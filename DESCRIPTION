@@ -1,0 +1,28 @@
+Package: tectr
+Type: Package
+Title: Provides an implementation of the architecture framework in R
+Version: 0.2-0
+Authors@R: c(person("Samuel", "Lippl", 
+                   email = "sfc.lippl@gmail.com", 
+                   role = c("cre", "aut")), 
+             person("Fabian", "Obster", 
+                     email = "fabian.obster@gmail.com", 
+                     role = c("aut")))
+Description: Provides an implementation of the architecture framework in R.
+License: GPL-2
+LazyData: true
+Depends: R(>= 3.3.3)
+Suggests: testthat
+Imports: 
+    methods,  
+    assertthat, 
+    dplyr
+Roxygen: list(markdown = TRUE)
+Collate: 
+    'scope-class.R'
+    'compound-class.R'
+    'structure-relation-class.R'
+    'supp-print.R'
+    'variable-class.R'
+    'variable-methods.R'
+RoxygenNote: 6.0.1
