@@ -12,25 +12,12 @@ is_relation <- function(x) "relation" %in% class(x)
 #' @param definition a short definition of the variable
 #' @param ... details on the relation
 #'
-#' @seealso [Content()]
-
-.C_Relation <- function(relation, definition = "", ...) {
-  c_relation <- .Content(title = relation, definition = definition, ...)
-  class(c_relation) <- c("atom_c_relation", "c_relation", "relation",
-                         class(c_relation))
-  c_relation
-}
-
-#' @rdname is_relation
+#' @seealso [Content()]#' @rdname is_relation
 #'
 #' @export
 
 C_Relation <- function(relation, definition = "", ...) {
-  stopifnot(length(relation) == length(definition))
-  ret <- list()
-  for(i in seq_len(length(relation))) {
-    ret[[i]] <- .C_Relation(relation[i], definition[i], ...)
-  }
-  class(ret) <- c("c_relation", "relation", "content", "variable", class(ret))
+  ret <- Content(relation, definition, ...)
+  class(ret) <- c("c_relation", "variable", class(ret))
   ret
 }

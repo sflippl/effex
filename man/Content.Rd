@@ -2,13 +2,10 @@
 % Please edit documentation in R/variable-class.R
 \name{Content}
 \alias{Content}
-\alias{.Content}
 \alias{is_content}
 \title{Content}
 \usage{
 Content(title, definition = "", ...)
-
-.Content(title, definition = "", ...)
 
 is_content(x)
 }
@@ -20,9 +17,9 @@ is_content(x)
 \item{...}{details on the content}
 }
 \description{
-\code{content} is a \code{variable} that is defined non-statistically. It therefore
-consists of a character vector carrying the definition and possible comments
-carried as attributes.
+\code{content} is a \code{variable} that is defined non-statistically. It is a
+\code{data.frame} with an obligatory \code{name} and \code{definition} as well as optional
+additional columns.
 }
 \details{
 Do not set \code{content} as \code{class(x) <- "content"} but only with the constructor

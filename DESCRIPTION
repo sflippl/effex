@@ -24,6 +24,8 @@ Collate:
     'structure-class.R'
     'structure-relation-class.R'
     'supp-print.R'
+    'supp-set.R'
+    'tectr.R'
     'variable-class.R'
     'variable-methods.R'
 RoxygenNote: 6.0.1

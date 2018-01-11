@@ -2,13 +2,10 @@
 % Please edit documentation in R/structure-relation-class.R
 \name{is_relation}
 \alias{is_relation}
-\alias{.C_Relation}
 \alias{C_Relation}
 \title{Relations}
 \usage{
 is_relation(x)
-
-.C_Relation(relation, definition = "", ...)
 
 C_Relation(relation, definition = "", ...)
 }
@@ -27,5 +24,5 @@ relationship between two \code{content}s
 (possible extension further down the road).
 }
 \seealso{
-\code{\link[=Content]{Content()}}
+\code{\link[=Content]{Content()}}#' @rdname is_relation
 }

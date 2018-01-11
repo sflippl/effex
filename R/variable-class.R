@@ -9,8 +9,6 @@
 #'
 #' @param x a possible variable
 #'
-#' @import dplyr
-#'
 #' @export
 
 is_variable <- function(x) {
@@ -20,9 +18,9 @@ is_variable <- function(x) {
 # Content-----------------------------------------------------------------------
 #' Content
 #'
-#' `content` is a `variable` that is defined non-statistically. It therefore
-#' consists of a character vector carrying the definition and possible comments
-#' carried as attributes.
+#' `content` is a `variable` that is defined non-statistically. It is a
+#' `data.frame` with an obligatory `name` and `definition` as well as optional
+#' additional columns.
 #'
 #' Do not set `content` as `class(x) <- "content"` but only with the constructor
 #' function.
@@ -48,27 +46,10 @@ is_variable <- function(x) {
 #' @export
 
 Content <- function(title, definition = "", ...) {
-  stopifnot(length(title) == length(definition))
-  ret <- list()
-  for(i in seq_len(length(title))) {
-    ret[[i]] <- .Content(title[i], definition[i], ...)
-  }
-  class(ret) <- c("content", "variable", class(ret))
+  ret <- data.frame(title = title, definition = definition, ...)
+  class(ret) <- c("content", class(ret))
   ret
 }
-
-#' @rdname Content
-
-.Content <- function(title, definition = "", ...) {
-  title <- paste(title)
-  definition <- paste(definition)
-  attribs <- list(Definition = definition, ...)
-  content <- as.character(title)
-  attributes(content) <- attribs
-  class(content) <- c("atom_content", "content", "variable", class(content))
-  content
-}
-
 
 #' @rdname Content
 #'

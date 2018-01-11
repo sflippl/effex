@@ -3,26 +3,19 @@
 \name{Structure}
 \alias{Structure}
 \alias{Structure.default}
-\alias{Structure.variable}
-\alias{Structure.list}
+\alias{Structure.relation}
 \title{Structure}
 \usage{
-Structure(subject, ...)
+Structure(relation, ...)
 
-\method{Structure}{default}(subject, ...)
+\method{Structure}{default}(relation, ...)
 
-\method{Structure}{variable}(subject, relation, object, ...)
-
-\method{Structure}{list}(subject, relation, object, ...)
+\method{Structure}{relation}(variables)
 }
 \arguments{
-\item{relation}{The relation.}
-
-\item{object}{The right variable.}
-
 \item{relation}{The relation.}
 }
 \description{
 Structures are collections of variables and relations between them. Saved in
-the form \code{subject} \code{relation} \code{object}.
+the form \code{relation} \code{content}.
 }
