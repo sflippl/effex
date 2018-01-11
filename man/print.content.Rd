@@ -4,7 +4,11 @@
 \alias{print.content}
 \title{Print Variables}
 \usage{
-\method{print}{content}(x, ...)
+\method{print}{content}(x, parse = 5, ...)
+}
+\arguments{
+\item{parse}{number of contents that are printed or logical \code{FALSE} that
+indicates that all contents are to be printed.}
 }
 \description{
 \code{print} provides a clearer approach to a \code{variable}.

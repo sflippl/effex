@@ -1,8 +1,4 @@
 # Print-------------------------------------------------------------------------
-#
-#' @import tidyverse
-
-NULL
 
 #' Print Variables
 #'
@@ -16,15 +12,20 @@ NULL
 #'                 displayed in one line. We therefore will parse it to the
 #'                 appropriate length.")
 #'
+#' @param parse number of contents that are printed or logical `FALSE` that
+#' indicates that all contents are to be printed.
+#'
 #' @export
 
-print.content <- function(x, ...) {
-  if(length(x) > 1) {
-    for(i in min(length(x), 5)) {
-      print(x[i])
-    }
-    cat("Printed", min(length(x), 5), "out of", length(x), "lines.\n")
-  }
+print.content <- function(x, parse = 5, ...) {
+  n <- length(x)
+  logic <- parse > 0 & n > parse
+  if(logic) n <- parse
+  lapply(x[seq_len(n)], print, ...)
+  if(logic) cat("Printed", n, "out of", length(x), "contents.\n")
+}
+
+print.atom_content <- function(x, parse = 5, ...) {
   title <- print_in_lines(as.character(x), nchars = 63)
   cat(class(x)[1], title, "\n")
   # One line has 80 characters. The first 340 characters of a definition are

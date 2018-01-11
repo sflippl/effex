@@ -2,10 +2,13 @@
 % Please edit documentation in R/variable-class.R
 \name{Content}
 \alias{Content}
+\alias{.Content}
 \alias{is_content}
 \title{Content}
 \usage{
 Content(title, definition = "", ...)
+
+.Content(title, definition = "", ...)
 
 is_content(x)
 }

@@ -48,14 +48,27 @@ is_variable <- function(x) {
 #' @export
 
 Content <- function(title, definition = "", ...) {
+  stopifnot(length(title) == length(definition))
+  ret <- list()
+  for(i in seq_len(length(title))) {
+    ret[[i]] <- .Content(title[i], definition[i], ...)
+  }
+  class(ret) <- c("content", "variable", class(ret))
+  ret
+}
+
+#' @rdname Content
+
+.Content <- function(title, definition = "", ...) {
   title <- paste(title)
   definition <- paste(definition)
   attribs <- list(Definition = definition, ...)
   content <- as.character(title)
   attributes(content) <- attribs
-  class(content) <- c("content", "variable", class(content))
+  class(content) <- c("atom_content", "content", "variable", class(content))
   content
 }
+
 
 #' @rdname Content
 #'

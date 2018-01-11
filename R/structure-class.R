@@ -1,38 +1,48 @@
 #' Structure
 #'
 #' Structures are collections of variables and relations between them. Saved in
-#' the form `subject` `relation` `object`.
+#' the form `relation` `content`.
 #'
-#' @param subject The left variable.
+#' @param relation The relation.
 #'
 #' @export
 
-Structure <- function(subject, ...) {
-  UseMethod("Structure", subject)
+Structure <- function(relation, ...) {
+  UseMethod("Structure", relation)
 }
 
 #' @rdname Structure
 
-Structure.default <- function(subject, ...) {
-  error("Provide an appropriate subject.")
+Structure.default <- function(relation, ...) {
+  error("Provide an appropriate relation")
 }
 
 #' @rdname Structure
 #'
-#' @param relation The relation.
-#' @param object The right variable.
+#' @details The implementation is highly inefficient as far as I can tell but
+#' we will change that in the future.
 
-Structure.variable <- function(subject, relation, object, ...) {
-  stopifnot(is_relation(relation), is_variable(object))
+Structure.relation <- function(relation, subject, object, ...) {
+  # Get a list of the unique subjects and objects, respectively the relations.
 
-}
+  variables <- c(subject, object)
+  class(variables) <- class(subject)
+  variables <- Set_list(c(subject, object))
 
-#' @rdname Structure
+  relations <- Set_list(relation)
 
-Structure.list <- function(subject, relation, object, ...) {
-  if(length(relation) != length(subject) | length(object) != length(subject))
-    warning("Subjects, relations and objects are not all the same length.")
-  lapply(seq_len(length(subject)), function(x) {
-    Structure(subject[[i]], relation[[i]], object[[i]])
-  })
+  structure <- data.frame(0, nrow = length(variables), ncol = length(variables))
+
+  attr(structure, "variables") <- variables
+  attr(structure, "relations") <- relations
+  class(structure) <- "structure"
+
+  # Check for every subject the relations.
+
+  for(i in seq_len(subject)) {
+    structure <- structure %>%
+      add_relation(relation[[i]], subject[[i]], object[[i]])
+  }
+
+  structure
 }
