@@ -13,10 +13,12 @@ License: GPL-2
 LazyData: true
 Depends: R(>= 3.3.3)
 Suggests: testthat
-Imports: 
-    methods,  
+Imports:  
     assertthat, 
-    dplyr
+    dplyr, 
+    tidygraph, 
+    ggraph, 
+    shiny
 Roxygen: list(markdown = TRUE)
 Collate: 
     'scope-class.R'

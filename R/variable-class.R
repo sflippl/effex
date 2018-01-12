@@ -25,12 +25,12 @@ is_variable <- function(x) {
 #' Do not set `content` as `class(x) <- "content"` but only with the constructor
 #' function.
 #'
-#' @param title the variable name
+#' @param name the variable name
 #' @param definition a short definition of the variable
 #' @param ... details on the content
 #'
 #' @examples
-#' int <- Content(title = "Intelligence",
+#' int <- Content(name = "Intelligence",
 #'                definition = "Intelligence has been defined in many different
 #'                              ways including as one's capacity for logic,
 #'                              understanding, self-awareness, learning,
@@ -45,9 +45,9 @@ is_variable <- function(x) {
 #'
 #' @export
 
-Content <- function(title, definition = "", ...) {
-  ret <- data.frame(title = title, definition = definition, ...)
-  class(ret) <- c("content", class(ret))
+Content <- function(name, definition = "", ...) {
+  ret <- data.frame(name = name, definition = definition, ...)
+  class(ret) <- c("content", "variable", class(ret))
   ret
 }
 
