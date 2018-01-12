@@ -8,7 +8,7 @@
 #' @export
 
 Structure <- function(variables, ...) {
-  UseMethod("Structure", relation)
+  UseMethod("Structure", variables)
 }
 
 #' @rdname Structure

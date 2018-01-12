@@ -5,12 +5,12 @@
 \alias{is_content}
 \title{Content}
 \usage{
-Content(title, definition = "", ...)
+Content(name, definition = "", ...)
 
 is_content(x)
 }
 \arguments{
-\item{title}{the variable name}
+\item{name}{the variable name}
 
 \item{definition}{a short definition of the variable}
 
@@ -26,7 +26,7 @@ Do not set \code{content} as \code{class(x) <- "content"} but only with the cons
 function.
 }
 \examples{
-int <- Content(title = "Intelligence",
+int <- Content(name = "Intelligence",
                definition = "Intelligence has been defined in many different
                              ways including as one's capacity for logic,
                              understanding, self-awareness, learning,

@@ -13,7 +13,7 @@ License: GPL-2
 LazyData: true
 Depends: R(>= 3.3.3)
 Suggests: testthat
-Imports:  
+Imports: 
     assertthat, 
     dplyr, 
     tidygraph, 
@@ -23,8 +23,12 @@ Roxygen: list(markdown = TRUE)
 Collate: 
     'scope-class.R'
     'compound-class.R'
+    'shiny-funs.R'
+    'shiny-tectr-server.R'
+    'shiny-tectr-ui.R'
     'structure-class.R'
     'structure-relation-class.R'
+    'structure-visualization.R'
     'supp-print.R'
     'supp-set.R'
     'tectr.R'

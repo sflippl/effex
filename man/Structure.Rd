@@ -3,19 +3,19 @@
 \name{Structure}
 \alias{Structure}
 \alias{Structure.default}
-\alias{Structure.relation}
+\alias{Structure.variable}
 \title{Structure}
 \usage{
-Structure(relation, ...)
+Structure(variables, ...)
 
-\method{Structure}{default}(relation, ...)
+\method{Structure}{default}(variables, ...)
 
-\method{Structure}{relation}(variables)
+\method{Structure}{variable}(variables, relations = NULL, edges)
 }
 \arguments{
-\item{relation}{The relation.}
+\item{variables}{The relation.}
 }
 \description{
-Structures are collections of variables and relations between them. Saved in
-the form \code{relation} \code{content}.
+Structures are collections of variables and relations between them -
+essentially graphs.
 }
