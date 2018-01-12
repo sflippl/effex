@@ -3,7 +3,7 @@
 #' Structures are collections of variables and relations between them -
 #' essentially graphs.
 #'
-#' @param variables The relation.
+#' @param variables The variables of the structure.
 #'
 #' @export
 
@@ -23,7 +23,7 @@ Structure.default <- function(variables, ...) {
 Structure.variable <- function(variables, relations = NULL, edges) {
   # Check appropriate input
   assert_that(is_variable(variables),
-              length(unique(variables$name)) == length(variables),
+              length(unique(variables$name)) == length(variables$name),
               is.null(relations) | is_relation(relations),
               length(unique(relations$name)) == length(relations),
               all(c("from", "to") %in% colnames(edges)))
