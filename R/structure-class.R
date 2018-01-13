@@ -15,7 +15,7 @@ Structure <- function(variables = Content(character(0)), ...) {
 #'
 #' @export
 
-Structure.default <- function(variables, ...) {
+Structure.default <- function(variables = Content(character(0)), ...) {
   error("Provide an appropriate variable")
 }
 
@@ -24,7 +24,7 @@ Structure.default <- function(variables, ...) {
 #' @param edges new connection between contents and relations
 #' @export
 
-Structure.variable <- function(variables,
+Structure.variable <- function(variables = Content(character(0)),
                                relations = C_Relation(character(0)),
                                edges = data.frame(from = numeric(0),
                                                   to = numeric(0),
