@@ -45,7 +45,7 @@ is_variable <- function(x) {
 #'
 #' @export
 
-Content <- function(name, definition = "", ...) {
+Content <- function(name, definition = rep("", length(name)), ...) {
   ret <- data.frame(name = name, definition = definition, ...)
   class(ret) <- c("content", "variable", class(ret))
   ret

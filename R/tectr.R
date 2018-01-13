@@ -2,5 +2,5 @@
 #'
 #'
 #'
-#' @import dplyr
+#' @import dplyr magrittr
 "_PACKAGE"

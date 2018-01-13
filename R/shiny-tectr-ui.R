@@ -1,28 +1,6 @@
 #' @rdname tectr
 
 tectr_ui <- function() {
-  structure_panel <- sidebarLayout(
-    sidebarPanel(
-      verticalLayout(
-        wellPanel(
-          textInput(inputId = "content_name",
-                    label = "Content Name"),
-          textInput(inputId = "content_definition",
-                    label = "Content Definition"),
-          actionButton(inputId = "content_add",
-                       label = "Add Content")
-        ),
-        well Panel(
-          textInput(inputId = "relation_name",
-                    label = "Relation Name"),
-          textInput(inputId = "relation_definition",
-                    label = "Relation Definition"),
-          actionButton(inputId = "content_add",
-                       label = )
-        )
-      )
-    )
-  )
   navbarPage(title = "tectr",
              tabPanel("Overview",
                       tabsetPanel(

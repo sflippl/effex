@@ -18,7 +18,8 @@ Imports:
     dplyr, 
     tidygraph, 
     ggraph, 
-    shiny
+    shiny, 
+    magrittr
 Roxygen: list(markdown = TRUE)
 Collate: 
     'scope-class.R'
@@ -26,6 +27,8 @@ Collate:
     'shiny-funs.R'
     'shiny-tectr-server.R'
     'shiny-tectr-ui.R'
+    'shiny-tectr_structure-server.R'
+    'shiny-tectr_structure-ui.R'
     'structure-class.R'
     'structure-relation-class.R'
     'structure-visualization.R'

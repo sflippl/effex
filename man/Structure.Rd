@@ -13,7 +13,7 @@ Structure(variables, ...)
 \method{Structure}{variable}(variables, relations = NULL, edges)
 }
 \arguments{
-\item{variables}{The relation.}
+\item{variables}{The variables of the structure.}
 }
 \description{
 Structures are collections of variables and relations between them -

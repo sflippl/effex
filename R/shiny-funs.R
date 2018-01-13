@@ -18,9 +18,11 @@ tectr <- function(project) {
 #' @rdname tectr
 #'
 #' @description `tectr_content()` provides an interface for changing structures.
+#'
+#' @export
 
-tectr_content <- function(structure) {
-  ui <- tectr_content_ui()
-  server <- tectr_content_server(structure)
+tectr_structure <- function(structure = Content(character(0))) {
+  ui <- tectr_structure_ui()
+  server <- tectr_structure_server(structure)
   shinyApp(ui = ui, server = server) %>% runApp()
 }
