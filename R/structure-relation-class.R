@@ -16,8 +16,8 @@ is_relation <- function(x) "relation" %in% class(x)
 #'
 #' @export
 
-C_Relation <- function(relation, definition = "", ...) {
+C_Relation <- function(relation, definition = rep("", length(relation)), ...) {
   ret <- Content(relation, definition, ...)
-  class(ret) <- c("c_relation", "variable", class(ret))
+  class(ret) <- c("c_relation", "relation", "variable", class(ret))
   ret
 }

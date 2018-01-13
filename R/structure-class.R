@@ -12,13 +12,17 @@ Structure <- function(variables, ...) {
 }
 
 #' @rdname Structure
+#'
+#' @export
 
 Structure.default <- function(variables, ...) {
   error("Provide an appropriate variable")
 }
 
 #' @rdname Structure
-#'
+#' @param relations relations that extend the structure
+#' @param edges new connection between contents and relations
+#' @export
 
 Structure.variable <- function(variables, relations, edges) {
   # Check appropriate input

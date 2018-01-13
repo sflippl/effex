@@ -10,10 +10,14 @@ Structure(variables, ...)
 
 \method{Structure}{default}(variables, ...)
 
-\method{Structure}{variable}(variables, relations = NULL, edges)
+\method{Structure}{variable}(variables, relations, edges)
 }
 \arguments{
 \item{variables}{The variables of the structure.}
+
+\item{relations}{relations that extend the structure}
+
+\item{edges}{new connection between contents and relations}
 }
 \description{
 Structures are collections of variables and relations between them -

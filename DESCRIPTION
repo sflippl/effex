@@ -30,6 +30,7 @@ Collate:
     'shiny-tectr_structure-server.R'
     'shiny-tectr_structure-ui.R'
     'structure-class.R'
+    'structure-methods.R'
     'structure-relation-class.R'
     'structure-visualization.R'
     'supp-print.R'

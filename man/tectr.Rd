@@ -12,7 +12,7 @@
 \usage{
 tectr(project)
 
-tectr_structure(structure)
+tectr_structure(structure = Content(character(0)))
 
 tectr_server(project = NULL)
 

@@ -7,7 +7,7 @@
 \usage{
 is_relation(x)
 
-C_Relation(relation, definition = "", ...)
+C_Relation(relation, definition = rep("", length(relation)), ...)
 }
 \arguments{
 \item{relation}{a character. the kind of relation}

@@ -5,7 +5,7 @@
 \alias{is_content}
 \title{Content}
 \usage{
-Content(name, definition = "", ...)
+Content(name, definition = rep("", length(name)), ...)
 
 is_content(x)
 }
