@@ -7,7 +7,7 @@
 
 visualize_struct <- function(struct) {
   relations <- attr(struct, "relations") %>%
-    mutate(index = seq_len(nrow(relations)))
+    mutate(index = seq_len(nrow(attr(struct, "relations")))
   struct <- struct %>%
     activate(edges) %>%
     rename(index = name) %>%
