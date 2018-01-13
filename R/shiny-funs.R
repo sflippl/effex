@@ -21,7 +21,7 @@ tectr <- function(project) {
 #'
 #' @export
 
-tectr_structure <- function(structure = Content(character(0))) {
+tectr_structure <- function(structure = Structure()) {
   ui <- tectr_structure_ui()
   server <- tectr_structure_server(structure)
   shinyApp(ui = ui, server = server) %>% runApp()

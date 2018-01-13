@@ -2,5 +2,5 @@
 #'
 #'
 #'
-#' @import dplyr magrittr tibble
+#' @import dplyr magrittr tibble tidygraph ggraph
 "_PACKAGE"

@@ -25,9 +25,9 @@ tectr_structure_ui <- function() {
           wellPanel(
             uiOutput(outputId = "edge_name"),
             uiOutput(outputId = "edge_from"),
-            uiOutput(outputId = "edge_to"))),
-        mainPanel(
-          verticalLayout(
-            verbatimTextOutput(outputId = "structure_verbatim"),
-            plotOutput(outputId = "structure_visual"))))))
+            uiOutput(outputId = "edge_to")))),
+      mainPanel(
+        verticalLayout(
+          verbatimTextOutput(outputId = "structure_verbatim"),
+          plotOutput(outputId = "structure_visual")))))
 }
