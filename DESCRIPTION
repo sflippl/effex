@@ -19,7 +19,8 @@ Imports:
     tidygraph, 
     ggraph, 
     shiny, 
-    magrittr
+    magrittr, 
+    tibble
 Roxygen: list(markdown = TRUE)
 Collate: 
     'scope-class.R'

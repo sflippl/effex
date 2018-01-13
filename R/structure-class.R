@@ -39,11 +39,13 @@ Structure.variable <- function(variables, relations, edges) {
 #' Validate input to structures
 
 valid_structure_input <- function(variables, relations, edges) {
-  assert_that(is_variable(variables),
-              length(unique(variables$name)) == length(variables$name),
+  assert_that(is.null(variables) | is_variable(variables),
+              is.null(variables) |
+                length(unique(variables$name)) == length(variables$name),
               is.null(relations) | is_relation(relations),
-              length(unique(relations$name)) == length(relations$name),
-              all(c("from", "to") %in% colnames(edges)))
+              is.null(relations) |
+                length(unique(relations$name)) == length(relations$name),
+              is.null(edges) | all(c("from", "to") %in% colnames(edges)))
 }
 
 #' Let edges reference the relations and variables
@@ -54,21 +56,22 @@ get_ref_edges <- function(variables, relations, edges) {
     # get positions from names
     edges$name <- match(edges$name, relations$name)
   }
-  else if(!is.numeric(edges$name))
+  if(!is.numeric(edges$name))
     stop("edges$name is available but neither character nor a number.")
   assert_that(0 <= min(edges$name),
               max(edges$name) <= length(relations))
 
   if(any(edges$name == 0)) warning("There are edges without known relations")
   for(varnames in c("from", "to")) {
-    if(is.character(edges$varnames) | is.factor(edges$varnames)) {
+    if(is.character(edges[, varnames]) | is.factor(edges[, varnames])) {
       # get positions from names
-      edges$varnames <- match(edges$varnames, variables$name)
+      edges[, varnames] <- match(edges[, varnames], variables$name)
     }
-    else if(is.numeric(edges$varnames))
+    if(!is.numeric(edges[, varnames]))
       stop("edges$", varnames, " needs to contain numbers or characters.")
-    assert_that(0 < min(edges$varnames),
-                max(edges$varnames) <= length(variables))
+    assert_that(0 < min(edges[, varnames]),
+                max(edges[, varnames]) <= length(variables))
   }
   edges
 }
+

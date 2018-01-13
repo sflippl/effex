@@ -1,4 +1,6 @@
 #' Relations
+#'
+#' @export
 
 is_relation <- function(x) "relation" %in% class(x)
 
