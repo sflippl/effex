@@ -30,15 +30,6 @@ Structure.variable <- function(variables, relations, edges) {
 
   edges <- get_ref_edges(variables, relations, edges)
   if(!("name" %in% colnames(edges))) edges$name <- ""
-  for(varnames in c("from", "to")) {
-    if(is.numeric(edges$varnames))
-      assert_that(0 < min(edges$varnames),
-                  max(edges$varnames) < length(variables))
-    else if(is.character(edges$varnames)) {
-      # get positions from names
-      edges$varnames <- match(edges$varnames, variables$name)
-    }
-  }
   ret <- tbl_graph(nodes = variables, edges = edges)
   attr(ret, "relations") <- relations
   class(ret) <- c("structure", class(ret))
@@ -70,14 +61,14 @@ get_ref_edges <- function(variables, relations, edges) {
 
   if(any(edges$name == 0)) warning("There are edges without known relations")
   for(varnames in c("from", "to")) {
-    if(is.numeric(edges$varnames))
-      assert_that(0 < min(edges$varnames),
-                  max(edges$varnames) <= length(variables))
-    else if(is.character(edges$varnames) | is.factor(edges$varnames)) {
+    if(is.character(edges$varnames) | is.factor(edges$varnames)) {
       # get positions from names
       edges$varnames <- match(edges$varnames, variables$name)
     }
-    else stop("edges$", varnames, " needs to contain numbers or characters.")
+    else if(is.numeric(edges$varnames))
+      stop("edges$", varnames, " needs to contain numbers or characters.")
+    assert_that(0 < min(edges$varnames),
+                max(edges$varnames) <= length(variables))
   }
   edges
 }
