@@ -4,13 +4,19 @@
 \alias{extend}
 \alias{extend_variables}
 \alias{extend_relations}
+\alias{extend_edges}
 \title{Extend a structure}
 \usage{
-extend(structure, variables = NULL, relations = NULL, edges = NULL)
+extend(structure, variables = Content(character(0)),
+  relations = C_Relation(character(0)), edges = data.frame(from =
+  numeric(0), to = numeric(0), name = numeric(0)))
 
-extend_variables(structure, variables)
+extend_variables(structure, variables = Content(character(0)))
 
-extend_relations(structure, relations)
+extend_relations(structure, relations = C_Relation(character(0)))
+
+extend_edges(structure, edges = data.frame(from = numeric(0), to = numeric(0),
+  name = numeric(0)))
 }
 \arguments{
 \item{structure}{a structure to be extended}

@@ -7,7 +7,7 @@
 #'
 #' @export
 
-Structure <- function(variables, ...) {
+Structure <- function(variables = Content(character(0)), ...) {
   UseMethod("Structure", variables)
 }
 
@@ -24,7 +24,11 @@ Structure.default <- function(variables, ...) {
 #' @param edges new connection between contents and relations
 #' @export
 
-Structure.variable <- function(variables, relations, edges) {
+Structure.variable <- function(variables,
+                               relations = C_Relation(character(0)),
+                               edges = data.frame(from = numeric(0),
+                                                  to = numeric(0),
+                                                  name = character(0))) {
   # Check appropriate input
   valid_structure_input(variables, relations, edges)
 

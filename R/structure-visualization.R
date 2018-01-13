@@ -6,6 +6,12 @@
 #' @export
 
 visualize_struct <- function(struct) {
+  relations <- attr(struct, "relations") %>%
+    mutate(index = seq_len(nrow(relations)))
+  struct <- struct %>%
+    activate(edges) %>%
+    rename(index = name) %>%
+    left_join(relations, by = "index")
   ggraph(struct) +
     theme_graph() +
     geom_edge_diagonal(aes(label = name),

@@ -20,16 +20,14 @@ tectr_structure_ui <- function() {
                       label = "Relation Name"),
             textInput(inputId = "relation_definition",
                       label = "Relation Definition"),
-            actionButton(inputId = "content_add",
+            actionButton(inputId = "relation_add",
                          label = "Add Relation")),
           wellPanel(
-            selectInput(inputId = "edge_relation",
-                        label = "Relation",
-                        choices = attr(structure, "relations")$name),
+            uiOutput(outputId = "edge_name"),
             uiOutput(outputId = "edge_from"),
             uiOutput(outputId = "edge_to"))),
         mainPanel(
           verticalLayout(
-            verbatimTextOutput(outputId = "structure_verbatim", height = 4),
+            verbatimTextOutput(outputId = "structure_verbatim"),
             plotOutput(outputId = "structure_visual"))))))
 }
