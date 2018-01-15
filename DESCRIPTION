@@ -20,7 +20,8 @@ Imports:
     ggraph, 
     shiny, 
     magrittr, 
-    tibble
+    tibble, 
+    ggplot2
 Roxygen: list(markdown = TRUE)
 Collate: 
     'scope-class.R'
