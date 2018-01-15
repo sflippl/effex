@@ -8,10 +8,11 @@
 \usage{
 Structure(variables = Content(character(0)), ...)
 
-\method{Structure}{default}(variables, ...)
+\method{Structure}{default}(variables = Content(character(0)), ...)
 
-\method{Structure}{variable}(variables, relations = C_Relation(character(0)),
-  edges = data.frame(from = numeric(0), to = numeric(0), name = character(0)))
+\method{Structure}{variable}(variables = Content(character(0)),
+  relations = C_Relation(character(0)), edges = data.frame(from =
+  numeric(0), to = numeric(0), name = character(0)))
 }
 \arguments{
 \item{variables}{The variables of the structure.}
