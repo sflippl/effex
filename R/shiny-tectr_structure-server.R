@@ -19,7 +19,7 @@ tectr_structure_server <- function(structure) {
                        input$relation_definition))
     })
 
-    # Add Relations -----------------------------------------------------------
+    # Add Edges -----------------------------------------------------------
 
     re_structure <- eventReactive(input$edge, {
       extend_edges(re_structure(),
@@ -30,7 +30,7 @@ tectr_structure_server <- function(structure) {
 
     output$edge_name <- renderUI({
       selectInput(inputId = "edge_name",
-                  label = "relation",
+                  label = "Relation",
                   choices = re_structure() %>%
                     attr("relations") %$%
                     name)
@@ -53,6 +53,9 @@ tectr_structure_server <- function(structure) {
                     name,
                   multiple = TRUE)
     })
+
+    # Visualize structure ---------------------------------------------------
+
     output$structure_verbatim <- renderPrint(re_structure() %>% print)
     output$structure_visual <- renderPlot(re_structure() %>% visualize_struct)
   }

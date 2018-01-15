@@ -63,7 +63,7 @@ get_ref_edges <- function(variables, relations, edges) {
   if(!is.numeric(edges$name))
     stop("edges$name is available but neither character nor a number.")
   assert_that(0 <= min(edges$name),
-              max(edges$name) <= length(relations))
+              max(edges$name) <= nrow(relations))
 
   if(any(edges$name == 0)) warning("There are edges without known relations")
   for(varnames in c("from", "to")) {
@@ -74,7 +74,7 @@ get_ref_edges <- function(variables, relations, edges) {
     if(!is.numeric(edges[, varnames]))
       stop("edges$", varnames, " needs to contain numbers or characters.")
     assert_that(0 < min(edges[, varnames]),
-                max(edges[, varnames]) <= length(variables))
+                max(edges[, varnames]) <= nrow(variables))
   }
   edges
 }
