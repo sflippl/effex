@@ -5,27 +5,27 @@ tectr_structure_server <- function(structure) {
 
     # Add Content -------------------------------------------------------------
 
-    observeEvent(input$content_add, {
-      re_structure() <- extend_variables(re_structure(),
-                                         Content(input$content_name,
-                                                 input$content_definition))
+    re_structure <- eventReactive(input$content_add, {
+      extend_variables(re_structure(),
+                       Content(input$content_name,
+                       input$content_definition))
                  })
 
     # Add Relations -----------------------------------------------------------
 
-    observeEvent(input$relation_add, {
-      re_structure() <- extend_relations(re_structure(),
-                                         C_Relation(input$relation_name,
-                                                    input$relation_definition))
+    re_structure <- eventReactive(input$relation_add, {
+      extend_relations(re_structure(),
+                       C_Relation(input$relation_name,
+                       input$relation_definition))
     })
 
     # Add Relations -----------------------------------------------------------
 
-    observeEvent(input$edge, {
-      re_structure() <- extend_edges(re_structure(),
-                                     data.frame(from = input$edge_from,
-                                                to = input$edge_to,
-                                                name = input$edge_name))
+    re_structure <- eventReactive(input$edge, {
+      extend_edges(re_structure(),
+                   data.frame(from = input$edge_from,
+                              to = input$edge_to,
+                              name = input$edge_name))
     })
 
     output$edge_name <- renderUI({
