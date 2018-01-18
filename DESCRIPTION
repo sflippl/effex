@@ -12,8 +12,10 @@ Description: Provides an implementation of the architecture framework in R.
 License: GPL-2
 LazyData: true
 Depends: R(>= 3.3.3)
-Suggests: testthat
-Imports: 
+Suggests: testthat,
+    knitr,
+    rmarkdown
+Imports:
     assertthat, 
     dplyr, 
     tidygraph, 
@@ -23,7 +25,7 @@ Imports:
     tibble, 
     ggplot2
 Roxygen: list(markdown = TRUE)
-Collate: 
+Collate:
     'scope-class.R'
     'compound-class.R'
     'shiny-funs.R'
@@ -41,3 +43,4 @@ Collate:
     'variable-class.R'
     'variable-methods.R'
 RoxygenNote: 6.0.1
+VignetteBuilder: knitr
