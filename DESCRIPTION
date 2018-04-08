@@ -19,28 +19,12 @@ Imports:
     assertthat, 
     dplyr, 
     tidygraph, 
-    ggraph, 
     shiny, 
     magrittr, 
     tibble, 
-    ggplot2
+    ggplot2, 
+    rlang
 Roxygen: list(markdown = TRUE)
-Collate:
-    'scope-class.R'
-    'compound-class.R'
-    'shiny-funs.R'
-    'shiny-tectr-server.R'
-    'shiny-tectr-ui.R'
-    'shiny-tectr_structure-server.R'
-    'shiny-tectr_structure-ui.R'
-    'structure-class.R'
-    'structure-methods.R'
-    'structure-relation-class.R'
-    'structure-visualization.R'
-    'supp-print.R'
-    'supp-set.R'
-    'tectr.R'
-    'variable-class.R'
-    'variable-methods.R'
+Collate: 'architecture.R'
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
