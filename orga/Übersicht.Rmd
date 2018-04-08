@@ -1,0 +1,44 @@
+---
+title: "Übersicht"
+author: "Samuel Lippl"
+date: "23 März 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Konzeptionelle Ziele
+
+I.  Der Fokus liegt auf der Effizienz im Umgang mit dem Programm, nicht auf der komputationellen Effizienz. Dafür bin ich nicht geeignet und dafür ist R vermutlich nicht mal geeignet.
+II.  Das Programm soll eine klare, aber flexible Philosophie bieten, nach der Indikatorsysteme konstruiert werden.
+III.  Die Zusammenarbeit zwischen Statistikern und Nicht-Statistikern soll vereinfacht werden.
+IV.  Die Präsentation der Ergebnisse soll einen intuitiven und flexiblen Zusammenhang zur Konstruktion haben.
+
+# Offene Fragen
+
+* **Was ist der Unterschied zwischen Variablen und Compounds?**<br>
+  Ultimativ wird der Unterschied zwischen Variablen darüber definiert sein, was man mit ihnen machen kann. Das sollte seinen Ursprung aber in irgendwie gearteten Konzepten haben.
+  Der Schritt von einer Variablen zur nächsten sollte eine gewisse Bedeutung als Konstruktion des Systems haben, z. B. eine Imputation, eine Regression, eine Regressionsanwendung etc. In diesem Sinne sollten hinter jeder Variable Gedanken stecken, welchen Zweck diese verfolgt. Im Kontrast dazu hat ein Compound über alle Variablen entweder 1) die gleiche Bedeutung oder 2) keine Bedeutung außer der Tatsache, dass man gewisse Grundeinheiten nun mal zusammensetzen kann. Alle Variablen sollten irgendwo einen Platz im konzeptionellen Analogon haben, während Compounds einfach nur das Gitter bieten. Das bedeutet insbesondere, dass höchstwahrscheinlich unendliche Variablendefinitionen fehl am Platz sind, während diese für Compounds durchaus Sinn ergeben, beispielsweise als Koordinatengitter.
+  Letztlich lässt sich die Angabe einer bestimmten Kategorie von Compound (z. B. Zeit) als Variable bezeichnen. Es sind aber insofern spezielle Variablen als sich alle (auch n-äre) Compounds kombinieren und vereinen lassen müssen.
+  Auf der ungenauesten Ebene sind Compounds Observationen. Hier sollte mein Konzept mit der grundsätzlichen tidyverse-dataframe-Philosophie vereinbar sein. Obwohl Variablen grundsätzlich Funktionen sind, müssen jederzeit gefixt werden können.
+* **Versionsmanagement: Wie sollte ich verschiedene Versionen des Indikatorsystems verwalten?**
+  Situationen sind vorstellbar, in denen die zeitliche Entwicklung des Indikatorsystems einen eigenen Compound darstellt. In anderen Situationen möchte man möglicherweise nur speichern, wann was dazugekommen ist. Manchmal könnte das auch gänzlich egal sein.
+* **Ist lineare Rekursivität von Variablen sinnvoll?**
+  Möglicherweise wären auch gegenseitige Definitionen von Variablen sinnvoll -- bei infiniten Universen wäre das im momentanen System nicht möglich.
+  Beispiel: neurale Netzwerke etc. -- Linearität in Compound-Slices? (Würde aber allgemein Nonlinearität bedeuten, weil ein Compound-Slices bei eindimensionales Compounds trivial ist.)
+  Letztlich würde das bedeuten, dass die Wohldefiniertheitsversicherung entweder kompliziert wird oder ignoriert werden muss, damit nach wie vor in einem Dataframe stückweise alle Daten produziert werden können.
+* **Was müssen Compounds erfüllen?**
+  Eine erste Definition von Compounds ist für viele konkreten Aufgaben wichtig!
+  
+
+# Konkrete Aufgaben
+* **Wie kann ich automatisch Daten aus dem Internet updaten?**<br>
+  Das Ziel dieser Aufgaben ist *nicht* einen Umgang mit Updates zu schaffen, sondern lediglich, wie diese vollzogen werden könnten, sodass den folgenden Aufgaben gut nachgegangen werden kann:
+    + Nach einer gewissen Anzahl von Tagen wird die Variable automatisch geupdatet
+    + Bei einer Veränderung des Datensatzes wird der Benutzer benachrichtigt
+    + Auf Wunsch wird die Variable geupdatet<br>
+  Alle anderen Aufgaben sind Gegenstand andere Aufgaben oder Fragen (s. z. B. Versionsmanagement)
+* **Allgemeine Struktur der Operatoren**<br>
+  Eine Funktion (der eigentliche Operator), ein Compound und ein Dataframe -- so werden Operatoren generiert: `generate(Operator, Compound, data)`
