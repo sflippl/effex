@@ -31,6 +31,7 @@ architecture <- function(
 #' @export
 
 as_architecture <- function(archie, verbose = TRUE) {
+  assert_that(is.logical(verbose))
   UseMethod("as_architecture")
 }
 
@@ -93,11 +94,11 @@ is_verbose <- function(archie) {
 #' @export
 
 set_verbose <- function(archie, verbose) {
+  archie_name <- as.character(enexpr(archie))
+
   prev_verbose <- is_verbose(archie)
 
   attr(archie, "verbose") <- verbose
-
-  archie_name <- as.character(expr(archie))
 
   if(prev_verbose) {
     message("Changed verbosity of architecture ", archie_name,

@@ -9,4 +9,7 @@ test_that("Creating Architectures.", {
   expect_equal(is_verbose(archie), TRUE)
   expect_warning(as_architecture(archie, verbose = TRUE))
   expect_error(as_architecture(1, verbose = TRUE))
+  foo <- architecture(verbose = TRUE)
+  expect_message(set_verbose(foo, TRUE), "foo")
+  expect_error(architecture(1))
 })
