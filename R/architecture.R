@@ -13,7 +13,11 @@
 #'
 #' @param ... Parameters of `new.env()`
 #'
+<<<<<<< HEAD
 #' @export
+=======
+#' @include
+>>>>>>> 3e8d278c4d07908f5ff77e825d6ee16264c132be
 
 architecture <- function(
   verbose = TRUE,
@@ -27,6 +31,7 @@ architecture <- function(
 #' @rdname architecture
 #'
 #' @param archie an environment
+<<<<<<< HEAD
 #'
 #' @export
 
@@ -37,12 +42,22 @@ as_architecture <- function(archie, verbose = TRUE) {
 
 #' @export
 
+=======
+
+as_architecture <- function(archie, verbose = TRUE) {
+  UseMethod("as_architecture")
+}
+
+>>>>>>> 3e8d278c4d07908f5ff77e825d6ee16264c132be
 as_architecture.default <- function(archie, ...) {
   stop("Invalid class for archie.")
 }
 
+<<<<<<< HEAD
 #' @export
 
+=======
+>>>>>>> 3e8d278c4d07908f5ff77e825d6ee16264c132be
 as_architecture.environment <- function(archie, verbose = TRUE, ...) {
   class(archie) <- c("architecture", "environment")
 
@@ -51,8 +66,11 @@ as_architecture.environment <- function(archie, verbose = TRUE, ...) {
   archie
 }
 
+<<<<<<< HEAD
 #' @export
 
+=======
+>>>>>>> 3e8d278c4d07908f5ff77e825d6ee16264c132be
 as_architecture.architecture <- function(archie, verbose = TRUE, ...) {
   prev_verbose <- is_verbose(archie)
   attr(archie, "verbose") <- verbose
@@ -74,35 +92,50 @@ as_architecture.architecture <- function(archie, verbose = TRUE, ...) {
 #' @param verbose logical
 #'
 #' @describeIn is_architecture Is x an architecture?
+<<<<<<< HEAD
 #'
 #' @export
+=======
+>>>>>>> 3e8d278c4d07908f5ff77e825d6ee16264c132be
 
 is_architecture <- function(x) {
   inherits(x, "architecture")
 }
 
 #' @describeIn is_architecture Is the architecture verbose?
+<<<<<<< HEAD
 #'
 #' @export
+=======
+>>>>>>> 3e8d278c4d07908f5ff77e825d6ee16264c132be
 
 is_verbose <- function(archie) {
   attr(archie, "verbose")
 }
 
 #' @describeIn is_architecture Change the architecture's verbosity.
+<<<<<<< HEAD
 #'
 #' @export
 
 set_verbose <- function(archie, verbose) {
   archie_name <- as.character(enexpr(archie))
 
+=======
+
+set_verbose <- function(archie, verbose) {
+>>>>>>> 3e8d278c4d07908f5ff77e825d6ee16264c132be
   prev_verbose <- is_verbose(archie)
 
   attr(archie, "verbose") <- verbose
 
   if(prev_verbose) {
+<<<<<<< HEAD
     message("Changed verbosity of architecture ", archie_name,
             " to ", verbose, ".\n")
+=======
+    message("Changed verbosity of architecture to ", verbose, ".\n")
+>>>>>>> 3e8d278c4d07908f5ff77e825d6ee16264c132be
   }
 
   archie
