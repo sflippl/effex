@@ -56,11 +56,19 @@ set_architecture.default <- function(archie = NULL) {
 #' @export
 
 set_architecture.architecture <- function(archie = NULL) {
-  if((as.character(archie_expr)) %in% ls(envir = parent.frame())) {
+  archie_char <- as.character(archie_expr)
+  if(length(archie_char) != 1) {
+    stop("I could not find a variable corresponding to your architecture. ",
+         "You probably supplied a variable without name, for example ",
+         "'architecture(verbose = TRUE)'.",
+         "It is also possible that you supplied a variable in an environment ",
+         "which is currently not possible.")
+  }
+  if(archie_char %in% ls(envir = parent.frame())) {
     assign(".arc", archie_expr, envir = tectr_env)
-    message("Set default architecture to ", as.character(archie_expr), ".")
+    message("Set default architecture to ", archie_char, ".")
   } else {
-    stop(as.character(archie_expr), " does not exist.")
+    stop(archie_char, " does not exist.")
   }
   invisible(archie)
 }
