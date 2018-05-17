@@ -19,12 +19,9 @@ Imports:
     assertthat, 
     dplyr, 
     magrittr, 
-    rlang
+    rlang, 
+    stringr, 
+    tidyr
 Roxygen: list(markdown = TRUE)
-Collate: 
-    'architecture.R'
-    'architecture-set.R'
-    'variable.R'
-    'variable-source.R'
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
