@@ -28,7 +28,8 @@ get_variable.indicator <- function(indicator) {
     clean
 }
 
-#' @describeIn get_variable The raw variable with minimal cleaning and without ids.
+#' @describeIn get_variable The raw variable with minimal cleaning and without
+#' ids.
 #'
 #' @export
 
@@ -46,6 +47,7 @@ get_raw_variable.indicator <- function(indicator) {
     class(ret[[i]]) <- c(ind_source(indicator[[i]]), class(ret[[i]]))
   }
   class(ret) <- c("raw_variable", class(ret))
+  ret
 }
 
 #' @export
@@ -68,8 +70,9 @@ tidy <- function(raw_var) {
 tidy.raw_variable <- function(raw_var) {
   ret <- variable()
   for(i in seq_len(length(raw_var))) {
-    ret %<>% full_join(tidy(raw_var[[i]]))
+    ret %<>% full_join(tidy(raw_var[[i]]), by = "id")
   }
+  ret
 }
 
 #' @describeIn get_variable The final, cleaned variable.

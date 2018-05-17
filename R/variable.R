@@ -12,5 +12,6 @@ variable <- function(id = character(0), ...) {
   for(i in seq_len(ncol(ret))) {
     class(ret[, i]) <- c(class(ret[, i]), "variable_col")
   }
+  class(ret) <- c("variable", class(ret))
   ret
 }
