@@ -2,9 +2,12 @@
 % Please edit documentation in R/variable.R
 \name{variable}
 \alias{variable}
+\alias{as_variable}
 \title{Variables}
 \usage{
-variable(id = character(0), ...)
+variable(id = NULL, ...)
+
+as_variable(object, id)
 }
 \description{
 A variable is a data frame of indicator variables, i. e. every column is

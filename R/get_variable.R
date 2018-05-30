@@ -70,7 +70,20 @@ tidy <- function(raw_var) {
 tidy.raw_variable <- function(raw_var) {
   ret <- variable()
   for(i in seq_len(length(raw_var))) {
-    ret %<>% full_join(tidy(raw_var[[i]]), by = "id")
+    tmp <- tidy(raw_var[[i]])
+    ids_ret <- ids(ret)
+    ids_tmp <- ids(tmp)
+    ids_ret_tmp <- ids_ret[ids_ret %in% ids_tmp]
+    if(length(ids_ret_tmp) == 0) {
+      tmp_in_ret <- tibble()
+      for(nam in ids_tmp) {
+        tmp_in_ret[[nam]] <-
+          structure(rep(NA, nrow(ret)), class = class(tmp[[nam]]))
+      }
+      ret %<>% bind_cols(variable(id = tmp_in_ret))
+      ids_ret_tmp <- ids_tmp
+    }
+    ret %<>% full_join(tmp, by = ids_ret_tmp)
   }
   ret
 }
@@ -86,7 +99,13 @@ clean <- function(var) {
 #' @export
 
 clean.variable <- function(var) {
-  apply(var, clean)
+  for(col in colnames(var)) {
+    var[[col]] <- structure(clean(var[[col]]),
+                            class = c(class(var[[col]])[1],
+                                      class(clean(var[[col]])),
+                                      "variable_col"))
+  }
+  var
 }
 
 #' @export
