@@ -48,3 +48,27 @@ knitr::include_graphics(path = "figures/1_separate_b.png")
 #  ggplot(df, aes(x = gdp, y = population, colour = continent)) +
 #    geom_standard()
 
+## ----eval = FALSE--------------------------------------------------------
+#  library(worldbank)
+#  df <- get_variable("worldbank-gdp") %>%
+#    get_variable("somesource-land_covered_in_grapes", .) # 2nd argument is already existing data
+
+## ----eval = FALSE--------------------------------------------------------
+#  conslm <- tectr_lm("conslm")
+#  interlm <- tectr_lm("interlm")
+#  conslm_pred <- tectr_predict(conslm)
+#  # ...
+#  df <- get_variable("worldbank-gdp") %>%
+#    get_variable("somesource-land_covered_in_grapes", .) %>%
+#    # ...
+#    get_variable(c("conslm", "interlm"), .) %>%
+#    get_variable(c("conslm_pred", "interlm_pred"), .)
+
+## ----eval = FALSE--------------------------------------------------------
+#  plot <- df %>%
+#    select_view(view = worldbank,
+#                worldbank__gdp, wb_coords__geometry, worldbank__year) %>%
+#    filter(worldbank__year == 2015) %>%
+#    ggplot(aes(fill = worldbank__gdp, geometry = wb_coords_geometry)) +
+#    geom_map()
+
