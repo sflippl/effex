@@ -21,7 +21,9 @@ Imports:
     magrittr, 
     rlang, 
     stringr, 
-    tidyr
+    tidyr,
+    tidyselect,
+    glue
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr

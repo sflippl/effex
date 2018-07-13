@@ -2,23 +2,23 @@
 % Please edit documentation in R/collection-elements.R
 \name{key}
 \alias{key}
-\alias{key.data.frame}
+\alias{key.collection_df}
 \alias{key.function}
 \alias{key.default}
-\alias{change_key.data.frame}
+\alias{change_key.collection_df}
 \alias{change_key.function}
 \alias{change_key.default}
 \title{Keys}
 \usage{
 key(x)
 
-\method{key}{data.frame}(x)
+\method{key}{collection_df}(x)
 
 \method{key}{function}(x)
 
 \method{key}{default}(x)
 
-\method{change_key}{data.frame}(x, key)
+\method{change_key}{collection_df}(x, key)
 
 \method{change_key}{function}(x, key)
 
@@ -38,13 +38,13 @@ frames.
 }
 \section{Methods (by class)}{
 \itemize{
-\item \code{data.frame}: 
+\item \code{collection_df}: 
 
 \item \code{function}: 
 
 \item \code{default}: 
 
-\item \code{data.frame}: 
+\item \code{collection_df}: 
 
 \item \code{function}: 
 

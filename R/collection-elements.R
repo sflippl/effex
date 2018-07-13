@@ -19,7 +19,7 @@ key <- function(x) {
 #'
 #' @export
 
-key.data.frame <- function(x) {
+key.collection_df <- function(x) {
   attr(x, "key")
 }
 
@@ -39,7 +39,7 @@ key.function <- function(x) {
 
 key.default <- function(x) {
   message("Objects of the class ", class(x), " cannot have a key.",
-          " Only data.frames and functions have keys.\n")
+          " Only collection_dfs and functions have keys.\n")
   NULL
 }
 
@@ -69,10 +69,18 @@ change_key <- function(x, key) {
 #'
 #' @export
 
-change_key.data.frame <- function(x, key) {
-  assertthat::assert_that(all(key %in% colnames(x)))
-  assertthat::assert_that(nrow(unique(dplyr::select(x, key))) ==
-                            nrow(dplyr::select(x, key)))
+change_key.collection_df <- function(x, key) {
+  key <- sort(key)
+  cl <- class(x)
+  if(!is.null(key)) {
+    assertthat::assert_that(all(key %in% colnames(x)))
+    assertthat::assert_that(
+      nrow(unique(dplyr::select(as.data.frame(x), !!key))) ==
+        nrow(dplyr::select(as.data.frame(x), !!key)))
+  }
+  # Keys should be up front.
+  x <- x[, c(key, names(x) %>% magrittr::extract(!(. %in% key))), drop = FALSE]
+  class(x) <- cl
   attr(x, "key") <- key
   x
 }
@@ -82,6 +90,7 @@ change_key.data.frame <- function(x, key) {
 #' @export
 
 change_key.function <- function(x, key) {
+  key <- sort(key)
   assertthat::assert_that(all(key %in% names(formals(x))))
   attr(x, "key") <- key
   x
@@ -93,7 +102,7 @@ change_key.function <- function(x, key) {
 
 change_key.default <- function(x, key) {
   stop("Objects of the class ", class(x), " cannot have a key.",
-       " Only data.frames and functions have keys.\n")
+       " Only collection_dfs and functions have keys.\n")
 }
 
 #' @describeIn key
@@ -103,3 +112,29 @@ change_key.default <- function(x, key) {
 `key<-` <- function(x, value) {
   change_key(x, value)
 }
+
+#' Collection data frames
+#'
+#' Collection data frames are possible elements of a collection (represented by
+#' the virtual class `collection_el`).
+#'
+#' @param df a data frame that will be transformed to a collection data frame.
+#' @param key the key of the collection data frame. Needs to consist of uniquely
+#' identifying columns of `df`. May also be `NULL` (default setting), in which
+#' case a name needs to be supplied to the collection.
+#'
+#' @export
+
+collection_df <- function(df, key = NULL) {
+  assertthat::assert_that(is.data.frame(df))
+  if(!is_collection_df(df))
+    class(df) <- c("collection_df", "collection_el", class(df))
+  key(df) <- key
+  df
+}
+
+#' @rdname collection_df
+#'
+#' @export
+
+is_collection_df <- function(x) inherits(x, "collection_df")
