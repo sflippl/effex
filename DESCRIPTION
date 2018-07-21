@@ -1,7 +1,7 @@
 Package: tectr
 Type: Package
 Title: Provides an implementation of the architecture framework in R
-Version: 0.0.1
+Version: 0.0.0.999
 Authors@R: c(person("Samuel", "Lippl", 
                    email = "sfc.lippl@gmail.com", 
                    role = c("cre", "aut")), 
@@ -23,8 +23,7 @@ Imports:
     stringr, 
     tidyr,
     tidyselect,
-    glue,
-    methods
+    glue
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
