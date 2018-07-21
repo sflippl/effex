@@ -81,13 +81,15 @@ join_key <- function(x, y, by = NULL) {
   else {
     vars <- dplyr::common_by(by = by, x = x, y = y) %>%
       as.data.frame %>%
-      dplyr::transmute(x_ = x, y_ = y) # prevent misunderstandings in filter below.
+      dplyr::transmute(x_ = .data$x, y_ = .data$y)
+    # prevent misunderstandings in filter below.
     new_key <- union(
       key(x),
       key(y) %>% magrittr::extract(!(. %in% vars$y_))
     ) %>%
       union(
-        vars %>% dplyr::filter(y_ %in% key(y)) %>% magrittr::use_series(x_)
+        vars %>% dplyr::filter(.data$y_ %in% key(y)) %>%
+          magrittr::use_series(x_)
       )
   }
   new_key
