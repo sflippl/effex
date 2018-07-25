@@ -22,12 +22,16 @@ collection <- function(...) {
       stop("Collection element ", inp[[1]], " of class ",
            paste(class(x), collapse = "/"), "is not a collection element.")
     ret <- structure(list(x), class = c("collection", "list"))
-    attr(ret, "namekey") <- dplyr::tibble(name = names(inp), key = list(key(x)))
+    attr(ret, "variables") <- variable(
+      ind_name = names(x), col = names(x), df_name = names(inp),
+      df_key = key(x),
+      is_key = names(x) %in% key(x)[[1]], nr_lst = 1L
+    )
     return(ret)
   }
   else {
     ret <- structure(list(), class = c("collection", "list"))
-    attr(ret, "namekey") <- dplyr::tibble(name = character(0), key = list())
+    attr(ret, "variables") <- variable()
     return(ret)
   }
 }
@@ -54,7 +58,7 @@ normalize <- function(cl) {
   }
 }
 
-#' rdname collection
+#' @rdname collection
 #'
 #' @param x an object
 #'
@@ -64,84 +68,54 @@ is_collection <- function(x) {
   inherits(x, "collection")
 }
 
-#' Attributes of Collections
-#'
-#' Names of collections are only unique in combination with their keys. In many
-#' cases, it is sensible to avoid names and only use keys.
+#' @rdname collection
 #'
 #' @export
 
-namekey <- function(x) {
-  UseMethod("namekey")
-}
+variables <- function(x) UseMethod("variables")
 
 #' @export
 
-namekey.collection_df <- function(x) {
-  stop("Names do not belong to collection_dfs. Only keys do.")
-}
+variables.collection <- function(x) attr(x, "variables")
 
-#' @export
-
-namekey.collection <- function(x) {
-  attr(x, "namekey")
-}
-
-#' @rdname namekey
+#' @rdname collection
 #'
 #' @export
 
-names.collection <- function(x) {
-  namekey(x)$name
+ind_names <- function(x) {
+  variables(x)$ind_name
 }
 
-#' @rdname namekey
+#' @rdname collection
 #'
+#' @export
+
+var_cols <- function(x) {
+  variables(x)$col
+}
+
+#' @rdname collection
+#'
+#' @export
+
+df_names <- function(x) {
+  variables(x)$df_name
+}
+
 #' @export
 
 key.collection <- function(x) {
-  namekey(x)$key
+  variables(x)$df_key
 }
 
-#' @rdname namekey
-#'
-#' @export
+#' @section Collection Manipulation:
+#' Most manipulations of collections are driven by actualizing the variables or
+#' changing a specific element.
 
-`names<-.collection` <- function(x, value) {
-  attr(x, "namekey")$name <- value
-  normalize(x)
+`variables<-` <- function(x) UseMethod("variables<-")
+
+`variables<-.collection` <- function(x, value) {
+  assertthat::assert_that(is_variable(value))
+  old <- variables(x)
+  unchanged <- semi_join(x, value, by = )
 }
-
-#' @rdname namekey
-#'
-#' @export
-
-change_key.collection <- function(x, key) {
-  attr(x, "namekey")$key <- key
-  for(i in seq_len(length(x))) {
-    key(x[[i]]) <- namekey(x)$key[[i]]
-  }
-  normalize(x)
-}
-
-#' @rdname namekey
-#'
-#' @export
-
-change_namekey <- function(x, value) {
-  UseMethod("change_namekey")
-}
-
-#' @export
-
-change_namekey.collection <- function(x, value) {
-  names(x) <- value$name
-  key(x) <- value$key
-  x
-}
-
-#' @rdname namekey
-#'
-#' @export
-
-`namekey<-` <- function(x, value) change_namekey(x, value)

@@ -5,7 +5,7 @@
 \alias{is_collection_df}
 \title{Collection data frames}
 \usage{
-collection_df(df, key = NULL)
+collection_df(df, key = new_key(NULL))
 
 is_collection_df(x)
 }

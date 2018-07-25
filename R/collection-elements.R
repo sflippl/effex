@@ -29,7 +29,7 @@ key.collection_df <- function(x) {
 
 key.function <- function(x) {
   key <- attr(x, "key")
-  if(is.null(key)) return(names(formals(x)))
+  if(is.null(key)) return(new_key(names(formals(x))))
   else return(key)
 }
 
@@ -49,7 +49,7 @@ key.default <- function(x) {
 #'
 #' @export
 
-has_key <- function(x) !is.null(key(x))
+has_key <- function(x) key(x) != new_key(NULL)
 
 
 #' @describeIn key
@@ -70,16 +70,17 @@ change_key <- function(x, key) {
 #' @export
 
 change_key.collection_df <- function(x, key) {
-  key <- sort(key)
+  key <- as_key(key)
+  assertthat::are_equal(length(key), 1L)
   cl <- class(x)
-  if(!is.null(key)) {
-    assertthat::assert_that(all(key %in% colnames(x)))
+  if(!is.null(key[[1]])) {
+    assertthat::assert_that(all(key[[1]] %in% colnames(x)))
     assertthat::assert_that(
-      nrow(unique(dplyr::select(as.data.frame(x), !!key))) ==
-        nrow(dplyr::select(as.data.frame(x), !!key)))
+      nrow(unique(dplyr::select(as.data.frame(x), !!key[[1]]))) ==
+        nrow(dplyr::select(as.data.frame(x), !!key[[1]])))
   }
   # Keys should be up front.
-  x <- x[, c(key, names(x) %>% magrittr::extract(!(. %in% key))), drop = FALSE]
+  x <- x[, c(key[[1]], names(x) %>% magrittr::extract(!(. %in% key[[1]]))), drop = FALSE]
   class(x) <- cl
   attr(x, "key") <- key
   x
@@ -90,8 +91,8 @@ change_key.collection_df <- function(x, key) {
 #' @export
 
 change_key.function <- function(x, key) {
-  key <- sort(key)
-  assertthat::assert_that(all(key %in% names(formals(x))))
+  key <- as_key(sort(key))
+  assertthat::assert_that(all(key[[1]] %in% names(formals(x))))
   attr(x, "key") <- key
   x
 }
@@ -125,7 +126,7 @@ change_key.default <- function(x, key) {
 #'
 #' @export
 
-collection_df <- function(df, key = NULL) {
+collection_df <- function(df, key = new_key(NULL)) {
   assertthat::assert_that(is.data.frame(df))
   if(!is_collection_df(df))
     class(df) <- c("collection_df", "collection_el", class(df))

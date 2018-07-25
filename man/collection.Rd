@@ -2,12 +2,29 @@
 % Please edit documentation in R/collection.R
 \name{collection}
 \alias{collection}
+\alias{is_collection}
+\alias{variables}
+\alias{ind_names}
+\alias{var_cols}
+\alias{df_names}
 \title{Collections}
 \usage{
 collection(...)
+
+is_collection(x)
+
+variables(x)
+
+ind_names(x)
+
+var_cols(x)
+
+df_names(x)
 }
 \arguments{
 \item{...}{objects of the class \code{collection_df}}
+
+\item{x}{an object}
 }
 \description{
 Collections are composed of collection elements (at the time only data

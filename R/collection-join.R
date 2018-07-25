@@ -23,9 +23,9 @@ join.collection_df <- function(x, y, copy = FALSE, ...) {
   if(!is_collection_df(y)) stop("Cannot join collection_df with ",
                                 paste(class(y), collapse = "/"),
                                 ".\n")
-  assertthat::assert_that(setequal(key(x), key(y)), has_key(x))
+  assertthat::assert_that(key(x) == key(y), has_key(x))
   ret <-
-    dplyr::full_join(x, y, copy = copy, by = key(x), suffix = c("", ".y"), ...)
+    dplyr::full_join(x, y, copy = copy, by = key(x)[[1]], suffix = c("", ".y"), ...)
   # We retain y's columns to check for identical column values and get rid of
   # them afterwards.
   possible_conflicts <- names(x) %>%
@@ -67,20 +67,30 @@ join.collection <- function(x, y, copy = FALSE, name = NULL, ...) {
       has_key(y) | length(name) == 1
     )
     if(!is.null(name)) assertthat::assert_that(has_key(y) | name != "")
-    nm <- namekey(x)
-    new_nm <- dplyr::tibble(
-      name = dplyr::if_else(is.null(name), "", name),
-      key = list(key(y))
+    vars <- variables(x)
+    n_vars <- variable(
+      ind_name = names(y), col = names(y),
+      df_name = dplyr::if_else(is.null(name), "", name),
+      df_key = key(y),
+      is_key = names(y) %in% key(y)[[1]], nr_lst = length(x) + 1
     )
-    k <- match(as.list(data.frame(t(new_nm))),
-               as.list(data.frame(t(nm))))
-    if(is.na(k)) {
-      x[[length(x) + 1]] <- y
-      attr(x, "namekey") <- dplyr::bind_rows(nm, new_nm)
+    if(is.null(name)) n_name <- ""
+    else n_name <- name
+    compatible_vars <- dplyr::filter(vars, df_name == n_name,
+                                     df_key == key(y))
+    lst_nr <- unique(compatible_vars$nr_lst)
+    assertthat::assert_that(length(lst_nr) <= 1)
+    if(length(lst_nr) == 0) {
+      lst_nr <- length(x) + 1
+      x[[lst_nr]] <- y
     }
-    else {
-      x[[k]] <- join(x[[k]], y)
-    }
+    else x[[lst_nr]] <- join(x[[lst_nr]], y)
+    attr(x, "variables") <- bind_rows(
+      variables(x),
+      variable(ind_name = names(y), col = names(y), df_name = n_name,
+               df_key = key(y), is_key = names(y) %in% key(y)[[1]],
+               nr_lst = lst_nr)
+    )
   }
   x
 }
