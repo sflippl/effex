@@ -1,5 +1,6 @@
 #' @include effex-ggplot.R effex-ggplot-s4-fxName.R effex-ggplot-s4-aesName.R
 #' fxDescription.R fxIndname.R fx.R fxGeom.R
+NULL
 
 #' @rdname def_fx_layer_single_ind
 #'

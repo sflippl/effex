@@ -1,0 +1,164 @@
+---
+title: "Überarbeitetes Konzept (27. 08.)"
+author: "Samuel Lippl"
+date: "27 August 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+devtools::load_all()
+library(ggplot2)
+```
+
+Ich habe viel Zeit damit verbracht, ein geeignetes Konzept zur Implementierung von `tectr` zu finden. Nach mehreren sehr groß angelegten Formaten habe ich mich nun auf ein kleineres Format verständigt, dessen grundlegende Idee ich gern in diesem Dokument darlegen würde. Ich würde dabei mit einem kurzen bereits implementierten Anwendungsbeispiel beginnen: `fx_ggplot`.
+
+# Anwendungsbeispiel: `fx_ggplot`
+
+Ich will `fx_ggplot` am Beispiel von `diamonds` darlegen. Um `fx_ggplot` zu bedienen, benötigt man die folgenden Informationen:
+
+* den grundlegenden Datensatz, also `diamonds`
+* ein `data.frame`, das die `indicator` Informationen enthält. `fx_diamonds` ist als Anwendungsbeispiel bereits in `tectr` enthalten:
+```{r}
+fx_diamonds
+```
+  Die hierin enthaltenen Informationen legen die Basis für die Funktion von `fx_ggplot`.
+
+* Ein mapping wie in einem gewöhnlichen `ggplot`, hier müssen rechts die Indikatornamen stehen.
+* Das Argument `ind_name`, das angibt, wo die Indikatornamen zu finden sind; entweder ein `character`-Vektor mit dem der Reihe im `indicator`-Datensatz entsprechenden Indikatornamen oder als Objekt der Klasse `fxIndName`
+* Das Argument `geom` der Klasse `fxpGeoms`, das `indicator` in die für `fx_ggplot` relevante Information verwandelt. Bereits als `fxpGeom` in `fx_ggplot` enthalten.
+* Weitere nützliche Informationen, zum Beispiel eine `description`.
+
+Daraus erstellt die Funktion nun flexibel eine sinnvolle Visualisierung:
+
+```{r}
+fx_ggplot(diamonds, fx_diamonds, aes(x = color), 
+          fxIndName(ind_name = ind_name), 
+          geom = fxpGeom)
+```
+
+Wir können auch eine `description` hinzufügen:
+
+```{r}
+fx_ggplot(diamonds, fx_diamonds, aes(x = color), 
+          fxIndName(ind_name = ind_name), 
+          geom = fxpGeom, 
+          description = fxpDescription(label = label))
+```
+
+Verändert sich das `mapping`, so verändert sich die entsprechende Visualisierung:
+
+```{r}
+fx_ggplot(diamonds, fx_diamonds, aes(x = x), 
+          fxIndName(ind_name = ind_name), 
+          geom = fxpGeom, 
+          description = fxpDescription(label = label))
+fx_ggplot(diamonds, fx_diamonds, aes(x = x, y = y), 
+          fxIndName(ind_name = ind_name), 
+          geom = fxpGeom, 
+          description = fxpDescription(label = label))
+fx_ggplot(diamonds, fx_diamonds, aes(x = color, y = y), 
+          fxIndName(ind_name = ind_name), 
+          geom = fxpGeom, 
+          description = fxpDescription(label = label))
+```
+
+Neben der flexiblen Modellierung bietet `fx_ggplot` in seinem derzeitigen Zustand auch eine konsistente Visualisierung; die variablenspezifischen Skalen bleiben unverändert, wenn der Datensatz gefiltert wird:
+
+```{r}
+fx_ggplot(diamonds, fx_diamonds, aes(x = clarity, fill = color), 
+          fxIndName(ind_name = ind_name), 
+          geom = fxpGeom, 
+          description = fxpDescription(label = label))
+fx_ggplot(dplyr::filter(diamonds, color %in% c("D", "G", "J"), 
+                        stringr::str_detect(clarity, stringr::coll("VS"))), 
+          fx_diamonds, aes(x = clarity, fill = color), 
+          fxIndName(ind_name = ind_name), 
+          geom = fxpGeom, 
+          description = fxpDescription(label = label))
+fx_ggplot(diamonds, fx_diamonds, aes(x = depth, y = price, colour = color), 
+          fxIndName(ind_name = ind_name), 
+          geom = fxpGeom, 
+          description = fxpDescription(label = label))
+fx_ggplot(dplyr::filter(diamonds, color %in% c("D", "G", "J"), 
+                        stringr::str_detect(clarity, stringr::coll("VS")), 
+                        price >= 5000, price <= 10000), 
+          fx_diamonds, aes(x = depth, y = price, colour = color), 
+          fxIndName(ind_name = ind_name), 
+          geom = fxpGeom, 
+          description = fxpDescription(label = label))
+```
+
+# Funktionsweise von `fx_ggplot`
+
+Die Funktionsweise von `fx_ggplot` soll einmal am Beispiel des letzten Befehls erläutert werden.
+Die interessanten Aspekte sind durch die `fxp`-Elemente gegeben, d. h. im oberen Fall das Argument in `geom` und das Argument in `description`. Als Vorverarbeitung werden nur die interessanten Elemente von `indicator` herausgefiltert:
+```{r}
+indicator <- dplyr::filter(fx_diamonds, ind_name %in% c("depth", "price", "color"))
+indicator
+```
+
+Zunächst werden nun `fxp`-Elemente (kurz für `fx`-Promise) durch `createFx` in `fx`-Elemente verwandelt. Beispielsweise ist das Argument `geom = fxpGeom` ein Objekt der S4-Klasse `fxpGeom`:
+```{r}
+fxpGeom
+```
+
+Die Struktur der `fxps` wird sicherlich noch eleganter -- aktuell hat `fxpGeom` einfach einen Slot mit einer Funktion, die gegeben `indicator` eine Liste mit `fxGeom`-Elementen erstellt -- das Versprechen wird also eingelöst. Dies lässt sich mithilfe von `createFx` vornehmen:
+
+```{r}
+fxGeom <- createFx(fxpGeom, indicator)
+fxGeom
+```
+
+`fx_ggplot` verwendet alle `fx`-Argumente zwei Mal: einmal in Kombination mit jeder einzelnen `aesthetic` und einmal in Kombination mit dem gesamten `mapping`. Hierfür ruft die Funktion zwei S4-Generics auf: `def_fx_layer_single_ind` und `def_fx_layer_complete_ind`.
+
+## `def_fx_layer_single_ind`
+
+Diese Funktion wird für jede Aesthetik (wie z. B. `x`) und jedes `fx`-Element einmal aufgerufen. Wir betrachten sie am Beispiel der Aesthetik `x` und des `fx`-Elements `geom`. Die beiden ersten Elemente sind im Grunde Dummy-Klasse, damit der Dispatch funktioniert.
+
+**`aes_name`** akzeptiert ein Element, das durch `aesName` verarbeitet wurde. Beispielsweise ergibt sich:
+
+```{r}
+aesName("x")
+```
+Dadurch hat jede `aesthetic` ihre eigene Klasse, sodass Methoden entweder für alle `aesthetic`s (via Klasse `aesName`) oder für eine spezielle `aesthetic` definiert werden können. 
+
+Analog funktioniert das zweite Argument, `fx_name`, z. B.:
+
+```{r}
+fxName("geom")
+```
+
+Das dritte Argument, über das der Dispatch funktioniert, ist `fx`. Hier wird das `fx`-Element aufgerufen, z. B. `fxGeom[[2]]` (im Falle von `"x"` in unserem Beispiel).
+
+Die hierfür definierte Methode ist also:
+
+```{r}
+selectMethod("def_fx_layer_single_ind", signature = c(aes_name = "xAesName", fx_name = "geomFxName", fx = "fxContinuousGeom"))
+```
+
+Aktuell wird durch diese Funktion also die Skala mithilfe der `limits` festgelegt (in Zukunft wird hier natürlich deutlich mehr passieren).
+
+Im Vergleich würde für die Klasse `fxDescription` hier beispielsweise die Achsenbeschriftung angepasst werden.
+
+## `def_fx_layer_complete_ind`
+
+Diese Funktion funktioniert über multiplen Dispatch über viele mögliche Ästhetiken. Im Falle weiterer Ästhetiken müsste die zugrundeliegende Generic angepasst werden. Beispielsweise ergibt sich im Falle des letzten, da x und y beide stetige Variablen sind und `fxGeom` an ihrer Stelle die Klasse `fxContinuousGeom` hat, ein Scatterplot, der hinzugefügt wird:
+
+```{r}
+selectMethod("def_fx_layer_complete_ind", signature = c(fx_name = "geomFxName", x = "fxContinuousGeom", y = "fxContinuousGeom"))
+```
+
+`fx_ggplot` erstellt also zunächst das `ggplot`-Grundobjekt und wendet dann die verschiedenen Funktionen, die von den beiden Bestandteilsfunktionen zurückgegeben werden darauf an.
+
+# Allgemeines Konzept
+
+Während die Syntax der `fx_`-Funktionen sicherlich noch zu überarbeiten ist, ist das allgemeine Konzept, das anhand von `fx_ggplot` vorgestellt wurde, meiner Meinung nach sinnvoll: einzelne *`fx`-Dimensionen* (z. B. `geom` oder `description`) werden mithilfe eines `fxp`s, also eines `fx`-Promises zur Verfügung gestellt. Durch `createFx(fxp, indicator)` wird daraus mithilfe des `indicator`-Dataframes ein tatsächliches `fx`-Element generiert. Die `fx_`-Funktion ruft mehrere Funktionen des Schemas `def_fx_<>(fx_name, ...)` auf, das durch multiplen oder einfachen Dispatch, das Produkt von `fx_` beeinflusst. Das Ergebnis von `def_fx_<>` kann durch neue Methoden oder durch Veränderung des `indicator`-Dataframes, das `createFx` als Argument verwendet, beeinflusst werden.
+
+# Ziele
+
+Am Ende der Bachelorarbeit soll eine interaktive App stehen, mit der der [V-Dem](http://v-dem.net/)-Datensatz veranschaulicht wird. Sie soll eine übersichtliche Beschreibung jeder Variable enthalten, sowie eine Erklärung fundamentaler Grundkonzepte. Darüber hinaus sollen die Variablen auf sinnvolle Weise visualisiert werden und die App soll einfach in eine erweiterte App zur Darstellung von bsp. Regressionsanalysen eingebunden werden können. Hierzu will ich die folgenden Funktionen implementieren:
+
+* `fx_ggplot`: Diese Funktion soll eine sinnvolle Visualisierung ergeben, indem die vorgestellten Konzepte verfeinert werden.
+* `fx_doc`: Diese Funktion soll eine Dokumentation der einzelnen Indikatoren (oder weiterer Konzepte) erstellen, die flexibel anpassbar ist und auf dem gleichen `fxDescription` aufbaut, das auch in `fx_ggplot` verwendet wird.
+* `fx_search`: Diese Funktion soll in einer Shiny-App verwendet werden können (oder in der Code-Zeile, da ist sie nur nicht so praktisch), um Variablen suchen zu können, auch wenn deren genauer Name nicht bekannt ist.

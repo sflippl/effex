@@ -62,7 +62,7 @@ setMethod("def_fx_layer_complete_ind",
                         x = "fxDiscreteGeom",
                         y = "fxContinuousGeom"),
           function(fx_name, ..., x, y) {
-            function(gg) gg + ggplot2::geom_histogram()
+            function(gg) gg + ggplot2::geom_boxplot()
           })
 
 #' @rdname fx_layer_complete_ind

@@ -17,5 +17,5 @@ setOldClass(c("quosure", "formula"))
 #' @export
 
 fxIndName <- function(ind_name) {
-  .fxIndName(ind_name = enquo(ind_name))
+  .fxIndName(ind_name = rlang::enquo(ind_name))
 }

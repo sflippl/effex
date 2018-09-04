@@ -25,7 +25,7 @@ fx_ggplot <- function(data, indicator, aes_mapping,
     ind_names <- rlang::eval_tidy(ind_names@ind_name, data = indicator)
   assertthat::assert_that(is.character(ind_names))
   # We only need those indicator rows that are given in the aes_mapping.
-  indicator <- filter(indicator, ind_names %in% get_inds(aes_mapping))
+  indicator <- dplyr::filter(indicator, ind_names %in% get_inds(aes_mapping))
   ind_names <- ind_names[ind_names %in% get_inds(aes_mapping)]
   p <- ggplot(data, aes_mapping)
   # At first, we get the single add-ons of every dimension:

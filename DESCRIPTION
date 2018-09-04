@@ -31,24 +31,5 @@ Imports:
     ggmosaic,
     ggridges
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
 VignetteBuilder: knitr
-Collate:
-    'doc-fx_mtcars.R'
-    'effex-aes.R'
-    'effex-ggplot-s4-aesName.R'
-    'effex-ggplot-s4-fxName.R'
-    'effex-ggplot.R'
-    'effex-ggplot-layer-single_ind.R'
-    'effex-ggplot-layer-complete_ind.R'
-    'effex-plot.R'
-    'effex-selectIndicator.R'
-    'explore.R'
-    'fx.R'
-    'fxPromise.R'
-    'fxDescription.R'
-    'fxGeom.R'
-    'fxIndName.R'
-    'get_variable.R'
-    'indicators.R'
-    'tectr.R'
