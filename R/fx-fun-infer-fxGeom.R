@@ -1,7 +1,7 @@
-#' Effex Functions: Infer the column `fxGeom_class`
+#' Effex Functions: Default of the column `fxGeom_class`
 #'
 #' `fxGeom_class` specifies the class of the `fxGeom` object which [fx_ggplot()]
-#' works on. `fx_infer_fxGeom_class` infers the class according to the class of
+#' works on. `fx_default_fxGeom_class` infers the class according to the class of
 #' the corresponding column.
 #'
 #' @param data a data frame
@@ -15,7 +15,7 @@
 #'
 #' @export
 
-fx_infer_fxGeom_class <- function(data, mf) {
+fx_default_fxGeom_class <- function(data, mf) {
   fxGeom_classes <- purrr::map_chr(
     mf$name,
     ~ dplyr::case_when(
@@ -30,8 +30,8 @@ fx_infer_fxGeom_class <- function(data, mf) {
 
 #' @export
 #'
-#' @rdname fxext_infer
+#' @rdname fxext_default
 
-fxext_infer.fxd_infer_fxGeom_class <- function(data, mf, col, ...)
-  fx_infer_fxGeom_class(data, mf)
+fxext_default.fxd_default_fxGeom_class <- function(data, mf, col, ...)
+  fx_default_fxGeom_class(data, mf)
 

@@ -37,7 +37,7 @@ test_that("Evaluating factors", {
   )
   expect_equal(fx_evaluate(tbl),
                dplyr::tibble(x = rep(1L:2L, 2), fxf = rep(1:2, 2)))
-  expect_true(tbl %>% fx_infer() %>% fx_evaluate() %>% has_metaframe())
+  expect_true(tbl %>% fx_default() %>% fx_evaluate() %>% has_metaframe())
 })
 
 test_that("Subsetting factors", {

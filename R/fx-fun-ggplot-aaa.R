@@ -18,12 +18,12 @@
 #'
 #' @param data A dataframe with [metaframe()] as an attribute
 #' @param mapping An aesthetic mapping
-#' @param ... Parameters to give on to [fx_infer()]
+#' @param ... Parameters to give on to [fx_default()]
 #'
 #' @export
 
 fx_ggplot <- function(data, mapping, ...) {
-  data <- fx_infer(data, columns = fx_ggplot_columns)
+  data <- fx_default(data, columns = fx_ggplot_columns)
   layers <- c(
     # At first, we add the geometric information along one dimension
     purrr::map(names(mapping), ~ fxint_layer_single(data, mapping, .)) %>%

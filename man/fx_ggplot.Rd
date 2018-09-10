@@ -11,7 +11,7 @@ fx_ggplot(data, mapping, ...)
 
 \item{mapping}{An aesthetic mapping}
 
-\item{...}{Parameters to give on to \code{\link[=fx_infer]{fx_infer()}}}
+\item{...}{Parameters to give on to \code{\link[=fx_default]{fx_default()}}}
 }
 \description{
 This function creates an effectively and explicitly specified visualization
