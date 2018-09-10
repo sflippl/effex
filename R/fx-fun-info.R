@@ -11,7 +11,7 @@
 
 fx_info <- function(data, topic, ...) {
   data <- data %>%
-    fx_infer(columns = fx_info_columns) %>%
+    fx_default(columns = fx_info_columns) %>%
     fx_evaluate()
   assertthat::assert_that(is.character(topic))
   lst <- purrr::map(topic, function(top) fxext_info(data, fxd("info", top), ...))
