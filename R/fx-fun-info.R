@@ -14,7 +14,7 @@ fx_info <- function(data, topic, ...) {
     fx_default(columns = fx_info_columns) %>%
     fx_evaluate()
   assertthat::assert_that(is.character(topic))
-  lst <- purrr::map(topic, function(top) fxext_info(data, fxd("info", top), ...))
+  lst <- purrr::map(topic, function(top) fxe_info(data, fxd("info", top), ...))
   purrr::reduce(lst, ~ dplyr::inner_join(.x, .y, by = "name"))
 }
 
@@ -27,13 +27,13 @@ fx_info <- function(data, topic, ...) {
 #'
 #' @export
 
-fxext_info <- function(data, topic, ...) UseMethod("fxext_info", topic)
+fxe_info <- function(data, topic, ...) UseMethod("fxe_info", topic)
 
-#' @rdname fxext_info
+#' @rdname fxe_info
 #'
 #' @export
 
-fxext_info.fxd_info <- function(data, topic, ...) {
+fxe_info.fxd_info <- function(data, topic, ...) {
   colname <- paste0("fxInfo_", fxd_subclass(topic))
   if(colname %in% names(metaframe(data))) {
     coltitle <-

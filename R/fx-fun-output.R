@@ -5,19 +5,19 @@
 #'
 #' @param info The info tibble
 #' @param form What form should it take. `fx_output` can be extended via this
-#' argument (see [fxext_output()])
+#' argument (see [fxe_output()])
 #' @param out_format What format should the output be in? Default argument is
 #' "rst" which means an R object. For now, the other valid values are
 #' "markdown", "html" and "latex".
 #' @param out_file Should the object be saved somewhere? If yes, provide the
 #' path - the object will still be returned in the end.
-#' @param ... arguments for the [fxext_output()] methods
+#' @param ... arguments for the [fxe_output()] methods
 #'
 #' @export
 
 fx_output <-
   function(info, form = "", out_format = "rst", ...) {
-  ret <- fxext_output(info = info, form = fxd("output", form),
+  ret <- fxe_output(info = info, form = fxd("output", form),
                       out_format = out_format, out_file = out_file, ...)
 
   ret
@@ -27,12 +27,12 @@ fx_output <-
 #'
 #' @export
 
-fxext_output <- function(info, form, out_format, ...)
-  UseMethod("fxext_output", form)
+fxe_output <- function(info, form, out_format, ...)
+  UseMethod("fxe_output", form)
 
 #' @export
 
-fxext_output.fxd_output <- function(info, form, out_format, ...)
+fxe_output.fxd_output <- function(info, form, out_format, ...)
   stop("No method for form ", fxd_subclass(form), "provided")
 
 #' @rdname fx_output
@@ -44,7 +44,7 @@ fxext_output.fxd_output <- function(info, form, out_format, ...)
 #'
 #' @export
 
-fxext_output.fxd_output_ <- function(info, form, out_format, ...) {
+fxe_output.fxd_output_ <- function(info, form, out_format, ...) {
   fx_output(info = dplyr::select(info, -name), form = "asis",
             out_format = out_format, out_file = out_file, ...)
 }
@@ -57,7 +57,7 @@ fxext_output.fxd_output_ <- function(info, form, out_format, ...) {
 #'
 #' @export
 
-fxext_output.fxd_output_asis <- function(info, form, out_format, ...) {
+fxe_output.fxd_output_asis <- function(info, form, out_format, ...) {
   info
 }
 
@@ -71,7 +71,7 @@ fxext_output.fxd_output_asis <- function(info, form, out_format, ...) {
 #'
 #' @export
 
-fxext_output.fxd_output_table <-
+fxe_output.fxd_output_table <-
   function(info, form, out_format, out_file, digits = 2, ...) {
     ret <- knitr::kable(info, format = out_format, digits = digits, ...)
     if(out_format %in% c("html", "latex"))
@@ -96,7 +96,7 @@ fxext_output.fxd_output_table <-
 #'
 #' @export
 
-fxext_output.fxd_output_collapse <-
+fxe_output.fxd_output_collapse <-
   function(info, form, out_format, out_file,
            cell_scheme = if(out_format == "latex") "<<name>>: <<value>>"
                          else "{name}: {value}",

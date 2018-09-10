@@ -7,5 +7,5 @@
 stat_names(statistics)
 }
 \description{
-Get the names of the \code{statistics} in \code{\link[=fxext_info.fxd_info_stats]{fxext_info.fxd_info_stats()}}.
+Get the names of the \code{statistics} in \code{\link[=fxe_info.fxd_info_stats]{fxe_info.fxd_info_stats()}}.
 }

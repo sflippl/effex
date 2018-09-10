@@ -10,7 +10,7 @@
 #'
 #' @export
 
-fxext_info.fxd_info_stats <- function(data, topic, statistics, ...) {
+fxe_info.fxd_info_stats <- function(data, topic, statistics, ...) {
   mf <- metaframe(data)
   ret <- dplyr::tibble(name = mf$name)
   stat_len <- length(statistics)
@@ -55,7 +55,7 @@ fxext_info.fxd_info_stats <- function(data, topic, statistics, ...) {
 
 #' Names of statistics
 #'
-#' Get the names of the `statistics` in [fxext_info.fxd_info_stats()].
+#' Get the names of the `statistics` in [fxe_info.fxd_info_stats()].
 
 stat_names <- function(statistics) {
   stat_len <- length(statistics)

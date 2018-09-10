@@ -26,7 +26,7 @@ Required columns in the metaframe:
 Columns that are used:
 \itemize{
 \item \code{fxGeom_nominations}: A list of nominations (see
-\code{\link[=fxint_layer_complete]{fxint_layer_complete()}})
+\code{\link[=fxi_layer_complete]{fxi_layer_complete()}})
 \item \code{fxGeom_veto}: A function that is given a nomination and returns a logical
 value whether to veto this nomination
 \item \code{fxGeom_vote}: A function that returns the amount of votes for a certain

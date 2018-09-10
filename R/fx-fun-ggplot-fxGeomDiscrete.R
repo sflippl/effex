@@ -1,8 +1,8 @@
 #' @export
 #'
-#' @rdname fxext_layer_complete_nominate
+#' @rdname fxe_layer_complete_nominate
 
-setMethod("fxext_layer_complete_nominate",
+setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
           function(fx_geom, aes_name, data, ..., fxGeom_nominations = NULL) {
             nxt <- callNextMethod()
@@ -15,9 +15,9 @@ setMethod("fxext_layer_complete_nominate",
 
 #' @export
 #'
-#' @rdname fxext_layer_complete_nominate
+#' @rdname fxe_layer_complete_nominate
 
-setMethod("fxext_layer_complete_nominate",
+setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
           function(fx_geom, aes_name, data, ..., fxGeom_nominations = NULL) {
             nxt <- callNextMethod()
@@ -28,9 +28,9 @@ setMethod("fxext_layer_complete_nominate",
 
 #' @export
 #'
-#' @rdname fxext_layer_complete_veto
+#' @rdname fxe_layer_complete_veto
 
-setMethod("fxext_layer_complete_veto",
+setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
           function(nomination, fx_geom, aes_name, data, ...,
                    fxGeom_vetos = NULL) {
@@ -44,9 +44,9 @@ setMethod("fxext_layer_complete_veto",
 
 #' @export
 #'
-#' @rdname fxext_layer_complete_veto
+#' @rdname fxe_layer_complete_veto
 
-setMethod("fxext_layer_complete_veto",
+setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
           function(nomination, fx_geom, aes_name, data, ...,
                    fxGeom_vetos = NULL) {
@@ -64,9 +64,9 @@ setMethod("fxext_layer_complete_veto",
 
 #' @export
 #'
-#' @rdname fxext_layer_complete_vote
+#' @rdname fxe_layer_complete_vote
 
-setMethod("fxext_layer_complete_vote",
+setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
           function(nomination, fx_geom, aes_name, data, ...,
                    fxGeom_vetos = NULL, fxGeom_votes = NULL) {
@@ -86,9 +86,9 @@ setMethod("fxext_layer_complete_vote",
 
 #' @export
 #'
-#' @rdname fxext_layer_complete_vote
+#' @rdname fxe_layer_complete_vote
 
-setMethod("fxext_layer_complete_vote",
+setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
           function(nomination, fx_geom, aes_name, data, ...,
                    fxGeom_vetos = NULL, fxGeom_votes = NULL) {

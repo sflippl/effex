@@ -6,7 +6,7 @@
 #'
 #' @export
 
-fxext_info.fxd_info_title <- function(data, topic, ...) {
+fxe_info.fxd_info_title <- function(data, topic, ...) {
   mf <- metaframe(data)
   title <- purrr::map_chr(
     seq_len(nrow(mf)),
@@ -16,7 +16,7 @@ fxext_info.fxd_info_title <- function(data, topic, ...) {
   dplyr::tibble(name = mf$name, ` ` = title)
 }
 
-#' @rdname fxext_info.fxd_info_title
+#' @rdname fxe_info.fxd_info_title
 #'
 #' @export
 

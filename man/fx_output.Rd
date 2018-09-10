@@ -2,41 +2,41 @@
 % Please edit documentation in R/fx-fun-output.R
 \name{fx_output}
 \alias{fx_output}
-\alias{fxext_output}
-\alias{fxext_output.fxd_output_}
-\alias{fxext_output.fxd_output_asis}
-\alias{fxext_output.fxd_output_table}
-\alias{fxext_output.fxd_output_collapse}
+\alias{fxe_output}
+\alias{fxe_output.fxd_output_}
+\alias{fxe_output.fxd_output_asis}
+\alias{fxe_output.fxd_output_table}
+\alias{fxe_output.fxd_output_collapse}
 \title{Effex Function: Render Output}
 \usage{
 fx_output(info, form = "", out_format = "rst", ...)
 
-fxext_output(info, form, out_format, ...)
+fxe_output(info, form, out_format, ...)
 
-\method{fxext_output}{fxd_output_}(info, form, out_format, ...)
+\method{fxe_output}{fxd_output_}(info, form, out_format, ...)
 
-\method{fxext_output}{fxd_output_asis}(info, form, out_format, ...)
+\method{fxe_output}{fxd_output_asis}(info, form, out_format, ...)
 
-\method{fxext_output}{fxd_output_table}(info, form, out_format, out_file,
+\method{fxe_output}{fxd_output_table}(info, form, out_format, out_file,
   digits = 2, ...)
 
-\method{fxext_output}{fxd_output_collapse}(info, form, out_format,
-  out_file, cell_scheme = if (out_format == "latex")
-  "<<name>>: <<value>>" else "{name}: {value}", digits = 2,
-  cell_sep = ", ", .open = if (out_format == "latex") "<<" else "{",
-  .close = if (out_format == "latex") ">>" else "}", ...)
+\method{fxe_output}{fxd_output_collapse}(info, form, out_format, out_file,
+  cell_scheme = if (out_format == "latex") "<<name>>: <<value>>" else
+  "{name}: {value}", digits = 2, cell_sep = ", ", .open = if
+  (out_format == "latex") "<<" else "{", .close = if (out_format ==
+  "latex") ">>" else "}", ...)
 }
 \arguments{
 \item{info}{The info tibble}
 
 \item{form}{What form should it take. \code{fx_output} can be extended via this
-argument (see \code{\link[=fxext_output]{fxext_output()}})}
+argument (see \code{\link[=fxe_output]{fxe_output()}})}
 
 \item{out_format}{What format should the output be in? Default argument is
 "rst" which means an R object. For now, the other valid values are
 "markdown", "html" and "latex".}
 
-\item{...}{arguments for the \code{\link[=fxext_output]{fxext_output()}} methods}
+\item{...}{arguments for the \code{\link[=fxe_output]{fxe_output()}} methods}
 
 \item{out_file}{Should the object be saved somewhere? If yes, provide the
 path - the object will still be returned in the end.}

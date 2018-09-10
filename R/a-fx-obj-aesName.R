@@ -114,3 +114,7 @@ AesName <- function(aes) {
     return(do.call(paste0(".", aes, "AesName"), list(aes)))
   else return(.AesName(aes))
 }
+
+setClassUnion("x_yAesName", members = c("xAesName", "yAesName"))
+
+setClassUnion("colour_fillAesName", members = c("colourAesName", "fillAesName"))

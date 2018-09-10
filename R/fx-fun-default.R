@@ -8,10 +8,10 @@
 #' for any number of metaframe columns. This is, of course only useful if
 #' modifications need not be applied.
 #'
-#' `fx_default` can be extended by adding a method to the generic `fxext_default`.
+#' `fx_default` can be extended by adding a method to the generic `fxe_default`.
 #' It is recommended to specify the particular method following the scheme
 #' `fx_default_<column name>` to make it easier to use effex default outside an
-#' entire data frame. To achieve that `fxint_default` creates a structure of class
+#' entire data frame. To achieve that `fxi_default` creates a structure of class
 #' <column name> with superclass "fx_default" via [fxd()]
 #'
 #' @param data The dataframe with a metaframe attribute
@@ -21,7 +21,7 @@
 #' might also delete columns without compatible method.
 #' @param mustWork If no compatible method is found, should the method return
 #' `NULL` or throw an error?
-#' @param ... Parameters to give on to the methods of [fxext_default()]
+#' @param ... Parameters to give on to the methods of [fxe_default()]
 #'
 #' @export
 
@@ -34,7 +34,7 @@ fx_default <- function(data, columns = character(0), ...,
   assertthat::assert_that(is.character(columns))
   for(col in columns) {
     if(!overwrite & col %in% names(mf)) next
-    mf[[col]] <- fxint_default(data, col, ..., mustWork = mustWork)
+    mf[[col]] <- fxi_default(data, col, ..., mustWork = mustWork)
   }
   metaframe(data) <- mf
   data
@@ -42,23 +42,23 @@ fx_default <- function(data, columns = character(0), ...,
 
 #' @rdname fx_default
 
-fxint_default <- function(data, col, ...) {
-  fxext_default(data, metaframe(data), fxd("default", col), ...)
+fxi_default <- function(data, col, ...) {
+  fxe_default(data, metaframe(data), fxd("default", col), ...)
 }
 
 #' @rdname fx_default
 #'
 #' @export
 
-fxext_default <- function(data, mf, col, ..., mustWork = TRUE) {
-  UseMethod("fxext_default", col)
+fxe_default <- function(data, mf, col, ..., mustWork = TRUE) {
+  UseMethod("fxe_default", col)
 }
 
 #' @rdname fx_default
 #'
 #' @export
 
-fxext_default.fxd_default <- function(data, mf, col, ..., mustWork = TRUE) {
+fxe_default.fxd_default <- function(data, mf, col, ..., mustWork = TRUE) {
   if(mustWork) {
     stop("No default function defined for column name ", fxd_subclass(col))
   }

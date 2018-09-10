@@ -12,22 +12,19 @@ test_that("fx_ggplot works", {
   expect_silent(fx_ggplot(df, aes(x = column_name)))
 })
 
-test_that("fxint_layer_single works", {
-  df <- data.frame(column_name = 1:10)
-  mf <- new_metaframe(name = "column_name",
-                      label = "Column Name",
-                      fxGeom_class = "")
-  metaframe(df) <- mf
-  expect_equal(class(fxint_layer_single(data = df, aes(x = column_name), "x")),
+test_that("fxi_layer_single works", {
+  df <- data.frame(column_name = 1:10) %>%
+    fx_default(columns = fx_ggplot_columns)
+  expect_equal(class(fxi_layer_single(data = df, aes(x = column_name), "x")),
                "list")
 })
 
-test_that("fxext_layer_single works", {
-  expect_error(fxext_layer_single(1, 2))
+test_that("fxe_layer_single works", {
+  expect_error(fxe_layer_single(1, 2))
 })
 
-test_that("fxint_layer_complete_nominate", {
-  expect_equal(fxint_layer_complete_nominate(data = data.frame(),
+test_that("fxi_layer_complete_nominate", {
+  expect_equal(fxi_layer_complete_nominate(data = data.frame(),
                                              mf = data.frame(
                                                aes = character(0),
                                                name = character(0),
@@ -37,7 +34,7 @@ test_that("fxint_layer_complete_nominate", {
     nomination(geom_point(), geom_line())
   )
   expect_equal(
-    fxint_layer_complete_nominate(
+    fxi_layer_complete_nominate(
       data = data.frame(),
       mf = dplyr::tibble(
         aes = "x",
@@ -47,15 +44,15 @@ test_that("fxint_layer_complete_nominate", {
       )
     ), nom1
   )
-  expect_error(fxint_layer_complete_nominate(
+  expect_error(fxi_layer_complete_nominate(
     data = data.frame(),
     mf = dplyr::tibble(aes = "x", name = "column_name", fxGeom_class = "",
                        fxGeom_nominations = list(1))
   ))
 })
 
-test_that("fxint_layer_complete_vote", {
-  expect_error(fxint_layer_complete_vote(nominations = list(),
+test_that("fxi_layer_complete_vote", {
+  expect_error(fxi_layer_complete_vote(nominations = list(),
                                          mf = data.frame(
                                            aes = character(0),
                                            name = character(0),
@@ -64,7 +61,7 @@ test_that("fxint_layer_complete_vote", {
     nomination(geom_point(), geom_line())
   )
   expect_equal(
-    fxint_layer_complete_vote(
+    fxi_layer_complete_vote(
       nominations = list(nom1), mf = dplyr::tibble(aes = "x", name = "column_name",
                                              fxGeom_class = "",
                                              fxGeom_nominations = list(nom1))
@@ -82,21 +79,21 @@ test_that("fxint_layer_complete_vote", {
     return(0)
   }
   expect_equal(
-    fxint_layer_complete_vote(
+    fxi_layer_complete_vote(
       nominations = nom2,
       mf = dplyr::tibble(aes = "x", name = "column_name", fxGeom_class = "",
                          fxGeom_veto = list(fxGeom_veto))
     ), nom2[[1]]
   )
   expect_equal(
-    fxint_layer_complete_vote(
+    fxi_layer_complete_vote(
       nominations = nom2,
       mf = dplyr::tibble(aes = "x", name = "column_name", fxGeom_class = "",
                          fxGeom_vote = list(fxGeom_vote))
     ), nom2[[2]]
   )
   expect_equal(
-    fxint_layer_complete_vote(
+    fxi_layer_complete_vote(
       nominations = nom2,
       mf = dplyr::tibble(aes = "x", name = "column_name", fxGeom_class = "",
                         fxGeom_veto = list(fxGeom_veto),
@@ -105,7 +102,7 @@ test_that("fxint_layer_complete_vote", {
   )
 })
 
-test_that("fxint_layer_complete component functions", {
+test_that("fxi_layer_complete component functions", {
   nominations <- list(
     nomination(geom_point()),
     nomination(geom_point(), geom_area()),
@@ -113,30 +110,30 @@ test_that("fxint_layer_complete component functions", {
   )
 })
 
-test_that("fxint_layer_complete works", {
+test_that("fxi_layer_complete works", {
   df <- dplyr::tibble(column_name = 1:10)
   mf <- new_metaframe(name = "column_name",
                       fxGeom_class = "")
   metaframe(df) <- mf
-  expect_error(fxint_layer_complete(df, aes(x = column_name)))
+  expect_error(fxi_layer_complete(df, aes(x = column_name)))
   nom <- nomination(geom_histogram())
   metaframe(df) <- dplyr::mutate(mf,
       fxGeom_nominations = list(list(nom))) %>%
     as_metaframe
   chosen_nomination <- nom %>% unlist(recursive = FALSE)
-  # expect_equal(fxint_layer_complete(df, aes(x = column_name)),
+  # expect_equal(fxi_layer_complete(df, aes(x = column_name)),
   #              function(p) {
   #                p + chosen_nomination
   #              })
 })
 
-test_that("fxext_layer_complete_nominate works", {
-  expect_identical(fxext_layer_complete_nominate(fxGeom(""), AesName("x")),
+test_that("fxe_layer_complete_nominate works", {
+  expect_identical(fxe_layer_complete_nominate(fxGeom(""), AesName("x")),
                    list())
-  expect_error(fxext_layer_complete_nominate(fxGeom(""), AesName("x"),
+  expect_error(fxe_layer_complete_nominate(fxGeom(""), AesName("x"),
                                              fxGeom_nominations = 1))
 })
 
-test_that("fxext_layer_complete_vote works", {
+test_that("fxe_layer_complete_vote works", {
 
 })
