@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Aborted election results usually occur when the President-elect does not reach office from the direct elections, e.g. if results are nullified or a coup d’etat interferes with inaugural passage.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "2-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Dichotomous",
+    "sources": ["v2exhoshog", "v2expathhg", "v2expathhs", "v2xel_elecpres"],
+    "name": "v2x_hosabort"
+  }
+]

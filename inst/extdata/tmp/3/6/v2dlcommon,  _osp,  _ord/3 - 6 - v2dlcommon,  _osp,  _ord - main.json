@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Little or no justification in terms of the common good is usually offered.", "      1: Specific business, geographic, group, party, or constituency interests are for the most part", "      offered as justifications.", "      2: Justifications are for the most part a mix of specific interests and the common good and it", "      is impossible to say which justification is more common than the other.", "      3: Justifications are based on a mixture of references to constituency/party/group interests", "      and on appeals to the common good.", "      4: Justifications are for the most part almost always based on explicit statements of the common", "      good for society, understood either as the greatest good for the greatest number or as helping", "", "      the least advantaged in a society."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "When important policy changes are being considered, to what extent do political elites justify their positions in terms of the common good?",
+    "name": "v2dlcommon, *_osp, *_ord"
+  }
+]

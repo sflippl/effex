@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: There are national elections, but there are no political parties.", "      1: Only one party is allowed to participate in national elections.", "      2: More than one party participates, and nearly all voters are non-partisans.", "      3: More than one party participates, and most voters are non-partisans.", "      4: More than one party participates, and voters are equally divided between partisans and", "      non-partisans.", "      5: More than one party participates, and most voters are partisans.", "      6: More than one party participates, and nearly all voters are partisans."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Do voters identify with a political party?",
+    "name": "v3partyid"
+  }
+]

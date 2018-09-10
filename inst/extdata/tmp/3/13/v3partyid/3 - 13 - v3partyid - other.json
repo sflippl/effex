@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "When party identification is strong, vote choice is largely determined by a voter’s party affiliation (and his/her affiliation with that party) rather than attachments to particular candidates, non-partisan issue-positions, or material incentives (e.g., vote-buying). Likewise, when party identification is strong, voters retain loyalty to a single party rather than switching from one party to another across elections or across offices in the same election (ticket-splitting). In this fashion we can somewhat crudely distinguish between partisans and non-partisans. Note that this question refers only to voters, not to members of the population who do not vote (because they are disenfranchised, choose not to vote, or are discouraged from voting). Leave this question blank if there are no national elections.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Mean",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["John Gerring"],
+    "scale": "Nominal, but categories 2—6 constitute ordinal",
+    "sources": [""],
+    "name": "v3partyid"
+  }
+]

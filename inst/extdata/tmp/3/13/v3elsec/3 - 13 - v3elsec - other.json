@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["John Gerring"],
+    "scale": "Nomina",
+    "sources": ["IFES;", "IDEA;", "http://en.wikipedia.org/wiki/Secret_ballot,", "various", "country", "specific", "sources."],
+    "name": "v3elsec"
+  }
+]

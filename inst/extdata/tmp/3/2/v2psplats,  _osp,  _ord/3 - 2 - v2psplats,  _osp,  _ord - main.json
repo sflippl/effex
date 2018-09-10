@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: None, or nearly none.", "      1: Fewer than half.", "      2: About half.", "      3: More than half.", "      4: All, or nearly all."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How many political parties with representation in the national legislature or presidency have publicly available party platforms (manifestos) that are publicized and relatively distinct from one another?",
+    "name": "v2psplats, *_osp, *_ord"
+  }
+]

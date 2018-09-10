@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is aggregated using this formula: v2x_egaldem =.25 ∗ v2x_polyarchy 1.585 + .25 ∗ v2x_egal + .5 ∗ v2x_polyarchy 1.585 ∗ v2x_egal",
+    "clarification": "The egalitarian principle of democracy holds that material and immaterial inequalities inhibit the exercise of formal rights and liberties, and diminish the ability of citizens from all social groups to participate. Egalitarian democracy is achieved when 1 rights and freedoms of individuals are protected equally across all social groups; and 2 resources are distributed equally across all social groups; 3 groups and individuals enjoy equal access to power. To make it a measure of egalitarian democracy, the index also takes the level of electoral democracy into account.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8. Release 1-4 used a different, preliminary aggregation formula.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Rachel Sigman", "Staffan Lindberg"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2x_egal", "v2x_polyarchy"],
+    "name": "v2x_egaldem"
+  }
+]

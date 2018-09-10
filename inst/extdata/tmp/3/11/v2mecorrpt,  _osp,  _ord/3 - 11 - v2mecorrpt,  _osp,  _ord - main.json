@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: The media are so closely directed by the government that any such payments would be either unnecessary to ensure pro-government coverage or ineffective in producing anti-government", "      coverage.", "      1: Journalists, publishers, and broadcasters routinely alter news coverage in exchange for payments.", "      2: It is common, but not routine, for journalists, publishers, and broadcasters to alter news", "      coverage in exchange for payments.", "      3: It is not normal for journalists, publishers, and broadcasters to alter news coverage in exchange for payments, but it happens occasionally, without anyone being punished.", "      4: Journalists, publishers, and broadcasters rarely alter news coverage in exchange for payments, and if it becomes known, someone is punished for it."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Do journalists, publishers, or broadcasters accept payments in exchange for altering news coverage?",
+    "name": "v2mecorrpt, *_osp, *_ord"
+  }
+]

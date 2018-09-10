@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If the years since the last successful event is smaller than 6, then v2ddthrerf =1, afterwards decreases by 0.06 units per year until 0.1; if the event was not successful during the first years v2ddthrerf =0.9, afterwards decreases by 0.1 units per year until 0.1.Responses: Percent.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["David Altman"],
+    "scale": "Interval",
+    "sources": [""],
+    "name": "v2ddthrerf"
+  }
+]

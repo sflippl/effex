@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The question refers to whether the legislature (or either of its chambers) is considered to hold this power of removal in practice, regardless of whether this is regulated by law and whether this power has been exercised or not. Moreover, the question refers to removal other than through an impeachment process.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2exremhsp, *_osp, *_ord"
+  }
+]

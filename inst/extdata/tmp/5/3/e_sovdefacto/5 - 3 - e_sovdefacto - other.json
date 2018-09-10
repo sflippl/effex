@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "A de facto sovereign country is defined as free to decide on its form of political system; it is not effectively restricted by an external actor regarding the choice of its political system or head executive.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Bilinski", "(2015)."],
+    "name": "e_sovdefacto"
+  }
+]

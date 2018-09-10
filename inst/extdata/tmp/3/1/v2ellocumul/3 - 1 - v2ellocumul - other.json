@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This counts the cumulative number of elections to the lower chamber or unicameral legislature, regardless of any constitutional or unconstitutional changes and interruptions that may have taken place. Do not code if there is no legislature. However, if there is a legislature and no elections to that body have ever occurred, this should be coded as 0.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "",
+    "sources": ["v2eltype"],
+    "name": "v2ellocumul"
+  }
+]

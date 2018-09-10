@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Elected institutions means the presence of legislature of executive, or both. If blank, it means that a country lacked an effective central government.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Bilinski", "(2015)."],
+    "name": "e_electinst"
+  }
+]

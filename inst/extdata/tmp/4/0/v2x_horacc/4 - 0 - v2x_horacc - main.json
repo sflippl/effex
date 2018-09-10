@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "Lührmann et al. (2017, V-Dem Working Paper Series 2017:46); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "To what extent is the ideal of horizontal government accountability achieved?",
+    "name": "v2x_horacc"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "To what extent is physical integrity respected?",
+    "name": "v2x_clphy"
+  }
+]

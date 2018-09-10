@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is the head of state (HOS) also head of government (HOG)?",
+    "name": "v2exhoshog"
+  }
+]

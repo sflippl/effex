@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Refers to the de jure status of slavery, not its actual practice.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["John Gerring"],
+    "scale": "Dichotomou",
+    "sources": ["Various", "country", "specific", "sources"],
+    "name": "v3clslavery"
+  }
+]

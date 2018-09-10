@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If the head of government is a collective body, answer for the person executing the most effective power over this body, or, if no such person exists, answer if any persons in the body are members of a disadvantaged social group. Disadvantage refers to socioeconomic disadvantage. Specifically, in order to be considered disadvantaged members of a social group must have an average income that is significantly below the median national income.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton", "Jan Teorell"],
+    "scale": "Dichotomous",
+    "sources": [""],
+    "name": "v2exdighog"
+  }
+]

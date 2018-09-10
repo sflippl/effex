@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is the chief executive no longer elected?",
+    "name": "v2x_hosinter"
+  }
+]

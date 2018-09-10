@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No legislature exists (or the legislature is shut down).", "      1: Unicameral", "      2: Bicameral", "      3: Tricameral", "      4: Quadricameral", "      9: Other type of legislature"],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How many chambers does the legislature contain?",
+    "name": "v3lgbicam"
+  }
+]

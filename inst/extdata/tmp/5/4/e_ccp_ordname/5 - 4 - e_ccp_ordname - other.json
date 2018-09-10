@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Please list the name in the order given in the constitution.",
+    "cpp_tag": "e_ ORDNAME",
+    "cross_coder_aggregation": "",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "This question is asked only if LEVJUD is answered 2, or if LEVJUD is answered 3.",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014)."],
+    "name": "e_ccp_ordname"
+  }
+]

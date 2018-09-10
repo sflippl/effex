@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "An S transformation of GDP growth that expands values close to zero and compresses extreme highs and lows. For positive growth, the transformation is ln(growth + 1). For negative growth, the transformation is -ln(abs(growth -1)). For display purposes only; do not use for analysis.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "2-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["e_migdpgro"],
+    "name": "e_migdpgrolns"
+  }
+]

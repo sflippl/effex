@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The fertility rate (i.e. total fertility rate, period total fertility rate, total period fertility rate) of a population is the mean number of children that would be born to a woman over her lifetime if (a) she were to experience the current age-specific fertility rates through her lifetime, and (b) she were to survive through the end of her reproductive life. It is obtained by adding single-year age-specific rates at a given time.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "2-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Gapminder", "(gapminder.org),", "drawn", "from", "various", "sources", "(unspecified)."],
+    "name": "e_miferrat"
+  }
+]

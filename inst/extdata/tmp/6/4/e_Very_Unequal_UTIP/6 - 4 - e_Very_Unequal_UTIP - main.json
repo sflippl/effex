@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "Haber and Menaldo (2011).",
+    "notes": "",
+    "question": "Is the Gini coefficient one standard deviation above the mean?",
+    "name": "e_Very_Unequal_UTIP"
+  }
+]

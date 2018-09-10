@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No. There is a high degree of insulation of the government from CSO input. The government", "      may sometimes enlist or mobilize CSOs after policies are adopted to sell them to the public at", "      large. But it does not often consult with them in formulating policies.", "      1: To some degree. CSOs are but one set of voices that policymakers sometimes take into", "      account.", "      2: Yes. Important CSOs are recognized as stakeholders in important policy areas and given", "      voice on such issues. This can be accomplished through formal corporatist arrangements or", "      through less formal arrangements."],
+    "answer_type": "Multiple Choice",
+    "citation": "Bernhard et al. (2015, V-Dem Working Paper Series 2015:13); Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Are major civil society organizations (CSOs) routinely consulted by policymakers on policies relevant to their members?",
+    "name": "v2cscnsult, *_osp, *_ord"
+  }
+]

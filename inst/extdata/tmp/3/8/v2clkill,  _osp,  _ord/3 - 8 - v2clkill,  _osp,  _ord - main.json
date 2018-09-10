@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Not respected by public authorities. Political killings are practiced systematically and they", "      are typically incited and approved by top leaders of government.", "      1: Weakly respected by public authorities. Political killings are practiced frequently and top", "", "      leaders of government are not actively working to prevent them.", "      2: Somewhat respected by public authorities. Political killings are practiced occasionally but", "      they are typically not incited and approved by top leaders of government.", "      3: Mostly respected by public authorities. Political killings are practiced in a few isolated cases", "      but they are not incited or approved by top leaders of government.", "      4: Fully respected by public authorities. Political killings are non-existent."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is there freedom from political killings?",
+    "name": "v2clkill, *_osp, *_ord"
+  }
+]

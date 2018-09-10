@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Text."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "The question text is different for the historical coding: \"From which kind of body or bodies does the head of government need approval prior to making important decisions on domestic policy?\"",
+    "question": "From which kind of body or bodies does the head of government need approval for its actions?",
+    "name": "v2exctlhog"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Text."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (C) to (A (C)) coding as of December 2014.",
+    "question": "What is the term(s) for the regional government units?",
+    "name": "v2elregnam"
+  }
+]

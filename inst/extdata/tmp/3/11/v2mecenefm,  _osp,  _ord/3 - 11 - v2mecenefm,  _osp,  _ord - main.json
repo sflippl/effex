@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Attempts to censor are direct and routine.", "      1: Attempts to censor are indirect but nevertheless routine.", "      2: Attempts to censor are direct but limited to especially sensitive issues.", "      3: Attempts to censor are indirect and limited to especially sensitive issues.", "      4: The government rarely attempts to censor major media in any way, and when such exceptional attempts are discovered, the responsible officials are usually punished."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Does the government directly or indirectly attempt to censor the print or broadcast media?",
+    "name": "v2mecenefm, *_osp, *_ord"
+  }
+]

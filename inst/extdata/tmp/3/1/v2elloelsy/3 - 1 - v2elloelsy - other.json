@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Mixed majoritarian systems were coded as a two-round system. Regarding multimember districts we coded list PR with large multi-member districts when the mean district size = 7. Constituent Assembly elections are excluded from the coding, since they often use specifically designed electoral systems. Further information on the following electoral system types can be found in Reynolds/Reilly, The New International IDEA Handbook(2005), chapter two and Annex B (Glossary of Terms) — downloadable, free of charge, at www.idea.int/publications/esd/.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7-8",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg", "Carl Henrik Knutsen", "Jan Teorell"],
+    "scale": "",
+    "sources": ["Chronicle", "of", "Parliamentary", "Elections", "(IPU);", "IDEA;", "Nohlen", "et", "al.", "(1999,", "2002,", "2005,", "2010);", "Colomer", "(2016)."],
+    "name": "v2elloelsy"
+  }
+]

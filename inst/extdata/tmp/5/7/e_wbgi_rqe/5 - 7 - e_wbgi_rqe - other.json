@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "\"Regulatory Quality\" includes measures of the incidence of marketunfriendly policies such as price controls or inadequate bank supervision, as well as perceptions of the burdens imposed by excessive regulation in areas such as foreign trade and business development.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Kaufmann", "et", "al.", "(2016)."],
+    "name": "e_wbgi_rqe"
+  }
+]

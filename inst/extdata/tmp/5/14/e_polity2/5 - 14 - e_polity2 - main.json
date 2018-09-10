@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "Polity IV (Marshall and Jaggers 2016).",
+    "notes": "",
+    "question": "What is the Revised Polity score?",
+    "name": "e_polity2"
+  }
+]

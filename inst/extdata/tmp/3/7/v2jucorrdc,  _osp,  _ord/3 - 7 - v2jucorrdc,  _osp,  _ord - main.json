@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Always.", "      1: Usually.", "      2: About half of the time.", "      3: Not usually.", "      4: Never."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "For reasons of consistency, as of December, 2014, responses to this question are reversed so that the least democratic response is ”0” and the most democratic is ”4”.",
+    "question": "How often do individuals or businesses make undocumented extra payments or bribes in order to speed up or delay the process or to obtain a favorable judicial decision?",
+    "name": "v2jucorrdc, *_osp, *_ord"
+  }
+]

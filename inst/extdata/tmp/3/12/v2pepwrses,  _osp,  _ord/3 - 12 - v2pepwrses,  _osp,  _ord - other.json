@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "All societies are characterized by some degree of economic (wealth and income) inequality. In some societies, income and wealth are distributed in a grossly unequal fashion. In others, the difference between rich and poor is not so great. Here, we are concerned not with the degree of social inequality but rather with the political effects of this inequality. Specifically, we are concerned with the extent to which wealth and income translates into political power.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["John Gerring"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2pepwrses, *_osp, *_ord"
+  }
+]

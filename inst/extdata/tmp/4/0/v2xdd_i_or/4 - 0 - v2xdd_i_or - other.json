@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "This index receives a maximum score of two resulting from the addition of the two terms easiness of initiation and easiness of approval of obligatory referendums, where each term obtains a maximum value of one. The ease of initiation is measured by• The existence of a direct democracy process v2ddlexor. Easiness of approval is measured by the surface of the polygon determined by• Participation quorum v2ddpartor• Approval quorum v2ddappor, and• Supermajority V2ddspmor. For an elaboration of the interaction among quorums, see David Altman 2016. The resulting score is then multiplied with d district majority v2ddadmor. Consequences are measured by• The legal status of the decision made by citizens binding or merely consultative v2ddlexor, and• The frequency and degree of success with which direct popular votes have been held in the past v2ddthreor. The index is aggregated using this formula:  v2xdd_i_or = (IF v2ddlexor > 0, 1, 0) + (v2ddpartor) ∩ v2ddappor ∩ V2ddspmor) × ((.5 + (1 − v2ddadmor)/2) × (IF v2ddlexor = 1, .75, 1) × (IF years since last successful event < 6, then v2ddthreor = 1, afterwards decreases by .06 units per year until .1, if the event was not successful during the first years v2ddthreor = .9, afterwards decreases by .1 units per year until .1)",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["David Altman"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2ddlexor", "v2ddpartor", "v2ddappor", "v2ddspmor", "v2ddadmor", "v2ddthreor"],
+    "name": "v2xdd_i_or"
+  }
+]

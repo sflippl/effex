@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Subset of \"Election domestic election monitors (B)\" for executive elections only.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "",
+    "sources": [""],
+    "name": "v2eldommon_ex"
+  }
+]

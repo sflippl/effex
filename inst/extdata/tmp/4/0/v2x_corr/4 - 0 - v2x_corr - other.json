@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is arrived at by taking the average of (a) public sector corruption index(v2x_pubcorr); (b) executive corruption index (v2x_execorr); (c) the indicator for legislative corruption (v2lgcrrpt); and (d) the indicator for judicial corruption (v2jucorrdc). In other words, these four different government spheres are weighted equally in the resulting index. We replace missing values for countries with no legislature by only taking the average of a, b and d.",
+    "clarification": "The directionality of the V-Dem corruption index runs from less corrupt to more corrupt unlike the other V-Dem variables that generally run from less democratic to more democratic situation. The corruption index includes measures of six distinct types of corruption that cover both different areas and levels of the polity realm, distinguishing between executive, legislative and judicial corruption. Within the executive realm, the measures also distinguish between corruption mostly pertaining to bribery and corruption due to embezzlement. Finally, they differentiate between corruption in the highest echelons of the executive at the level of the rulers/cabinet on the one hand, and in the public sector at large on the other. The measures thus tap into several distinguished types of corruption: both ‘petty’ and ‘grand’; both bribery and theft; both corruption aimed and influencing law making and that affecting implementation.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2x_pubcorr", "v2x_execorr", "v2lgcrrpt", "v2jucorrdc"],
+    "name": "v2x_corr"
+  }
+]

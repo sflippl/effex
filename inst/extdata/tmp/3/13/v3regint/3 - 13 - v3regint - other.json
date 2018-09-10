@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This question is used to identify so-called interregnum periods, where no political  regime is in control over the entity. Different types of political situations can lead to periods of time under which there is no identifiable political regime, one example being a civil war in which none of the parties have clear control over political bodies and processes in the country. However, the interregnum coding is employed conservatively, meaning that partial control over political bodies and processes in fairly large parts of the country (which is often the case also during civil wars) is sufficient for a 0 score.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Carl Henrik Knutsen", "Tore Wig"],
+    "scale": "Dichotomou",
+    "sources": ["Encyclopedia", "Britannica;", "Wikipedia;", "various", "region-", "and", "country-specific", "sources."],
+    "name": "v3regint"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Regions are described as politico-geographic in the sense that they are based on geographical proximity as well as characteristics that contribute to regional understanding as identified by scholars in studies of democratization (e.g. post-Communist). Coverage extended back to 1900 from original source.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Quality", "of", "Government", "Standard", "Dataset", "(2018)."],
+    "name": "e_regionpol"
+  }
+]

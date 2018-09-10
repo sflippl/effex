@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Not really. Many members are elected as independents and party discipline is very weak.", "      1: More often than not. Members are more likely to vote with their parties than against them, but defections are common.", "      2: Mostly. Members vote with their parties most of the time.", "      3: Yes, absolutely. Members vote with their parties almost all the time."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is it normal for members of the legislature to vote with other members of their party on important bills?",
+    "name": "v2pscohesv, *_osp, *_ord"
+  }
+]

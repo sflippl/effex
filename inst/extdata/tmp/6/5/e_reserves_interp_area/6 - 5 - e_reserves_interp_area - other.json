@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Some breaks occur in the 1940s because of missing data and some data is missing for Soviet countries.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Haber", "and", "Menaldo", "(2011)."],
+    "name": "e_reserves_interp_area"
+  }
+]

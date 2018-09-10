@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Composition of the legislature.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Nominal",
+    "sources": ["Przeworski", "et", "al.", "(2013)."],
+    "name": "e_upper_house"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Numeric."],
+    "answer_type": "Multiple Choice",
+    "citation": "Bormann and Golder (2016).",
+    "notes": "",
+    "question": "After this election, what was the effective number of parties as measured by share of seats in the lower (or unicameral) chamber of the legislature? Leave this question blank if election was nonpartisan, i.e., no parties (not even pro-government parties) were allowed.",
+    "name": "e_ellonmpl"
+  }
+]

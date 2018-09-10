@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Democracy.", "      0: Otherwise."],
+    "answer_type": "Multiple Choice",
+    "citation": "Cheibub et al. (2009).",
+    "notes": "",
+    "question": "",
+    "name": "e_chga_demo"
+  }
+]

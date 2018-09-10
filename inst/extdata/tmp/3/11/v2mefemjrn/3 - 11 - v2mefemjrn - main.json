@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Please estimate the percentage (%) of journalists in the print and broadcast media who are women.",
+    "name": "v2mefemjrn"
+  }
+]

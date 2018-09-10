@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "By members of the armed forces, we mean members of all ranks, excluding conscripts. By \"salaried employee\", we mean someone who is employed on a contract and paid a regular allowance directly out of the state coffers. It does not include unpaid work, work paid for through a private collection of fees, material perquisites or bribes, or private employment by a higher-ranking \"patron\" within the armed forces.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell", "Agnes Cornell"],
+    "scale": "Ordinal",
+    "sources": [""],
+    "name": "v3strenarm"
+  }
+]

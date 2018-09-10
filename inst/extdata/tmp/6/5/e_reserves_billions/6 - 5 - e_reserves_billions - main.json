@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Numeric."],
+    "answer_type": "Multiple Choice",
+    "citation": "Haber and Menaldo (2011).",
+    "notes": "",
+    "question": "How much oil does a country have in reserves?",
+    "name": "e_reserves_billions"
+  }
+]

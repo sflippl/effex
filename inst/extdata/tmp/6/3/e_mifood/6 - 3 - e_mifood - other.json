@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Food supply from crops in kilocalories per capita per day.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["FAOstat", "(2018)."],
+    "name": "e_mifood"
+  }
+]

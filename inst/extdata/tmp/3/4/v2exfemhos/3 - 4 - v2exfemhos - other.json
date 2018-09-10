@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If the head of state is a collective body, provide the gender of the person executing the most effective power over this body, or, if no such person exists, answer if any persons in the body are female.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell", "Pamela Paxton"],
+    "scale": "Dichotomous",
+    "sources": ["worldstatesman.org;", "Melander", "(2005);", "Paxton", "and", "Hughes", "(2007)."],
+    "name": "v2exfemhos"
+  }
+]

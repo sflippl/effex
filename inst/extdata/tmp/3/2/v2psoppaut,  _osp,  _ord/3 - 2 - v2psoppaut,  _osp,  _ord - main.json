@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Opposition parties are not allowed.", "      1: There are no autonomous, independent opposition parties. Opposition parties are either", "      selected or co-opted by the ruling regime.", "      2: At least some opposition parties are autonomous and independent of the ruling regime.", "      3: Most significant opposition parties are autonomous and independent of the ruling regime.", "      4: All opposition parties are autonomous and independent of the ruling regime."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Are opposition parties independent and autonomous of the ruling regime?",
+    "name": "v2psoppaut, *_osp, *_ord"
+  }
+]

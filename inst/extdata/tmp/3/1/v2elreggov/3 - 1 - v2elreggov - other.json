@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Regional government is typically the second-highest level of government, just below the national government. There are many names for units at this level; some common ones are regions, provinces, states, departments, and cantons. Countries with more than two subnational levels may have multiple levels that fit the definition of regional government. If this is the case, for all questions about regional government please code the regional level that, in practice, has the most responsibilities (e.g. making laws, providing primary, education, maintaining roads, policing, etc.) and resources to carry out those responsibilities. Some countries are so small that, now or in earlier time periods, they have only local government and not regional government. If this is the case, please code this question as \"0\" for the appropriate time period. If you have questions about identifying the regional government for your country, please send an email inquiry to your V-Dem contact.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Mode from country experts’ coding, cross-checked by research assistants in cases where a single mode was not generated because of expert disagreement.",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "If coded \"0\" for entire period, skip the following questions focused on regional government.",
+    "project_manager": ["Kelly McMann"],
+    "scale": "Dichotomous",
+    "sources": ["Country", "expert", "coding", "(C", "data)."],
+    "name": "v2elreggov"
+  }
+]

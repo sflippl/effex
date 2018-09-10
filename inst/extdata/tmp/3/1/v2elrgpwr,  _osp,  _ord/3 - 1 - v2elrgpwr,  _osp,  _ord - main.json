@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: All or nearly all elected offices are subordinate to non-elected offices at the regional level.", "      1: Some elected offices are subordinate to non-elected offices at the regional level.", "      2: Elected and non-elected offices are approximately equal in power at the regional level.", "      3: Most non-elected offices are subordinate to elected offices at the regional level.", "      4: All or nearly all non-elected offices are subordinate to elected offices at the regional level."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How would you characterize the relative power, in practice, of elected and non-elected offices at the regional level?",
+    "name": "v2elrgpwr, *_osp, *_ord"
+  }
+]

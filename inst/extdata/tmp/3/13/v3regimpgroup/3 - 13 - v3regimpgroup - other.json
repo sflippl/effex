@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Choose the group that, if it were to retract its support to the regime, would most endanger the regime (i.e. most strongly increase the chance that it loses power).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Mean",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Carl Henrik Knutsen"],
+    "scale": "Nomina",
+    "sources": [""],
+    "name": "v3regimpgroup"
+  }
+]

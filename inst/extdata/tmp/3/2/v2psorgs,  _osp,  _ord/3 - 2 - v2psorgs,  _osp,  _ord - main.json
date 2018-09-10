@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No parties.", "      1: Fewer than half of the parties.", "      2: About half of the parties.", "      3: More than half of the parties.", "      4: All parties."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How many political parties for national-level office have permanent organizations?",
+    "name": "v2psorgs, *_osp, *_ord"
+  }
+]

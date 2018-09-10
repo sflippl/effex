@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Leave blank if there is no lower (or unicameral) chamber.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Svend-Erik Skaaning"],
+    "scale": "Interva",
+    "sources": ["Nohlen", "and", "colleagues", "(1999,", "2002,", "2005,", "2010);", "Mackie", "and", "Rose", "(1991);", "Posada-Carbó(1996);", "CCP", "(Elkins", "et", "al.", "2012);", "and", "various", "country", "specific", "sources."],
+    "name": "v3canagelc"
+  }
+]

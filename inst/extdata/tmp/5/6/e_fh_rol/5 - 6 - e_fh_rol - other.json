@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The variable measures the independence of the judiciary; the extent to which rule of law prevails in civil and criminal matters; the existence of direct civil control over the police; the protection from political terror, unjustified imprisonment, exile and torture; absence of war and insurgencies; and the extent to which laws, policies and practices guarantee equal treatment of various segments of the population.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Freedom", "House", "(2018).", "Taken", "from", "Teorell", "et", "al", "(2018)."],
+    "name": "e_fh_rol"
+  }
+]

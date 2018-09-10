@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "Przeworski et al. (2013).",
+    "notes": "In cases of death, constitutional successors of elected chief executives are coded as elected. Coded is each year of the current chief executive. Prime ministers are always coded as elected as long as the legislature is open (OPENL=1). If there is a president and a prime minister, EXSELEC=1 only if both have been elected. If a chief executive is elected, overthrown by force, and then reinstated, coded as of the year of reinstatemen.",
+    "question": "",
+    "name": "e_exselec_pipe"
+  }
+]

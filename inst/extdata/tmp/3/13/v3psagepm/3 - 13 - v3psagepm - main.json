@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Numeric",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How many years have passed since the party controlling the executive was formed?",
+    "name": "v3psagepm"
+  }
+]

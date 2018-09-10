@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No. Legislation is routinely passed without the approval of the upper chamber of the", "      legislature.", "      1: Yes, usually. Legislation is usually passed with the approval of the upper chamber of the", "      legislature, but occasionally the legislature is by-passed.", "      2: Yes, always. Legislation of any consequence is always approved by the upper chamber of", "      the legislature."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In practice, is the approval of the upper chamber of the legislature required to pass legislation?",
+    "name": "v2lglegpup, *_osp, *_ord"
+  }
+]

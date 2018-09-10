@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Leave blank if there is no lower (or unicameral) chamber.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Mean",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Svend-Erik Skaaning"],
+    "scale": "nomina",
+    "sources": [""],
+    "name": "v3equavolc"
+  }
+]

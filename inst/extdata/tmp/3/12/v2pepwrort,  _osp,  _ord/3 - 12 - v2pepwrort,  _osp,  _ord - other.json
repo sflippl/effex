@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This question contrasts (A) the political power of heterosexuals and lesbian, gay, bisexual, and transgender (LGBT) members of the polity who are not open about their sexuality with (B) the political power of lesbian, gay, bisexual, and transgender (LGBT) members of the polity who are open about their sexuality. (A) will be referred to as \"heterosexual\" and (B) as\"LGBT.\" Note that in comparing the political power of these two groups we are comparing their power per person. So, when we say that LGBT have less, equal, or more power than heterosexuals we mean relative to their share of the population (as near as this can be estimated).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["John Gerring"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2pepwrort, *_osp, *_ord"
+  }
+]

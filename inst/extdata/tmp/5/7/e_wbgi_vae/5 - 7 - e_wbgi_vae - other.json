@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "\"Voice and Accountability\" includes a number of indicators measuring various aspects of the political process, civil liberties and political rights. These indicators measure the extent to which citizens of a country are able to participate in the selection of governments. This category also includes indicators measuring the independence of the media, which serves an important role in monitoring those in authority and holding them accountable for their actions.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Kaufmann", "et", "al.", "(2016)."],
+    "name": "e_wbgi_vae"
+  }
+]

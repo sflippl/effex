@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "Bayesian factor analysis of indicators focused on freedom from forced labor for men(v2clslavem) and women (v2clslavef).",
+    "clarification": "Involuntary servitude occurs when an adult is unable to quit a job s/he desires to leave — not by reason of economic necessity but rather by reason of employer’s coercion. This includes labor camps but not work or service which forms part of normal civic obligations such as conscription or employment in command economies.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton", "Svend-Erik Skaaning"],
+    "scale": "Ordinal, converted to interval by the measurement model, from from low to high 0-1",
+    "sources": ["v2clslavem", "v2clslavef"],
+    "name": "v2xcl_slave"
+  }
+]

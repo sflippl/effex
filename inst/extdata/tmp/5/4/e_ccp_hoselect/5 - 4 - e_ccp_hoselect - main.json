@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Heredity/Royal Selection", "      2: Elected by Citizens", "      3: Elected by Elite Group", "      90: Left explicitly to non-constitutional law", "      96: Other, please specify in the comments section", "      97: Unable to Determine", "      98: Not Specified", "      99: Not Applicable"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "How is the Head of State selected?",
+    "name": "e_ccp_hoselect"
+  }
+]

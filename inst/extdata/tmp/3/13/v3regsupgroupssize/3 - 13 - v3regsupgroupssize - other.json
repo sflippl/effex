@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "You should consider the sum of all the groups (excepting foreign governments and colonial powers) entered in v3regsupgroups. Hence, your answer should take into account the total size of the/those groups that are supportive of the regime, and, if it/they were to retract support would substantially increase the chance that the regime would lose power. Regarding the issue of overlapping identities, and one individual potentially belonging to more than one groups: Individuals should only be \"counted\" once; thus if the two relevant supporting groups are (4) civil servants, which total about 5%, and all of them belong to a particular ethnic group (6) also coded as a relevant, the overall total size of the supporting groups is still 5%(presuming that no other members of that ethnic group are essential for the regime staying in power).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Carl Henrik Knutsen"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v3regsupgroupssize"
+  }
+]

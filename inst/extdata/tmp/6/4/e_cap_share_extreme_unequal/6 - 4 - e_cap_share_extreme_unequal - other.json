@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Inequality is estimated as the share of GDP that goes to capital. High inequality countries are those above the mean Very high inequality countries are those at least one standard deviation above the mean.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Haber", "and", "Menaldo", "(2011)."],
+    "name": "e_cap_share_extreme_unequal"
+  }
+]

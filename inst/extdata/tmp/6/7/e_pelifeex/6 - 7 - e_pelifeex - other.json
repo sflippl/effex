@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Life expectancy refers to expected longevity at birth based on current age-specific mortality rates. Missing data within a time-series is interpolated using linear interpolation.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "2-3, 7-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Gapminder", "(gapminder.org),", "drawing", "on", "Human", "Mortality", "Database", "(2008),", "Riley(2005a,", "2005b),", "Human", "Life", "Table", "Database", "(2007),", "United", "Nations", "Population", "Division", "(2010).", "Clio", "Infra", "(clio-infra.eu),", "drawing", "on", "Human", "Mortality", "Database", "(2008),", "Human", "Life", "Table", "Database", "(2007),", "World", "Bank", "(2013),", "Montevideo-Oxford", "Latin", "America", "Economic", "History", "Database", "(http://moxlad.fcs.edu.uy/es/basededatos.html)."],
+    "name": "e_pelifeex"
+  }
+]

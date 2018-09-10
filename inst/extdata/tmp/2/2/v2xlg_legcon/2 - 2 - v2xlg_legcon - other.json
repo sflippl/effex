@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for legislature questions officials in practice (v2lgqstexp), executive oversight (v2lgotovst), legislature investigates in practice (v2lginvstp), and legislature opposition parties (v2lgoppart).",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2lgqstexp", "v2lgotovst", "v2lginvstp", "v2lgoppart"],
+    "name": "v2xlg_legcon"
+  }
+]

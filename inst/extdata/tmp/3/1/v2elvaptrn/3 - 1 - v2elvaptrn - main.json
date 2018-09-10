@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "In cases where executive and legislative elections were held on the same day but there is a different VAP turnout for each election, the VAP turnout for this date is coded for the executive elections only. The VAP turnout data for the legislative elections, in these cases, can be found in the IDEA Voter turnout database (see references).",
+    "question": "In this national election, what percentage (%) of the adult voting-age population cast a vote according to official results?",
+    "name": "v2elvaptrn"
+  }
+]

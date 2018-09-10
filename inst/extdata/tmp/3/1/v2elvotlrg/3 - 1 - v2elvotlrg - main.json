@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In the first (or only round) of this presidential election, what percentage (%) of the vote was received by candidate eventually winning office?",
+    "name": "v2elvotlrg"
+  }
+]

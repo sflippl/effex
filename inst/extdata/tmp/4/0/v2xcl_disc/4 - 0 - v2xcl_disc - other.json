@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "Bayesian factor analysis of indicators focused on freedom of discussion for men(v2cldiscm) and women (v2cldiscw).",
+    "clarification": "This indicator specifies the extent to which citizens are able to engage in private discussions, particularly on political issues, in private homes and public spaces restaurants, public transportation, sports events, work etc. without fear of harassment by other members of the polity or the public authorities. We are interested in restrictions by the government and its agents but also cultural restrictions or customary laws that are enforced by other members of the polity, sometimes in informal ways.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton", "Svend-Erik Skaaning"],
+    "scale": "Ordinal, converted to interval by the measurement model, from from low to high 0-1",
+    "sources": ["v2cldiscm", "v2cldiscw"],
+    "name": "v2xcl_disc"
+  }
+]

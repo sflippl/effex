@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Independent labor unions (free from state or ruling party control) are not allowed.", "      1: Independent labor unions are allowed, at least in some sectors of the economy or some", "      sections of the country. However, they are subject to harassment by the police, paramilitary", "      groups, business associations, or other groups. Harassment refers to systematic beatings, imprisonment, outlawing of specific unions, and other actions that seriously impinge upon the", "      ability of unions to organize and bargain collectively.", "      2: Independent labor unions are allowed and they do not face violent repression but the legal", "      climate is not friendly (e.g., \"closed shop\" rules are widespread), making it difficult to organize", "      and bargain collectively.", "      3: Independent labor unions are allowed and may organize freely in all sectors of the economy."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Does labor enjoy the right to organize freely and bargain collectively?",
+    "name": "v3cllabrig"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Basic education refers to ages typically between 6 and 16 years of age but this varies slightly among countries.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Michael Coppedge", "John Gerring", "Staffan Lindberg"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2peedueq, *_osp, *_ord"
+  }
+]

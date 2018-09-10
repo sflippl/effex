@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Maternal mortality is defined as the death of a woman while pregnant or within 42 days of termination of pregnancy from any cause or disease associated with pregnancy. The maternal mortality rate is calculated as a ratio of 100,000 live births.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Gapminder", "(gapminder.org),", "drawing", "from", "various", "sources", "(unspecified)."],
+    "name": "e_pematmor"
+  }
+]

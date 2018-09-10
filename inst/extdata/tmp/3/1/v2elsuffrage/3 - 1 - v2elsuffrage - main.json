@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "In Version 3 of the dataset this variable was re-coded from scratch based on the modified criteria reflected in the clarification section (above).",
+    "question": "What percentage (%) of adult citizens (as defined by statute) has the legal right to vote in national elections?",
+    "name": "v2elsuffrage"
+  }
+]

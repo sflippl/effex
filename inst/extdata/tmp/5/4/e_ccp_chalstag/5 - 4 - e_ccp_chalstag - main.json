@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Pre-promulgation", "      2: Post-promulgation", "      3: Either", "      90: Left explicitly to non-constitutional law", "      96: Other, please specify in the comments section", "      97: Unable to Determine", "      98: Not Specified"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "At what stage of the legislative process can bills be reviewed for constitutionality?",
+    "name": "e_ccp_chalstag"
+  }
+]

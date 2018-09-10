@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: None. (0=No, 1=Yes) [v2exctlhs_0]", "      1: A foreign power. (0=No, 1=Yes) [v2exctlhs_1]", "      2: The ruling party or party leadership body (in a one-party system). (0=No, 1=Yes)[v2exctlhs_2]", "      3: A royal council. (0=No, 1=Yes) [v2exctlhs_3]", "      4: The military. (0=No, 1=Yes) [v2exctlhs_4]", "      5: A religious body. (0=No, 1=Yes) [v2exctlhs_5]", "      6: A tribal or ethnic council. (0=No, 1=Yes) [v2exctlhs_6]", "      7: Other. (0=No, 1=Yes) [v2exctlhs_7]"],
+    "answer_type": "Multiple Selection",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In practice, from which of the following bodies must the head of state customarily seek approval prior to making important decisions on domestic policy?",
+    "name": "v2exctlhs"
+  }
+]

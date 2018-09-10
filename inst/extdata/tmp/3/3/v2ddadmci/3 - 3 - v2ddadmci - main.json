@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "What percentage of subnational districts (e.g., cantons, provinces, states) must approve(by majority vote) in order for an initiative to be approved?",
+    "name": "v2ddadmci"
+  }
+]

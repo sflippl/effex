@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "NELDA (Hyde and Marinov 2012).",
+    "notes": "",
+    "question": "Was there significant violence involving civilian deaths immediately before, during, or after the election?",
+    "name": "e_nelda33"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Abroad.", "      1: In the capital.", "      2: In urban areas outside the capital.", "      3: In rural areas.", "      4: The groups are not concentrated in any particular area."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In which geographic area do the support groups for the current political regime mainly reside? Do not code for years denoted as \"interregnum\".",
+    "name": "v3regsuploc"
+  }
+]

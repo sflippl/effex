@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Numeric."],
+    "answer_type": "Multiple Choice",
+    "citation": "CLEA (Kollman et al. 2016).",
+    "notes": "",
+    "question": "A summary expression of the level of the nationalization of a party system that standardizes for the number of territorial units and also weights for the size of the territorial units(Bochsler, 2010).",
+    "name": "e_pssnastrdwsc"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Virtually no women enjoy private property rights of any kind.", "      1: Some women enjoy some private property rights, but most have none.", "      2: Many women enjoy many private property rights, but a smaller proportion enjoys few or", "      none.", "      3: More than half of women enjoy most private property rights, yet a smaller share of women", "      have much more restricted rights.", "      4: Most women enjoy most private property rights but a small minority does not.", "      5: Virtually all women enjoy all, or almost all, property rights."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Do women enjoy the right to private property?",
+    "name": "v2clprptyw, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "Bernhard et al. (2015, V-Dem Working Paper Series 2015:13); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How robust is civil society?",
+    "name": "v2xcs_ccsi"
+  }
+]

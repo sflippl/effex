@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Includes trucks, tractors, buses, and passenger cars.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-7.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["CLIO", "(2014)", "drawn", "from", "Almanach", "de", "Gotha", "(1895),", "Mitchell", "(1998b),", "Herbertson", "and", "Howarth", "(1914a),", "Herbertson", "and", "Howarth", "(1914b),", "Herbertson", "and", "Howarth", "(1914c),", "Herbertson", "and", "Howarth", "(1914d)."],
+    "name": "e_mimotveh"
+  }
+]

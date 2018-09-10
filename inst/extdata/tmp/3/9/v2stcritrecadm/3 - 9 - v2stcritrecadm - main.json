@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: All appointment decisions in the state administration are based on personal or political", "      connections. None are based on skills and merit.", "      1: Most appointment decisions in the state administration are based on personal or political", "      connections. Only a few are based on skills and merit.", "      2: Approximately half of the appointment decisions in the state administration are based on", "      personal or political connections. Approximately half are based on skills and merit.", "      3: Only few of the appointment decisions in the state administration are based on personal or", "      political connections. Most appointment decisions are based on skills and merit.", "      4: None of the appointment decisions in the state administration are based on personal or", "      political connections. All are based on skills and merit."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "To what extent are appointment decisions in the state administration based on personal and political connections, as opposed to skills and merit?",
+    "name": "v2stcritrecadm"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Numeric",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How many years have passed since the party that holds the third most seats in the lower chamber (or only chamber) of the legislature was formed?",
+    "name": "v3psagethird"
+  }
+]

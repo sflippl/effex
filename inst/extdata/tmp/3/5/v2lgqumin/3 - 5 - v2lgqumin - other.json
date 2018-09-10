@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "These quotas are sometimes informally known as \"minority quotas.\" Do not record gender quotas here (as gender is not part of what we mean by a social group). Also, do not include special rules that benefit parties defined by social group but do not guarantee seats for these groups. For example, do not count a rule exempting parties from threshold requirements. Code \"yes\" only if the groups covered by the quota have full voting rights in the legislature.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-6.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton"],
+    "scale": "Dichotomous",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2012),", "v225;", "Coding", "by", "V-Dem", "country", "coordinators."],
+    "name": "v2lgqumin"
+  }
+]

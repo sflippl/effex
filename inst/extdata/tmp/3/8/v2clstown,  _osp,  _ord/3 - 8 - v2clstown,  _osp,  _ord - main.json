@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Virtually all valuable capital belongs to the state or is directly controlled by the state.", "      Private property may be officially prohibited.", "      1: Most valuable capital either belongs to the state or is directly controlled by the state.", "      2: Many sectors of the economy either belong to the state or are directly controlled by the", "      state, but others remain relatively free of direct state control.", "      3: Some valuable capital either belongs to the state or is directly controlled by the state, but", "      most remains free of direct state control.", "      4: Very little valuable capital belongs to the state or is directly controlled by the state."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Does the state own or directly control important sectors of the economy?",
+    "name": "v2clstown, *_osp, *_ord"
+  }
+]

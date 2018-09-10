@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Never.", "      1: Seldom.", "      2: About half of the time.", "      3: Usually.", "      4: Always."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How often would you say the government complies with important decisions of the high court with which it disagrees?",
+    "name": "v2juhccomp, *_osp, *_ord"
+  }
+]

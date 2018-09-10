@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Please provide the names of all chambers, as well as how they are grouped into a\"upper\" and \"lower\" chamber. For example, in Sweden prior to 1866, the names would be Estates of Nobility, Clergy, Burghers and Peasantry, where the Estates of Nobility and Clergy are grouped into the \"upper\" chamber, those of the Burghers and Peasantry into the \"lower\" chamber.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Nomina",
+    "sources": ["Nohlen", "and", "colleagues", "(1999,", "2002,", "2005,", "2010).", "Caramani", "(2000).", "Wikipedia.", "Various", "country-specific", "sources."],
+    "name": "v3lgcamoth"
+  }
+]

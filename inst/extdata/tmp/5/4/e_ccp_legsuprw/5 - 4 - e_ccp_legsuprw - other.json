@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This question refers exclusively to legislation, not other acts performed by the legislature like declaring war, impeaching members of government, etc.",
+    "cpp_tag": "LEGSUPRW",
+    "cross_coder_aggregation": "",
+    "data_release": "3-7.",
+    "historical_clarification": "",
+    "ordering": "Asked only if LEGSUPR is answered 1.",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014),", "v265."],
+    "name": "e_ccp_legsuprw"
+  }
+]

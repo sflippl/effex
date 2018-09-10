@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The Polity score is computed by subtracting the autocracy score from the democracy score. The resulting unified POLITY scale ranges from +10 (strongly democratic) to -10(strongly autocratic).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Polity", "IV", "(Marshall", "and", "Jaggers", "2016)."],
+    "name": "e_p_polity"
+  }
+]

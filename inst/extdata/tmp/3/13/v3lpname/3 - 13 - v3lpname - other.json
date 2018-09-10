@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Carl Henrik Knutsen"],
+    "scale": "Nomina",
+    "sources": ["Nohlen", "and", "colleagues", "(1999,", "2002,", "2005,", "2010).", "Caramani", "(2000).", "Wikipedia.", "Websites", "of", "National", "Parliaments.", "Websites", "of", "National", "Bureau", "of", "Statistics.", "Various", "country-specific", "sources."],
+    "name": "v3lpname"
+  }
+]

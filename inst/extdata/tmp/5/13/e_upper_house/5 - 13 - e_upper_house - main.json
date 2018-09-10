@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: if unicameral.", "      1: if second (upper) house is fully elected (directly or not).", "      2: if second (upper) house is partially appointed."],
+    "answer_type": "Multiple Choice",
+    "citation": "Przeworski et al. (2013).",
+    "notes": "",
+    "question": "",
+    "name": "e_upper_house"
+  }
+]

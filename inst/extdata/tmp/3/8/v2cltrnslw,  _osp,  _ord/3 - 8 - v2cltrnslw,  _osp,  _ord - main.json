@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Transparency and predictability are almost non-existent. The laws of the land are created", "      and/or enforced in completely arbitrary fashion.", "      1: Transparency and predictability are severely limited. The laws of the land are more often", "      than not created and/or enforced in arbitrary fashion.", "      2: Transparency and predictability are somewhat limited. The laws of the land are mostly", "      created in a non-arbitrary fashion but enforcement is rather arbitrary in some parts of the", "      country.", "      3: Transparency and predictability are fairly strong. The laws of the land are usually created", "      and enforced in a non-arbitrary fashion.", "      4: Transparency and predictability are very strong. The laws of the land are created and", "      enforced in a non-arbitrary fashion."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Are the laws of the land clear, well publicized, coherent (consistent with each other), relatively stable from year to year, and enforced in a predictable manner?",
+    "name": "v2cltrnslw, *_osp, *_ord"
+  }
+]

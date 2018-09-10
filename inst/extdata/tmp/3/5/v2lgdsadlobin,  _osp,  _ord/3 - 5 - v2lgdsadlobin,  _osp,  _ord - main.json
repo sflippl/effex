@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "As of December 2014, category \"0\" from variable v2lgdsadlo is coded separately as v2lgdsadlobin.",
+    "question": "Are there disadvantaged groups in the society?",
+    "name": "v2lgdsadlobin, *_osp, *_ord"
+  }
+]

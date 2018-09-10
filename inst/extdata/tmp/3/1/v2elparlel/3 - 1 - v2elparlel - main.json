@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Majoritarian.", "      1: Proportional.", "      2: Mixed.", "      3: Other (e.g. single non-transferable voting, limited voting)"],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Mixed majoritarian systems were coded as majoritarian systems. Category 3: Other was introduced for data release 7.",
+    "question": "What was the electoral system used in this election for the lower or unicameral chamber of the legislature?",
+    "name": "v2elparlel"
+  }
+]

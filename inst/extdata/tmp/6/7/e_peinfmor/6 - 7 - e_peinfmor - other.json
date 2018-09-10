@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The infant mortality rate is measured as the number of deaths prior to age 1 per 1000 live births in a year. Missing data within a time-series is interpolated using linear interpolation.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "2-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Gapminder", "(gapminder.org),", "drawing", "on", "various", "sources."],
+    "name": "e_peinfmor"
+  }
+]

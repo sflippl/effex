@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes, but not at his/her own discretion, only when prompted to as a response to specific", "      events (for example, after a certain number of votes of no confidence, or after a certain number", "      of failed attempts to form a cabinet).", "      2: Yes, at his/her own discretion, but with restrictions (for example, by frequency, such as”once a year”, by time point within term, such as ”not within the last sixth months of the", "      head of government’s term”, and by the requirement that the head of government must then", "      himself/herself stand for election).", "      3: Yes, at his/her own discretion and without restrictions."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "If the head of government took actions to dissolve the legislature, would he/she be likely to succeed?",
+    "name": "v2exdjdshg, *_osp, *_ord"
+  }
+]

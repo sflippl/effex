@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for executive respects constitution (v2exrescon), compliance with judiciary (v2jucomp), compliance with high court (v2juhccomp), high court independence(v2juhcind), and lower court independence (v2juncind).",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2exrescon", "v2jucomp", "v2juhccomp", "v2juhcind", "v2juncind"],
+    "name": "v2x_jucon"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Numeric", "      0: Term length not specified", "      99: Not Applicable", "      100: Term length is explicitly unlimited or the life of the office holder."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Changes to term lengths are recorded as occurring on the date that a new constitution or constitutional amendment takes force, or, if unavailable, date of promulgation.",
+    "question": "What is the maximum term length of the head of government?",
+    "name": "v2exfxtmhg"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Total. All opposition parties and candidates boycotted the election.", "      1: Significant. Some but not all opposition parties or candidates boycotted but they constituted a major opposition force.", "      2: Ambiguous. Some but not all opposition parties or candidates boycotted but it is unclear", "      whether they would have constituted a major electoral force.", "      3: Minor. A few opposition parties or candidates boycotted and they were relatively insignificant ones.", "      4: Nonexistent. No parties or candidates boycotted the elections."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In this national election, did any registered opposition candidates or parties boycott?",
+    "name": "v2elboycot, *_osp, *_ord"
+  }
+]

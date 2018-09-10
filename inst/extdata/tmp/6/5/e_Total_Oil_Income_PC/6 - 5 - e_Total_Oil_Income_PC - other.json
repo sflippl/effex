@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Real value of petroleum produced per capita.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Haber", "and", "Menaldo", "(2011)."],
+    "name": "e_Total_Oil_Income_PC"
+  }
+]

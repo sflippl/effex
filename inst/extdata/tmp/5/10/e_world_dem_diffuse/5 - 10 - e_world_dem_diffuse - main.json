@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "Haber and Menaldo (2011).",
+    "notes": "",
+    "question": "What is the percentage of democracies in the world?",
+    "name": "e_world_dem_diffuse"
+  }
+]

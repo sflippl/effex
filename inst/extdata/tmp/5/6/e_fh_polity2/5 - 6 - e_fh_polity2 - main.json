@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Scale ranges from 0-10 where 0 is least democratic and 10 most democratic."],
+    "answer_type": "Multiple Choice",
+    "citation": "Freedom House (2018).",
+    "notes": "Average of Freedom House (fh_pr and fh_cl) is transformed to a scale 0-10 and Polity(p_polity2) is transformed to a scale 0-10. These variables are averaged into fh_polity2.",
+    "question": "",
+    "name": "e_fh_polity2"
+  }
+]

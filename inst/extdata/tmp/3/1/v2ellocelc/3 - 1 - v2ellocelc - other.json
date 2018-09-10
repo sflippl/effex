@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "\"Government offices\" here refers to a local executive and a local assembly, not a judiciary and not minor bureaucrats. An executive is a single individual (or a very small group) (e.g., a mayor). An assembly is a larger body of officials.\"Elected\" refers to offices that are directly elected by citizens or indirectly elected by a local elected assembly. All other methods of obtaining office — including appointment by a higher level of government — are considered to be non-elected. In classifying a position as elected one is making no judgments about the freeness/fairness of the election or the relative extent of suffrage. One is simply indicating that there is an election and that the winner of that election (however conducted) generally takes office.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Mode from country experts’ coding, cross-checked by research assistants in cases where a single mode was not generated because of expert disagreement.",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "If coded \"0\" for entire period, skip the following questions on local offices relative power.",
+    "project_manager": ["Kelly McMann"],
+    "scale": "Nominal",
+    "sources": ["Country", "expert", "coding", "(C", "data)."],
+    "name": "v2ellocelc"
+  }
+]

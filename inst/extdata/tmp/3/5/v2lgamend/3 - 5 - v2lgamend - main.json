@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "By law, can the legislature (including both chambers of the legislature) change the constitution without the involvement of any other body?",
+    "name": "v2lgamend"
+  }
+]

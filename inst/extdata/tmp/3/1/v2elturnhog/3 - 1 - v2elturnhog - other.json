@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Turnover can occur in presidential, semi-presidential, as well as parliamentary systems, and it refers not only to the individual person holding office but also to that person’s party. If the HOS and HOG are the same person, the coding is the same for the two variables. The second round of election is coded as the first.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "Ordinal",
+    "sources": ["Henisz", "(2000;", "2002);", "Lentz", "(1994;", "1999);", "worldstatesmen.org;", "V-Dem", "Country", "Coordinators."],
+    "name": "v2elturnhog"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This counts the consecutive number of presidential elections since the last unconstitutional change of government or democratic breakdown, or 1900 whichever is more recent. Do not code if there is no office of the presidency.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "",
+    "sources": ["v2eltype"],
+    "name": "v2elprescons"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "An interruption of the electoral regime occurring through the HOS, e.g. a coup d’état, is defined by v2x_hosinter as a change in v2x_elecpres, with the exception of a change when the elected HOS is replaced by a HOS appointed by a legislature. An interruption of the electoral regime occurring through the legislature is defined by v2xlg_leginter based on changes in v2lgbicam. Elections to the legislature or executive where the ones elected were never allowed to assume office are coded as aborted elections v2x_hosabort and, respectively, v2x_legabort.  Elecreg is thus coded 1 from when there was a presidential or parliamentary election, if it was not aborted, until there was an interruption through the executive or legislature. An electoral interruption is i an event that dissolves, replaces, or otherwise terminates an elected body executive or parliament or ii an event that implies that the elected body, while still intact, will not be subject to election in the future. Typically, an interruption is the product of a coup, declared state of emergency, or military defeat. After an interruption, a coding of 0 continues until another election occurs. An executive and a legislative electoral regime cannot be separated since they form an integral part, where an aborted legislature is interpreted as a signal that also the executive is not standing for election any longer, and vice versa.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg", "Jan Teorell"],
+    "scale": "Dichotomous",
+    "sources": ["v2xel_elecparl", "v2xlg_leginter", "v2xel_elecpres", "v2x_hosinter", "v2x_hosabort", "v2x_legabort"],
+    "name": "v2x_elecreg"
+  }
+]

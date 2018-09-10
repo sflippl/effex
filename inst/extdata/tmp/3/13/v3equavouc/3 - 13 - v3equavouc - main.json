@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No. All ballots are counted equally, regardless of social group.", "      1: Yes. There is a curial/estate voting system where voters are separated into categories by, for example, class criteria and assigned a disproportionate numbers of deputies.", "      2: Yes. There is census/plural vote for particular groups (e.g., votes cast by individuals with", "      higher incomes or tax contributions are given more weight)", "      3: Yes. Some voters are allowed to vote in several constituencies."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Are ballots in elections for the upper chamber of the national legislature counted differently for different social groups? (Check all that apply.)",
+    "name": "v3equavouc"
+  }
+]

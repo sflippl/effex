@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "An average mean of indicators focused on election suffrage in practice for men(v2elmalsuf) and women (v2elfemsuf).",
+    "clarification": "Legal voting rights can be compromised by a number of issues for example intimidation, insecurity, prohibitive laws or practices, impersonation, or by social/religious norms and practices. Do not consider registration practices that place the burden on the voter to take action to register ahead of the election.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "3-6.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2elmalsuf", "v2elfemsuf"],
+    "name": "v2elprasuf"
+  }
+]

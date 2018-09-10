@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Numeric."],
+    "answer_type": "Multiple Choice",
+    "citation": "Polity IV (Marshall and Jaggers 2016).",
+    "notes": "",
+    "question": "Is the polity an institutionalized autocracy?",
+    "name": "e_autoc"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This variable combines information presented in two component variables: the degree of institutionalization, or regulation, of political competition (e_parreg) and the extent of government restriction on political competition (e_parcomp).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Polity", "IV", "(Marshall", "and", "Jaggers", "2016)."],
+    "name": "e_polcomp"
+  }
+]

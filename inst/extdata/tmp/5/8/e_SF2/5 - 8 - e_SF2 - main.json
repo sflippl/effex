@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: No, citizens do not have freedom of association", "      2: Rights exist, but with some problems", "      3: Yes, citizens have freedom of association"],
+    "answer_type": "Multiple Choice",
+    "citation": "Kelley and Kolev (2010).",
+    "notes": "",
+    "question": "Do citizens have freedom of association?",
+    "name": "e_SF2"
+  }
+]

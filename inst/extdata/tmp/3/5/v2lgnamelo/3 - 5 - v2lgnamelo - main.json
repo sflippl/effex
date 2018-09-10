@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Text."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "In cases when a parliament consists of three or more chambers, one of the chamber names is coded in the variable ”Lower chamber legislature name” (v2lgnamelo), while the others are enlisted in the variable \"Upper chamber name\" (v2lgnameup). Example: South Africa had a three-chamber parliament during the period of 1984-1994. Subsequently, variable v2lgbicam is coded 2, v2lgnamelo is coded ”House of Assembly”, and v2lgnameup enlists ”House of Representatives, House of Delegates”.",
+    "question": "What is the name of the lower (or unicameral) chamber of the legislature?",
+    "name": "v2lgnamelo"
+  }
+]

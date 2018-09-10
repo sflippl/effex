@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "A statistical agency is an official government organization exclusively devoted to gathering numerical information in a variety of subjects about the country. This may be a completely independent agency or a distinguishable office or department within another governmental agency.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell", "Thomas Brambor", "Agustín Goenaga", "Johannes Lindvall"],
+    "scale": "Dichotomou",
+    "sources": ["Various", "country-specific", "sources"],
+    "name": "v3ststatag"
+  }
+]

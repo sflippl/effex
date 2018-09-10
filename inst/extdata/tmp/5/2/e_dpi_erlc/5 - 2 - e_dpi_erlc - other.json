@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Party orientation with respect to economic policy, coded based on the description of the party in the sources, using the following criteria: Right: for parties that are defined as conservative, Christian democratic, or right-wing. Left: for parties that are de_ned as communist, socialist, social democratic, or left-wing. Center: for parties that are defined as centrist or when party position can best be described as centrist (e.g. party advocates strengthening private enterprise in a social-liberal context). Not described as centrist if competing factions \"average out\" to a centrist position (e.g. a party of \"right-wing Muslims and Beijing-oriented Marxists\"). 0: for all those cases which do not fit into the above-mentioned category (i.e. party’s platform does not focus on economic issues, or there are competing wings), or no information.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Categorical",
+    "sources": ["Cruz", "et", "al.", "(2018)."],
+    "name": "e_dpi_erlc"
+  }
+]

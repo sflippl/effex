@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If there is a coalition government, you should count the party of the prime minister was counted. In case of multiple elections in the same year, the party age was coded for the parliament that sat for the most days.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["John Gerring"],
+    "scale": "Interva",
+    "sources": ["http://countrystudies.us"],
+    "name": "v3psagepm"
+  }
+]

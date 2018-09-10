@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Kelly McMann"],
+    "scale": "Dichotomous, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2elffelrbin, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If there was evidence of intentional government harassment of the opposition, a\"Yes\" was coded. Harassment may include detaining opposition leaders, disrupting opposition political rallies with state forces, and shutting down opposition newspapers.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["NELDA", "(Hyde", "and", "Marinov", "2012)."],
+    "name": "e_nelda15"
+  }
+]

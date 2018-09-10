@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Eastern Europe and post-Soviet Union (including Central Asia)", "      2: Latin America (including Cuba, Haiti and Dominican Republic)", "      3: North Africa and Middle East (including Israel, Turkey and Cyprus)", "      4: Sub-Saharan Africa", "      5: Western Europe and North America (including Australia and New Zealand)", "      6: East Asia (Including Japan and Mongolia)", "      7: Southeast Asia", "      8: South Asia", "      9: The Pacific (excluding Australia and New Zealand)", "      10: The Caribbean (including Belize, Cuba, Haiti, Dominican Republic and Guyana)"],
+    "answer_type": "Multiple Choice",
+    "citation": "Haber and Menaldo (2011).",
+    "notes": "",
+    "question": "In which geographic region is the country located?",
+    "name": "e_region_world_2"
+  }
+]

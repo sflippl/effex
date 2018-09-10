@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The population living in areas classified as urban according to the criteria of each area or country (United Nations, with reference to 1950-present). No definition is provided by sources used by Clio-Infra for years prior to 1950. Missing data within a time-series is interpolated using linear interpolation.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Clio", "Infra", "(clio-infra.eu)", "based", "on", "Bairoch,", "Batou,", "Chevre", "(1988),", "Chandler", "(1987),", "de", "Vries", "(1984),", "History", "Database", "of", "Global", "Environment", "(www.pbl.nl/hyde),", "Etter,", "McAlpine,", "Possingham", "(2007),", "Grigg", "(1980),", "Goldewijk,", "Beusen,", "Janssen", "(2010),", "Maddison", "(2001),", "Rozman", "(1973),", "United", "Nations", "(2009a),", "United", "Nations", "(2009b),", "Urquhart", "and", "Buckley", "(1965),", "Van", "Zanden", "(2009)."],
+    "name": "e_miurbpop"
+  }
+]

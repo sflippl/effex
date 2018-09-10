@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Does any court in the judiciary have the legal authority to invalidate governmental policies (e.g. statutes, regulations, decrees, administrative actions) on the grounds that they violate a constitutional provision?",
+    "name": "v2jureview, *_osp, *_ord"
+  }
+]

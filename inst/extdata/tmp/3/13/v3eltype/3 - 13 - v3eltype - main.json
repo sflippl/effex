@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Legislative; lower, sole, or both chambers, first or only round.", "      1: Legislative, lower, sole, or both chambers, second round.", "", "      2: Legislative, upper chamber only, first or only round.", "      3: Legislative, upper chamber only, second round.", "      4: Constituent Assembly, first or only round.", "      5: Constituent Assembly, second round.", "      6: Presidential, first or only round.", "      7: Presidential, second round.", "      8: Metropolitan or supranational legislative, first or only round.", "      9: Metropolitan or supranational legislative, second round."],
+    "answer_type": "Multiple Selection",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "What type of election was held on this date?",
+    "name": "v3eltype"
+  }
+]

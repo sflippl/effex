@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: It is routine and expected.", "      1: It happens more often than not in dealings with the executive.", "      2: It happens but is unpredictable: those dealing with the executive find it hard to predict", "      when an inducement will be necessary.", "      3: It happens occasionally but is not expected.", "      4: It never, or hardly ever, happens."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How routinely do members of the executive (the head of state, the head of government, and cabinet ministers), or their agents, grant favors in exchange for bribes, kickbacks, or other material inducements?",
+    "name": "v2exbribe, *_osp, *_ord"
+  }
+]

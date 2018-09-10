@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Note that in some cases we consider an institution to be the Highest Court in a given country, even though we acknowledge that its jurisdiction covers most though not all the territory of the country. Any pre-coded years contain an orange triangle. This means that the rating and/or specific date have already been entered, so we are asking you only to add your confidence in the pre-coded rating; we do not want you to change the rating.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "If answer is \"0\", skip to v2juncind.",
+    "project_manager": ["Jan Teorell"],
+    "scale": "",
+    "sources": ["Various", "country-specific", "sources"],
+    "name": "v3juhcourt"
+  }
+]

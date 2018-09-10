@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the average of the point estimates from a Bayesian factor analysis model of the indicators for executive bribery v2exbribe and executive embezzlement v2exembez.",
+    "clarification": "The directionality of the V-Dem corruption index runs from less corrupt to more corrupt unlike the other V-Dem variables that generally run from less democratic to more democratic situation.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2exbribe", "v2exembez"],
+    "name": "v2x_execorr"
+  }
+]

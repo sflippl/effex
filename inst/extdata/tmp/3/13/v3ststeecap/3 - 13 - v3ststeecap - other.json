@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This refers to the state’s ability to keep track of economic activities in its territory and potentially influence them by shaping the incentives and constraints that private firms  face to do business; e.g., through licensing, granting exploitation rights, taxing, imposing market barriers, building infrastructure, offering subsidies, adjudicating conflicts, or enforcing regulations.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Ordinal",
+    "sources": [""],
+    "name": "v3ststeecap"
+  }
+]

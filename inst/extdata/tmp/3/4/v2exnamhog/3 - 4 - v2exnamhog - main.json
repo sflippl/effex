@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Text."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "What is the name of the head of government?",
+    "name": "v2exnamhog"
+  }
+]

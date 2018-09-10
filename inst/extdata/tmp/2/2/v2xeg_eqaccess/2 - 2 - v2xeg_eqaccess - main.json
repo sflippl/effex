@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "Sigman and Lindberg (2017); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How equal is access to power?",
+    "name": "v2xeg_eqaccess"
+  }
+]

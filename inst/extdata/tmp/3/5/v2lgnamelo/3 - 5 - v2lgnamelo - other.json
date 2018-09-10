@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Please provide an as accurate as possible literal translation of the name of the lower(or unicameral) chamber of the legislature in English, with the name in the native language, or a transcription thereof, within parentheses. The legislature names have been pre-coded for as many years as possible. This means that the text and specific date have already been entered, so we are asking you only to add your confidence in the pre-coded rating.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Steven Fish", "Matthew Kroenig"],
+    "scale": "",
+    "sources": [""],
+    "name": "v2lgnamelo"
+  }
+]

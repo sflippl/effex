@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: if never unilaterally.", "      1: if a unilateral (that is, not at the request of someone else) decision of the dissolver."],
+    "answer_type": "Multiple Choice",
+    "citation": "Przeworski et al. (2013).",
+    "notes": "",
+    "question": "",
+    "name": "e_dissolution_power"
+  }
+]

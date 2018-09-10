@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: There is a high degree of malapportionment. Vote/seat ratios across districts differ by as", "      much as 50:1.", "      1: There is a substantial degree of malapportionment. Vote/seat ratios across districts differ", "      as much as 10:1.", "      2: There is some degree of malapportionment. Vote/seat ratios across districts differ by as", "      much as 2:1.", "      3: There is modest or no malapportionment. Vote/seat ratios across districts differ by less", "      than 2:1."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is there a large discrepancy in the vote/seat ratio across electoral districts for the lower(or unicameral) chamber?",
+    "name": "v3elmalalc"
+  }
+]

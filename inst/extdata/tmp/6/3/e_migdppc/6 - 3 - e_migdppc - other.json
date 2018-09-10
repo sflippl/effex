@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "GDP refers to gross domestic production, understood on a per capita basis.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "2-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["The", "Maddison", "Project", "Database", "(2018)"],
+    "name": "e_migdppc"
+  }
+]

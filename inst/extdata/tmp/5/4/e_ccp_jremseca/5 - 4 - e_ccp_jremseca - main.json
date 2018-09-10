@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Plurality", "      2: Majority", "      3: 3/5 Majority", "      4: 2/3 Majority", "      5: 3/4 Majority", "      6: Unspecified supermajority", "      96: Other, please specify in the comments section", "      97: Unable to Determine", "      98: Not Specified", "      99: Not Applicable"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "What proportion of the vote is needed in the Second Chamber to approve the dismissal of judges?",
+    "name": "e_ccp_jremseca"
+  }
+]

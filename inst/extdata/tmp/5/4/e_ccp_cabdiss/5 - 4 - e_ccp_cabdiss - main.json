@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Head of State (use this choice for single executive systems). (0=No, 1=Yes) [e_CABDISS_1]", "      2: Head of Government. (0=No, 1=Yes) [e_CABDISS_2]", "      3: First (or only) Chamber of the Legislature. (0=No, 1=Yes) [e_CABDISS_3]", "      4: Second Chamber of the Legislature. (0=No, 1=Yes) [e_CABDISS_4]", "      5: Both Chambers of the Legislature acting separately. (0=No, 1=Yes) [e_CABDISS_5]", "      6: Both Chambers of the Legislature in a joint session. (0=No, 1=Yes) [e_CABDISS_6]", "      7: By Public Recall. (0=No, 1=Yes) [e_CABDISS_7]", "      8: Public Prosecutor. (0=No, 1=Yes) [e_CABDISS_8]", "      90: Left explicitly to non-constitutional law. (0=No, 1=Yes) [e_CABDISS_90]", "      96: Other, please specify in the comments section. (0=No, 1=Yes) [e_CABDISS_96]", "      97: Unable to Determine. (0=No, 1=Yes) [e_CABDISS_97]", "      98: Not Specified. (0=No, 1=Yes) [e_CABDISS_98]"],
+    "answer_type": "Multiple Selection",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "Who has the authority to dismiss the cabinet/ministers?",
+    "name": "e_ccp_cabdiss"
+  }
+]

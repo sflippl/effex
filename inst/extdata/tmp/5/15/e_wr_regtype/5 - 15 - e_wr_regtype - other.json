@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Variable on regime type. Classes are: (1) Indirect military; (2) Military; (3) MilitaryPersonal; (4) Monarchy; (5) Oligarchy; (6) Party; (7) Party-Military; (8) Party-MilitaryPersonal; (9) Party-Personal; (10) Personal.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Geddes", "et", "al.", "(2014)."],
+    "name": "e_wr_regtype"
+  }
+]

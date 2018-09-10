@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If there were no Western monitors, or no international monitors, this variable is coded as missing.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "",
+    "sources": ["NELDA", "47", "(Hyde", "and", "Marinov", "2012);", "IDEA;", "websites", "by", "Western", "election", "monitors."],
+    "name": "v2elwestmon"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Includes steamships (above a minimum weight) registered to a country that are in use at midyear.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-7.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["CLIO", "(2014),", "drawn", "from", "Almanach", "de", "Gotha", "(1895),", "Comin", "and", "Hobijn", "(2009),", "Mitchell(1998b),", "Herbertson", "and", "Howarth", "(1914a,", "1914b,", "1914c,", "1914d)."],
+    "name": "e_mishimto"
+  }
+]

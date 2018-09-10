@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "When referring to dismissal, we mean the active removal of a public official, so do not answer yes to this question if the constitution only refers to death/incapacitation or expiration of term of office.",
+    "cpp_tag": "HOSDISS",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "Asked only if EXECNUM is answered 3, or if HOSHOG is answered 1, or if HOSHOG is answered 3, or if HOSHOG is answered 4, or if HOSHOG is answered 96, or if HOSHOG is answered 97.",
+    "project_manager": [],
+    "scale": "Ordinal",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014),", "v96;", "cf.", "IAEP,", "questions", "4.", "1", "and", "8.", "1;", "8a.", "1-4."],
+    "name": "e_ccp_hosdiss"
+  }
+]

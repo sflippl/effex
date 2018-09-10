@@ -3,7 +3,8 @@ context("Test metaframe.R")
 test_that("Building metaframes works", {
   mf <- new_metaframe(name = "column_name", label = "Column Name")
   expect_identical(mf, structure(
-    data.frame(name = "column_name", label = "Column Name"),
+    data.frame(name = "column_name", label = "Column Name",
+               stringsAsFactors = FALSE),
     class = c("metaframe", "data.frame")
   ))
   expect_true(is_metaframe(mf))
@@ -14,9 +15,11 @@ test_that("Building metaframes works", {
 test_that("Getting and setting metaframes works", {
   mf <- new_metaframe(name = "column_name", label = "Column Name")
   df <- data.frame(column_name = 1:10)
+  expect_false(has_metaframe(df))
   df2 <- df
   attr(df2, "metaframe") <- mf
   metaframe(df) <- mf
+  expect_true(has_metaframe(df))
   expect_identical(df, df2)
   expect_identical(metaframe(df), mf)
   expect_error(metaframe(1))

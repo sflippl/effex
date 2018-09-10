@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Numeric."],
+    "answer_type": "Multiple Choice",
+    "citation": "Haber and Menaldo (2011).",
+    "notes": "",
+    "question": "What are the oil reserves per square kilometer (missing data)?",
+    "name": "e_reserves_interp_area"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "First, regional government elected (v2elsrgel) is recoded so that 0=none elected, 1=only executive elected, 2=only assembly elected, and 3=both elected. This new construct is then scaled to vary from 0-1 and multiplied by regional offices relative power (v2elrgpwr) scaled to vary from 0-1. v2xel_regelec is set to 0 whenever v2elreggov is 0 (there is no regional government).",
+    "clarification": "The lowest score would be reserved for a country that has no elected regional governments. A medium score would be accorded a country that has elected regional governments but where those governments are subordinate to unelected officials at the regional level perhaps appointed by a higher-level body. A high score would be accorded to a country in which regional governments are elected and able to operate without restrictions from unelected actors at the regional level with the exception of judicial bodies. Naturally, regional governments remain subordinate to the national government.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Kelly McMann", "Jan Teorell"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2elsrgel", "v2elrgpwr", "v2elreggov"],
+    "name": "v2xel_regelec"
+  }
+]

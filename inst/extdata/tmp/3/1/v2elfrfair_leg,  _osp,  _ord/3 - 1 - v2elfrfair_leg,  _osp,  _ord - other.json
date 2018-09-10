@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Subset of \"Election free and fair (C)\" for legislative elections only.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "",
+    "sources": [""],
+    "name": "v2elfrfair_leg, *_osp, *_ord"
+  }
+]

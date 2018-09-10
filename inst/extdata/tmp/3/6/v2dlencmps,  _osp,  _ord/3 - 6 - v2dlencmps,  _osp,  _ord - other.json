@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Particularistic spending is narrowly targeted on a specific corporation, sector, social group, region, party, or set of constituents. Such spending may be referred to as \"pork\", \"clientelistic\", or \"private goods.\" Public-goods spending is intended to benefit all communities within a society, though it may be means-tested so as to target poor, needy, or otherwise underprivileged constituents. The key point is that all who satisfy the means-test are allowed to receive the benefit. Your answer should consider the entire budget of social and infrastructural spending. We are interested in the relative value of particularistic and public-goods spending, not the number of bills or programs that fall into either category.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Michael Coppedge", "John Gerring", "Staffan Lindberg"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2dlencmps, *_osp, *_ord"
+  }
+]

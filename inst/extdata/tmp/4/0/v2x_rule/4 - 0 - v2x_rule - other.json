@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for compliance with high court (v2juhccomp), compliance with judiciary (v2jucomp), high court independence (v2juhcind), lower court independence (v2juncind), executive respects constitution (v2exrescon), rigorous and impartial public administration(v2clrspct), transparent laws with predictable enforcement (v2cltrnslw), access to justice for men (v2clacjstm), access to justice for women (v2clacjstw), judicial accountability (v2juaccnt), judicial corruption decision (v2jucorrdc), public sector corrupt exchanges (v2excrptps), public sector theft (v2exthftps), executive bribery and corrupt exchanges (v2exbribe), executive embezzlement and theft (v2exembez).",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Svend-Erik Skaaning", "Jeffrey Staton"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2juhccomp", "v2jucomp", "v2juhcind", "v2juncind", "v2exrescon", "v2clrspct", "v2cltrnslw", "v2clacjstm", "v2clacjstw", "v2juaccnt", "v2jucorrdc", "v2excrptps", "v2exthftps", "v2exbribe", "v2exembez"],
+    "name": "v2x_rule"
+  }
+]

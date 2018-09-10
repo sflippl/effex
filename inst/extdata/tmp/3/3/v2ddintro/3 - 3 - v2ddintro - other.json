@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This set of questions focuses on direct popular votes. Four mechanisms are distinguished: a. Measures placed on the ballot by the executive and/or the legislature for which the constitution or basic laws require a vote. These are referred to as constitutional referendums (i.e. obligatory referendums). b. Measures placed on the ballot by the executive and/or the legislature that for which the constitution or basic laws does not require a vote. These are referred to as plebiscites. c. Measures placed on the ballot through a citizen petition process that concern the possible adoption of a new law or constitutional amendment. These are referred to as popular initiatives. c. Measures placed on the ballot through a citizen petition process that concern the possible rejection of a recently approved law or a bill discussed in parliament. These are referred to as referendums.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["David Altman"],
+    "scale": "",
+    "sources": [""],
+    "name": "v2ddintro"
+  }
+]

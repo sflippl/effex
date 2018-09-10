@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Missing data within a time-series is interpolated using a linear model, increasing the number of observations from 930 to 7774.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Vanhanen", "(2003)."],
+    "name": "e_Vanhanen_familyfarm_ipo"
+  }
+]

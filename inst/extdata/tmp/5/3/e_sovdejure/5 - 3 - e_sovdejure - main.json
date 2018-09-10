@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "Bilinski (2015).",
+    "notes": "",
+    "question": "Is the country de jure sovereign?",
+    "name": "e_sovdejure"
+  }
+]

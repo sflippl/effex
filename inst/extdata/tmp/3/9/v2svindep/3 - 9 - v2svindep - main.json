@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "V-Dem uses the updated List of independent states (v.5.0), including the tentative list of microstates, posted on Gleditsch’s webpage on 14 March 2013. We have reconciled Gleditsch and Ward’s data with the V-Dem country definitions (see the document \"V-Dem Countries v1.1\").",
+    "question": "Is the polity an independent state?",
+    "name": "v2svindep"
+  }
+]

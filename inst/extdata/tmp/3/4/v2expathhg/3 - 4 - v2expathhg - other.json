@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If several bodies were involved in the appointment process, select the one that exerted the most critical impact on the decision. However, in the next question we ask separately about whether the approval of the legislature was necessary. Response category 8 should only be selected if the head of government is directly elected, not if he or she was appointed by the legislature after an election.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "If you select 0 or 9, proceed to the next question [v2exothhgl]. If you selected 1-6, skip to question \"HOG selection by legislature in practice\" [v2exaphogp]. If you selected 7-8, skip to question [v2excomex].",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Nominal (v2expathhg), or a series of dichotomous scales",
+    "sources": ["V-Dem", "country", "coordinators;", "constituteproject.org."],
+    "name": "v2expathhg"
+  }
+]

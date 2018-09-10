@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In this national election, what percentage (%) of male citizens who were legally entitled to vote was prevented from doing so?",
+    "name": "v2elmalsuf"
+  }
+]

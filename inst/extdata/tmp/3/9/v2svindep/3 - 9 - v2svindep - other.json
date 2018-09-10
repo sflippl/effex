@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "We use Gleditsch and Ward’s (1999) coding of independent states. Their definition recognizes that listing independent states relies at least in part on subjective evaluations. A state is considered to be an independent polity if it (a) has a relatively autonomous administration over some territory, (b) is considered a distinct entity by local actors or the state it is dependent on. Polities excluded from the list are: colonies; states that have some form of limited autonomy (e.g. Scotland); are alleged to be independent but are contiguous to the dominant entity (Ukraine and Belarus prior to 1991); de facto independent polities but recognized by at most one other state (Turkish Republic of Northern Cyprus). Occupations or foreign rule are considered to be an actual loss of statehood when they extend beyond a decade. This means that cases such as the Baltic Republic during Soviet occupation are not considered independent states, but independent statehood is retained for European countries occupied during World War II.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Svend-Erik Skaaning", "Michael Bernhard"],
+    "scale": "Dichotomous",
+    "sources": ["Gleditsch", "and", "Ward", "(1999;", "2013)."],
+    "name": "v2svindep"
+  }
+]

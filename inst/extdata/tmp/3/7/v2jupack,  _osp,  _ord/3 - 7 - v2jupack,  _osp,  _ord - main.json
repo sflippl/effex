@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: There was a massive, politically motivated increase in the number of judgeships across the", "      entire judiciary.", "      1: There was a limited, politically motivated increase in the number of judgeships on very", "      important courts.", "      2: There was a limited, politically motivated increase in the number of judgeships.", "      3: Judgeships were added to the judiciary, but there is no evidence that the increase was", "      politically motivated; or there was no increase."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "A previous version of the variable contained category \"4: There was no increase\". As of November 2014, all responses in category \"4\" are assigned to category \"3\", since the two responses have the same meaning in practice.",
+    "question": "The size of the judiciary is sometimes increased for very good reasons, as when judges are added to manage an increasing caseload; however, sometimes judges are added purely for political reasons. With this distinction in mind, please describe any increases in the size of the judiciary that occurred this calendar year.",
+    "name": "v2jupack, *_osp, *_ord"
+  }
+]

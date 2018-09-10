@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the reversed point estimates (so that higher scores = more regime corruption) from a Bayesian factor analysis model of the indicators for executive executive embezzlement (v2exembez), executive bribes (v2exbribe), legislative corruption (v2xlgcrrpt) and judicial corruption (v2jucorrdc).*Estimates of legislative corruption (v2lgcrrpt) are missing for country-years in which no legislature exists. In order to ensure we have index coverage for these country-years, we use the most recent known value. For years before a legislature ever existed (meaning there is no most recent known value) we impute up to 10 previous years using the value of v2lgcrrpt in the first non-missing year.",
+    "clarification": "In systems of neopatrimonial rule, politicians use their offices for private and/or political gain. This index relates closely to V-Dem’s political corruption index (v2x_corr), but focuses on a more specific set of actors – those who occupy political offices - and a more specific set of corrupt acts that relate more closely to the conceptualization of corruption in literature on neopatrimonial rule.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Rachel Sigman", "Staffan Lindberg"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2exembez", "v2exbribe", "v2lgcrrpt", "v2jucorrdc"],
+    "name": "e_v2xnp_regcorr"
+  }
+]

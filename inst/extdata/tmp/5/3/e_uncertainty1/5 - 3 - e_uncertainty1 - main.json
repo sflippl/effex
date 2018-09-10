@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Not certain", "      1: More information exists"],
+    "answer_type": "Multiple Choice",
+    "citation": "Bilinski (2015).",
+    "notes": "",
+    "question": "How certain are the previous answers?",
+    "name": "e_uncertainty1"
+  }
+]

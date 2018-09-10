@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "By ”veto”, we mean either a partial veto (concerning any parts of a bill) or package vetoes (concerning whole bills) of bills that have already been passed by the legislature. The question refers to whether the head of government is considered to hold this power in practice, regardless of whether this is regulated by law and whether this power has been exercised or not.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2exdfvthg, *_osp, *_ord"
+  }
+]

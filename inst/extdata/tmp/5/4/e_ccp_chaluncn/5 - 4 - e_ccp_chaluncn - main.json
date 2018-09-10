@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Law is void (0=No, 1=Yes) [e_CHALUNCN-1]", "      2: Void for specific case, but law still exists (0=No, 1=Yes) [e_CHALUNCN-2]", "      3: Returned to legislature for revision/reconsideration (0=No, 1=Yes) [e_CHALUNCN-3]", "      90: Left explicitly to non-constitutional law (0=No, 1=Yes) [e_CHALUNCN-90]", "      96: Other, please specify in the comments section (0=No, 1=Yes) [e_CHALUNCN-96]", "      97: Unable to Determine (0=No, 1=Yes) [e_CHALUNCN-97]", "      98: Not Specified (0=No, 1=Yes) [e_CHALUNCN-98]"],
+    "answer_type": "Multiple Selection",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "What is the effect of a determination of unconstitutionality?",
+    "name": "e_ccp_chaluncn"
+  }
+]

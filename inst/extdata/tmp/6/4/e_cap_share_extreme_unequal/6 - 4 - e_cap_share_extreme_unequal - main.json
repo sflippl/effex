@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "Haber and Menaldo (2011).",
+    "notes": "",
+    "question": "Is the share of GDP earned by capital one standard deviation above the mean?",
+    "name": "e_cap_share_extreme_unequal"
+  }
+]

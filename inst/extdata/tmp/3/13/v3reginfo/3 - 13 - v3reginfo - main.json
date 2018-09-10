@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Text",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "What is the regime name as well as start and end dates of this regime?",
+    "name": "v3reginfo"
+  }
+]

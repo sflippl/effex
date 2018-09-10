@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bootstrapped",
+    "data_release": "1-6.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Michael Coppedge"],
+    "scale": "Interval",
+    "sources": [""],
+    "name": "v2meaccess"
+  }
+]

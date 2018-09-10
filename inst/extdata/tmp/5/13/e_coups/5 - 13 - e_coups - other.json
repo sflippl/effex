@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Number of successful coups d’état during a given year.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Przeworski", "et", "al.", "(2013)."],
+    "name": "e_coups"
+  }
+]

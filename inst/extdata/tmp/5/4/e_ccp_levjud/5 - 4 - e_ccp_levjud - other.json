@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "By ordinary courts, we mean non-specialized courts. For example, the Supreme Court, Appellate Courts, and District Courts in the United States By contrast, specialized courts include the constitutional court, military courts, and administrative courts.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014)."],
+    "name": "e_ccp_levjud"
+  }
+]

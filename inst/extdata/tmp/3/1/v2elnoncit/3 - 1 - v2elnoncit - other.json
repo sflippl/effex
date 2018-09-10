@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This question focuses on people whose exclusion from suffrage stems from their immigrant status or lack of recognition as citizens by a colonial power. An example of the first sort would be Kuwait, where about half of the population consists of non-nationals, who are thereby excluded from the suffrage. An example of the second sort would be French West Africa, where (until the late 1950s) only a small portion of permanent residents were allowed to vote.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bootstrapped",
+    "data_release": "1-6.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton"],
+    "scale": "Interval",
+    "sources": [""],
+    "name": "v2elnoncit"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: They have no representation at all.", "      2: They are highly under-represented relative to their proportion of the general population.", "      3: They are slightly under-represented relative to their proportion of the general population.", "      4: They are represented roughly equal relative to their proportion of the general population.", "      5: They are over-represented relative to their proportion of the general population."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "As of December 2014, category 0: There are no disadvantaged groups in the society, is coded as a separate variable (v2lgdsadlobin).",
+    "question": "Considering all disadvantaged social groups in the country, how well represented are these groups, as a whole, in the national legislature?",
+    "name": "v2lgdsadlo, *_osp, *_ord"
+  }
+]

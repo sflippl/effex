@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "CONREMP",
+    "cross_coder_aggregation": "",
+    "data_release": "1-7.",
+    "historical_clarification": "",
+    "ordering": "This question is asked only if CONREM is answered 1.",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014)."],
+    "name": "e_ccp_conremp"
+  }
+]

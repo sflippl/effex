@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Not respected by public authorities. Torture is practiced systematically and is incited and", "      approved by the leaders of government.", "      1: Weakly respected by public authorities. Torture is practiced frequently but is often not", "      incited or approved by top leaders of government. At the same time, leaders of government", "      are not actively working to prevent it.", "      2: Somewhat. Torture is practiced occasionally but is typically not approved by top leaders of", "      government.", "      3: Mostly respected by public authorities. Torture is practiced in a few isolated cases but is", "      not incited or approved by top government leaders.", "      4: Fully respected by public authorities. Torture is non-existent."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is there freedom from torture?",
+    "name": "v2cltort, *_osp, *_ord"
+  }
+]

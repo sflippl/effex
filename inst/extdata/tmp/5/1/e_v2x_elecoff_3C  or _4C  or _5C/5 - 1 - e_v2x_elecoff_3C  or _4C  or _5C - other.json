@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "Same transformation rule as for \"v2x_libdem_3C/_4C/_5C\".",
+    "clarification": "These are ordinalized versions of the V-Dem elected executive index (de jure). The original index ranges from 0 to 1. These transformations offer three different ordinal versions with three (_3C), four (_4C), and five (_5C) levels respectively.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Ordinal",
+    "sources": ["v2lgello", "v2lgelecup", "v2lgdomchm", "v2exaphos", "v2expathhs", "v2exaphogp", "v2expathhg", "v2exdfcbhs", "v2exdjcbhg", "v2exdfdmhs", "v2exdfdshg", "v2exhoshog"],
+    "name": "e_v2x_elecoff_3C /_4C /_5C"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the average of women’s civil liberties index (v2x_gencl), women’s civil society participation index (v2x_gencs), and women’s political participation index (v2x_genpp).",
+    "clarification": "Women’s political empowerment is defined as a process of increasing capacity for women, leading to greater choice, agency, and participation in societal decision-making. It is understood to incorporate three equally-weighted dimensions: fundamental civil liberties, women’s open discussion of political issues and participation in civil society organizations, and the descriptive representation of women in formal political positions.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2x_gencl", "v2x_gencs", "v2x_genpp"],
+    "name": "v2x_gender"
+  }
+]

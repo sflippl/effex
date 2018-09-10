@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This question does not take into consideration restrictions based on age, residence, having been convicted for crime, or being legally incompetent. It covers legal ( extitde jure) restrictions, not restrictions that may be operative in practice ( extitde facto). The adult population (as defined by statute) is defined by citizens in the case of independent countries or the people living in the territorial entity in the case of colonies. Universal suffrage is coded as 100 The scores reflect extitde jure provisions of suffrage extension in percentage of the adult population. If the suffrage law is revised in a way that affects the extension, the scores reflect this change as of the calendar year the law was enacted.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Svend-Erik Skaaning"],
+    "scale": "Interval",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2012);", "IDEA;", "Nohlen", "et", "al.", "(1999,", "2002,", "2005,", "2010);", "country-specific", "sources."],
+    "name": "v2elsuffrage"
+  }
+]

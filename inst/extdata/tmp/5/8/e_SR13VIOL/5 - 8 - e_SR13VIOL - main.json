@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Good, no problems", "      1: Low, minor problems only", "      2: Moderate problems", "      3: Major problems"],
+    "answer_type": "Multiple Choice",
+    "citation": "Kelley and Kolev (2010).",
+    "notes": "",
+    "question": "Were there problems regarding the pre-election violence or unrest?",
+    "name": "e_SR13VIOL"
+  }
+]

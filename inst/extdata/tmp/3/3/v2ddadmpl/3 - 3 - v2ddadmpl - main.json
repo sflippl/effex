@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes — at least half of subnational districts.", "      2: Yes — more than half of subnational districts."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (B) to (A) coding by David Altman.",
+    "question": "Must a majority across subnational districts (e.g., cantons, provinces, states) be attained in order for a plebiscite to be approved?",
+    "name": "v2ddadmpl"
+  }
+]

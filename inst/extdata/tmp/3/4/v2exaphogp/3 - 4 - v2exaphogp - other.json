@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "By ”approval” we mean both explicit approval, such as through a vote of confidence, and tacit approval, such as a practice stating that the head of government has to have majority support in the legislature although no vote is taken on his/her appointment.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "Answer this question only if you selected 1-6 on question v2expathhg.",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Dichotomous",
+    "sources": ["V-Dem", "country", "coordinators;", "constituteproject.org."],
+    "name": "v2exaphogp"
+  }
+]

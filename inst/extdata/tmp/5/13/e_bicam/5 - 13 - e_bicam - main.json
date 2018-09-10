@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "Przeworski et al. (2013).",
+    "notes": "A legislature that is elected in one election and then divides itself into chambers that differ in some prerogatives and at least at times vote separately is coded as multicameral. An example is Norway as of 1814.",
+    "question": "",
+    "name": "e_bicam"
+  }
+]

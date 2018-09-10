@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "What share of adult citizens as defined by statute has the legal right to vote in national elections?",
+    "name": "v2x_suffr"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: General dissatisfaction with the leadership (i.e., dismissal is fairly unrestricted). (0=No, 1=Yes) [e_HOSDCOND_1]", "      2: Crimes and other issues of conduct. (0=No, 1=Yes) [e_HOSDCOND_2]", "      3: Treason. (0=No, 1=Yes) [e_HOSDCOND_3]", "      4: Violations of the constitution. (0=No, 1=Yes) [e_HOSDCOND_4]", "      5: Incapacitated. (0=No, 1=Yes) [e_HOSDCOND_5]", "      90: Left explicitly to non-constitutional law. (0=No, 1=Yes) [e_HOSDCOND_90]", "      96: Other, please specify in the comments section. (0=No, 1=Yes) [e_HOSDCOND_96]", "      97: Unable to Determine. (0=No, 1=Yes) [e_HOSDCOND_97]", "      98: Not Specified. (0=No, 1=Yes) [e_HOSDCOND_98]"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "On what grounds can the Head of State be dismissed?",
+    "name": "e_ccp_hosdcond"
+  }
+]

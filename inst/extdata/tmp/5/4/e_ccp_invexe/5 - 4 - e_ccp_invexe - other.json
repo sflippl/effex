@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Please answer ”no” if the constitution explicitly denies the subject of the question and ”not specified” if the subject of the question is not mentioned in the constitution.",
+    "cpp_tag": "INVEXE",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Dichotomous",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014),", "v262", "[INVEXE]."],
+    "name": "e_ccp_invexe"
+  }
+]

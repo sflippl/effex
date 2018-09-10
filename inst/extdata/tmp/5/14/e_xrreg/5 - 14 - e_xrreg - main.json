@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Unregulated: Changes in chief executive occur through forceful seizures of power.", "      2: Designational/Transitional: Chief executives are chosen by designation within the political", "      elite, without formal competition (i.e., one-party systems or \"rigged\" multiparty elections).", "      3: Regulated: Chief executives are determined by hereditary succession or in competitive", "      elections."],
+    "answer_type": "Multiple Choice",
+    "citation": "Polity IV (Marshall and Jaggers 2016).",
+    "notes": "",
+    "question": "Are there rules in recruiting the executive?",
+    "name": "e_xrreg"
+  }
+]

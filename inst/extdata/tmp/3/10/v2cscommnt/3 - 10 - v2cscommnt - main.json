@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Text."],
+    "answer_type": "Multiple Choice",
+    "citation": "Bernhard et al. V-Dem Working Paper Series 2015:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Add here any comments you have about any of the previous questions on civil society.",
+    "name": "v2cscommnt"
+  }
+]

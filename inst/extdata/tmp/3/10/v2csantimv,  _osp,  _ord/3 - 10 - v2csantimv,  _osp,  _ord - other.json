@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "An anti-system opposition movement is any movement — peaceful or armed — that is based in the country (not abroad) and is organized in opposition to the current political system. That is, it aims to change the polity in fundamental ways, e.g., from democratic to autocratic(or vice-versa), from capitalist to communist (or vice-versa), from secular to fundamentalist(or vice-versa). This movement may be linked to a political party that competes in elections but it must also have a \"movement\" character, which is to say a mass base and an existence separate from normal electoral competition. If there are several movements, please answer in a general way about the relationship of those movements to the regime.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "If coded \"0\", skip the following questions focused on anti-system movements.",
+    "project_manager": ["Michael Bernhard"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2csantimv, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This counts the cumulative number of presidential elections, regardless of any constitutional or unconstitutional changes and interruptions that may have taken place. Do not code if there is no office of the presidency. However, if there is a presidency, and no elections have ever occurred, this should be recorded as 0.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2eltype"],
+    "name": "v2elprescumul"
+  }
+]

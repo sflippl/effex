@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Men have a near-monopoly on political power.", "      1: Men have a dominant hold on political power. Women have only marginal influence.", "      2: Men have much more political power but women have some areas of influence.", "      3: Men have somewhat more political power than women.", "      4: Men and women have roughly equal political power."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is political power distributed according to gender?",
+    "name": "v2pepwrgen, *_osp, *_ord"
+  }
+]

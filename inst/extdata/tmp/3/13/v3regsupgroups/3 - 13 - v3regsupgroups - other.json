@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Consider which group(s) is supportive of the regime, and, if it/they were to retract support would substantially increase the chance that the regime would lose power. Do not code for years denoted as \"interregnum\".",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Carl Henrik Knutsen"],
+    "scale": "nomina",
+    "sources": [""],
+    "name": "v3regsupgroups"
+  }
+]

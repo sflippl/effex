@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Text", "      99: Not Applicable"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "What types of legislation require a supermajority?",
+    "name": "e_ccp_legsuprw"
+  }
+]

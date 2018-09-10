@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Never.", "      1: Seldom.", "      2: About half of the time.", "      3: Usually.", "      4: Always."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "When judges are found responsible for serious misconduct, how often are they removed from their posts or otherwise disciplined?",
+    "name": "v2juaccnt, *_osp, *_ord"
+  }
+]

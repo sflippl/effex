@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No/Unclear", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Were there allegations of significant vote-fraud by any Western monitors?",
+    "name": "v2elwestmon"
+  }
+]

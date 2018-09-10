@@ -10,7 +10,7 @@
 #' @export
 
 new_metaframe <- function(...) {
-  as_metaframe(data.frame(...))
+  as_metaframe(data.frame(..., stringsAsFactors = FALSE))
 }
 
 #' @rdname metaframe
@@ -72,3 +72,11 @@ set_metaframe <- function(x, value) {
 #' @export
 
 `metaframe<-` <- set_metaframe
+
+#' @describeIn metaframe determines whether x has a metaframe
+#'
+#' @export
+
+has_metaframe <- function(x) {
+  !is.null(tryCatch(metaframe(x), error = function(e) NULL))
+}

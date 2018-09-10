@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Fiscal Reliance includes taxes and royalties paid by either privately-owned or stateowned oil and mining firms, as well as dividend payments or direct transfers paid to the government by state-owned firms. Coverage starts from a country’s first year of independence(or 1800) to 2006.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-7.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Haber", "and", "Menaldo", "(2011)."],
+    "name": "e_ Fiscal_Reliance"
+  }
+]

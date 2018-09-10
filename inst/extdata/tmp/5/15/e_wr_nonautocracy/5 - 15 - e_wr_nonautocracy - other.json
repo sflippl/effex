@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Variable on what substituted the autocracy. Classes are: (1) Democracy; (2) ForeignOccupied; (3) Not-Independent; (4) Provisional; (5) Warlord; (6) Warlord/Foreign-occupied.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Geddes", "et", "al.", "(2014)."],
+    "name": "e_wr_nonautocracy"
+  }
+]

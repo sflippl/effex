@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Political parties or candidates print all (or nearly all) the ballot papers.", "      1. Both the state and parties or candidates print the ballot papers.", "      2: The state prints all (or nearly all) ballot papers.", ""],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Who prints ballot papers?",
+    "name": "v3elbalstat"
+  }
+]

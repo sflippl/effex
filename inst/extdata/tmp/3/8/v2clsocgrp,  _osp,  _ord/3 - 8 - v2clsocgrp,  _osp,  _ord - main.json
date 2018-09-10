@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Members of some social groups enjoy much fewer civil liberties than the general population.", "      1: Members of some social groups enjoy substantially fewer civil liberties than the general", "      population.", "      2: Members of some social groups enjoy moderately fewer civil liberties than the general", "      population.", "      3: Members of some social groups enjoy slightly fewer civil liberties than the general population.", "      4: Members of all salient social groups enjoy the same level of civil liberties."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Do all social groups, as distinguished by language, ethnicity, religion, race, region, or caste, enjoy the same level of civil liberties, or are some groups generally in a more favorable position?",
+    "name": "v2clsocgrp, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Countries where, for example, opposition parties are offcially and constitutionally banned", "      or where irregularities are not mentioned (although may still exist).", "      1: When opposition is offcially legal but suppressed anyway. If not an election year, or if", "      elected government has been deposed, refers to most recent election (i.e. the only way to get", "      rid of a \"1\" is to hold a fair election)."],
+    "answer_type": "Multiple Choice",
+    "citation": "Cruz et al. (2018).",
+    "notes": "Recording is irrespective of whether only opposition claims that fraudulent elections have occurred or whether allegations are backed by independent international observers. Recorded also are any forms of boycotts carried out by important parties before or after parliamentary elections. In the cases where irregularities are mentioned in the text of the  sources, they were recorded. However, there may have been instances of fraud/violence that were not reported, thus resulting in false negatives.",
+    "question": "Were vote fraud or candidate intimidation serious enough to affect the outcome of elections?",
+    "name": "e_dpi_fraud"
+  }
+]

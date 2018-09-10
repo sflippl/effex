@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Subset of \"Election female suffrage in practice (C)\" for executive elections only.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton"],
+    "scale": "",
+    "sources": [""],
+    "name": "v2elfemsuf_ex"
+  }
+]

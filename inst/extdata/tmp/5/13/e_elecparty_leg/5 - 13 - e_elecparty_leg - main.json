@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["-1: if no legislature or estate parliament or fully appointed legislature", "      0: if none.", "      1: of one.", "      2: if more."],
+    "answer_type": "Multiple Choice",
+    "citation": "Przeworski et al. (2013).",
+    "notes": "Several parties offering a joint single list to the voters, \"fronts,\" are counted as 1. The coding is based on the number of lists in an election, not on the number of parties in the legislature. If there is more than one election during a year, the last one is coded. If all candidates run as independents coded as 0.",
+    "question": "",
+    "name": "e_elecparty_leg"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Text."],
+    "answer_type": "Multiple Choice",
+    "citation": "NELDA (Hyde and Marinov 2012).",
+    "notes": "",
+    "question": "What type of election took place?",
+    "name": "e_nelda_types"
+  }
+]

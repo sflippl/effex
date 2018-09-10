@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Indirect suffrage and/or offices filled by appointment only", "      1: Propertied ethnic males", "      2: Ethnic males", "      3: Propertied/educated males", "      4: Ethnic males and females", "      5: Propertied/educated males and females", "      6: All males", "      7: Spatially variant", "      8: Universal", "      9: Occupational categories/Party membership", "      10: Only citizens of colonial metropole", "      11: Propertied/tax-paying colons and non-colons", "      12: Propertied males and military females", "      13: Propertied/landowning households", "      14: All households", "      15: All males and married Females", "      16: Age differential: Married people vote at younger age than single"],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "What is the level of suffrage practiced?",
+    "name": "v2elgvsuflvl"
+  }
+]

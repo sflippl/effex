@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Numeric."],
+    "answer_type": "Multiple Choice",
+    "citation": "CLEA (Kollman et al. 2016).",
+    "notes": "",
+    "question": "In this election to the lower (or unicameral) chamber of the legislature, what was the effective number of parties by share of votes?",
+    "name": "e_ellonmpe"
+  }
+]

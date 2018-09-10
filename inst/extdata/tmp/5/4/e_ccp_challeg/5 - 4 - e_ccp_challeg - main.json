@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Head of State (use this choice for single executive systems) (0=No, 1=Yes)", "      2: Head of Government (0=No, 1=Yes)", "      3: The Government/Cabinet (0=No, 1=Yes)", "      4: First (or unicameral) Chamber of the Legislature (0=No, 1=Yes)", "      5: Second Chamber of the Legislature (0=No, 1=Yes)", "      6: Both Chambers of the Legislature are required (0=No, 1=Yes)", "      7: Lawyers (0=No, 1=Yes)", "      8: Public (by complaint) (0=No, 1=Yes)", "      9: The Courts (0=No, 1=Yes)", "      90: Left explicitly to non-constitutional law (0=No, 1=Yes)", "      96: Other, please specify in the comments section (0=No, 1=Yes)", "      97: Unable to Determine (0=No, 1=Yes)", "      98: Not Specified (0=No, 1=Yes)"],
+    "answer_type": "Multiple Selection",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "Who has standing to initiate challenge to the constitutionality of legislation?",
+    "name": "e_ccp_challeg"
+  }
+]

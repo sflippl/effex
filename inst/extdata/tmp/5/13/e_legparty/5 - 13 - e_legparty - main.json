@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["-1: if no legislature.", "      0: if none (including cases where parties are officially banned).", "      1: if one (including cases where other parties are officially banned).", "      2: if more."],
+    "answer_type": "Multiple Choice",
+    "citation": "Przeworski et al. (2013).",
+    "notes": "During the early period candidates typically competed in elections on an individual basis, without any kind of centralized party organizations or shared programs. Within legislatures, however, they often coalesced into groups, currents, factions, ”sentiments,” etc. Hence, subjective judgments are inevitable in coding this variable. Our rule of thumb was to code as parties any kind of groups that bare a label that survived over two consecutive legislatures. This was true in several countries of ”Liberals” and ”Conservatives.” In other countries, notably France between 1815 and 1848, however, the divisive issues, the parliamentary groups, and their labels changed frequently, and such cases are coded as ”none.” A legislature consisting of one party and independents is coded as one party.",
+    "question": "",
+    "name": "e_legparty"
+  }
+]

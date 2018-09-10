@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Not respected by public authorities. Citizens are rarely allowed to emigrate or travel out of", "      the country. Transgressors (or their families) are severely punished. People discredited by the", "      public authorities are routinely exiled or prohibited from traveling.", "      1: Weakly respected by public authorities. The public authorities systematically restrict the", "      right to travel, especially for political opponents or particular social groups. This can take the", "      form of general restrictions on the duration of stays abroad or delays/refusals of visas.", "      2: Somewhat respected by the public authorities. The right to travel for leading political", "      opponents or particular social groups is occasionally restricted but ordinary citizens only met", "      minor restrictions.", "      3: Mostly respected by public authorities. Limitations on freedom of movement and residence", "      are not directed at political opponents but minor restrictions exist. For example, exit visas", "      may be required and citizens may be prohibited from traveling outside the country when", "      accompanied by other members of their family.", "      4: Fully respected by the government. The freedom of citizens to travel from and to the", "      country, and to emigrate and repatriate, is not restricted by public authorities."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is there freedom of foreign travel and emigration?",
+    "name": "v2clfmove, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Participation is regulated to the extent that there are binding rules on when, whether, and how political preferences are expressed.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Polity", "IV", "(Marshall", "and", "Jaggers", "2016)."],
+    "name": "e_parreg"
+  }
+]

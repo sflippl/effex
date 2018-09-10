@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No. There are glaring deficits in staff, financial, or other resources affecting the organization", "      across the territory.", "      1: Not really. Deficits are not glaring but they nonetheless seriously compromised the organization of administratively well-run elections in many parts of the country.", "      2: Ambiguous. There might be serious deficiencies compromising the organization of the election but it could also be a product of human errors and co-incidence or other factors outside", "      the control of the EMB.", "      3: Mostly. There are partial deficits in resources but these are neither serious nor widespread.", "      4: Yes. The EMB has adequate staff and other resources to administer a well-run election."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Does the Election Management Body (EMB) have sufficient staff and resources to administer a well-run national election?",
+    "name": "v2elembcap, *_osp, *_ord"
+  }
+]

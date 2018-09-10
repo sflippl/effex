@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No, the head of state is not a member of a disadvantaged social group.", "      1: Yes, the head of state is a member of a disadvantaged social group."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is the head of state a member of a disadvantaged social group?",
+    "name": "v2exdighos"
+  }
+]

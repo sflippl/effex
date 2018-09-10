@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Note that this question applies to citizens only. Note also that we are interested in legal (de jure) restrictions, not restrictions that may be operative in practice (de facto). In cases where married people are allowed to vote at a younger age than single people, the higher(older) age minimum for single voters is given (see v2elage).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Megan Reif"],
+    "scale": "Nominal",
+    "sources": ["IFES;", "IDEA;", "Nohlen", "et", "al.", "(1999,", "2002,", "2005,", "2010);", "Furtak", "(1990);", "KRWE", "(1987-2012);", "KRWE/KCA", "(1931-1987);", "Mackie", "and", "Rose", "(1991);", "Posada-Carbó", "(1996);", "IPU;", "constituteproject.org.", "See", "Reif", "GVED", "and", "Reif", "EDATES", "(2011,", "2012", "for", "additional", "country-specific", "sources)."],
+    "name": "v2elgvsuflvl"
+  }
+]

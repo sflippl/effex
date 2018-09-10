@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If there are no (direct) national elections, observations are not coded (missing).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-6, 8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "Ordinal",
+    "sources": ["Paxton", "et", "al.", "(2003);", "Paxton", "et", "al.", "(2008);", "Reif", "(GVED)."],
+    "name": "v2elfemrst"
+  }
+]

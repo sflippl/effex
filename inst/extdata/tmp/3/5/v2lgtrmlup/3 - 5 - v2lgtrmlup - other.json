@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "For this question, no limit means the constitution specifies there is no limit on the number of terms and not specified means the constitution does not specify whether or not there is a limit. ”Eligible for re-election” should be coded as ”no term limits.”",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8",
+    "historical_clarification": "",
+    "ordering": "CCP ordering: Asked only if HOUSENUM is answered 2, or if HOUSENUM is answered 3.",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "Ordinal",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2012),", "v223."],
+    "name": "v2lgtrmlup"
+  }
+]

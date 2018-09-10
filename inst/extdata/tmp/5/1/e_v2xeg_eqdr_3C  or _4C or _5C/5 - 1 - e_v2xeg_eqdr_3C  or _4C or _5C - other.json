@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "Same transformation rule as for \"v2x_libdem_3C/_4C/_5C\".",
+    "clarification": "These are ordinalized versions of the V-Dem equal distribution of resources index. The original index ranges from 0 to 1. These transformations offer three different ordinal versions with three (_3C), four (_4C), and five (_5C) levels respectively.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Ordinal",
+    "sources": ["v2dlencmps", "v2dlunivl", "v2peedueq", "v2pehealth", "v2pepwrses", "v2pepwrsoc", "v2pepwrgen"],
+    "name": "e_v2xeg_eqdr_3C /_4C/_5C"
+  }
+]

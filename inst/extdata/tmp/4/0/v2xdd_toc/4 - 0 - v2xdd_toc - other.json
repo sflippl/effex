@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "This index is the normalized average of the scores of both indices of mechanism of direct democracy which are not citizen-initiated obligatory referendums and plebiscites. For an elaboration of the weighting factor of each component, see David Altman 2016. The index is aggregated using this formula: v2xdd_toc = [v2xdd_i_pl + v2xdd_i_or]/4",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["David Altman"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2xdd_i_pl", "v2xdd_i_or"],
+    "name": "v2xdd_toc"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: In almost all subnational units (at least 90%), a single party controls all or virtually all", "      policymaking bodies.", "      1: In most subnational units (66%-90%), a single party controls all or virtually all policymaking bodies.", "      2: In few subnational units (less than 66%), a single party controls all or virtually all policymaking bodies."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Does a single party control important policymaking bodies across subnational units(regional and local governments)?",
+    "name": "v2pssunpar, *_osp, *_ord"
+  }
+]

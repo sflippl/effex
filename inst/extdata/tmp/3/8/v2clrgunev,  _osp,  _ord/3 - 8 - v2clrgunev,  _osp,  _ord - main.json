@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Yes. Government officials in some areas of the country respect civil liberties significantly", "      more (or, alternatively, significantly less) than government officials in other areas of the country.", "      1: Somewhat. Government officials in some areas of the country respect civil liberties somewhat", "      more (or, alternatively, somewhat less) than government officials in other areas of the country.", "      2: No. Government officials in most or all areas of the country equally respect (or, alternatively, equally do not respect) civil liberties."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Does government respect for civil liberties vary across different areas of the country?",
+    "name": "v2clrgunev, *_osp, *_ord"
+  }
+]

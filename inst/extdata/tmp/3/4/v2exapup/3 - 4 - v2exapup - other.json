@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The chief executive is defined by whether the head of state or the head of government have more relative power (v2ex_hosw, v2x_hogw). Answer v2exapup only if the legislature is playing a role in the appointment of the chief executive (if v2exaphos or v2exaphogp are 1).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell", "Anna Lührmann"],
+    "scale": "Dichotomous",
+    "sources": ["National", "constitutions;", "Websites", "of", "national", "governments."],
+    "name": "v2exapup"
+  }
+]

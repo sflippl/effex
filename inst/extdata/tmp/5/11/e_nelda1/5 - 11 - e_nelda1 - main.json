@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "NELDA (Hyde and Marinov 2012).",
+    "notes": "",
+    "question": "Were regular elections suspended before this election?",
+    "name": "e_nelda1"
+  }
+]

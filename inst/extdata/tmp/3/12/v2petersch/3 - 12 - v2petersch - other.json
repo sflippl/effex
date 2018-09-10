@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The base variable is Barro and Lee’s (2015) long-run measure of tertiary enrollment (available in 5-year intervals). The time series is interpolated increasing the number of observations from 2,025 to 9,308. Missing data for the base variable is then imputed from UNESCO’s total secondary enrollment percentage, which includes those enrolled who are not of secondary-school age. The linear imputation increases the number of obervations from 9,308 to 11,613.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "6, 7.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Rachel Sigman"],
+    "scale": "",
+    "sources": ["UNESCO", "Institute", "for", "Statistics", "(accessed", "through", "World", "Bank", "Education", "Statistics);", "Barro", "and", "Lee", "(1996)", "Long-Run", "Enrollment", "Ratios", "by", "Country."],
+    "name": "v2petersch"
+  }
+]

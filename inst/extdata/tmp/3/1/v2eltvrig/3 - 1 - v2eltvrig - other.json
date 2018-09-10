@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "Ordinal",
+    "sources": ["V-Dem", "country", "coordinators;", "Nohlen", "et", "al.", "(1999,", "2002,", "2005,", "2010);", "Chronicle", "of", "Parliamentary", "Elections", "(IPU)."],
+    "name": "v2eltvrig"
+  }
+]

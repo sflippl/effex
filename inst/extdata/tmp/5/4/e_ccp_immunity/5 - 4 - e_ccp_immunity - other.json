@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Absolute immunity means immunity from all types of legal process. Limited immunity means immunity only for certain types of actions. Please note in the comments section if there are any time restrictions for immunity or if immunity can be waived.",
+    "cpp_tag": "IMMUNITY",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Ordinal",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014),", "v260."],
+    "name": "e_ccp_immunity"
+  }
+]

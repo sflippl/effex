@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This final section of the survey pertains to the executive, considered as a whole. Some questions refer to \"members of the executive,\" i.e., the head of state, the head of government, and cabinet ministers. If you feel that the answer to a question varies across these offices, your answer should reflect the average (arithmetic mean) across these offices. Other questions refer to lower-level members of the executive branch. This will be clarified as we proceed.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": [""],
+    "name": "v2exintro3"
+  }
+]

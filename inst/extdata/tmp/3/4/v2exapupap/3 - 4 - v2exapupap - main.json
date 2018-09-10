@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is the tacit or implicit approval of the upper chamber (alongside the lower chamber) necessary for the appointment of the chief executive?",
+    "name": "v2exapupap"
+  }
+]

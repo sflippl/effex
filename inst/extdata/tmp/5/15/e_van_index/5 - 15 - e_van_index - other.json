@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The index of democratization is formed by multiplying the competition and the participation variables and then dividing the outcome by 100.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Vanhanen", "(2016)."],
+    "name": "e_van_index"
+  }
+]

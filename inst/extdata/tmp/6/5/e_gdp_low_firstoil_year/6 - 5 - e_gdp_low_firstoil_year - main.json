@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "Haber and Menaldo (2011).",
+    "notes": "",
+    "question": "In the first year of oil production, was the GDP lower than the mean?",
+    "name": "e_gdp_low_firstoil_year"
+  }
+]

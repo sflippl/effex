@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Choose all that apply.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Mean",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Allen Hicken"],
+    "scale": "Series of dichotomous scales",
+    "sources": [""],
+    "name": "v2psbantar"
+  }
+]

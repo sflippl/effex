@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Extremely unlikely.", "      1: Unlikely.", "      2: Very uncertain.", "      3: Likely.", "      4: Certain or nearly certain."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "If executive branch officials were engaged in unconstitutional, illegal, or unethical activity, how likely is it that a body other than the legislature, such as a comptroller general, general prosecutor, or ombudsman, would question or investigate them and issue an unfavorable decision or report?",
+    "name": "v2lgotovst, *_osp, *_ord"
+  }
+]

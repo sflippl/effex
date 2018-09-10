@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (B) to (A) coding.",
+    "question": "Was approval of the legislature necessary for the appointment of the head of state?",
+    "name": "v2exaphos"
+  }
+]

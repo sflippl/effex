@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If several bodies were involved in the appointment process, select the one that exerted the most critical impact on the decision. However, in the next question we ask separately about whether the approval of the legislature was necessary. Response category 7 should only be selected if the head of state is directly elected, not if he or she was appointed by the legislature after an election.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "",
+    "sources": [""],
+    "name": "v2expathhs"
+  }
+]

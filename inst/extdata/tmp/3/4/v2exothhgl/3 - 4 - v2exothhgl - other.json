@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "3-8. Only included in the disaggregated dataset.",
+    "historical_clarification": "",
+    "ordering": "Answer this question only for those years you selected 0 or 9 on the previous question[v2expathhg].",
+    "project_manager": ["Jan Teorell"],
+    "scale": "",
+    "sources": ["V-Dem", "country", "coordinators."],
+    "name": "v2exothhgl"
+  }
+]

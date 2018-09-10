@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No — never or very rarely.", "      1: Yes — routinely."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In practice, does the legislature routinely question executive branch officials?",
+    "name": "v2lgqstexp, *_osp, *_ord"
+  }
+]

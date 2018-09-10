@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The answer to this question has been pre-coded for as many years as possible. Any pre-coded years contain an orange triangle. This means that the code and/or specific date have already been entered, so we are asking you only to add your confidence in the pre-coded rating; we do not want you to change the rating.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "If all years are (0), skip to The Judiciary (v2juintro). If (1) is chosen, skip to v2lgintro2.",
+    "project_manager": ["Carl Henrik Knutsen"],
+    "scale": "Ordina",
+    "sources": ["Nohlen", "and", "colleagues", "(1999,", "2002,", "2005,", "2010);", "Caramani", "(2000);", "Lindvall-Larson(2000);", "CCP", "(http://comparativeconstitutionsproject.org/);", "websites", "of", "National", "Parliaments;", "Library", "of", "Congress", "-", "Country", "Studies;", "Wikipedia;", "various", "country-specific", "sources,", "including", "books,", "articles,", "constitutions", "and", "online", "sources."],
+    "name": "v3lgbicam"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "For all questions referring to the dismissal of the Head of Government, we are referring to normal dismissal procedures as well as vote of confidence procedures. We are not referring to events such as death, incapacitation, or expiration of term.",
+    "cpp_tag": "HOGDISS",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Ordinal",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014),", "v131."],
+    "name": "e_ccp_hogdiss"
+  }
+]

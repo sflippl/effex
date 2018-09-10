@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: No, citizens do not have the right to change the government", "      2: Rights exist, but with some problems", "      3: Yes, citizens have the right to change the government"],
+    "answer_type": "Multiple Choice",
+    "citation": "Kelley and Kolev (2010).",
+    "notes": "",
+    "question": "Do citizens have the right to change the government?",
+    "name": "e_SF1"
+  }
+]

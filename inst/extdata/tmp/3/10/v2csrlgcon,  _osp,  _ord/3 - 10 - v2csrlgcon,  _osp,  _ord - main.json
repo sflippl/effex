@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No. There is a high degree of insulation of the government from input from religious organizations. The government may sometimes enlist or mobilize religious organizations after", "      policies are adopted to sell them to the public at large. But typically, it does not consult with", "      them in formulating policies.", "      1: To some degree. Religious organizations are but one set of voices that policymakers sometimes take into account.", "      2: Yes. Important religious organizations are recognized as stakeholders in important policy", "      areas and given voice on such issues. This can be accomplished through formal corporatist", "      arrangements or through less formal arrangements."],
+    "answer_type": "Multiple Choice",
+    "citation": "Bernhard et al. (2015, V-Dem Working Paper Series 2015:13); Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Are major religious organizations routinely consulted by policymakers on policies relevant to their members?",
+    "name": "v2csrlgcon, *_osp, *_ord"
+  }
+]

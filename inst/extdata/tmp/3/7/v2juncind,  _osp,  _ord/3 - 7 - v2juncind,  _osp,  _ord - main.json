@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Always.", "      1: Usually.", "      2: About half of the time.", "      3: Seldom.", "      4: Never."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "When judges not on the high court are ruling in cases that are salient to the government, how often would you say that their decisions merely reflect government wishes regardless of their sincere view of the legal record?",
+    "name": "v2juncind, *_osp, *_ord"
+  }
+]

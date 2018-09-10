@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg", "Carl Henrik Knutsen", "Jan Teorell"],
+    "scale": "",
+    "sources": ["Chronicle", "of", "Parliamentary", "Elections", "(IPU);", "IDEA;", "Nohlen", "et", "al.", "(1999,", "2002,", "2005,", "2010);", "Colomer", "(2016)."],
+    "name": "v2elloeldm"
+  }
+]

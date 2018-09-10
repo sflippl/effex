@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "By \"covered\" we mean whether, based on the title of the yearbook, information about this year was included in a statistical yearbook. For example, if a yearbook was published in 1914, according to its title covering 1911-1914, then v3ststybpub should be coded as 1 for 1914 only, 0 for 1911-1913, but v3ststybcov as 1 for 1911-1914.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell", "Thomas Brambor", "Agustín Goenaga", "Johannes Lindvall"],
+    "scale": "Dichotomou",
+    "sources": ["Various", "country-specific", "sources"],
+    "name": "v3ststybcov"
+  }
+]

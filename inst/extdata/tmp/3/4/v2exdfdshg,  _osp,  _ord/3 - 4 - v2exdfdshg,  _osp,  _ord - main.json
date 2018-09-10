@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes, but not at his/her own discretion, only when prompted to as a response to specific", "      events (for example, after a vote of no confidence taken by the legislature).", "      2: Yes, at his/her own discretion, but with restrictions (for example, only provided the head of", "      government proposes an alternative minister who would need the legislature’s approval , i.e., so called ”constructive dismissal”).", "      3: Yes, at his/her own discretion and without restrictions."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "If the head of government took actions to dismiss cabinet ministers, would he/she be likely to succeed?",
+    "name": "v2exdfdshg, *_osp, *_ord"
+  }
+]

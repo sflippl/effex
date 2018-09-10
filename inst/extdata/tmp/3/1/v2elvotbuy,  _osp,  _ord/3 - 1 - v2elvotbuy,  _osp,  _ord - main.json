@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Yes. There was systematic, widespread, and almost nationwide vote/turnout buying by", "      almost all parties and candidates.", "      1: Yes, some. There were non-systematic but rather common vote-buying efforts, even if only", "      in some parts of the country or by one or a few parties.", "      2: Restricted. Money and/or personal gifts were distributed by parties or candidates but these", "      offerings were more about meeting an ‘entry-ticket’ expectation and less about actual vote", "      choice or turnout, even if a smaller number of individuals may also be persuaded.", "      3: Almost none. There was limited use of money and personal gifts, or these attempts were", "      limited to a few small areas of the country. In all, they probably affected less than a few", "      percent of voters.", "      4: None. There was no evidence of vote/turnout buying."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In this national election, was there evidence of vote and/or turnout buying?",
+    "name": "v2elvotbuy, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Head of State (use this choice for single executive systems) (0=No, 1=Yes) [CCP tag:", "      CHIEFAP-1]", "      2: Head of Government (0=No, 1=Yes) [CCP tag: CHIEFAP-2]", "      3: The Government/Cabinet (0=No, 1=Yes) [CCP tag: CHIEFAP-3]", "      4: First (or unicameral) Chamber of the Legislature (0=No, 1=Yes) [CCP tag: CHIEFAP-4]", "      5: Second Chamber of the Legislature (0=No, 1=Yes) [CCP tag: CHIEFAP-5]", "      6: Judicial Council/Commission (0=No, 1=Yes) [CCP tag: CHIEFAP-6]", "      7: Judiciary (other than judicial council/commission) (0=No, 1=Yes) [CCP tag: CHIEFAP-7]", "      90: Left explicitly to non-constitutional law (0=No, 1=Yes) [CCP tag: CHIEFAP-90]", "      96: Other, please specify in the comments section (0=No, 1=Yes) [CCP tag: CHIEFAP-96]", "      97: Unable to Determine (0=No, 1=Yes) [CCP tag: CHIEFAP-97]", "      98: Not Specified (0=No, 1=Yes) [CCP tag: CHIEFAP-98]"],
+    "answer_type": "Multiple Selection",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "Who is involved in the approval of nominations for the Chief Justice of the Highest Ordinary Court?",
+    "name": "e_ccp_chiefap"
+  }
+]

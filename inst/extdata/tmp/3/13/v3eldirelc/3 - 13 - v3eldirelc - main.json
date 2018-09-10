@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Indirect", "      1: Direct", "      2: Mixed (differs depending on individual or collective characteristics)."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "What is the mode of election of the parliament/lower chamber?",
+    "name": "v3eldirelc"
+  }
+]

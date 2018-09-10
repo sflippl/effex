@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Mark ”Yes” if there are any types of legislation that require a supermajority, but this does not include economic legislation or any legislative approval powers (i.e. impeachment, declaration of war, etc.).",
+    "cpp_tag": "LEGSUPR",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "If (1) is chosen, questions pertaining to the upper chamber and the one question entitled Dominant chamber [v2lgdomchm] do not apply. CCP ordering: Asked only if LEGISL is answered.",
+    "project_manager": [],
+    "scale": "Dichotomous (assuming that missing observations can be interpreted as \"No\")",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2012),", "v264."],
+    "name": "e_ccp_legsupr"
+  }
+]

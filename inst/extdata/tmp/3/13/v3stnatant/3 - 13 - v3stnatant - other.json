@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["John Gerring"],
+    "scale": "Dichotomou",
+    "sources": ["CCP", "(v67);", "Bristow,", "Michael", "Jamieson", "(ed).", "2006.", "National", "Anthems", "of", "the", "World,", "Eleventh", "Edition.", "Casell.", "www.nationalanthems.info;", "https://www.cia.gov/library/publications/theworld-factbook;", "https://en.wikipedia.org/wiki/List_of_historical_national_anthems."],
+    "name": "v3stnatant"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Closed: Chief executives are determined by hereditary succession and assume executive", "      powers by right of descent.", "      2: Dual Executive — Designation: Hereditary succession plus executive or court selection of", "      an effective chief minister.", "      3: Executive — Election: Hereditary succession plus electoral selection of an effective chief", "      minister.", "      4: Open: Chief executives are chosen by elite designation, competitive election, or transitional", "      arrangements between designation and election."],
+    "answer_type": "Multiple Choice",
+    "citation": "Polity IV (Marshall and Jaggers 2016).",
+    "notes": "",
+    "question": "Is the process of recruiting the executive open to everyone?",
+    "name": "e_xropen"
+  }
+]

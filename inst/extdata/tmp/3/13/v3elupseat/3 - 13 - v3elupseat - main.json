@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Numeric ",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In this election, how many seats were there in the upper chamber of the legislature?",
+    "name": "v3elupseat"
+  }
+]

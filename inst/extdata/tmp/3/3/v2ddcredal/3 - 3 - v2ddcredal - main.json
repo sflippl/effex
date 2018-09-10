@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Not credible.", "      1: Credible."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (B) to (A) coding by David Altman.",
+    "question": "If any direct democracy election occurred this year, was the official result of the vote, or votes (their success or failure) credible?",
+    "name": "v2ddcredal"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Missing data within a time-series is interpolated using linear interpolation.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "2-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Clio", "Infra", "(clio-infra.eu),", "drawing", "on", "Goldewijk,", "Beusen,", "Janssen", "(2010),", "History", "Database", "of", "Global", "Environment", "(www.pbl.nl/hyde)."],
+    "name": "e_mipopula"
+  }
+]

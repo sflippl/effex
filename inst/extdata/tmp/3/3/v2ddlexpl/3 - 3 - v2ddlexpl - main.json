@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Not allowed.", "      1: Allowed but non-binding (or with an intervening institutional veto).", "      2: Allowed and binding."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (B) to (A) coding by David Altman.",
+    "question": "Is there legal provision for plebiscites?",
+    "name": "v2ddlexpl"
+  }
+]

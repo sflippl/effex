@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Does each member of the lower (or unicameral) chamber of the legislature have at least one staff member with policy expertise?",
+    "name": "v2lgstafflo, *_osp, *_ord"
+  }
+]

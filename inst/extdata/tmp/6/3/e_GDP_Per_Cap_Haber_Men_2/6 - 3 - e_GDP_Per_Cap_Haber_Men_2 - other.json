@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Real gross domestic product per capita on an annual basis for each country in International Dollars in 2000 constant prices.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-7.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Haber", "and", "Menaldo", "(2011)."],
+    "name": "e_GDP_Per_Cap_Haber_Men_2"
+  }
+]

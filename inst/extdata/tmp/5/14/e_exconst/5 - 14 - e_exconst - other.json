@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This variable refers to the extent of institutionalized constraints on the decisionmaking powers of chief executives. Such limitations may be imposed by any \"accountability groups\" (i.e. legislatures, ruling party, councils of nobles, the military, judiciary).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Polity", "IV", "(Marshall", "and", "Jaggers", "2016)."],
+    "name": "e_exconst"
+  }
+]

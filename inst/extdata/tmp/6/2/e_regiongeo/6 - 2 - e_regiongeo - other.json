@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Regions are described based on geographic location. Coverage extended back to 1900 from original source.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["United", "Nations", "Statistics", "Division", "(2013)."],
+    "name": "e_regiongeo"
+  }
+]

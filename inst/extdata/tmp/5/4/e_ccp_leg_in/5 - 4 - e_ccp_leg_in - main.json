@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Head of State (use this choice for single executive systems). (0=No, 1=Yes) [e_LEG_IN_1]", "      2: Head of Government. (0=No, 1=Yes) [e_LEG_IN_2]", "      3: The Government/Cabinet. (0=No, 1=Yes) [e_LEG_IN_3]", "      4: Political Party. (0=No, 1=Yes) [e_LEG_IN_4]", "      5: Member of First (or only) Chamber of the Legislature. (0=No, 1=Yes) [e_LEG_IN_5]", "      6: Member of Second Chamber of the Legislature. (0=No, 1=Yes) [e_LEG_IN_6]", "      7: Public (0=No, 1=Yes) [e_LEG_IN_7]", "      96: Other, please specify in the comments section. (0=No, 1=Yes) [e_LEG_IN_96]", "      97: Unable to Determine. (0=No, 1=Yes) [e_LEG_IN_97]", "      98: Not Specified. (0=No, 1=Yes) [e_LEG_IN_98]"],
+    "answer_type": "Multiple Selection",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "Who does the constitution specify can initiate general legislation?",
+    "name": "e_ccp_leg_in"
+  }
+]

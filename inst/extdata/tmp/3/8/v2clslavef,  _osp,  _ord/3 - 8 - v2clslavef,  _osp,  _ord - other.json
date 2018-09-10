@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Involuntary servitude occurs when an adult is unable to quit a job s/he desires to leave — not by reason of economic necessity but rather by reason of employer’s coercion. This includes labor camps but not work or service which forms part of normal civic obligations such as conscription or employment in command economies. This question does not ask you to assess the relative freedom of men and women from forced labor. Thus, a country in which both men and women suffer the same conditions of servitude might be coded a (0) for women, even though there is equality across the sexes.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton", "Svend-Erik Skaaning"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2clslavef, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Yes", "      2: No", "      90: Left explicitly to non-constitutional law", "      96: Other, please specify in the comments section", "      97: Unable to Determine"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "Are there provisions for dismissing judges?",
+    "name": "e_ccp_jrem"
+  }
+]

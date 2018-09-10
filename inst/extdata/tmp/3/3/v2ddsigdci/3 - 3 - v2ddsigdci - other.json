@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "Answer only if answered 1 for previous question.",
+    "project_manager": ["David Altman"],
+    "scale": "Interval",
+    "sources": [""],
+    "name": "v2ddsigdci"
+  }
+]

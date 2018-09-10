@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No consultation. The leader or a very small group (e.g. military council) makes authoritative decisions on their own.", "      1: Very little and narrow. Consultation with only a narrow circle of loyal party/ruling elites.", "      2: Consultation includes the former plus a larger group that is loyal to the government, such", "      as the ruling party’s or parties’ local executives and/or women, youth and other branches.", "      3: Consultation includes the former plus leaders of other parties.", "      4: Consultation includes the former plus a select range of society/labor/business representatives.", "      5: Consultation engages elites from essentially all parts of the political spectrum and all politically relevant sectors of society and business."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "When important policy changes are being considered, how wide is the range of consultation at elite levels?",
+    "name": "v2dlconslt, *_osp, *_ord"
+  }
+]

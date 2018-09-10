@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "We capture the extent to which the judiciary, the legislature and other oversight agencies hold the government to account by modeling each of these factors as separate hierarchical nodes. The judiciary node speaks to the degree to which members of the executive compromise horizontal accountability by \"unlawfully encroaching\" on the legitimate authority of the judiciary branch. To capture that we use the indicators from the V-Dem judicial constraints on the executive index (v2x_jucon). To model the degree to which a legislature facilitates horizontal accountability we model whether or not a legislature exists a dichotomized version of v2lgbicam, and legislature activities as a function of this variable. The key function of a legislature in terms of horizontal  accountability is to scrutinize government officials’ potential misconduct by demanding information for their policies and decisions, and taking specific actions in case of irregularities. We use as baseline the indicators from the V-Dem legislative constraints on the executive index (v2xlg_legcon): the degree to which: 1 the legislature routinely questions the executive(v2lgotovst); and 2 a legislature is likely to investigate and produce a decision unfavorable to the executive, if the latter were engaged in an illegal or unethical activity (v2lginvstp). We exclude the legislature opposition parties (v2lgoppart) as this aspect is part of vertical accountability. Finally, we include a variable regarding the degree to which other state bodies comptroller general, general prosecutor, or ombudsman are likely to investigate and report on potential illegal or unethical activities on part of the executive (v2lgotovst).",
+    "clarification": "Horizontal accountability concerns the power of state institutions to oversee the government by demanding information, questioning officials and punishing improper behavior. This form of accountability ensures checks between institutions and prevents the abuse of power. The key agents in horizontal government accountability are: the legislature; the judiciary; and specific oversight agencies such as ombudsmen, prosecutor and comptroller generals.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Anna Lührmann", "Kyle L. Marquardt", "Valeriya Mechkova"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2juhcind", "v2juncind", "v2juhccomp", "v2jucomp", "v2exrescon", "v2lgotovst", "v2lginvstp", "v2lgbicam", "v2lgotovst"],
+    "name": "v2x_horacc"
+  }
+]

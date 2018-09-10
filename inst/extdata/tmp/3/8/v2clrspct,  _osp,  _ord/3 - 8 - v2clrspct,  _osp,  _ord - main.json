@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: The law is not respected by public officials. Arbitrary or biased administration of the law", "      is rampant.", "      1: The law is weakly respected by public officials. Arbitrary or biased administration of the", "      law is widespread.", "      2: The law is modestly respected by public officials. Arbitrary or biased administration of the", "      law is moderate.", "      3: The law is mostly respected by public officials. Arbitrary or biased administration of the", "", "      law is limited.", "      4: The law is generally fully respected by the public officials. Arbitrary or biased administration", "      of the law is very limited."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Are public officials rigorous and impartial in the performance of their duties?",
+    "name": "v2clrspct, *_osp, *_ord"
+  }
+]

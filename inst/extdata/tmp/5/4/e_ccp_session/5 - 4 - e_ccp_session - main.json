@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Numeric", "      99: Not Applicable"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "For how long are legislators in session during each year?",
+    "name": "e_ccp_session"
+  }
+]

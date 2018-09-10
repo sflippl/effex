@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If the head of government is a collective body, provide the name of the person executing the most effective power over this body, or, if no such person exists, enter the expression \"collective body.\" If multiple heads of government were appointed any given year, please answer this question with respect to each one of them; also make sure you enter the specific date of appointment and reappointment for each one of them. Once again, the identities of the head of government for each country have been pre-coded for as many years as possible. Any pre-coded years contain an orange triangle. This means that either the score or text and/or specific date have already been entered, so we are asking you only to add your confidence in the pre-coded rating; we do not want you to change the rating, as we need all the Country Experts to answer the subsequent questions for the same executives.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "",
+    "sources": ["worldstatesmen.org;", "Henisz", "(2000;", "2002);", "Lentz", "(1994;", "1999)."],
+    "name": "v2exnamhog"
+  }
+]

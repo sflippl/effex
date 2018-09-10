@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Countries are graded between 1 (most free) and 7 (least free)."],
+    "answer_type": "Multiple Choice",
+    "citation": "Freedom House (2018).",
+    "notes": "",
+    "question": "",
+    "name": "e_fh_pr"
+  }
+]

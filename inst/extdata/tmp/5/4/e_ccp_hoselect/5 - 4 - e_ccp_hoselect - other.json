@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If the Head of State is selected by the legislature, please select ”Elected by Elite Group.”",
+    "cpp_tag": "HOSELECT",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "Asked only if EXECNUM is answered 3, or if HOSHOG is answered 1, or if HOSHOG is answered 3, or if HOSHOG is answered 4, or if HOSHOG is answered 96, or if HOSHOG is answered 97.",
+    "project_manager": [],
+    "scale": "A series of dichotomous scales",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014),", "var", "v89;", "cf.", "IAEP,", "questions", "4.", "1", "and", "8a,", "1-4."],
+    "name": "e_ccp_hoselect"
+  }
+]

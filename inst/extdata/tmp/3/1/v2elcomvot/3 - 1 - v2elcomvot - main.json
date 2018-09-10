@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes. But there are no sanctions or sanctions are not enforced.", "      2: Yes. Sanctions exist and are enforced, but they impose minimal costs upon the offending", "      voter.", "      3: Yes. Sanctions exist, they are enforced, and they impose considerable costs upon the", "      offending voter."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (B) to (A) coding.",
+    "question": "Is voting compulsory (for those eligible to vote) in national elections?",
+    "name": "v2elcomvot"
+  }
+]

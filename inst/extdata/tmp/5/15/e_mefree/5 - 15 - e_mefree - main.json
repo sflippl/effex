@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: It is not possible to safely criticize government or government officials.", "      1: Social, legal, or economic costs related to the criticism of the government officials limits", "      public criticism and major policy failings can and do occur.", "      2: Criticism of governments and government officials is a common part of the political dialogue", "      in the mediated public sphere."],
+    "answer_type": "Multiple Choice",
+    "citation": "Whitten-Woodring and Van Belle (2015).",
+    "notes": "For reasons of consistency with the V-Dem data, the responses to this question from the original source were reversed so that the least democratic response is ”0” and the most democratic is ”2”. Also, original categories \"0\" (No effective media) and \"8\" (Missing data or social/political disruption makes it impossible to code) were set to missing.",
+    "question": "Is media free?",
+    "name": "e_mefree"
+  }
+]

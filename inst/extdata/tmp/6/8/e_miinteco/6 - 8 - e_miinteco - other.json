@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Coded 1 if the country participated in an international armed conflict in a given year, 0 otherwise. The original source codebook (Brecke 2001) states that no war is coded as 0 and war is coded as 1. However, the data contains only 1’s along with missing data (no 0’s). Following the authors’ instructions (personal communication), we re-code missing observations as non-conflict (0) for countries where at least one year in the original times series (which runs from 1500 until present) was coded as 1.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Clio", "Infra", "(clio-infra.eu),", "drawing", "on", "Brecke", "(2001)."],
+    "name": "e_miinteco"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Numeric",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "What is the minimum age at which citizens are allowed to vote for presidential elections?",
+    "name": "v3elagepr"
+  }
+]

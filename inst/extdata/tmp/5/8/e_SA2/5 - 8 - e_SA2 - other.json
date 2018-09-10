@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This variable assesses the extent of the problems in the election. This is a combined assessment that considers problems in the legal framework, political and administrative problems in the pre-election period, and then the integrity of the election day itself.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-7.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Kelley", "and", "Kolev", "(2010)."],
+    "name": "e_SA2"
+  }
+]

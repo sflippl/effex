@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (B) to (A) coding by David Altman.",
+    "question": "How many signatures — expressed as the percentage (",
+    "name": "v2ddsigprf"
+  }
+]

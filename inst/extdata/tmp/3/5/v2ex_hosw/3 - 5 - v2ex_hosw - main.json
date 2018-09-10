@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      0.5: The HOS and HOG share equal power.", "      1: Yes."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "If the head of state is also head of government, v2ex_hosw is 1.",
+    "question": "Does the head of state HOS have more relative power than the head of government HOG over the appointment and dismissal of cabinet ministers?",
+    "name": "v2ex_hosw"
+  }
+]

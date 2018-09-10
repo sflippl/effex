@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "Kelley and Kolev (2010).",
+    "notes": "",
+    "question": "Were there any international observers during the elections?",
+    "name": "e_Siemass"
+  }
+]

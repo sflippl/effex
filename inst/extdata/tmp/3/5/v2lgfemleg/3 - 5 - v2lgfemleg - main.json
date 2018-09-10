@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "What percentage (%) of the lower (or unicameral) chamber of the legislature is female?",
+    "name": "v2lgfemleg"
+  }
+]

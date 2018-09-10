@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: The aristocracy, including high status hereditary social groups and castes.", "", "      1: Agrarian elites, including rich peasants and large landholders.", "      2: Party elites (of the party or parties that control the executive).", "      3: Business elites.", "      4: The state bureaucracy.", "      5: The military.", "      6: An ethnic or racial group(s).", "      7: A religious group(s).", "      8: Local elites, including customary chiefs.", "      9: Urban working classes, including labor unions.", "      10: Urban middle classes", "      11: Rural working classes (e.g. peasants).", "      12: Rural middle classes (e.g., family farmers)", "      13: A foreign government or colonial power."],
+    "answer_type": "Multiple Selection",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Which groups does the current political regime rely on in order to maintain power?(Check all that apply.)",
+    "name": "v3regsupgroups"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "A regime change is defined simply as a three-point change in either the polity’s democracy or autocracy score and may be either a negative or a positive value change. A negative or adverse regime transition is defined as a six-point decrease in the Polity score.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Polity", "IV", "(Marshall,", "Jaggers", "2016)."],
+    "name": "e_regtrans"
+  }
+]

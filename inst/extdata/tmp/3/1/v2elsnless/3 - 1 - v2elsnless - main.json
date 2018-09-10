@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Text."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In which areas of the country are subnational elections significantly less free and fair than the country average for subnational elections?",
+    "name": "v2elsnless"
+  }
+]

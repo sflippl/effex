@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "JREMSECP",
+    "cross_coder_aggregation": "",
+    "data_release": "1-7.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Ordinal",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2014)."],
+    "name": "e_ccp_jremsecp"
+  }
+]

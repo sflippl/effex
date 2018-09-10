@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No female suffrage. No women are allowed to vote, but some or all males vote.", "", "      1: Restricted female suffrage. Some women are allowed to vote, and face more or different", "      restrictions than men", "      2: Universal female suffrage. All women are allowed to vote."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Are women eligible to vote in national elections?",
+    "name": "v2elfemrst"
+  }
+]

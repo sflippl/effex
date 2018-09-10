@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Measures the level of dispersion of economic, intellectual, and organizational—or, for short, power—resources in society. Computed as the product of Index of Occupational Diversification (van_occup), Index of Knowledge Distribution (van_knowdist) and Index of Distribution of Economic Power Resources (van_distec), divided by 10.000, to range from 0(low) to 100 (high relative distribution of power resources). Measures the level of dispersion of economic, intellectual, and organizational—or, for short, power—resources in society. Computed as the product of Index of Occupational Diversification (van_occup), Index of Knowledge Distribution (van_knowdist) and Index of Distribution of Economic Power Resources (van_distec), divided by 10.000, to range from 0 (low) to 100 (high relative distribution of power resources). Measures the level of dispersion of economic, intellectual, and organizational—or, for short, power—resources in society. Computed as the product of Index of Occupational Diversification (van_occup), Index of Knowledge Distribution (van_knowdist) and Index of Distribution of Economic Power Resources (van_distec), divided by 10.000, to range from 0(low) to 100 (high relative distribution of power resources).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Vanhanen", "(2007)."],
+    "name": "e_van_powres"
+  }
+]

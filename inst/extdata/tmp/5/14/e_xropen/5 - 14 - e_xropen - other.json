@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Recruitment of the chief executive is \"open\" to the extent that all the politically active population has an opportunity, in principle, to attain the position through a regularized process.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Polity", "IV", "(Marshall", "and", "Jaggers", "2016)."],
+    "name": "e_xropen"
+  }
+]

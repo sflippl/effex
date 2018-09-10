@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Appointment decisions include hiring, firing and promotion in the state administration. Note that the question refers to the typical de facto (rather than de jure) situation obtaining in the state administration, excluding the armed forces. If there are large differences between different branches of the state administration or between top and lower level state administrators please try to consider the average when answering the question.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Agnes Cornell"],
+    "scale": "Ordinal",
+    "sources": [""],
+    "name": "v2stcritrecadm"
+  }
+]

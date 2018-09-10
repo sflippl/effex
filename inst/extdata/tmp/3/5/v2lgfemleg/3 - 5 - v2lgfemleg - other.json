@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "4-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "Interval",
+    "sources": ["Edgel", "(2014);", "Paxton", "et", "al.", "(2008);", "Carmichael", "et", "al.", "(2015);", "Chronicle", "of", "Parliamentary", "Elections", "(IPU);", "genderproject.org."],
+    "name": "v2lgfemleg"
+  }
+]

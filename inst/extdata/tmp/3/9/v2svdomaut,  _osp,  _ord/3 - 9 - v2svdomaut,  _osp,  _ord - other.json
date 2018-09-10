@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The question of domestic autonomy does not include restrictions emanating from treaties (e.g., NATO), international organizations (e.g., the WTO), or confederations (e.g., the European Union) if these agreements are freely negotiated by the state and if the state is free to exit from that treaty, organization, or confederation. Nor does it include restrictions on policymaking emanating from international market forces and trans-national corporations.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Michael Bernhard"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2svdomaut, *_osp, *_ord"
+  }
+]

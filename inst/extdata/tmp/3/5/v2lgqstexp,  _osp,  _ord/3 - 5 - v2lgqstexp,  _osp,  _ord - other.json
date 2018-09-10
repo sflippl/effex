@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "By ”question” we mean, for example, the power of summons through which the head of state or head of government could be forced to explain its policies or testify.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Steven Fish", "Matthew Kroenig"],
+    "scale": "Dichotomous, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2lgqstexp, *_osp, *_ord"
+  }
+]

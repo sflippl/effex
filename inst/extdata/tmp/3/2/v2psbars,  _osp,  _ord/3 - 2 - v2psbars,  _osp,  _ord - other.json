@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Barriers include legal requirements such as requirements for membership or financial deposits, as well as harassment.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "If your answer is 1-4, proceed to the next question [v2psoppaut]. If your answer is 0, skip to the question about Party organization [v2psorgs].",
+    "project_manager": ["Allen Hicken"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2psbars, *_osp, *_ord"
+  }
+]

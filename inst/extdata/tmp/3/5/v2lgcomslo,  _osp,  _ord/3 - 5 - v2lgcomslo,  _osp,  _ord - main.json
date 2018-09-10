@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No, there are no committees.", "      1: Yes, but there are only special (not permanent) committees.", "      2: Yes, there are permanent committees, but they are not very significant in affecting the", "      course of policy.", "      3: Yes, there are permanent committees that have strong influence on the course of policymaking."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Does the lower (or unicameral) chamber of the legislature have a functioning committee system?",
+    "name": "v2lgcomslo, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "\"Political Stability\" combines several indicators which measure perceptions of the likelihood that the government in power will be destabilized or overthrown by possibly unconstitutional and/or violent means, including domestic violence and terrorism.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Kaufmann", "et", "al.", "(2016)."],
+    "name": "e_wbgi_pve"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Indicates whether the second (upper) house can delay or veto the decisions of the first (lower) house. Blocking applies to any issue area. Note that if UPPER HOUSE_ 1 AND UPPER_BLOCK _1, then non-elective legislative power can block.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Nominal",
+    "sources": ["Przeworski", "et", "al.", "(2013)."],
+    "name": "e_upper_block"
+  }
+]

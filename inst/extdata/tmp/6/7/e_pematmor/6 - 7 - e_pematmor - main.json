@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "Gapminder (gapminder.org).",
+    "notes": "",
+    "question": "What is the maternal mortality rate?",
+    "name": "e_pematmor"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "If providing names of all the relevant territorial units is not possible, use broad categories (for example, \"the North\").",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "3-8. Only included in the disaggregated dataset.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Kelly McMann"],
+    "scale": "",
+    "sources": [""],
+    "name": "v2elsnmore"
+  }
+]

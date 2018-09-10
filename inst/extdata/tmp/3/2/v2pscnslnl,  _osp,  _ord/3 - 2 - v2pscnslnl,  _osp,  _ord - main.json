@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: National legislative candidates are selected exclusively by national party leaders.", "      1: National legislative candidate selection is dominated by national party leaders but with", "      some limited influence from local or state level organizations.", "      2: National legislative candidates are chosen through bargaining across different levels of party", "      organization.", "      3: National legislative candidates are chosen by regional or state-level organizations, perhaps", "      with some input from local party organizations or constituency groups.", "      4: National legislative candidates are chosen by a small cadre of local or municipal level actors.", "      5: National legislative candidates are chosen by constituency groups or direct primaries."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How centralized is legislative candidate selection within the parties?",
+    "name": "v2pscnslnl, *_osp, *_ord"
+  }
+]

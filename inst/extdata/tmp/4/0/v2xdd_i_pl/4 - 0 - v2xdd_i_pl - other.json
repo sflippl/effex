@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "This index receives a maximum score of two resulting from the addition of the two terms easiness of initiation and easiness of approval of plebiscites, where each term obtains a maximum value of one. The ease of initiation is measured by• The existence of a direct democracy process v2ddlexpl. Easiness of approval is measured by the surface of the polygon determined by• Participation quorum v2ddpartpl, • Approval quorum v2ddapprpl, and• Supermajority v2ddspmpl. For an elaboration of the interaction among quorums, see David Altman 2016. The resulting score is then multiplied with (d) district majority v2ddadmpl. Consequences are measured by• The legal status of the decision made by citizens (binding or merely consultative) (v2ddlexpl), and• The frequency and degree of success with which direct popular votes have been held in the past(v2ddthrepl). The baseline for those countries that have the legal apparatus to hold a particular MDD but have never experienced one is 0.1. The index is aggregated using this formula: v2xdd_i_pl = (IF v2ddlexpl > 0, 1, 0) + (v2ddpartpl ∩ v2ddapprpl ∩ v2ddspmpl) × ((0.5 + (1 − v2ddadmpl)/2)) × (IF v2ddlexpl = 1, 0.75, 1) × (IF years since last successful event < 6, then v2ddthrepl = 1, afterwards decreases by 0.06 units per year until 0.1, if the event was not successful during the first years v2ddthrepl = 0.9, afterwards decreases by 0.1 units per year until 0.1)",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["David Altman"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2ddlexpl", "v2ddpartpl", "v2ddapprpl", "v2ddspmpl", "v2ddadmpl", "v2ddyrpl", "v2ddthrepl"],
+    "name": "v2xdd_i_pl"
+  }
+]

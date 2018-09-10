@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "We model this form of accountability as a function of four hierarchical nodes: media freedom, civil society characteristics, freedom of expression, and the degree to which citizens are engaged in politics. The media freedom node incorporates variables representing two broad dimensions. The first dimension regards the extent to which the government attempts to censor the media(v2mecenefm) and information on the Internet (v2mecenefi), as well as the extent to which government and other powerful actors harass journalists (v2meharjrn). The second dimension concerns the work of the media itself, namely the extent to which: the media criticizes the government at least occasionally (v2mecrit); there is bias against opposition candidates (v2mebias); the media offers a wide array of political perspectives in their coverage (v2merange); and there is self-censorship on salient issues for the government (v2meslfcen). The media freedom node is an expanded version of the V-Dem Alternative sources of information index (v2xme_altinf). Finally, we use the components of the V-Dem core index of civil society to account for the opportunity of citizens to channel their interests and potentially oppose the government and its policies in an organized way through a robust, self-organized and autonomous civil society organizations. The indicators included in this node are: popular and voluntary participation in CSOs, (v2csprtcpt), government control to the entry and exit of CSOs into the public life, (v2cseeorgs), and government oppression of CSOs (v2csreprss). The freedom of expression node incorporates variables regarding the degree to which men and women are free to discuss political issues without fear of harassment (v2cldiscm and v2cldiscw), as well as an indicator on the freedom of academic and cultural expression (v2clacfree). Finally, we incorporate a variable representing engaged society (v2dlengage), which gives information on the width and depth of public deliberations when important policy changes are being considered.",
+    "clarification": "Diagonal accountability covers the range of actions and mechanisms that citizens, civil society organizations CSOs, and an independent media can use to hold the government accountable. These mechanisms include using informal tools such as social mobilization and  investigative journalism to enhance vertical and horizontal accountability.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "7-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Anna Lührmann", "Kyle L. Marquardt", "Valeriya Mechkova"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2mecenefm", "v2mecenefi", "v2meharjrn", "v2mecrit", "v2mebias", "v2merange", "v2meslfcen", "v2csprtcpt", "v2cseeorgs", "v2csreprss", "v2cldiscm", "v2cldiscw", "v2clacfree", "v2dlengage"],
+    "name": "v2x_diagacc"
+  }
+]

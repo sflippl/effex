@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "These are measures placed on the ballot through a citizen petition process, not by the legislature or the executive. They may concern either the rejection of a recently approved law or a bill discussed in parliament. (They do not include recall elections.)",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "If no legal provision exists (option 0), skip to question \"Occurrence of plebiscite this year\" [v2ddyrpl].",
+    "project_manager": ["David Altman"],
+    "scale": "Ordinal",
+    "sources": [""],
+    "name": "v2ddlexrf"
+  }
+]

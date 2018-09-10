@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "Same transformation rule as for \"v2x_libdem_3C/_4C/_5C\".",
+    "clarification": "These are ordinalized versions of the V-Dem direct popular vote index. The original index ranges from 0 to 1. These transformations offer three different ordinal versions with three (_3C), four (_4C), and five (_5C) levels respectively.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-6, 7 (new aggregation formula),8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Ordinal",
+    "sources": ["v2ddlexci", "v2ddsigpci", "v2ddsiglci", "v2ddsigdci", "v2ddlevci", "v2ddpartci", "v2ddapprci", "v2ddspmci", "v2ddadmci", "v2ddyrci", "v2ddlexrf", "v2ddsigprf", "v2ddsigdrf", "v2ddpartrf", "v2ddapprrf", "v2ddspmrf", "v2ddadmrf", "v2ddyrrf", "v2ddpartpl", "v2ddapprpl", "v2ddspmpl", "v2ddadmpl", "v2ddlexpl", "v2ddyrpl", "v2ddlexor", "v2ddpartor", "v2ddappor", "v2ddspmor", "v2ddadmor", "v2ddyror,", "v2ddthreor,", "v2ddthrerf,", "v2ddthrepl"],
+    "name": "e_v2xdd_dd_3C /_4C /_5C"
+  }
+]

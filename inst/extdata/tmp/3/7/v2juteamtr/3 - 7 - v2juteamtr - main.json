@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: no", "      1: Yes, this event was translated by our team"],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "For constitutions not available in English, did our coders translate the relevant sections of a non-English event?",
+    "name": "v2juteamtr"
+  }
+]

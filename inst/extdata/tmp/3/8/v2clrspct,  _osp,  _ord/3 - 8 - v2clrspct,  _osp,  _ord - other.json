@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This question focuses on the extent to which public officials generally abide by the law and treat like cases alike, or conversely, the extent to which public administration is characterized by arbitrariness and biases (i.e., nepotism, cronyism, or discrimination). The question covers the public officials that handle the cases of ordinary people. If no functioning public administration exists, the lowest score (0) applies.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Svend-Erik Skaaning"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2clrspct, *_osp, *_ord"
+  }
+]

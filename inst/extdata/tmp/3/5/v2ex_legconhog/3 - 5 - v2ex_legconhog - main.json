@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No.", "      1: Yes."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is the head of government HOG appointed by the legislature, or is the approval of the legislature necessary for the appointment of the head of state?",
+    "name": "v2ex_legconhog"
+  }
+]

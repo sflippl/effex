@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Numeric."],
+    "answer_type": "Multiple Choice",
+    "citation": "CLEA (Kollman et al. 2016).",
+    "notes": "",
+    "question": "A measure of party linkage across a country’s electoral constituencies that builds on the economic principle of inflation. Here inflation refers to the discrepancy that occurs in party  linkage as parties are aggregated from the constituency-level to the national-level party system. This measure was developed by Cox (1999).",
+    "name": "e_pssnacois"
+  }
+]

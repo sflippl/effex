@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "Brambor et al. (2016); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Was there a national census in this year?",
+    "name": "v3stcensus"
+  }
+]

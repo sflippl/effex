@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Yes, there are such statutory restrictions.", "      1: No, there are no such restrictions or the candidates are not elected."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Is the eligibility of candidates for the office of head of government (when elected) formally restricted (by constitution or statute) by ethnicity, race, religion, or language?",
+    "name": "v2elrsthog"
+  }
+]

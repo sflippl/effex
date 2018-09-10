@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No, not at all. The elections were fundamentally flawed and the official results had little if", "      anything to do with the ’will of the people’ (who won office).", "      1: Not really. While the elections allowed for some competition, the irregularities in the end", "      affected the outcome of the elections (who won office).", "      2: Ambiguous. There was substantial competition and freedom of participation but there were", "      also significant irregularities. It is hard to determine whether the irregularities affected the", "      outcome or not (who won office).", "      3: Yes, somewhat. There were deficiencies and some degree of fraud and irregularities but", "      these did not in the end affect the outcome (who won office).", "      4: Yes. There was some amount of human error and logistical restrictions but these were", "", "      largely unintentional and without significant consequences."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "As of December 2014, the former category \"5\" is recoded as a separate variable (v2elffelrbin).",
+    "question": "Taking all aspects of the pre-election period, election day, and the post-election process into account, would you consider subnational elections (regional and local, as previously identified) to be free and fair on average?",
+    "name": "v2elffelr, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the point estimates from a Bayesian factor analysis  model of the indicators for CSO entry and exit (v2cseeorgs), CSO repression (v2csreprss) and CSO participatory environment (v2csprtcpt).",
+    "clarification": "The sphere of civil society lies in the public space between the private sphere and the state. Here, citizens organize in groups to pursue their collective interests and ideals. We call these groups civil society organizations CSOs. CSOs include, but are by no means limited to, interest groups, labor unions, spiritual organizations if they are engaged in civic or political activities, social movements, professional associations, charities, and other non-governmental organizations. The core civil society index CCSI is designed to provide a measure of a robust civil society, understood as one that enjoys autonomy from the state and in which citizens freely and actively pursue their political and civic goals, however conceived.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Michael Bernhard"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2cseeorgs", "v2csreprss", "v2csprtcpt"],
+    "name": "v2xcs_ccsi"
+  }
+]

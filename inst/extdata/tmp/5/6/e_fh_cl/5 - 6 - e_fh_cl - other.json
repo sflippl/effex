@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Civil liberties allow for the freedoms of expression and belief, associational and organizational rights, rule of law, and personal autonomy without interference from the state. The more specific list of rights considered vary over the years.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Freedom", "House", "(2018).", "Taken", "from", "Teorell", "et", "al", "(2018)."],
+    "name": "e_fh_cl"
+  }
+]

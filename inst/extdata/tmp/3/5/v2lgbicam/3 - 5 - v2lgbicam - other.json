@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The number of chambers have been pre-coded for as many years as possible. This means that the score has already been entered, so we are asking you only to add your confidence in the pre-coded rating. If there is a change in the number of chambers, this is coded on the exact date of when the change occurred, for example the exact date of when a legislature was dissolved, or when the lower and/or upper chamber was established (usually coded on the date when the new legislature first meets; otherwise on the date of the legislative election where the composition of the new legislature was decided).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Steven Fish", "Matthew Kroenig"],
+    "scale": "Ordina",
+    "sources": ["Nohlen", "et", "al.", "(1999,", "2002,", "2005,", "2010);", "Chronicle", "of", "Parliamentary", "Elections", "(IPU);", "IFES;", "Websites", "of", "national", "parliaments;", "National", "constitutions;", "Reif", "(2011,", "2012);", "CCP", "(Elkins", "et", "al.", "2012),", "v191."],
+    "name": "v2lgbicam"
+  }
+]

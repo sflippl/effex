@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Language restriction should be understood as a restriction of spoken language, not literacy.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "4-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "Dichotomous",
+    "sources": ["CCP", "(Elkins", "et", "al.", "2012),", "v221,", "v95;", "National", "constitutions."],
+    "name": "v2elrsthos"
+  }
+]

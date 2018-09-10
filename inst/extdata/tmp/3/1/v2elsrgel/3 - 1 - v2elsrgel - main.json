@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Generally, offices at the regional level are not elected.", "      1: Generally, the regional executive is elected but not the assembly.", "      2: Generally, the regional assembly is elected but not the executive.", "      3: Generally, the regional executive is elected and there is no assembly.", "      4: Generally, the regional assembly is elected and there is no executive.", "      5: Generally, the regional executive and assembly are elected."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (C) to (A (C)) coding as of December 2014.",
+    "question": "At the regional level, are government offices elected in practice?",
+    "name": "v2elsrgel"
+  }
+]

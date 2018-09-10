@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (B) to (A) coding. v2expathhg is coded according to appointment dates of the Head of Government. The same is true for coups or rebellions where the date when the HOG was appointed through a coup, or the first day in office after the coup, is coded.",
+    "question": "Was the approval of the legislature necessary for the appointment of the head of government?",
+    "name": "v2exaphogp"
+  }
+]

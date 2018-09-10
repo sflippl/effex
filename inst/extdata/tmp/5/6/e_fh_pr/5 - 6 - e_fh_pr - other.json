@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Political rights enable people to participate freely in the political process, including the right to vote freely for distinct alternatives in legitimate elections, compete for public office, join political parties and organizations, and elect representatives who have a decisive impact on public policies and are accountable to the electorate. The specific list of rights considered varies over the years.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Freedom", "House", "(2018).", "Taken", "from", "Teorell", "et", "al", "(2018)."],
+    "name": "e_fh_pr"
+  }
+]

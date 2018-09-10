@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "A party-constituent linkage refers to the sort of \"good\" that the party offers in exchange for political support and participation in party activities.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Allen Hicken"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2psprlnks, *_osp, *_ord"
+  }
+]

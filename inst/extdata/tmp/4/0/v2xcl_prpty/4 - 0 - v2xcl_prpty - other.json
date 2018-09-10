@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "Bayesian factor analysis of indicators focused on property rights for men (v2clprptym) and women (v2clprptyw).",
+    "clarification": "Private property includes the right to acquire, possess, inherit, and sell private property, including land. Limits on property rights may come from the state which may legally limit rights or fail to enforce them; customary laws and practices; or religious or social norms. This question concerns the right to private property, not actual ownership of property.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton", "Svend-Erik Skaaning"],
+    "scale": "Ordinal, converted to interval by the measurement model, from from low to high 0-1",
+    "sources": ["v2clprptym", "v2clprptyw"],
+    "name": "v2xcl_prpty"
+  }
+]

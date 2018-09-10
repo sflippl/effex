@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No, or very minimal. Anti-system movements are practically nonexistent.", "      1: There is only a low-level of anti-system movement activity but it does not pose much of a", "      threat to the regime.", "      2: There is a modest level of anti-system movement activity, posing some threat to the regime.", "      3: There is a high level of anti-system movement activity, posing substantial threat to the", "      regime.", "      4: There is a very high level of anti-system movement activity, posing a real and present threat", "      to the regime."],
+    "answer_type": "Multiple Choice",
+    "citation": "Bernhard et al. (2015, V-Dem Working Paper Series 2015:13); Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Among civil society organizations, are there anti-system opposition movements?",
+    "name": "v2csantimv, *_osp, *_ord"
+  }
+]

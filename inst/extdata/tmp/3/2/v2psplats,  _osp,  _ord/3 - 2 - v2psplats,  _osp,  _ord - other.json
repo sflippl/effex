@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "In order to be counted in the affirmative, parties must have platforms that are both distinct (either in terms of content or generalized ideology) and publicly disseminated. This question is not intended to measure how much the public actually knows about these platforms or whether they are important in structuring policymaking.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Allen Hicken"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2psplats, *_osp, *_ord"
+  }
+]

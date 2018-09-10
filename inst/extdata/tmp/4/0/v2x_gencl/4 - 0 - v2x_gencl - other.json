@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for freedom of domestic movement for women (v2cldmovew), freedom from forced labor for women (v2clslavef), property rights for women (v2clprptyw), and access to justice for women (v2clacjstw).",
+    "clarification": "Women’s civil liberties are understood to include freedom of domestic movement, the right to private property, freedom from forced labor, and access to justice.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2cldmovew", "v2clslavef", "v2clprptyw", "v2clacjstw"],
+    "name": "v2x_gencl"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["-1: if the legislature is unicameral.", "      0: if the second (upper) house cannot block or delay legislation passed by the lower (first)", "      house.", "      1: if the second (upper) house can only put a suspensive veto or can send for reconsideration(a \"suspensive veto\" is any veto that can be overridden by someone).", "      2: if the second (upper) house must approve must legislation or can put a final veto."],
+    "answer_type": "Multiple Choice",
+    "citation": "Przeworski et al. (2013).",
+    "notes": "",
+    "question": "",
+    "name": "e_upper_block"
+  }
+]

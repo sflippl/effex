@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Any Ordinary Court (0=No, 1=Yes) [CCP tag: INTERP-1]", "      2: Constitutional Court/Council (0=No, 1=Yes) [CCP tag: INTERP-2]", "      3: Supreme Court Only (0=No, 1=Yes) [CCP tag: INTERP-3]", "      4: Special chamber of the Supreme Court (0=No, 1=Yes) [CCP tag: INTERP-4]", "      5: First (or unicameral) Chamber of the Legislature (0=No, 1=Yes) [CCP tag: INTERP-5]", "      6: Second Chamber of the Legislature (0=No, 1=Yes) [CCP tag: INTERP-6]", "", "      7: Both Chambers of the Legislature are required (0=No, 1=Yes) [CCP tag: INTERP-7]", "      90: Left explicitly to non-constitutional law (0=No, 1=Yes) [CCP tag: INTERP-90]", "      96: Other, please specify in the comments section (0=No, 1=Yes) [CCP tag: INTERP-96]", "      97: Unable to Determine (0=No, 1=Yes) [CCP tag: INTERP-97]", "      98: Not Specified (0=No, 1=Yes) [CCP tag: INTERP-98]"],
+    "answer_type": "Multiple Selection",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "To whom does the constitution assign the responsibility for the interpretation of the constitution?",
+    "name": "e_ccp_interp"
+  }
+]

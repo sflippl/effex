@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Percent."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In the first cabinet after this national election, what percentage (%) of the ministers was female?",
+    "name": "v2elwomcab"
+  }
+]

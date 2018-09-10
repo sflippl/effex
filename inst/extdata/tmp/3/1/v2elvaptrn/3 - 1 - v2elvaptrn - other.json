@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The VAP can reflect irregularities such as problems with the voters’ register or registration system. VAP numbers are estimates since they do not take into account legal or systemic barriers to the exercise of the franchise or account for non-eligible members of the population. Thus, it can occur that VAP values surpass 100 which is not an error but reflects such conditions.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton"],
+    "scale": "Interval",
+    "sources": ["IDEA", "(VAP", "figures", "are", "estimates", "and", "should", "be", "treated", "as", "such)."],
+    "name": "v2elvaptrn"
+  }
+]

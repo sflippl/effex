@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Constantly. Public sector employees act as though all public resources were their personal", "      or family property.", "      1: Often. Public sector employees are responsible stewards of selected public resources but", "      treat the rest like personal property.", "      2: About half the time. Public sector employees are about as likely to be responsible stewards", "      of selected public resources as they are to treat them like personal property.", "      3: Occasionally. Public sector employees are responsible stewards of most public resources but", "      treat selected others like personal property.", "      4: Never, or hardly ever. Public sector employees are almost always responsible stewards of", "      public resources and keep them separate from personal or family property."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How often do public sector employees steal, embezzle, or misappropriate public funds or other state resources for personal or family use?",
+    "name": "v2exthftps, *_osp, *_ord"
+  }
+]

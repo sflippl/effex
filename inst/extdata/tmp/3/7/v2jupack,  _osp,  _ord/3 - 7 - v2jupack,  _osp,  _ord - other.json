@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The second and third response categories permit you to distinguish among limited court packing efforts (i.e. when relatively few judgeships are added) by the political importance of the packing. For example, you may consider the packing of the high court to be more important than the packing of a lower court.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jeffrey Staton"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2jupack, *_osp, *_ord"
+  }
+]

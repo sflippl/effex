@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Selection: Chief executives are determined by hereditary succession, designation, or by a", "      combination of both, as in monarchies whose chief minister is chosen by king or court.", "      2: Dual/Transitional: Dual executives in which one is chosen by hereditary succession, the", "      other by competitive election. Also used for transitional arrangements between selection and", "      competitive election.", "      3: Election: Chief executives are typically chosen in or through competitive elections matching", "      two or more major parties or candidates."],
+    "answer_type": "Multiple Choice",
+    "citation": "Polity IV (Marshall and Jaggers 2016).",
+    "notes": "",
+    "question": "How is the executive recruited?",
+    "name": "e_xrcomp"
+  }
+]

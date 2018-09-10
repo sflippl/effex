@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The following questions are focused on actual practices (de facto) rather than formal legal or constitutional rights (de jure).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "",
+    "historical_clarification": "The following questions are focused on actual practices (de facto) rather than formal legal or constitutional rights (de jure). Note that if there is significant variation in the respect for a particular civil liberty across the territory, the score should reflect the”average situation” across the territorial scope of the country unit (for each period) as defined in the coder instructions.",
+    "ordering": "",
+    "project_manager": ["Svend-Erik Skaaning"],
+    "scale": "",
+    "sources": [""],
+    "name": "v2clintro"
+  }
+]

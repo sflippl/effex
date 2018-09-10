@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This variable captures extra-constitutional irregularities, which are recorded only if mentioned in sources.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Dichotomous",
+    "sources": ["Cruz", "et", "al.", "(2018)."],
+    "name": "e_dpi_fraud"
+  }
+]

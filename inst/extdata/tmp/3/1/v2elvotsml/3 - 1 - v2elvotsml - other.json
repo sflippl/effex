@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg"],
+    "scale": "Interval",
+    "sources": ["Nohlen", "et", "al.", "(1999,", "2002,", "2005,", "2010);", "IFES."],
+    "name": "v2elvotsml"
+  }
+]

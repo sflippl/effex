@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Countries that meet the minimum conditions for democracy (see below) enter the dataset and are coded \"0.\" When countries cease to meet those minimum criteria they are coded \"1\" and exit from the dataset.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Dichotomous",
+    "sources": ["Bernhard", "et", "al.", "(2001)."],
+    "name": "e_bnr_dem"
+  }
+]

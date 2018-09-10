@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Disadvantage refers to socioeconomic disadvantage. Specifically, in order to be considered disadvantaged members of a social group must have an average income that is significantly below the median national income.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "3-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2lgdsadlo, *_osp, *_ord"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Are there elected local governments, and — if so — to what extent can they operate without interference from unelected bodies at the local level?",
+    "name": "v2xel_locelec"
+  }
+]

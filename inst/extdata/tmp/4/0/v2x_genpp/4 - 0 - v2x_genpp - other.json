@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the average of the indicators for lower chamber female legislators (v2lgfemleg, standardized) and power distributed by gender (v2pepwrgen).",
+    "clarification": "Women’s political participation is understood to include women’s descriptive representation in the legislature and an equal share in the overall distribution of power.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Pamela Paxton"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2lgfemleg", "v2pepwrgen"],
+    "name": "v2x_genpp"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: The state is not capable of raising revenue to finance itself.", "      1: The state primarily relies on external sources of funding (loans and foreign aid) to finance", "      its activities.", "      2: The state primarily relies on directly controlling economic assets (natural resource rents, public monopolies, and the expropriation of assets within and outside the country) to finance", "      its activities.", "      3: The state primarily relies on taxes on property (land taxes) and trade (customs duties).", "      4: The state primarily relies on taxes on economic transactions (such as sales taxes) and/or", "      taxes on income, corporate profits and capital."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "On which of the following sources of revenue does the central government primarily rely to finance its activities?",
+    "name": "v2stfisccap"
+  }
+]

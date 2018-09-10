@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No", "      1: Yes"],
+    "answer_type": "Multiple Choice",
+    "citation": "NELDA (Hyde and Marinov 2012).",
+    "notes": "",
+    "question": "Is there evidence that the government harassed the opposition?",
+    "name": "e_nelda15"
+  }
+]

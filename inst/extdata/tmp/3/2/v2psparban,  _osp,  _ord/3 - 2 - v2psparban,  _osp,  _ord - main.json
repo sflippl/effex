@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Yes. All parties except the state-sponsored party (and closely allied parties) are banned.", "      1: Yes. Elections are non-partisan or there are no officially recognized parties.", "      2: Yes. Many parties are banned.", "      3: Yes. But only a few parties are banned.", "      4: No. No parties are officially banned."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "Are any parties banned?",
+    "name": "v2psparban, *_osp, *_ord"
+  }
+]

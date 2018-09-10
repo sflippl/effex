@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "This index is an equally weighted average of a local government index and a regional government index. The local government index is the product of a dummy variable for the existence of local government (v2ellocgov), a recoded version of Local government elected(v2ellocelc), and a CDF of local offices relative power (v2ellocpwr). Local governments are recoded as unelected 0 if they did not exist or if data is missing. They are coded 0.5 if an executive is elected but no assembly, and 1 if an assembly is elected, with or without an executive. The regional government index is calculated the same way but using the existence of regional government (v2elreggov), regional government elected (v2elsrgel), and regional offices relative power (v2elrgpwr).",
+    "clarification": "The lowest score would be reserved for a country that has no elected local or regional governments, or where all or nearly all elected offices are subordinate to non-elected offices at any local or regional level that exists. A high score would be accorded to a country in which both local and regional governments are elected and able to operate without restrictions from unelected actors at the local or regional level with the exception of judicial bodies. A medium score can be achieved in various ways: there are strong elected governments at the local level but not the regional level, or vice versa; or both local and regional governments elect an executive but not an assembly; or elected and non-elected offices are approximately equal in power at the local and regional levels; or various combinations of these scenarios.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "6-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Michael Coppedge", "Svend-Erik Skaaning"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2ellocgov", "v2elreggov", "v2ellocelc", "v2elsrgel", "v2ellocpwr", "v2elrgpwr"],
+    "name": "v2x_feduni"
+  }
+]

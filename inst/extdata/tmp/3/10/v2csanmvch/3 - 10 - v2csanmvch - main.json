@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Works through legal channels, for the most part. (0=No, 1=Yes) [v2csanmvch_0]", "      1: Participates in elections. (0=No, 1=Yes) [v2csanmvch_1]", "      2: Works through a mix of legal and extra-legal channels. (0=No, 1=Yes) [v2csanmvch_2]", "", "      3: Insurrectionary. (0=No, 1=Yes) [v2csanmvch_3]", "      4: Democratic. Perceived by most disinterested observers as willing to play by the rules of", "      the democratic game, willing to respect constitutional provisions or electoral outcomes, and", "      willing to relinquish power (under democratic auspices). (0=No, 1=Yes) [v2csanmvch_4]", "      5: Anti-democratic. Perceived by most disinterested observers as unwilling to play by the", "      rules of the democratic game, not willing to respect constitutional provisions or electoral outcomes, and/or not willing to relinquish power (under democratic auspices). (0=No, 1=Yes)[v2csanmvch_5]", "      6: Leftist, socialist, communist. (0=No, 1=Yes) [v2csanmvch_6]", "      7: Rightist, conservative, party of order. (0=No, 1=Yes) [v2csanmvch_7]", "      8: Ethnolinguistic, tribe, kinship, clan. (0=No, 1=Yes) [v2csanmvch_8]", "      9: Separatist or autonomist. (0=No, 1=Yes) [v2csanmvch_9]", "      10: Religious. (0=No, 1=Yes) [v2csanmvch_10]", "      11: Paramilitary. (0=No, 1=Yes) [v2csanmvch_11]", "      12: Heavily engaged in criminal activity, e.g., narcotics, bootlegging, illegal exploitation of", "      natural resources, extortion, kidnapping. (0=No, 1=Yes) [v2csanmvch_12]"],
+    "answer_type": "Multiple Selection",
+    "citation": "Bernhard et al. V-Dem Working Paper Series 2015:13); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How would you characterize the anti-system movement(s) identified in the previous question?",
+    "name": "v2csanmvch"
+  }
+]

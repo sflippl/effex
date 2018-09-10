@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      Text."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (C) to (A(C)) from version 7. Where possible, data was pre-coded, and CEs were asked to add their answers to the remaining gaps.",
+    "question": "Please enter the name of the high court.",
+    "name": "v2juhcname"
+  }
+]

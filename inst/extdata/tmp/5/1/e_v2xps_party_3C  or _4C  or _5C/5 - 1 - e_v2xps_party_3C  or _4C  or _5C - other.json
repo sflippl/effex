@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "Same transformation rule as for \"v2x_libdem_3C/_4C/_5C\".",
+    "clarification": "These are ordinalized versions of the V-Dem party institutionalization index. The original index ranges from 0 to 1. These transformations offer three different ordinal versions with three (_3C), four (_4C), and five (_5C) levels respectively.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "Ordinal",
+    "sources": ["v2psorgs", "v2psprbrch", "v2psprlnks", "v2psplats", "v2pscohesv"],
+    "name": "e_v2xps_party_3C /_4C /_5C"
+  }
+]

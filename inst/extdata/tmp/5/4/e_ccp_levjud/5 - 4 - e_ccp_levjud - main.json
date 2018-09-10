@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Supreme or top court only [e_LEVJUD -1]", "      2: Supreme court and other courts to be determined by law [e_LEVJUD -2]", "      3: Supreme court and specific other courts, such as provincial or city courts [e_LEVJUD -3]", "      4: Other courts mentioned, but no supreme court [e_LEVJUD -4]", "      96: Other, please specify in the comments section [e_LEVJUD -96]", "      97: Unable to Determine [e_LEVJUD -97]", "      98: Not Specified [e_LEVJUD -98]"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "Does the court system provide for any of the following?",
+    "name": "e_ccp_levjud"
+  }
+]

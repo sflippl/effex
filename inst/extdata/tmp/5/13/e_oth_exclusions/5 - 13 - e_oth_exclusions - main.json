@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: None other (all restrictions are accounted for under FRANCHISE).", "      1: By ethnicity (some ethnic groups are excluded).", "      2: By territory (people living in some regions cannot vote).", "      3: By religion (only adherents of a particular religion(s) can vote).", "      4: By politics (Individuals sympathizing with some political parties or ideologies are excluded.", "      This code refers only to persons, hence it does not cover cases when political parties are", "      banned.). Includes the language in which suffrage is determined by \"moral character.\"", "      5: Slaves are excluded.", "      6: Military personnel or police is excluded.", "      7: Priests or nuns are excluded.", "      8: Propertied are excluded (as in Mongolia, USSR 1918)."],
+    "answer_type": "Multiple Choice",
+    "citation": "Przeworski et al. (2013).",
+    "notes": "When more than one exclusion applies, all are listed as consecutive digits. For example, if 5, 6, and 7 applies, we code exclusions as 567.",
+    "question": "",
+    "name": "e_oth_exclusions"
+  }
+]

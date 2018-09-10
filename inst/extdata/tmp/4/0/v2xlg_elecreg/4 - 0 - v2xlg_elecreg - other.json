@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "v2xlg_elecreg is coded 1 from when an election for seats to the legislature is held until there is an interruption in these elections. An electoral interruption is an event that dissolves, replaces, or otherwise terminates an elected body in the case the elected parliament but unlike the more general v2x_elecreg variable not an event that implies that the elected body, while still intact, will not be subject to election in the future. After an interruption, a coding of 0 continues until another election to the legislature occurs.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Staffan I. Lindberg", "Jan Teorell"],
+    "scale": "Dichotomous",
+    "sources": ["v2xel_elecparl", "v2xlg_leginter", "v2x_legabort"],
+    "name": "v2xlg_elecreg"
+  }
+]

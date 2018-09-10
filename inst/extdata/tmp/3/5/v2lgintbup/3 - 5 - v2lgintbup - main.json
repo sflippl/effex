@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No, there are policy areas in which the upper chamber cannot introduce bills.", "      1: Yes."],
+    "answer_type": "Multiple Choice",
+    "citation": "V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "Converted from (B) to (A) coding. V-Dem Country Coordinators answers were used for country-years where data was missing in CCP (Elkins et al. 2012).",
+    "question": "By law, does the upper chamber of the legislature have the ability to introduce bills in all policy jurisdictions?",
+    "name": "v2lgintbup"
+  }
+]

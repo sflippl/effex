@@ -14,13 +14,14 @@ LazyData: true
 Depends: R(>= 3.3.3)
 Suggests: testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    sf
 Imports:
-    assertthat, 
-    dplyr, 
-    magrittr, 
-    rlang, 
-    stringr, 
+    assertthat,
+    dplyr,
+    magrittr,
+    rlang,
+    stringr,
     tidyr,
     tidyselect,
     glue,
@@ -29,7 +30,13 @@ Imports:
     purrr,
     shiny,
     ggmosaic,
-    ggridges
+    ggridges,
+    jsonlite,
+    knitr,
+    kableExtra,
+    scales,
+    moments,
+    geoR
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.0
 VignetteBuilder: knitr

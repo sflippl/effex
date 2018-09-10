@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Unified coalition control. A single multi-party coalition controls the executive and legislative branches of the national government. (This is true almost by definition in a parliamentary", "      system where a single coalition gathers together a majority of seats.).", "      1: Divided party control. (A) Different parties or individuals (unconnected to parties) control the executive and the legislature or (B) Executive power is divided between a president/monarch and a prime minister, each of which belongs to different parties; or between", "      a non-partisan monarch and a prime minister.", "      2: Unified party control. A single party controls the executive and legislative branches of the", "      national government. (This is true almost by definition in a parliamentary system where a", "      single party has a majority of seats.)."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How unified is party control of the national government?",
+    "name": "v2psnatpar"
+  }
+]

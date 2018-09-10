@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Indirect elections include elections by local/regional parliaments, country/city councilors or similar. Exceptions to the norm of indirect election include members who are appointed, e.g., by an executive, the military, or a theocratic body. We are not concerned with non-voting members or with members of the legislature who do not possess the powers of most legislators.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Interval",
+    "sources": ["Nohlen", "et", "al.", "(1999,", "2002,", "2005,", "2010);", "Chronicle", "of", "Parliamentary", "Elections", "(IPU);", "Websites", "of", "national", "parliaments."],
+    "name": "v2lginello"
+  }
+]

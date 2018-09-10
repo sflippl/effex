@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Text", "      99: Not Applicable"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "Who are the electors for the Head of State?",
+    "name": "e_ccp_hoselctr"
+  }
+]

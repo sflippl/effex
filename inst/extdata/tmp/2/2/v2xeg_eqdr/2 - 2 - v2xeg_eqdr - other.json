@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for particularistic or public goods v2dlencmps, means tested vs. universalistic welfare policies v2dlunivl, educational equality v2peedueq and health equality v2pehealth.",
+    "clarification": "This component measures the extent to which resources — both tangible and intangible — are distributed in society. An equal distribution of resources supports egalitarian democracy in two ways. First, lower poverty rates and the distribution of goods and services such as food, water, housing, education and healthcare ensure that all individuals are capable of participating in politics and government. In short, basic needs must be met in order for individuals to effectively exercise their rights and freedoms see, for example, Sen 1999, Maslow 1943. Second, high levels of resource inequality undermine the ability of poorer populations to participate meaningfully Aristotle, Dahl 2006. Thus, it is necessary to include not only measures of poverty and the distribution of goods and services, but also the levels of inequality in these distributions, and the proportion of the population who are not eligible for social services i.e. means-tests, particularistic distribution, etc.. This principle also implies that social or economic inequalities can translate into political inequalities, an issue addressed most notably by Walzer 1983, who argues that overlapping \"spheres\" of inequality are particularly harmful to society. To address these overlapping \"spheres\", this component also includes measures of the distribution of power in society amongst different socio-economic groups, genders, etc.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5, 7 modified: v2pepwrses, v2pepwrsoc and v2pepwrgen now form a separate subcomponent index, 8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Rachel Sigman", "Staffan Lindberg"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2dlencmps", "v2dlunivl", "v2peedueq", "v2pehealth"],
+    "name": "v2xeg_eqdr"
+  }
+]

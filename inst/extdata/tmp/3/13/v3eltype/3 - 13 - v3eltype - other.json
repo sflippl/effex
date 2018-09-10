@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The date and type of each election has been pre-coded. Any pre-coded years contain an orange triangle. This means that the score or specific date have already been entered, so we are asking you only to add your confidence in the pre-coded rating; we do not want you to change the rating, as we need all the Country Experts to answer the subsequent questions for the same elections. If the election unfolds across more than one day, the date for the first day is entered. If the precise date was unavailable, the first of the month is entered. If the month is unknown, January 1 is entered. Multiple-round elections (e.g., two-round elections) are counted separately, i.e., as separate elections. More than one election in a single year is accommodated by listing each election with a separate calendar date. When elections to more than one office occur on the same day these are listed separately (though naturally with the same date).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Carl Henrik Knutsen"],
+    "scale": "",
+    "sources": ["Nohlen", "and", "colleagues", "(1999,", "2002,", "2005,", "2010);", "Caramani", "(2000);", "Lindvall-Larson(2000);", "websites", "of", "national", "parliaments;", "Wikipedia;", "Election", "Politique", "Citoyen", "(http://www.electionpolitique.com);", "CLEA", "(http://www.electiondataarchive.org/countries.html);", "various", "countryspecific", "sources."],
+    "name": "v3eltype"
+  }
+]

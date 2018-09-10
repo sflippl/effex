@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "Counts the number of times the lower house of the legislature was dissolved in a particular year.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Przeworski", "et", "al.", "(2013)."],
+    "name": "e_dissolution"
+  }
+]

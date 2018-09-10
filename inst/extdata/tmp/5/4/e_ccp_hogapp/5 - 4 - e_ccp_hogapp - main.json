@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Head of State. (0=No, 1=Yes) [e_HOGAPP_1]", "      2: First (or only) chamber of the Legislature. (0=No, 1=Yes) [e_HOGAPP_2]", "      3: Second Chamber of the Legislature. (0=No, 1=Yes) [e_HOGAPP_3]", "      4: Both Chambers of the Legislature are required. (0=No, 1=Yes) [e_HOGAPP_4]", "      5: Parliamentary Majority. (0=No, 1=Yes) [e_HOGAPP_5]", "      6: No formal approval process specified, but appointer is directed to act on the advice of", "      party/legislative majority. (0=No, 1=Yes) [e_HOGAPP_6]", "      7: No formal approval process specified, but appointer is directed to act on the basis of election", "      results. (0=No, 1=Yes) [e_HOGAPP_7]", "      90: Left explicitly to non-constitutional law. (0=No, 1=Yes) [e_HOGAPP_90]", "      96: Other, please specify in the comments section. (0=No, 1=Yes) [e_HOGAPP_96]", "      97: Unable to Determine. (0=No, 1=Yes) [e_HOGAPP_97]", "      98: Not Specified. (0=No, 1=Yes) [e_HOGAPP_98]"],
+    "answer_type": "Multiple Choice",
+    "citation": "CCP (Elkins et al. 2014).",
+    "notes": "",
+    "question": "Who approves the nomination of the Head of Government?",
+    "name": "e_ccp_hogapp"
+  }
+]

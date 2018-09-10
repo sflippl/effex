@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: No. There was no registry, or the registry was not used.", "      1: No. There was a registry but it was fundamentally flawed (meaning 20% or more of eligible", "      voters could have been disenfranchised or the outcome could have been affected significantly", "      by double-voting and impersonation).", "      2: Uncertain. There was a registry but it is unclear whether potential flaws in the registry had", "      much impact on electoral outcomes.", "      3: Yes, somewhat. The registry was imperfect but less than 10% of eligible voters may have", "      been disenfranchised, and double-voting and impersonation could not have affected the results", "      significantly.", "      4: Yes. The voter registry was reasonably accurate (less than 1% of voters were affected by", "      any flaws) and it was applied in a reasonable fashion."],
+    "answer_type": "Multiple Choice",
+    "citation": "Pemstein et al. (2018, V-Dem Working Paper Series 2018:21); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "In this national election, was there a reasonably accurate voter registry in place and was it used?",
+    "name": "v2elrgstry, *_osp, *_ord"
+  }
+]

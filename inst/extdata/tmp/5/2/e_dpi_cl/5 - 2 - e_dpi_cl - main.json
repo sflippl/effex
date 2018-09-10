@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Yes", "      0: No."],
+    "answer_type": "Multiple Choice",
+    "citation": "Cruz et al. (2018).",
+    "notes": "When PR is \"1\", closed list gets a \"1\" if voters cannot express preferences for candidates within a party list, 0 if voters can. If PR is \"NA\" or 0, and Mean District Magnitude =1, Closed list is NA. If PR is \"NA\" or 0 and Mean District Magnitude is greater than one, the following rules apply: 1) If only one party takes seats, closed list is: \"0\" (open list), if the number of candidates is greater than the number of seats in an electoral district in a one-party state where other parties may or may not be illegal (LIEC is 4 or 5), \"1\" (closed list), if the number of candidates equals the number of seats in an electoral district in a one party state where other parties are illegal (LIEC is 3), blank, if it is unclear whether there is more than one candidate for every seat in an electoral district in a one-party state where other parties are  illegal (LIEC is 3.5). 2) If thereare multiple parties taking seats, closed list is blank unless the system is explicitly stated as open or closed.",
+    "question": "Are closed lists used?",
+    "name": "e_dpi_cl"
+  }
+]

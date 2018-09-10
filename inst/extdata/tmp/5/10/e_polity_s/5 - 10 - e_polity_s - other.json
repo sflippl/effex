@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The Polity index is normalized to run from 0 to 100 by adding 10 and multiplying by five. This transformation makes regression coefficients easier to interpret.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "5-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": [],
+    "scale": "",
+    "sources": ["Haber", "and", "Menaldo", "(2011)."],
+    "name": "e_polity_s"
+  }
+]

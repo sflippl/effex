@@ -1,0 +1,10 @@
+[
+  {
+    "responses": null,
+    "answer_type": "Multiple Choice",
+    "citation": "McMann et al. (2016, V-Dem Working Paper Series 2016:23); V-Dem Codebook (see suggested citation at the top of this document).",
+    "notes": "",
+    "question": "How pervasive is political corruption?",
+    "name": "v2x_corr"
+  }
+]

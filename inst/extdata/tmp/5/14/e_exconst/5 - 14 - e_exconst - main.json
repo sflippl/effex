@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      1: Unlimited Authority: There are no regular limitations on the executive’s actions (as distinct", "      from irregular limitations such as the threat or actuality of coups and assassinations).", "      2: Intermediate Category", "      3: Slight to Moderate Limitation on Executive Authority: There are some real but limited", "      restraints on the executive.", "      4: Intermediate Category", "      5: Substantial Limitations on Executive Authority: The executive has more effective authority", "      than any accountability group but is subject to substantial constraints by them.", "      6: Intermediate Category", "      7: Executive Parity or Subordination: Accountability groups have effective authority equal to", "      or greater than the executive in most areas of activity."],
+    "answer_type": "Multiple Choice",
+    "citation": "Polity IV (Marshall and Jaggers 2016).",
+    "notes": "",
+    "question": "Is there institutional restraint on the executive?",
+    "name": "e_exconst"
+  }
+]

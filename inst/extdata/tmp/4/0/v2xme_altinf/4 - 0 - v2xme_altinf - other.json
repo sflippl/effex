@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for media bias (v2mebias), print/broadcast media critical (v2mecrit), and print/broadcast media perspectives (v2merange).",
+    "clarification": "",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Interval, from low to high (0-1)",
+    "sources": ["v2mebias", "v2mecrit", "v2merange"],
+    "name": "v2xme_altinf"
+  }
+]

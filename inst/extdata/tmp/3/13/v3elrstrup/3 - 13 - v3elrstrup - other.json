@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "This question applies to citizens only and to legal (de jure) restrictions, not restrictions that may be operative in practice (de facto). Leave blank if there is no upper chamber. Specify in comments section if some of the criteria are jointly necessary (e.g., BOTH property AND literacy) or if some of them are mutually substitutable (e.g., EITHER property OR literacy).",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "",
+    "data_release": "8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Svend-Erik Skaaning"],
+    "scale": "Nomina",
+    "sources": ["Caramani", "(2000);", "Flora", "et", "al.", "(1983);", "Nohlen", "and", "colleagues", "(1999,", "2002,", "2005,", "2010);", "Mackie", "and", "Rose", "(1991);", "Posada-Carbó", "(1996);", "Rokkan", "and", "Meyriat", "(1969);", "Sternberger", "and", "Vogel", "(1969);", "CCP", "(Elkins", "et", "al.", "2012);", "and", "various", "country", "specific", "sources,", "including", "constitutions."],
+    "name": "v3elrstrup"
+  }
+]

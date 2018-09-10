@@ -1,0 +1,15 @@
+[
+  {
+    "aggregation": "",
+    "clarification": "The question refers to whether the head of government is considered to hold this power in practice, regardless of whether this is regulated by law and whether this power has been exercised or not. By \"dissolving the legislature\" we refer to the ability of the head of government to call a new election for the legislature.",
+    "cpp_tag": "",
+    "cross_coder_aggregation": "Bayesian Item Response Theory Measurement Model",
+    "data_release": "1-8.",
+    "historical_clarification": "",
+    "ordering": "",
+    "project_manager": ["Jan Teorell"],
+    "scale": "Ordinal, converted to interval by the measurement model",
+    "sources": [""],
+    "name": "v2exdjdshg, *_osp, *_ord"
+  }
+]

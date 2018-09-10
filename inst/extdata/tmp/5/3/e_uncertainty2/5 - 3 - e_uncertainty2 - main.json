@@ -1,0 +1,10 @@
+[
+  {
+    "responses": ["", "      0: Not certain, because lacking sources", "      1: Uncertain because of real world factors"],
+    "answer_type": "Multiple Choice",
+    "citation": "Bilinski (2015).",
+    "notes": "",
+    "question": "How certain are the previous answers?",
+    "name": "e_uncertainty2"
+  }
+]
