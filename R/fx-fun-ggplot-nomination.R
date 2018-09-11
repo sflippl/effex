@@ -130,6 +130,16 @@ add_to_nom.Scale <- function(nomination_el, nomination) {
   nomination
 }
 
+#' @rdname nomination
+
+add_to_nom.list <- function(nomination_el, nomination) {
+  purrr::reduce_right(
+    nomination_el,
+    function(nomination, nomination_el) add_to_nom(nomination_el, nomination),
+    .init = nomination
+  )
+}
+
 #' @describeIn nom_access all coordinate systems (class "Coord")
 #'
 #' @export

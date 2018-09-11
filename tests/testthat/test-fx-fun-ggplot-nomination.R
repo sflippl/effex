@@ -24,3 +24,11 @@ test_that("Nominations", {
   expect_error(nom_coords(nom) <- list(LETTERS))
   expect_error(nom_others(nom) <- list(LETTERS))
 })
+
+test_that("Lists can be added to a nomination", {
+  expect_equal(nomination(list()), nomination())
+  p <- ggplot2::geom_point()
+  l <- ggplot2::geom_line()
+  expect_equal(nomination(list(p, l)), nomination(p, l))
+  expect_equal(nomination(p, list(l)), nomination(p, l))
+})

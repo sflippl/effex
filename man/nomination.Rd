@@ -5,6 +5,7 @@
 \alias{add_to_nom.Layer}
 \alias{add_to_nom.Facet}
 \alias{add_to_nom.Scale}
+\alias{add_to_nom.list}
 \alias{add_to_nom.Coord}
 \alias{add_to_nom.ggproto}
 \alias{is_nomination}
@@ -19,6 +20,8 @@ nomination(...)
 \method{add_to_nom}{Facet}(nomination_el, nomination)
 
 \method{add_to_nom}{Scale}(nomination_el, nomination)
+
+\method{add_to_nom}{list}(nomination_el, nomination)
 
 \method{add_to_nom}{Coord}(nomination_el, nomination)
 

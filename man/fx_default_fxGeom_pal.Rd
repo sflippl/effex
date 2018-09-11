@@ -39,9 +39,6 @@ fxe_default_fxGeom_pal(fx_geom, aes_name, ...)
 
 \S4method{fxe_default_fxGeom_pal}{fxGeomDiscrete,shapeAesName}(fx_geom,
   aes_name, ...)
-
-\S4method{fxe_default_fxGeom_pal}{fxGeomDiscrete,shapeAesName}(fx_geom,
-  aes_name, ...)
 }
 \description{
 The default palette depends on the aesthetic that is used and mostly
