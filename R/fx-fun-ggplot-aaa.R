@@ -18,19 +18,29 @@
 #'
 #' @param data A dataframe with [metaframe()] as an attribute
 #' @param mapping An aesthetic mapping
+#' @param facet_vars Possibly variables, given via [[ggplot2::vars()]], to
+#' facet after
+#' @param discard Should unnecessary columns in the data frame be removed before
+#'
 #' @param ... Parameters to give on to [fx_default()]
 #'
 #' @export
 
-fx_ggplot <- function(data, mapping, ...) {
-  data <- fx_default(data, columns = fx_ggplot_columns, ...) %>%
+fx_ggplot <- function(data, mapping, facet_vars = vars(), discard = TRUE, ...) {
+  data <-
+    data %>%
+    fx_default("fxGeom_class") %>%
+    fx_default(columns = fx_ggplot_columns, ...) %>%
     fx_evaluate()
   layers <- c(
     # At first, we add the geometric information along one dimension
     purrr::map(names(mapping), ~ fxi_layer_single(data, mapping, .)) %>%
       unlist(recursive = FALSE),
     # Then, we add the geometric information that is dependent on all dimensions
-    fxi_layer_complete(data, mapping)
+    fxi_layer_complete(data, mapping),
+    if(length(facet_vars) != 0)
+      facet_wrap(facet_vars, labeller = fxi_labeller(data, facet_vars))
+    else NULL
   )
   ggplot(data, mapping) + layers
 }
@@ -279,4 +289,55 @@ setMethod("fxe_layer_complete_vote",
               msg = "fxGeom_vote must by type NULL or function."
             )
             0
+          })
+
+#' Effex Internals: `fx_ggplot` facetting: labellers
+
+fxi_labeller <- function(data, facet_vars) {
+  vars <- get_inds(facet_vars)
+  lst <-
+    vars %>%
+    purrr::map(
+      function(var) {
+        mf <-
+          metaframe(data) %>%
+          filter(name == var)
+        cls <- mf$fxGeom_class
+        fx_geom <- fxGeom(cls)
+        mf_args <-
+          mf %>%
+          dplyr::select(-fxGeom_class) %>%
+          lst_mf_args()
+        do.call(fxe_labeller,
+                rlang::list2(fxGeom_class = fx_geom, !!!mf_args))
+      }
+    ) %>%
+    set_names(vars) %>%
+    rlang::splice() %>%
+    ggplot2::labeller()
+}
+
+#' Effex Extendibles: `fx_ggplot` facetting: labellers
+#'
+#' @return a valid argument to [ggplot2::labeller()]. Supplies [fx_ggplot2()]
+#' with the labels for the facetting variable
+#'
+#' @export
+
+setGeneric("fxe_labeller",
+           function(fxGeom_class, name, ...) standardGeneric("fxe_labeller"))
+
+#' @rdname fxe_labeller
+#'
+#' @export
+
+setMethod("fxe_labeller",
+          signature = c(fxGeom_class = "fxGeomDiscrete"),
+          function(fxGeom_class, name, fxGeom_limits,
+                   fxGeom_breaks = NULL, ...) {
+            if(!is.null(fxGeom_breaks)) {
+              names(fxGeom_limits) <- fxGeom_breaks
+              return(fxGeom_limits)
+            }
+            ggplot2::label_value
           })

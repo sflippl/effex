@@ -24,6 +24,8 @@
 \alias{.strokeAesName}
 \alias{geomAesName-class}
 \alias{.geomAesName}
+\alias{facetAesName-class}
+\alias{.facetAesName}
 \alias{AesName}
 \title{AesName}
 \usage{
@@ -76,6 +78,11 @@ used, the available subclasses are:
 
 \itemize{
 \item geom
+}
+
+\itemize{
+\item facet (this is, of course not an actual aesthetics but it has
+tasks that are similar enough)
 }
 }
 \details{

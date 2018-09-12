@@ -4,12 +4,17 @@
 \alias{fx_ggplot}
 \title{Effex Function: Visualization}
 \usage{
-fx_ggplot(data, mapping, ...)
+fx_ggplot(data, mapping, facet_vars = vars(), discard = TRUE, ...)
 }
 \arguments{
 \item{data}{A dataframe with \code{\link[=metaframe]{metaframe()}} as an attribute}
 
 \item{mapping}{An aesthetic mapping}
+
+\item{facet_vars}{Possibly variables, given via [\code{\link[ggplot2:vars]{ggplot2::vars()}}], to
+facet after}
+
+\item{discard}{Should unnecessary columns in the data frame be removed before}
 
 \item{...}{Parameters to give on to \code{\link[=fx_default]{fx_default()}}}
 }

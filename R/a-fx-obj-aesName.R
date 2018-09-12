@@ -95,6 +95,15 @@
 
 .geomAesName <- setClass("geomAesName", contains = "AesName")
 
+#' @rdname AesName-class
+#'
+#' @description * facet (this is, of course not an actual aesthetics but it has
+#' tasks that are similar enough)
+#'
+#' @export
+
+.facetAesName <- setClass("facetAesName", contains = "AesName")
+
 #' @param aes The aes. If a subclass "<aes>AesName" exists, this will be
 #' instantiated.
 #'
