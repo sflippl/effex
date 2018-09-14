@@ -144,7 +144,7 @@ fx_default_fxGeom_trans <- function(
     seq_len(nrow(mf)),
     function(i) {
       nam <- mf$name[i]
-      if(!is.numeric(data[[nam]]) | any(data[[nam]] <= 0, na.rm = TRUE))
+      if(!is.numeric(data[[nam]]) || any(data[[nam]] <= 0, na.rm = TRUE))
         fxGeom_trans <- "identity"
       else {
         ident <- data[[nam]]

@@ -36,5 +36,9 @@ Columns that are used:
 value whether to veto this nomination
 \item \code{fxGeom_vote}: A function that returns the amount of votes for a certain
 nomination
+\item \code{fxGeom_name}
+\item \code{fxGeom_title}: for the axis title
+\item layer parameters: see \code{\link[=fxe_layer_scale]{fxe_layer_scale()}}
+\item parameters for many values: see \code{\link[=fxe_layer_complete_nominate]{fxe_layer_complete_nominate()}}
 }
 }

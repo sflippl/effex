@@ -15,6 +15,10 @@
 #' value whether to veto this nomination
 #' * `fxGeom_vote`: A function that returns the amount of votes for a certain
 #' nomination
+#' * `fxGeom_name`
+#' * `fxGeom_title`: for the axis title
+#' * layer parameters: see [fxe_layer_scale()]
+#' * parameters for many values: see [fxe_layer_complete_nominate()]
 #'
 #' @param data A dataframe with [metaframe()] as an attribute
 #' @param mapping An aesthetic mapping

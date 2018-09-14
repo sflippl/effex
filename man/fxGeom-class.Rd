@@ -6,10 +6,18 @@
 \alias{.fxGeom}
 \alias{fxGeomContinuous-class}
 \alias{.fxGeomContinuous}
+\alias{fxGeomTime-class}
+\alias{.fxGeomTime}
 \alias{fxGeomDiscrete-class}
 \alias{.fxGeomDiscrete}
+\alias{fxGeomOrdinal-class}
+\alias{.fxGeomOrdinal}
 \alias{fxGeomSpatial-class}
 \alias{.fxGeomSpatial}
+\alias{fxGeomContinuousCI-class}
+\alias{.fxGeomContinuousCI}
+\alias{fxGeomOrdinalCI-class}
+\alias{.fxGeomOrdinalCI}
 \alias{fxGeom}
 \title{Effex Objects: fxGeom}
 \usage{
@@ -28,12 +36,28 @@ will throw an error. The available subclasses are:
 \item fxGeomContinuous
 }
 
+\preformatted{+ fxGeomTime
+}
+
+\itemize{
+\item fxGeomCI
+}
+
 \itemize{
 \item fxGeomDiscrete
 }
 
+\preformatted{+ fxGeomOrdinal
+}
+
 \itemize{
 \item fxGeomSpatial
+}
+
+\preformatted{+ fxGeomContinuousCI (also inherits from fxGeomContinuous)
+}
+
+\preformatted{+ fxGeomOrdinalCI (also inherits from fxGeomOrdinal)
 }
 }
 \examples{
