@@ -24,3 +24,14 @@ test_that("Getting and setting metaframes works", {
   expect_identical(metaframe(df), mf)
   expect_error(metaframe(1))
 })
+
+test_that("mutate_mf works", {
+  df <- data.frame(column_name = 1:10)
+  ex <-
+    df %>%
+    mutate_mf(tst = "a")
+  expect_equal(metaframe(ex),
+               data.frame(name = "column_name", tst = "a",
+                          stringsAsFactors = FALSE) %>%
+                 as_metaframe())
+})

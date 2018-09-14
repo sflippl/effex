@@ -5,7 +5,8 @@
 \title{Effex Functions: Default of \code{fxGeom_trans}}
 \usage{
 fx_default_fxGeom_trans(data, mf = metaframe(fx_default(data)),
-  fxGeom_trans_simple = TRUE, fxGeom_trans_p.threshold = 0.01)
+  fxGeom_trans_simple = TRUE, fxGeom_trans_p.threshold = 0.01,
+  custom_fun = default_identity)
 }
 \arguments{
 \item{fxGeom_trans_simple}{\code{logical} should all boxcox and modulus

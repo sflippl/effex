@@ -4,7 +4,8 @@
 \alias{fx_default_fxGeom_class}
 \title{Effex Functions: Default of the column \code{fxGeom_class}}
 \usage{
-fx_default_fxGeom_class(data, mf = metaframe(fx_default(data)))
+fx_default_fxGeom_class(data, mf = metaframe(fx_default(data)),
+  custom_fun = default_identity)
 }
 \arguments{
 \item{data}{a data frame}

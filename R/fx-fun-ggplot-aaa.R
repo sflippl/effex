@@ -29,7 +29,6 @@
 fx_ggplot <- function(data, mapping, facet_vars = vars(), discard = TRUE, ...) {
   data <-
     data %>%
-    fx_default("fxGeom_class") %>%
     fx_default(columns = fx_ggplot_columns, ...) %>%
     fx_evaluate()
   layers <- c(
@@ -301,7 +300,7 @@ fxi_labeller <- function(data, facet_vars) {
       function(var) {
         mf <-
           metaframe(data) %>%
-          filter(name == var)
+          dplyr::filter(name == var)
         cls <- mf$fxGeom_class
         fx_geom <- fxGeom(cls)
         mf_args <-
@@ -312,9 +311,9 @@ fxi_labeller <- function(data, facet_vars) {
                 rlang::list2(fxGeom_class = fx_geom, !!!mf_args))
       }
     ) %>%
-    set_names(vars) %>%
-    rlang::splice() %>%
-    ggplot2::labeller()
+    magrittr::set_names(vars) %>%
+    rlang::dots_splice()
+  do.call("labeller", lst, envir = asNamespace("ggplot2"))
 }
 
 #' Effex Extendibles: `fx_ggplot` facetting: labellers
@@ -336,8 +335,8 @@ setMethod("fxe_labeller",
           function(fxGeom_class, name, fxGeom_limits,
                    fxGeom_breaks = NULL, ...) {
             if(!is.null(fxGeom_breaks)) {
-              names(fxGeom_limits) <- fxGeom_breaks
-              return(fxGeom_limits)
+              names(fxGeom_breaks) <- fxGeom_limits
+              return(fxGeom_breaks)
             }
             ggplot2::label_value
           })

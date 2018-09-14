@@ -8,28 +8,39 @@ test_that("Vetos and votes have the correct classes", {
     noms,
     function(nom)
       expect_true(is.logical(
-        fxe_layer_complete_veto(nom, fxGeom("Continuous"), AesName("x"))
+        fxe_layer_complete_veto(nom, fxGeom("Continuous"), AesName("x"),
+                                data.frame())
       ))
   )
   purrr::walk(
     noms,
     function(nom)
       expect_true(is.logical(
-        fxe_layer_complete_veto(nom, fxGeom("Continuous"), AesName("y"))
+        fxe_layer_complete_veto(nom, fxGeom("Continuous"), AesName("y"),
+                                data.frame())
       ))
   )
   purrr::walk(
     noms,
     function(nom)
       expect_true(is.numeric(
-        fxe_layer_complete_vote(nom, fxGeom("Continuous"), AesName("x"))
+        fxe_layer_complete_vote(nom, fxGeom("Continuous"), AesName("x"),
+                                data.frame())
       ))
   )
   purrr::walk(
     noms,
     function(nom)
       expect_true(is.numeric(
-        fxe_layer_complete_vote(nom, fxGeom("Continuous"), AesName("y"))
+        fxe_layer_complete_vote(nom, fxGeom("Continuous"), AesName("y"),
+                                data.frame())
       ))
   )
+})
+
+test_that("get_alpha works", {
+  expect_equal(get_alpha(NULL, NULL, NULL, 3000), 0.525)
+  expect_equal(get_alpha(NULL, NULL, NULL, 1000), 1)
+  expect_equal(get_alpha(NULL, NULL, NULL, 1), 1)
+  expect_equal(get_alpha(NULL, NULL, NULL, 5000), 0.05 + 0.95 * 0.25)
 })

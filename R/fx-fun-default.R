@@ -29,7 +29,9 @@ fx_default <- function(data, columns = character(0), ...,
                      overwrite = FALSE, mustWork = TRUE) {
   if(!has_metaframe(data)) metaframe(data) <- new_metaframe(name = names(data))
   else metaframe(data) <-
-      dplyr::filter(metaframe(data), name %in% names(data)) %>% as_metaframe()
+      metaframe(data) %>%
+      dplyr::filter(name %in% names(data)) %>%
+      as_metaframe()
   mf <- metaframe(data)
   assertthat::assert_that(is.character(columns))
   for(col in columns) {

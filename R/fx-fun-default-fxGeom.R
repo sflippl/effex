@@ -15,15 +15,22 @@
 #'
 #' @export
 
-fx_default_fxGeom_class <- function(data, mf = metaframe(fx_default(data))) {
+fx_default_fxGeom_class <- function(data,
+                                    mf = metaframe(fx_default(data)),
+                                    custom_fun = default_identity)
+  {
+  assertthat::assert_that(is.function(custom_fun))
   fxGeom_classes <- purrr::map_chr(
     mf$name,
-    ~ dplyr::case_when(
-      is.numeric(data[[.]]) ~ "Continuous",
-      is.factor(data[[.]]) | is.character(data[[.]]) ~ "Discrete",
-      inherits(data[[.]], "sfc") ~ "Spatial",
-      TRUE ~ ""
-    )
+    function(name) {
+      if(is.numeric(data[[name]])) fxGeom_class <- "Continuous"
+      else if(is.factor(data[[name]]) | is.character(data[[name]]))
+        fxGeom_class <- "Discrete"
+      else if(inherits(data[[name]], "sfc")) fxGeom_class <- "Spatial"
+      else fxGeom_class <- ""
+      fxGeom_class <- custom_fun(fxGeom_class, name)
+      fxGeom_class
+    }
   )
   fxGeom_classes
 }
@@ -47,17 +54,22 @@ fxe_default.fxd_default_fxGeom_class <- function(data, mf, col, ...)
 #'
 #' @export
 
-fx_default_fxGeom_limits <- function(data, mf = metaframe(fx_default(data))) {
+fx_default_fxGeom_limits <- function(data,
+                                     mf = metaframe(fx_default(data)),
+                                     custom_fun = default_identity) {
   fxGeom_limits <- purrr::map(
     mf$name,
-    function(nam) {
-      if(is.numeric(data[[nam]])) return(range(data[[nam]], na.rm = TRUE))
-      else if(is.character(data[[nam]])) {
-        un <- unique(data[[nam]])
-        return(un[!is.na(un)])
+    function(name) {
+      if(is.numeric(data[[name]]))
+        fxGeom_limits <- range(data[[name]], na.rm = TRUE)
+      else if(is.character(data[[name]])) {
+        un <- unique(data[[name]])
+        fxGeom_limits <- un[!is.na(un)]
       }
-      else if(is.factor(data[[nam]])) return(levels(data[[nam]]))
-      NULL
+      else if(is.factor(data[[name]])) fxGeom_limits <- levels(data[[name]])
+      else fxGeom_limits <- NULL
+      fxGeom_limits <- custom_fun(fxGeom_limits, name)
+      fxGeom_limits
     }
   )
   fxGeom_limits
@@ -124,29 +136,28 @@ fxe_default.fxd_default_fxGeom_limits <- function(data, mf, col, ...)
 
 fx_default_fxGeom_trans <- function(
   data, mf = metaframe(fx_default(data)),
-  fxGeom_trans_simple = TRUE, fxGeom_trans_p.threshold = 0.01
+  fxGeom_trans_simple = TRUE, fxGeom_trans_p.threshold = 0.01,
+  custom_fun = default_identity
 ) {
-  ret <- purrr::map_chr(
+  fxGeom_trans <-
+    purrr::map(
     seq_len(nrow(mf)),
     function(i) {
       nam <- mf$name[i]
       if(!is.numeric(data[[nam]]) | any(data[[nam]] <= 0, na.rm = TRUE))
-        return("identity")
-      ident <- data[[nam]]
-      sqrt <- sqrt(ident)
-      log <- log10(ident)
-      winner <- which.min(abs(c(
-        moments::skewness(ident, na.rm = TRUE),
-        moments::skewness(sqrt, na.rm = TRUE),
-        moments::skewness(log, na.rm = TRUE)
-      )))
-      return(c("identity", "sqrt", "log10")[winner])
-    }
-  )
-  if(!fxGeom_trans_simple) {
-    ret <- purrr::map(
-      seq_len(nrow(mf)),
-      function(i) {
+        fxGeom_trans <- "identity"
+      else {
+        ident <- data[[nam]]
+        sqrt <- sqrt(ident)
+        log <- log10(ident)
+        winner <- which.min(abs(c(
+          moments::skewness(ident, na.rm = TRUE),
+          moments::skewness(sqrt, na.rm = TRUE),
+          moments::skewness(log, na.rm = TRUE)
+        )))
+        fxGeom_trans <- c("identity", "sqrt", "log10")[winner]
+      }
+      if(!fxGeom_trans_simple) {
         nam <- mf$name[i]
         if(!is.numeric(data[[nam]])) return("identity")
         x <- data[[nam]] %>% na.omit()
@@ -162,14 +173,16 @@ fx_default_fxGeom_trans <- function(
           geoR::boxcoxfit(data[[nam]], lambda2 = TRUE),
           error = function(e) NULL
         )
-        if(is.null(bc)) return(ret[[i]])
+        if(is.null(bc)) return(fxGeom_trans)
         lambda <- bc$lambda[1]
         offset <- bc$lambda[2]
-        scales::boxcox_trans(p = lambda, offset = offset)
+        fxGeom_trans <- scales::boxcox_trans(p = lambda, offset = offset)
       }
-    )
-  }
-  ret
+      fxGeom_trans <- custom_fun(fxGeom_trans, mf[i, ])
+      fxGeom_trans
+    }
+  )
+  fxGeom_trans
 }
 
 #' @export
@@ -199,9 +212,13 @@ fx_default_fxGeom_pal <-
   function(data, mf = metaframe(fx_default(data)), aes_name) {
   metaframe(data) <- mf
   data <- fx_default(data, columns = "fxGeom_class")
+  mf <- metaframe(data)
   purrr::map(
-    metaframe(data)$fxGeom_class,
-    function(cls) fxe_default_fxGeom_pal(fxGeom(cls), AesName(aes_name))
+    seq_len(nrow(mf)),
+    function(i) {
+      cls <- mf$fxGeom_class[i]
+      fxe_default_fxGeom_pal(fxGeom(cls), AesName(aes_name))
+    }
   )
   }
 
@@ -277,3 +294,5 @@ setMethod("fxe_default_fxGeom_pal",
                         aes_name = "shapeAesName"),
           function(fx_geom, aes_name, ...)
             scales::shape_pal())
+
+default_identity <- function(x, ...) x

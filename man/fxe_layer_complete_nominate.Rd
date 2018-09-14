@@ -25,10 +25,14 @@ fxe_layer_complete_veto(nomination, fx_geom, aes_name, data, ...)
 fxe_layer_complete_vote(nomination, fx_geom, aes_name, data, ...)
 
 \S4method{fxe_layer_complete_nominate}{fxGeomContinuous,xAesName}(fx_geom,
-  aes_name, data, ..., fxGeom_nominations = NULL)
+  aes_name, data, ..., name, fxGeom_nominations = NULL,
+  fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
+  fxGeom_alpha.min = NULL)
 
 \S4method{fxe_layer_complete_nominate}{fxGeomContinuous,yAesName}(fx_geom,
-  aes_name, data, ..., fxGeom_nominations = NULL)
+  aes_name, data, ..., fxGeom_nominations = NULL,
+  fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
+  fxGeom_alpha.min = NULL)
 
 \S4method{fxe_layer_complete_nominate}{fxGeomDiscrete,xAesName}(fx_geom,
   aes_name, data, ..., fxGeom_nominations = NULL)

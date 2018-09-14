@@ -134,6 +134,24 @@ test_that("fxe_layer_complete_nominate works", {
                                              fxGeom_nominations = 1))
 })
 
-test_that("fxe_layer_complete_vote works", {
-
+test_that("fxi_labeller works", {
+  expect_error(
+    ex <-
+      data.frame(column_name = 1:10) %>%
+      fx_default(columns = "fxGeom_class") %>%
+      fxi_labeller(vars(column_name))
+  )
+  ex <-
+    data.frame(column_name = LETTERS[1:10], stringsAsFactors = FALSE) %>%
+    fx_default(columns = fx_ggplot_columns) %>%
+    fxi_labeller(vars(column_name))
+  expect_equal(ex(data.frame(column_name = "C"))$column_name, "C")
+  ex <-
+    data.frame(column_name = LETTERS[1:10]) %>%
+    fx_default(columns = c("fxGeom_class", "fxGeom_limits")) %>%
+    mutate_mf(fxGeom_breaks = list(letters[1:10])) %>%
+    fxi_labeller(vars(column_name))
+  expect_equal(
+    ex(data.frame(column_name = "C"))$column_name,
+    "c")
 })

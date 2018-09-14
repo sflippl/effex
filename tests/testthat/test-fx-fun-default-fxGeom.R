@@ -52,7 +52,7 @@ test_that("fx_default_fxGeom_trans", {
                                   fxGeom_trans_simple = FALSE)
   expect_equal(unlist(tst2), rep("identity", 4))
   tst3 <- fx_default_fxGeom_trans(df)
-  expect_equal(tst3, c("identity", "sqrt", "log10", "identity"))
+  expect_equal(tst3, list("identity", "sqrt", "log10", "identity"))
 })
 
 test_that("fx_default_fxGeom_pal", {
@@ -74,4 +74,14 @@ test_that("fx_default_fxGeom_pal", {
   expect_equal(pal[[1]], scales::rescale_pal())
   pal <- fx_default_fxGeom_pal(data[, 2, drop = FALSE], aes_name = "shape")
   expect_equal(pal[[1]], scales::shape_pal())
+})
+
+test_that("custom_fun works", {
+  data <- dplyr::tibble(col1 = 1:10, col2 = LETTERS[1:10])
+  custom_fun <- function(fxGeom_class, name) {
+    if(name == "col2") return("Character")
+    fxGeom_class
+  }
+  fxGeom_class <- fx_default_fxGeom_class(data, custom_fun = custom_fun)
+  expect_equal(fxGeom_class, c("Continuous", "Character"))
 })

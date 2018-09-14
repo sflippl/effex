@@ -80,3 +80,17 @@ set_metaframe <- function(x, value) {
 has_metaframe <- function(x) {
   !is.null(tryCatch(metaframe(x), error = function(e) NULL))
 }
+
+#' @describeIn metaframe allows you to modify the metaframe by accessing the
+#' data itself. If the metaframe does not exist, it creates one.
+#'
+#' @export
+
+mutate_mf <- function(data, ...) {
+  data <- fx_default(data)
+  metaframe(data) <-
+    metaframe(data) %>%
+    dplyr::mutate(...) %>%
+    as_metaframe()
+  data
+}

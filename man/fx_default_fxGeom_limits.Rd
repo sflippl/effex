@@ -4,7 +4,8 @@
 \alias{fx_default_fxGeom_limits}
 \title{Effex Functions: Default of \code{fxGeom_limits}}
 \usage{
-fx_default_fxGeom_limits(data, mf = metaframe(fx_default(data)))
+fx_default_fxGeom_limits(data, mf = metaframe(fx_default(data)),
+  custom_fun = default_identity)
 }
 \description{
 \code{fxGeom_limits} specifies the limits of the scale of \code{\link[=fx_ggplot]{fx_ggplot()}}.

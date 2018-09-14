@@ -34,12 +34,6 @@ nomination <- function(...) {
 
 add_to_nom <- function(nomination_el, nomination) UseMethod("add_to_nom")
 
-#' @rdname nomination
-
-add_to_nom.Layer <- function(nomination_el, nomination) {
-  nomination[["layer"]] <- c(nomination[["layer"]], list(nomination_el))
-}
-
 #' Access functions to a nomination
 #'
 #' These functions provide access to resp. change the different kinds of layers
@@ -70,6 +64,8 @@ nom_layers <- function(nomination) {
 }
 
 #' @rdname nomination
+#'
+#' @export
 
 add_to_nom.Layer <- function(nomination_el, nomination) {
   nom_layers(nomination) <- c(nom_layers(nomination), list(nomination_el))
@@ -97,6 +93,8 @@ nom_facets <- function(nomination) {
 }
 
 #' @rdname nomination
+#'
+#' @export
 
 add_to_nom.Facet <- function(nomination_el, nomination) {
   nom_facets(nomination) <- c(nom_facets(nomination), list(nomination_el))
@@ -124,6 +122,8 @@ nom_scales <- function(nomination) {
 }
 
 #' @rdname nomination
+#'
+#' @export
 
 add_to_nom.Scale <- function(nomination_el, nomination) {
   nom_scales(nomination) <- c(nom_scales(nomination), list(nomination_el))
@@ -131,6 +131,8 @@ add_to_nom.Scale <- function(nomination_el, nomination) {
 }
 
 #' @rdname nomination
+#'
+#' @export
 
 add_to_nom.list <- function(nomination_el, nomination) {
   purrr::reduce_right(
@@ -161,6 +163,8 @@ nom_coords <- function(nomination) {
 }
 
 #' @rdname nomination
+#'
+#' @export
 
 add_to_nom.Coord <- function(nomination_el, nomination) {
   nom_coords(nomination) <- c(nom_coords(nomination), list(nomination_el))
@@ -188,6 +192,8 @@ nom_others <- function(nomination) {
 }
 
 #' @rdname nomination
+#'
+#' @export
 
 add_to_nom.ggproto <- function(nomination_el, nomination) {
   nom_others(nomination) <- c(nom_others(nomination), list(nomination_el))

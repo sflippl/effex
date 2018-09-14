@@ -7,6 +7,7 @@
 \alias{set_metaframe}
 \alias{metaframe<-}
 \alias{has_metaframe}
+\alias{mutate_mf}
 \title{Metaframe of data}
 \usage{
 as_metaframe(df)
@@ -20,6 +21,8 @@ set_metaframe(x, value)
 metaframe(x) <- value
 
 has_metaframe(x)
+
+mutate_mf(data, ...)
 }
 \arguments{
 \item{df}{a data frame that contains information on indicators}
@@ -36,5 +39,8 @@ Get and set the \code{\link[=metaframe]{metaframe()}} of certain data.
 \section{Functions}{
 \itemize{
 \item \code{has_metaframe}: determines whether x has a metaframe
+
+\item \code{mutate_mf}: allows you to modify the metaframe by accessing the
+data itself. If the metaframe does not exist, it creates one.
 }}
 

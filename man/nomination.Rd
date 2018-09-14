@@ -15,8 +15,6 @@ nomination(...)
 
 \method{add_to_nom}{Layer}(nomination_el, nomination)
 
-\method{add_to_nom}{Layer}(nomination_el, nomination)
-
 \method{add_to_nom}{Facet}(nomination_el, nomination)
 
 \method{add_to_nom}{Scale}(nomination_el, nomination)
