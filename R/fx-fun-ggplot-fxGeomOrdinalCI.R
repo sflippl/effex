@@ -21,20 +21,24 @@ setMethod("fxe_layer_complete_nominate",
             # if high and low mappings are well defined, define them and set
             # bool_errorbar to true.
             if(!is.null(upper_quo)) {
-              upper_var <-
-                upper_quo %>%
-                rlang::quo_get_expr() %>%
-                as.character()
+              if(rlang::is_quosure(upper_quo))
+                upper_var <-
+                  upper_quo %>%
+                  rlang::quo_get_expr() %>%
+                  as.character()
+              else upper_var <- upper_quo
               if(upper_var %in% names(data)) {
                 if(!is.null(lower_quo)) {
-                  lower_var <-
-                    lower_quo %>%
-                    rlang::quo_get_expr() %>%
-                    as.character()
+                  if(rlang::is_quosure(lower_quo))
+                    lower_var <-
+                      lower_quo %>%
+                      rlang::quo_get_expr() %>%
+                      as.character()
+                  else lower_var <- lower_quo
                   if(lower_var %in% names(data)) {
                     new_mapping <-
                       fxGeom_assoc_vars[c("upper", "lower")] %>%
-                      magrittr::set_names(c("xmax", "xmin"))
+                      magrittr::set_names(c("ymax", "ymin"))
                     bool_errorbar <- TRUE
                   }
                 }

@@ -8,7 +8,7 @@
 #' some tweaks in the retrieval function might have to be added. If `data` is
 #' grouped, a sub-folder will be created for every grouping variable. In order
 #' to ensure that the folders are approriately named, we remove or replace the
-#' following characters: `.`, `:`, `*`, `?`, `"`, `<`, `>`, `/`, `\` and `|`.
+#' following characters: `.`, `:`, `*`, `?`, `\"`, `<`, `>`, `/`, `\\` and `|`.
 #'
 #' @param data either a metaframe or an object with attribute metaframe
 #' @param path The path specifying the folder of the different objects

@@ -62,7 +62,7 @@ fxe_default <- function(data, mf, col,
 #' @examples
 #' fxe_default(data.frame(),
 #'             new_metaframe(name = character(0)),
-#'             col = fxd("default),
+#'             col = fxd("default"),
 #'             mustWork = FALSE)
 #' \donttest{
 #' fxe_default(data.frame(),

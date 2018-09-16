@@ -16,7 +16,6 @@ Depends: R(>= 3.3.3)
 Suggests: testthat,
     knitr,
     rmarkdown,
-    sf,
     covr
 Imports:
     assertthat,
@@ -39,7 +38,8 @@ Imports:
     scales,
     moments,
     geoR,
-    methods
+    methods,
+    sf
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.0
 VignetteBuilder: knitr

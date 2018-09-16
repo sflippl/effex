@@ -53,7 +53,7 @@ will throw an error. The available subclasses are:
 \preformatted{+ fxGeomOrdinal
 }
 
-\preformatted{  + fxGeomOrdinalCI (also inherits from fxGeomOrdinal)
+\preformatted{  + fxGeomOrdinalCI
 }
 
 \itemize{

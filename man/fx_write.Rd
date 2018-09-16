@@ -38,3 +38,15 @@ in the future.
 \item \code{fx_write_json}: exports to a json format via \code{\link[jsonlite:toJSON]{jsonlite::toJSON()}}.
 }}
 
+\section{JSON formats}{
+
+Currently, only a json format is implemented. This format represents a good
+compromise between flexibility and readability. However, it is advised to
+make certain that the retrieval via \code{\link[=fx_read]{fx_read()}} yields the same data. Due to
+the sparse specification that comes with readability for non-programmers,
+some tweaks in the retrieval function might have to be added. If \code{data} is
+grouped, a sub-folder will be created for every grouping variable. In order
+to ensure that the folders are approriately named, we remove or replace the
+following characters: \code{.}, \code{:}, \code{*}, \code{?}, \code{\"}, \code{<}, \code{>}, \code{/}, \code{\\} and \code{|}.
+}
+
