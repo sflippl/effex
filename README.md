@@ -12,6 +12,18 @@ You can install tectr from github with:
 devtools::install_github("sflippl/tectr")
 ```
 
+<<<<<<< HEAD
 For now, an introduction to `tectr` can be found in my [Bachelor's Thesis](https://github.com/sflippl/bachelor-thesis/blob/master/_book/bachelor-thesis.pdf).
 
 The package [`vdem.tectr`](https://github.com/sflippl/vdem.tectr) applies `tectr` to the [V-Dem database](v-dem.net).
+=======
+<<<<<<< HEAD
+For now, an introduction to `tectr` can be found in my [Bachelor's Thesis](https://github.com/sflippl/bachelor-thesis/blob/master/_book/bachelor-thesis.pdf).
+
+The package [`vdem.tectr`](https://github.com/sflippl/vdem.tectr) applies `tectr` to the [V-Dem database](v-dem.net).
+=======
+For now, an introduction to `tectr` can be found in my [https://github.com/sflippl/bachelor-thesis/blob/master/\_book/bachelor-thesis.pdf](Bachelor's%20Thesis).
+
+The package [https://github.com/sflippl/vdem.tectr](%60vdem.tectr%60) applies `tectr` to the [v-dem.net](V-Dem%20database).
+>>>>>>> 9ae34ab326d7c3285f315dc3928fa16c5a569964
+>>>>>>> 54ff524e7a8b1aa3e301b27a05ffbc0650b07473
