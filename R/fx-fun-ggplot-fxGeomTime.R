@@ -1,9 +1,14 @@
 #' @export
 #'
 #' @param fxGeom_shadow.threshold What is the threshold for the number of groups
-#' so that the different lines are greyed out and a smoother is fitted?
+#' so that the different lines are greyed out and a smoother is fitted? Default
+#' is 10
 #'
-#' @rdname fxe_layer_complete_nominate
+#' @describeIn fxe_layer_complete_nominate
+#'     + a line plot that is possibly grouped according to the group aesthetic
+#'     in `fxGeom_assoc_vars`. If there are more than 10 groups, the individual
+#'     lines become transparent and a smooth function is fitted
+#'     + a step plot with the same specifications
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomTime", aes_name = "xAesName"),
@@ -47,7 +52,7 @@ setMethod("fxe_layer_complete_nominate",
                   ggplot2::geom_smooth()
                 ),
                 nomination(
-                  ggplot2::geom_path(mapping = new_mapping,
+                  ggplot2::geom_step(mapping = new_mapping,
                                      alpha = fxGeom_shadow.alpha),
                   ggplot2::geom_smooth()
                 )
@@ -59,7 +64,7 @@ setMethod("fxe_layer_complete_nominate",
                   ggplot2::geom_line(mapping = new_mapping)
                 ),
                 nomination(
-                  ggplot2::geom_path(mapping = new_mapping)
+                  ggplot2::geom_step(mapping = new_mapping)
                 )
               )
             }
@@ -68,7 +73,9 @@ setMethod("fxe_layer_complete_nominate",
 
 #' @export
 #'
-#' @rdname fxe_layer_complete_vote
+#' @describeIn fxe_layer_complete_vote
+#'     + a line plot: 4
+#'     + a path plot which is not a line plot: 3
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomTime", aes_name = "xAesName"),

@@ -3,34 +3,42 @@
 #' This function creates an effectively and explicitly specified visualization
 #' of several variables in line with the syntax of [ggplot2].
 #'
-#' Required columns in the metaframe:
+#' @section Required metaframe columns:
 #'
 #' * `fxGeom_class`: What class does the geometry have?
+#' * `fxGeom_limits`: The range of the variables
+#' * `fxGeom_trans`: The scale transformation
+#' * `fxInfo_name`: The name of the variable
 #'
-#' Columns that are used:
+#' @section Extension Mechanism:
 #'
-#' * `fxGeom_nominations`: A list of nominations (see
-#' [fxi_layer_complete()])
-#' * `fxGeom_veto`: A function that is given a nomination and returns a logical
-#' value whether to veto this nomination
-#' * `fxGeom_vote`: A function that returns the amount of votes for a certain
-#' nomination
-#' * `fxGeom_name`
-#' * `fxGeom_title`: for the axis title
-#' * layer parameters: see [fxe_layer_scale()]
-#' * parameters for many values: see [fxe_layer_complete_nominate()]
+#' Extensions may be defined over the following functions:
+#'
+#' * [fxe_layer_single()]: This function adds independent elements whose nature
+#' only depends on a single aesthetic to the plot. Usually, it is split up into:
+#'     + [fxe_layer_scale()]: This function explicitly changes the independent
+#'     scale element.
+#'     + [fxe_layer_single_other()]: This function adds any other independent
+#'     plot elements.
+#' * the sub-functions of [fxi_layer_complete()]: This function implements a
+#' voting system to
+#' determine those plot elements which depend on all aesthetics.
+#' * [fxe_labeller()]: This function returns the [ggplot2::labeller()] for a
+#' possible facetting variable. It is again an independent plot element.
 #'
 #' @param data A dataframe with [metaframe()] as an attribute
 #' @param mapping An aesthetic mapping
-#' @param facet_vars Possibly variables, given via [[ggplot2::vars()]], to
+#' @param facet_vars Possibly variables, given via [ggplot2::vars()], to
 #' facet after
-#' @param discard Should unnecessary columns in the data frame be removed before
-#'
 #' @param ... Parameters to give on to [fx_default()]
+#'
+#' @examples
+#' fx_ggplot(mtcars, aes(x = mpg))
+#' fx_ggplot(diamonds, aes(x = carat, y = price))
 #'
 #' @export
 
-fx_ggplot <- function(data, mapping, facet_vars = vars(), discard = TRUE, ...) {
+fx_ggplot <- function(data, mapping, facet_vars = vars(), ...) {
   data <-
     data %>%
     fx_default(columns = fx_ggplot_columns, ...) %>%
@@ -48,8 +56,6 @@ fx_ggplot <- function(data, mapping, facet_vars = vars(), discard = TRUE, ...) {
   ggplot(data, mapping) + layers
 }
 
-#' Effex Internals: `fx-ggplot` - geometric information along one dimension
-
 fxi_layer_single <- function(data, mapping, nam) {
   mf <- metaframe(data) %>%
     dplyr::filter(name == as.character(rlang::quo_get_expr(mapping[[nam]])))
@@ -63,12 +69,16 @@ fxi_layer_single <- function(data, mapping, nam) {
   )
 }
 
-#' Effex Extendibles: `fx-ggplot` - geometric information along one dimension
+#' Effex Extendibles in `fx-ggplot`: geometric information along one dimension
 #'
-#' This is the extendible function for the single layer. It is dispatched
-#' along the arguments `fx_geom` and `aes_name`. Arbitrary other arguments may
+#' This is the extendible function for the independent elements. It is
+#' dispatched along the S4 class arguments `fx_geom` and `aes_name`. Arbitrary
+#' other parameters may
 #' be added that should then be expected in the metaframe. It should always be
 #' considered a possibility that these values are missing.
+#'
+#' @param fx_geom An S4 class argument which inherits from [fxGeom-class].
+#' @param aes_name An S4 class argument which inherits from [AesName-class].
 #'
 #' @export
 
@@ -82,7 +92,8 @@ setGeneric(
 #' @param fx_geom the [fxGeom()] object
 #' @param aes_name the [aesName()] object
 #'
-#' @rdname fxe_layer_single
+#' @describeIn fxe_layer_single The standard mechanism simply adds the result of
+#' [fxe_layer_scale()] and [fxe_layer_single_other()] together.
 
 setMethod(
   "fxe_layer_single",
@@ -94,17 +105,21 @@ setMethod(
   }
 )
 
-#' Effex Internals: `fx_ggplot` - combine all different dimensions
+#' Effex Internals in `fx_ggplot`: combine all different dimensions
 #'
-#' This function generates the function to add an arbitrary number of layers
-#' that depend on all specified layers.
+#' This function generates the function to add an arbitrary number of elements
+#' which depend on all specified layers.
 #'
-#' `fxi_layer_complete` is driven by three extendible functions (see
-#' [?fxe_layer_complete_nominate()](here)):
+#' @section Voting System:
+#' This function employs a *voting system* to determine a suitable
+#' [nomination()] of elements.
 #'
-#' * `fxe_layer_complete_nominate` gathers the nominations
-#' * `fxe_layer_complete_veto` collects the vetoes
-#' * `fxe_layer_complete_vote` collects the votes
+#' * [fxe_layer_nominate()] gathers nominations
+#' * [fxe_layer_veto()] determines the vetos
+#' * [fxe_layer_vote()] gathers the votes
+#'
+#' You can extend all three of these functions by S4 dispatch over the aesthetic
+#' and the geometry class.
 #'
 #' @param data the data with the metaframe
 #' @param mapping the aesthetic mapping
@@ -122,12 +137,10 @@ fxi_layer_complete <- function(data, mapping) {
   # class and therefore unique.
   # Veto the inapplicable nominees and give the other nominees the corresponding
   # votes.
-  chosen_nomination <- fxi_layer_complete_vote(nominations, mf) %>%
+  chosen_nomination <- fxi_layer_complete_vote(nominations, mf, data) %>%
     unlist(recursive = FALSE)
   chosen_nomination
 }
-
-#' @describeIn fxi_layer_complete Gathers the nominations.
 
 fxi_layer_complete_nominate <- function(data, mf) {
   lst_fxGeom <- purrr::map(mf[["fxGeom_class"]], fxGeom)
@@ -148,10 +161,7 @@ fxi_layer_complete_nominate <- function(data, mf) {
   nominations
 }
 
-#' @describeIn fxi_layer_complete vetoes (via `fxe_layer_complete_veto`)
-#' and then votes (via `fxe_layer_complete_vote`) for the nominations
-
-fxi_layer_complete_vote <- function(nominations, mf) {
+fxi_layer_complete_vote <- function(nominations, mf, data) {
   lst_fxGeom <- purrr::map(mf[["fxGeom_class"]], fxGeom)
   lst_aesName <- purrr::map(mf[["aes"]], AesName)
   assertthat::assert_that(length(nominations) != 0,
@@ -206,16 +216,12 @@ get_inds <- function(x) {
   purrr::map_chr(x, ~ as.character(rlang::quo_get_expr(.)))
 }
 
-#' Effex Extendibles: `fx_ggplot` - nominate layers
+#' Effex Extendibles in `fx_ggplot`: nominate layers
 #'
-#' These functions drive [fxi_layer_complete()]. Provided that they fulfill
-#' certain conditions they can be extended.
+#' @inheritParams fxe_layer_single
 #'
-#' @details
-#' `fxe_layer_complete_nominate` returns a list of
-#' [nomination()](layer nominations). The default returns either an empty
-#' list or, if provided the element of the metaframe column
-#' `fxGeom_nominations`.
+#' This function returns element [nomination()]s for a combination of a geometry
+#' class and an aesthetic.
 #'
 #' @seealso [fxi_layer_complete()]
 #'
@@ -227,7 +233,11 @@ setGeneric("fxe_layer_complete_nominate",
 
 #' @export
 #'
-#' @rdname fxe_layer_complete_nominate
+#' @param fxGeom_nominations Allows nominating additional elements.
+#'
+#' @describeIn fxe_layer_complete_nominate returns the list of all nomination
+#' which have been specified manually within the metaframe. If the argument is
+#' `NULL`, the function returns an empty list.
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeom", aes_name = "AesName"),
@@ -241,13 +251,12 @@ setMethod("fxe_layer_complete_nominate",
 
 #' @rdname fxe_layer_complete_nominate
 #'
-#' @param nomination a [nomination()]
+#' @param nomination the [nomination()] which is to be considered for a veto
+#' @inheritParams fxe_layer_single
 #'
-#' @details
+#' @return
 #' `fxe_layer_complete_veto` returns a logical value that indicates whether
-#' this layer should be vetoed, i. e. removed from the nominations list. The
-#' default method returns either `FALSE` or, if supplied with an element of the
-#' metaframe column, it applies that function.
+#' this layer should be vetoed, i. e. removed from the nominations list.
 #'
 #' @export
 
@@ -255,9 +264,14 @@ setGeneric("fxe_layer_complete_veto",
            function(nomination, fx_geom, aes_name, data, ...)
              standardGeneric("fxe_layer_complete_veto"))
 
-#' @export
+#' @export fxGeom_veto either `NULL` (the default) or a function which returns
+#' whether this element should be vetoed.
 #'
-#' @rdname fxe_layer_complete_veto
+#' @param fxGeom_veto either `NULL` or a function which vetoes nominations by
+#' returning a boolean for a given nomination.
+#'
+#' @describeIn fxe_layer_complete_veto returns either `FALSE` or, if supplied
+#' with `fxGeom_veto` from the metaframe column, it applies that function.
 
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeom", aes_name = "AesName"),
@@ -265,12 +279,20 @@ setMethod("fxe_layer_complete_veto",
                    fxGeom_veto = NULL) {
             if(is.null(fxGeom_veto)) return(FALSE)
             assertthat::assert_that(is.function(fxGeom_veto))
-            fxGeom_veto(nomination = nomination, ...)
+            fxGeom_veto(nomination = nomination, aes_name = aes_name,
+                        ...)
           })
 
-#' @rdname fxe_layer_complete_nominate
+#' Effex Extendibles in `fx_ggplot`: Vote for the nominations
 #'
+#' This function gathers the votes for the different nomination.
 #'
+#' @return A number which represents the amount of votes for a certain
+#' nomination.
+#'
+#' @inheritParams fxe_layer_complete_veto
+#'
+#' @export
 
 setGeneric("fxe_layer_complete_vote",
            function(nomination, fx_geom, aes_name, data, ...)
@@ -278,7 +300,10 @@ setGeneric("fxe_layer_complete_vote",
 
 #' @export
 #'
-#' @rdname fxe_layer_complete_vote
+#' @param fxGeom_vote Either `NULL` (the default) or a function which returns
+#' the votes as a numerical value for a given nomination.
+#'
+#' @describeIn fxe_layer_complete_vote
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeom", aes_name = "AesName"),
@@ -293,8 +318,6 @@ setMethod("fxe_layer_complete_vote",
             )
             0
           })
-
-#' Effex Internals: `fx_ggplot` facetting: labellers
 
 fxi_labeller <- function(data, facet_vars) {
   vars <- get_inds(facet_vars)
@@ -320,9 +343,9 @@ fxi_labeller <- function(data, facet_vars) {
   do.call("labeller", lst, envir = asNamespace("ggplot2"))
 }
 
-#' Effex Extendibles: `fx_ggplot` facetting: labellers
+#' Effex Extendibles in `fx_ggplot`: facetting labellers
 #'
-#' @return a valid argument to [ggplot2::labeller()]. Supplies [fx_ggplot2()]
+#' @return a valid argument to [ggplot2::labeller()]. Supplies [fx_ggplot()]
 #' with the labels for the facetting variable
 #'
 #' @export
@@ -330,7 +353,8 @@ fxi_labeller <- function(data, facet_vars) {
 setGeneric("fxe_labeller",
            function(fxGeom_class, name, ...) standardGeneric("fxe_labeller"))
 
-#' @rdname fxe_labeller
+#' @describeIn fxe_labeller If the breaks are specified, these are used for the
+#' labeller. If not the default argument [ggplot2::label_value()] is returned.
 #'
 #' @export
 

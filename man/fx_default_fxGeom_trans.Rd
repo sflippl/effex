@@ -9,6 +9,10 @@ fx_default_fxGeom_trans(data, mf = metaframe(fx_default(data)),
   custom_fun = default_identity)
 }
 \arguments{
+\item{data}{A data frame}
+
+\item{mf}{The metaframe. The metaframe of \code{data} is set as default.}
+
 \item{fxGeom_trans_simple}{\code{logical} should all boxcox and modulus
 transformations be allowed or should they be restricted to "identity",
 "sqrt" and "log10"?}
@@ -57,7 +61,7 @@ df <- dplyr::tibble(
   chars = rep("a", 100)
 )
 fx_default_fxGeom_trans(df)
-fx_default_fxGeom_trans(fxGeom_trans_simple = FALSE)
+fx_default_fxGeom_trans(df, fxGeom_trans_simple = FALSE)
 
 }
 \seealso{

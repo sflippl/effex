@@ -9,7 +9,6 @@ test_that("Constructing factors", {
   expect_equal(levels(x_fxf), x_levels)
   expect_error(as_fx_factor(x, x_levels))
   expect_error(as_fx_factor(c(x_int, 4), x_levels))
-  expect_error(as_fx_factor(x_int, levels = rep(x_levels, 2)))
 })
 
 test_that("Inferring factors", {

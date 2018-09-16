@@ -35,11 +35,3 @@ test_that("Table form", {
                knitr::kable(ex, format = "html") %>%
                  kableExtra::kable_styling())
 })
-
-test_that("Report form", {
-  ex3 <- dplyr::tibble(name = c("col1", "col2", "col3", "col4"),
-                       chapter = c("ch1", "ch1", "ch2", "ch2"),
-                       section = c("sec1.1", "sec1.2", "sec2.1", "sec2.1"),
-                       mean = 5) %>%
-    dplyr::group_by(chapter, section)
-})

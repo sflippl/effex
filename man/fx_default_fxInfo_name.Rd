@@ -4,14 +4,15 @@
 \alias{fx_default_fxInfo_name}
 \title{Effex Functions: Default for the column \code{fxInfo_name}}
 \usage{
-fx_default_fxInfo_name(data, mf)
+fx_default_fxInfo_name(data, mf = metaframe(fx_default(data)))
 }
 \arguments{
-\item{data}{a data frame}
+\item{data}{A data frame}
 
-\item{mf}{a metaframe}
+\item{mf}{The metaframe. The metaframe of \code{data} is set as default.}
 }
 \description{
 \code{fxInfo_name} is a more human-readable title of the particular variable than
-\code{name}. Nevertheless, inference simply assigns the name to it.
+\code{name}. Nevertheless, inference simply assigns the name to it and replaces
+underscores with spaces.
 }

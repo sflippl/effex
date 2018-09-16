@@ -4,14 +4,24 @@
 #' works on. `fx_default_fxGeom_class` infers the class according to the class of
 #' the corresponding column.
 #'
-#' @param data a data frame
-#' @param mf a metaframe
+#' @inheritParams fx_default_fxInfo_name
+#' @param custom_fun A function which accepts the determined class and the name
+#' and returns the corrected class. Default is the identity.
 #'
 #' @section Mechanism:
-#' * Numeric: [fxGeomContinuous-class](fxGeomContinuous)
-#' * Character or Factor: [fxGeomDiscrete-class](fxGeomDiscrete)
-#' * Simple Feature column: [fxGeomSpatial-class](fxGeomSpatial)
-#' * Else: [fxGeom-class](fxGeom)
+#' * Numeric: "Continuous"
+#' * Character or Factor: "Discrete"
+#' * Simple Feature column: "Spatial"
+#' * Else: "" (no class)
+#'
+#' @examples
+#' df <- dplyr::tibble(
+#'   Cont = 1:10,
+#'   Disc = LETTERS[1:10],
+#'   Disc2 = factor(LETTERS[1:10]),
+#'   List = as.list(1:10)
+#' )
+#' fx_default_fxGeom_class(df)
 #'
 #' @export
 
@@ -37,7 +47,8 @@ fx_default_fxGeom_class <- function(data,
 
 #' @export
 #'
-#' @rdname fxe_default
+#' @describeIn fx_default infers the `fxGeom_class` via
+#' [fx_default_fxGeom_class()]
 
 fxe_default.fxd_default_fxGeom_class <- function(data, mf, col, ...)
   fx_default_fxGeom_class(data, mf)
@@ -46,11 +57,22 @@ fxe_default.fxd_default_fxGeom_class <- function(data, mf, col, ...)
 #'
 #' `fxGeom_limits` specifies the limits of the scale of [fx_ggplot()].
 #'
+#' @inheritParam fx_default_fxGeom_class
+#'
 #' @section Mechanism:
 #' * Numeric: The range of the data
 #' * Character: The unique values
 #' * Factor: The levels
 #' * Else: NULL
+#'
+#' @examples
+#' df <- dplyr::tibble(
+#'   num = c(1:3, 1:3),
+#'   char = LETTERS[c(1:3, 1:3)],
+#'   fac = factor(LETTERS[c(1:3, 1:3)], levels = LETTERS[1:4]),
+#'   lst = as.list(c(1:3, 1:3))
+#' )
+#' fx_default_fxGeom_limits(df)
 #'
 #' @export
 
@@ -77,7 +99,8 @@ fx_default_fxGeom_limits <- function(data,
 
 #' @export
 #'
-#' @rdname fxe_default
+#' @describeIn fx_default infers the column `fxGeom_limits` via
+#' [fx_default_fxGeom_limits()]
 
 fxe_default.fxd_default_fxGeom_limits <- function(data, mf, col, ...)
   fx_default_fxGeom_limits(data, mf)
@@ -88,6 +111,7 @@ fxe_default.fxd_default_fxGeom_limits <- function(data, mf, col, ...)
 #' skewness. Skewed distribution are often hard to interpret if the
 #' axes are not transformed.
 #'
+#' @inheritParams fx_default_fxInfo_name
 #' @param fxGeom_trans_simple `logical` should all boxcox and modulus
 #' transformations be allowed or should they be restricted to "identity",
 #' "sqrt" and "log10"?
@@ -130,7 +154,7 @@ fxe_default.fxd_default_fxGeom_limits <- function(data, mf, col, ...)
 #'   chars = rep("a", 100)
 #' )
 #' fx_default_fxGeom_trans(df)
-#' fx_default_fxGeom_trans(fxGeom_trans_simple = FALSE)
+#' fx_default_fxGeom_trans(df, fxGeom_trans_simple = FALSE)
 #'
 #' @export
 
@@ -187,7 +211,8 @@ fx_default_fxGeom_trans <- function(
 
 #' @export
 #'
-#' @rdname fxe_default
+#' @describeIn fx_default infers the column `fxGeom_trans` which controls axis
+#' transformations via [fx_default_fxGeom_trans()].
 
 fxe_default.fxd_default_fxGeom_trans <- function(
   data, mf, col, ...) {
@@ -203,8 +228,11 @@ fxe_default.fxd_default_fxGeom_trans <- function(
 #' Effex Functions: Default of `fxGeom_pal`
 #'
 #' The default palette depends on the aesthetic that is used and mostly
-#' corresponds to the default choices in [ggplot2]. It is extendible via
-#' `fxe_default_fxGeom_pal` over `fx_geom` and `aes_name`.
+#' corresponds to the default choices in [ggplot2]. It
+#'
+#' @section Extension Mechanism:
+#' The function is extendible via `fxe_default_fxGeom_pal` over `fx_geom` and
+#' `aes_name`.
 #'
 #' @export
 

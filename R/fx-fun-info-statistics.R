@@ -1,12 +1,10 @@
-#' Effex Function: Information -- Statistical Description
+#' @describeIn fx_info provides a statistical summary table
 #'
 #' @param statistics a character vector or a list of characters and functions.
 #' Function slots must have a name. Functions can accept arguments from
 #' metaframe columns. The corresponding column will be fed in first and there
 #' will be an additional data column with the entire data. All arguments but
 #' the column will only be fed into functions, not characters.
-#'
-#' @inheritParams fx_doc
 #'
 #' @export
 
@@ -24,7 +22,7 @@ fxe_info.fxd_info_stats <- function(data, topic, statistics, ...) {
         if(is.function(stat_fun))
           stat_args <- c(
             list(data[[tmp_mf$name]], data = data),
-            list(lst_mf_args(tmp_mf)),
+            lst_mf_args(tmp_mf),
             rlang::dots_list(...))
         else stat_args <- list(data[[tmp_mf$name]])
         do.call(stat_fun, stat_args)

@@ -29,9 +29,9 @@ fxe_layer_scale(fx_geom, aes_name, ...)
   fxGeom_pal.shape = NULL, ...)
 }
 \arguments{
-\item{fx_geom}{the \code{\link[=fxGeom]{fxGeom()}} object}
+\item{fx_geom}{An S4 class argument which inherits from \linkS4class{fxGeom}.}
 
-\item{aes_name}{the \code{\link[=aesName]{aesName()}} object}
+\item{aes_name}{An S4 class argument which inherits from \linkS4class{AesName}.}
 
 \item{fxGeom_title}{\code{NULL} or a character that provides the title}
 }
@@ -41,9 +41,6 @@ If some features are to be added, it is often sensible to \code{callNextMethod()
 and then add these features.
 }
 \section{Methods}{
-
-Implemented methods are:
-
 
 \itemize{
 \item \code{fx_geom = fxGeom(), aes_name = AesName()}: Adds labels and limits

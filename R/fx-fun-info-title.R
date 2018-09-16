@@ -1,6 +1,4 @@
-#' Effex Function: Information -- Titles
-#'
-#' These functions provide different kinds of titles
+#' @describeIn fx_info determines a title via [fx_info_title()]
 #'
 #' @param fxInfo_title `character`, `NULL` or list of both. If
 #'
@@ -16,7 +14,28 @@ fxe_info.fxd_info_title <- function(data, topic, ...) {
   dplyr::tibble(name = mf$name, ` ` = title)
 }
 
-#' @rdname fxe_info.fxd_info_title
+#' Build up a variable title
+#'
+#' This function builds a title from a name and possibly certain statistics and
+#' units.
+#'
+#' @param data a data frame, possibly with metaframe
+#' @param name the internal name of the variable
+#' @param fxInfo_title either a title or `NULL`. If it is not `NULL`, all other
+#' parameters are irrelevant.
+#' @param fxInfo_title_fun either a function which determines a title or `NULL`.
+#' If it is not `NULL`, all parameters below are irrelevant.
+#' @param fxInfo_name the name of the variable
+#' @param fxInfo_unit the unit of the variable or `NULL`
+#' @param fxInfo_title_stats the statistics that should be given in the title.
+#' Number of data points and missing values are given separately.
+#' @param fxInfo_title_na.show Should the number of missing values be displayed?
+#' @param fxInfo_title_na.show.threshold If `fxInfo_title_na.show` is missing,
+#' what is the
+#' threshold number of missing values to display them. Default is 1.
+#' @param fxInfo_title_n.show Should the number of data points be displayed.
+#' Default is `FALSE`
+#' @param fxInfo_title_unit.show Should the unit be displayed?
 #'
 #' @export
 

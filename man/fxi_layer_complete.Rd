@@ -2,15 +2,9 @@
 % Please edit documentation in R/fx-fun-ggplot-aaa.R
 \name{fxi_layer_complete}
 \alias{fxi_layer_complete}
-\alias{fxi_layer_complete_nominate}
-\alias{fxi_layer_complete_vote}
-\title{Effex Internals: \code{fx_ggplot} - combine all different dimensions}
+\title{Effex Internals in \code{fx_ggplot}: combine all different dimensions}
 \usage{
 fxi_layer_complete(data, mapping)
-
-fxi_layer_complete_nominate(data, mf)
-
-fxi_layer_complete_vote(nominations, mf)
 }
 \arguments{
 \item{data}{the data with the metaframe}
@@ -18,23 +12,20 @@ fxi_layer_complete_vote(nominations, mf)
 \item{mapping}{the aesthetic mapping}
 }
 \description{
-This function generates the function to add an arbitrary number of layers
-that depend on all specified layers.
+This function generates the function to add an arbitrary number of elements
+which depend on all specified layers.
 }
-\details{
-\code{fxi_layer_complete} is driven by three extendible functions (see
-\href{here}{?fxe_layer_complete_nominate()}):
-\itemize{
-\item \code{fxe_layer_complete_nominate} gathers the nominations
-\item \code{fxe_layer_complete_veto} collects the vetoes
-\item \code{fxe_layer_complete_vote} collects the votes
-}
-}
-\section{Functions}{
-\itemize{
-\item \code{fxi_layer_complete_nominate}: Gathers the nominations.
+\section{Voting System}{
 
-\item \code{fxi_layer_complete_vote}: vetoes (via \code{fxe_layer_complete_veto})
-and then votes (via \code{fxe_layer_complete_vote}) for the nominations
-}}
+This function employs a \emph{voting system} to determine a suitable
+\code{\link[=nomination]{nomination()}} of elements.
+\itemize{
+\item \code{\link[=fxe_layer_nominate]{fxe_layer_nominate()}} gathers nominations
+\item \code{\link[=fxe_layer_veto]{fxe_layer_veto()}} determines the vetos
+\item \code{\link[=fxe_layer_vote]{fxe_layer_vote()}} gathers the votes
+}
+
+You can extend all three of these functions by S4 dispatch over the aesthetic
+and the geometry class.
+}
 

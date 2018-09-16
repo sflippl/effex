@@ -7,6 +7,10 @@
 #' @param topic The topic of the information
 #' @param arguments for the information methods
 #'
+#' @section Extension Mechanism:
+#' An extension may be defined via `fxe_info()` which dispatches over
+#' `fxd("info", topic)`.
+#'
 #' @export
 
 fx_info <- function(data, topic, ...) {
@@ -18,18 +22,12 @@ fx_info <- function(data, topic, ...) {
   purrr::reduce(lst, ~ dplyr::inner_join(.x, .y, by = "name"))
 }
 
-#' Effex Externals: Information
-#'
-#' This generic powers [fx_info()]. A new topic can be supplied by providing a
-#' method for the class "fxd_info_<topic>".
-#'
-#' @inheritParams fx_info
-#'
-#' @export
+#' @rdname fx_info
 
 fxe_info <- function(data, topic, ...) UseMethod("fxe_info", topic)
 
-#' @rdname fxe_info
+#' @describeIn fx_info If no method for this topic is supplied, this function
+#' looks up whether a column `fxInfo_<column>` exists.
 #'
 #' @export
 

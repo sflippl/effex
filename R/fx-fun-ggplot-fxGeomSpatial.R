@@ -1,6 +1,7 @@
 #' @export
 #'
-#' @rdname fxe_layer_single
+#' @describeIn fxe_layer_single produces an error as the aesthetic must be
+#' `geom`
 
 setMethod(
   "fxe_layer_single",
@@ -13,7 +14,12 @@ setMethod(
 
 #' @export
 #'
-#' @rdname fxe_layer_single
+#' @param fxGeom_xlim see [ggplot2::coord_sf()]
+#' @param fxGeom_ylim see [ggplot2::coord_sf()]
+#' @param fxGeom_expand see [ggplot2::coord_sf()]
+#' @param fxGeom_crs see [ggplot2::coord_sf()]
+#'
+#' @describeIn fxe_layer_single
 
 setMethod(
   "fxe_layer_single",
@@ -23,15 +29,16 @@ setMethod(
            fxGeom_crs = NULL, ...) {
     if(is.null(fxGeom_expand)) fxGeom_expand <- TRUE
     list(
-      ggplot2::coord_sf(xlim = fxGeom_xlim, ylim = fxGeom_ylim, expand = fxGeom_expand,
-               crs = fxGeom_crs)
+      ggplot2::coord_sf(xlim = fxGeom_xlim, ylim = fxGeom_ylim,
+                        expand = fxGeom_expand,
+                        crs = fxGeom_crs)
     )
   }
 )
 
 #' @export
 #'
-#' @rdname fxe_layer_complete_nominate
+#' @describeIn fxe_layer_complete_nominate
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomSpatial", aes_name = "geomAesName"),
@@ -43,7 +50,8 @@ setMethod("fxe_layer_complete_nominate",
 
 #' @export
 #'
-#' @rdname fxe_layer_complete_veto
+#' @describeIn fxe_layer_complete_veto vetoes anything that does not inherit
+#' from [ggplot2::GeomSf]
 
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomSpatial", aes_name = "geomAesName"),

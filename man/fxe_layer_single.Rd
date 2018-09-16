@@ -6,8 +6,7 @@
 \alias{fxe_layer_single}
 \alias{fxe_layer_single,fxGeom,AesName-method}
 \alias{fxe_layer_single,fxGeomSpatial,AesName-method}
-\alias{fxe_layer_single,fxGeomSpatial,geomAesName-method}
-\title{Effex Extendibles: \code{fx-ggplot} - geometric information along one dimension}
+\title{Effex Extendibles in \code{fx-ggplot}: geometric information along one dimension}
 \usage{
 fxe_layer_single(fx_geom, aes_name, data, ...)
 
@@ -15,19 +14,29 @@ fxe_layer_single(fx_geom, aes_name, data, ...)
 
 \S4method{fxe_layer_single}{fxGeomSpatial,AesName}(fx_geom, aes_name, data,
   ...)
-
-\S4method{fxe_layer_single}{fxGeomSpatial,geomAesName}(fx_geom, aes_name,
-  data, fxGeom_xlim = NULL, fxGeom_ylim = NULL, fxGeom_expand = NULL,
-  fxGeom_crs = NULL, ...)
 }
 \arguments{
+\item{fx_geom}{An S4 class argument which inherits from \linkS4class{fxGeom}.}
+
+\item{aes_name}{An S4 class argument which inherits from \linkS4class{AesName}.}
+
 \item{fx_geom}{the \code{\link[=fxGeom]{fxGeom()}} object}
 
 \item{aes_name}{the \code{\link[=aesName]{aesName()}} object}
 }
 \description{
-This is the extendible function for the single layer. It is dispatched
-along the arguments \code{fx_geom} and \code{aes_name}. Arbitrary other arguments may
+This is the extendible function for the independent elements. It is
+dispatched along the S4 class arguments \code{fx_geom} and \code{aes_name}. Arbitrary
+other parameters may
 be added that should then be expected in the metaframe. It should always be
 considered a possibility that these values are missing.
 }
+\section{Methods (by class)}{
+\itemize{
+\item \code{fx_geom = fxGeom,aes_name = AesName}: The standard mechanism simply adds the result of
+\code{\link[=fxe_layer_scale]{fxe_layer_scale()}} and \code{\link[=fxe_layer_single_other]{fxe_layer_single_other()}} together.
+
+\item \code{fx_geom = fxGeomSpatial,aes_name = AesName}: produces an error as the aesthetic must be
+\code{geom}
+}}
+

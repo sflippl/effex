@@ -42,8 +42,7 @@ fx_factor <- function(x, levels = unique(x)) {
 #' @export
 
 as_fx_factor <- function(x_int, levels) {
-  assertthat::assert_that(!any(duplicated(levels)),
-                          is.integer(x_int),
+  assertthat::assert_that(is.integer(x_int),
                           length(levels) >= max(x_int, na.rm = TRUE))
   structure(x_int, levels = levels, class = "fx_factor")
 }

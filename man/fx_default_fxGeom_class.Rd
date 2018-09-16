@@ -8,9 +8,12 @@ fx_default_fxGeom_class(data, mf = metaframe(fx_default(data)),
   custom_fun = default_identity)
 }
 \arguments{
-\item{data}{a data frame}
+\item{data}{A data frame}
 
-\item{mf}{a metaframe}
+\item{mf}{The metaframe. The metaframe of \code{data} is set as default.}
+
+\item{custom_fun}{A function which accepts the determined class and the name
+and returns the corrected class. Default is the identity.}
 }
 \description{
 \code{fxGeom_class} specifies the class of the \code{fxGeom} object which \code{\link[=fx_ggplot]{fx_ggplot()}}
@@ -20,10 +23,20 @@ the corresponding column.
 \section{Mechanism}{
 
 \itemize{
-\item Numeric: \href{fxGeomContinuous}{fxGeomContinuous-class}
-\item Character or Factor: \href{fxGeomDiscrete}{fxGeomDiscrete-class}
-\item Simple Feature column: \href{fxGeomSpatial}{fxGeomSpatial-class}
-\item Else: \href{fxGeom}{fxGeom-class}
+\item Numeric: "Continuous"
+\item Character or Factor: "Discrete"
+\item Simple Feature column: "Spatial"
+\item Else: "" (no class)
 }
 }
 
+\examples{
+df <- dplyr::tibble(
+  Cont = 1:10,
+  Disc = LETTERS[1:10],
+  Disc2 = factor(LETTERS[1:10]),
+  List = as.list(1:10)
+)
+fx_default_fxGeom_class(df)
+
+}

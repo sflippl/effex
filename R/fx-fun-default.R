@@ -8,11 +8,13 @@
 #' for any number of metaframe columns. This is, of course only useful if
 #' modifications need not be applied.
 #'
-#' `fx_default` can be extended by adding a method to the generic `fxe_default`.
+#' @section Extension Mechanism:
+#' `fx_default` can be extended by adding a method to the S3 generic
+#' `fxe_default`.
 #' It is recommended to specify the particular method following the scheme
 #' `fx_default_<column name>` to make it easier to use effex default outside an
-#' entire data frame. To achieve that `fxi_default` creates a structure of class
-#' <column name> with superclass "fx_default" via [fxd()]
+#' entire data frame. The new method must conform to the [fxd()] naming
+#' mechanism where the task is "default" and the column name is the subclass.
 #'
 #' @param data The dataframe with a metaframe attribute
 #' @param columns `character`. The columns of the metaframe that should be
@@ -42,8 +44,6 @@ fx_default <- function(data, columns = character(0), ...,
   data
 }
 
-#' @rdname fx_default
-
 fxi_default <- function(data, col, ...) {
   fxe_default(data, metaframe(data), fxd("default", col), ...)
 }
@@ -52,11 +52,24 @@ fxi_default <- function(data, col, ...) {
 #'
 #' @export
 
-fxe_default <- function(data, mf, col, ..., mustWork = TRUE) {
+fxe_default <- function(data, mf, col,
+                        ..., mustWork = TRUE) {
   UseMethod("fxe_default", col)
 }
 
-#' @rdname fx_default
+#' @describeIn fx_default returns an error if no previous method has been found.
+#'
+#' @examples
+#' fxe_default(data.frame(),
+#'             new_metaframe(name = character(0)),
+#'             col = fxd("default),
+#'             mustWork = FALSE)
+#' \donttest{
+#' fxe_default(data.frame(),
+#'             new_metaframe(name = character(0)),
+#'             col = fxd("default))
+#' }
+#'
 #'
 #' @export
 

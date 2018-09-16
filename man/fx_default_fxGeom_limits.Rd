@@ -20,3 +20,13 @@ fx_default_fxGeom_limits(data, mf = metaframe(fx_default(data)),
 }
 }
 
+\examples{
+df <- dplyr::tibble(
+  num = c(1:3, 1:3),
+  char = LETTERS[c(1:3, 1:3)],
+  fac = factor(LETTERS[c(1:3, 1:3)], levels = LETTERS[1:4]),
+  lst = as.list(c(1:3, 1:3))
+)
+fx_default_fxGeom_limits(df)
+
+}

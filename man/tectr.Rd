@@ -4,7 +4,7 @@
 \name{tectr}
 \alias{tectr}
 \alias{tectr-package}
-\title{tectr}
+\title{User Interface For Complex Datasets}
 \description{
-tectr
+User Interface For Complex Datasets
 }

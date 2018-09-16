@@ -44,3 +44,14 @@ test_that("get_alpha works", {
   expect_equal(get_alpha(NULL, NULL, NULL, 1), 1)
   expect_equal(get_alpha(NULL, NULL, NULL, 5000), 0.05 + 0.95 * 0.25)
 })
+
+test_that("colour and fill veto correctly", {
+  expect_true(fxe_layer_complete_veto(
+    nomination(ggplot2::geom_density2d()),
+               fxGeom("Continuous"), AesName("colour"), data.frame()
+  ))
+  expect_true(fxe_layer_complete_veto(
+    nomination(ggplot2::geom_density2d()),
+               fxGeom("Continuous"), AesName("fill"), data.frame()
+  ))
+})

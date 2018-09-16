@@ -6,9 +6,6 @@
 #'
 #' @inheritParams fxe_layer_single
 #'
-#' @section Methods:
-#' Implemented methods are:
-#'
 #' @export
 
 setGeneric("fxe_layer_scale",

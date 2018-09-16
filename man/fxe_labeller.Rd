@@ -4,7 +4,7 @@
 \name{fxe_labeller}
 \alias{fxe_labeller}
 \alias{fxe_labeller,fxGeomDiscrete-method}
-\title{Effex Extendibles: \code{fx_ggplot} facetting: labellers}
+\title{Effex Extendibles in \code{fx_ggplot}: facetting labellers}
 \usage{
 fxe_labeller(fxGeom_class, name, ...)
 
@@ -12,9 +12,15 @@ fxe_labeller(fxGeom_class, name, ...)
   fxGeom_breaks = NULL, ...)
 }
 \value{
-a valid argument to \code{\link[ggplot2:labeller]{ggplot2::labeller()}}. Supplies \code{\link[=fx_ggplot2]{fx_ggplot2()}}
+a valid argument to \code{\link[ggplot2:labeller]{ggplot2::labeller()}}. Supplies \code{\link[=fx_ggplot]{fx_ggplot()}}
 with the labels for the facetting variable
 }
 \description{
-Effex Extendibles: \code{fx_ggplot} facetting: labellers
+Effex Extendibles in \code{fx_ggplot}: facetting labellers
 }
+\section{Methods (by class)}{
+\itemize{
+\item \code{fxGeomDiscrete}: If the breaks are specified, these are used for the
+labeller. If not the default argument \code{\link[ggplot2:label_value]{ggplot2::label_value()}} is returned.
+}}
+

@@ -1,6 +1,9 @@
 #' @export
 #'
-#' @rdname fxe_layer_complete_nominate
+#' @describeIn fxe_layer_complete_nominate
+#'     + bar plot
+#'     + heatmap
+#'     + boxplot
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
@@ -15,7 +18,8 @@ setMethod("fxe_layer_complete_nominate",
 
 #' @export
 #'
-#' @rdname fxe_layer_complete_nominate
+#' @describeIn fxe_layer_complete_nominate
+#'     + heatmap
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
@@ -28,7 +32,8 @@ setMethod("fxe_layer_complete_nominate",
 
 #' @export
 #'
-#' @rdname fxe_layer_complete_veto
+#' @describeIn fxe_layer_complete_veto
+#'     + density plots
 
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
@@ -45,6 +50,10 @@ setMethod("fxe_layer_complete_veto",
 #' @export
 #'
 #' @rdname fxe_layer_complete_veto
+#'     + histograms
+#'     + density plots
+#'     + bar plots
+#'     + boxplots
 
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
@@ -64,7 +73,10 @@ setMethod("fxe_layer_complete_veto",
 
 #' @export
 #'
-#' @rdname fxe_layer_complete_vote
+#' @describeIn fxe_layer_complete_vote
+#'     + heatmap: 1
+#'     + barplot: 2
+#'     + boxplot: 1
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
@@ -86,7 +98,8 @@ setMethod("fxe_layer_complete_vote",
 
 #' @export
 #'
-#' @rdname fxe_layer_complete_vote
+#' @describeIn fxe_layer_complete_vote
+#'     + heatmap: 1
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),

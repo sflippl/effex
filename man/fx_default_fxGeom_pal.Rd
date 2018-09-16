@@ -42,6 +42,11 @@ fxe_default_fxGeom_pal(fx_geom, aes_name, ...)
 }
 \description{
 The default palette depends on the aesthetic that is used and mostly
-corresponds to the default choices in \link{ggplot2}. It is extendible via
-\code{fxe_default_fxGeom_pal} over \code{fx_geom} and \code{aes_name}.
+corresponds to the default choices in \link{ggplot2}. It
 }
+\section{Extension Mechanism}{
+
+The function is extendible via \code{fxe_default_fxGeom_pal} over \code{fx_geom} and
+\code{aes_name}.
+}
+

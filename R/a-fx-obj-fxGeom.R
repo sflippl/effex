@@ -27,6 +27,16 @@
 #' @rdname fxGeom-class
 #'
 #' @description
+#'     + fxGeomContinuousCI
+#'
+#' @export
+
+.fxGeomContinuousCI <- setClass("fxGeomContinuousCI",
+                                contains = c("fxGeomContinuous"))
+
+#' @rdname fxGeom-class
+#'
+#' @description
 #'     + fxGeomTime
 #'
 #' @export
@@ -55,7 +65,17 @@
 #'
 #' @export
 
-.fxGeomOrdinal <- setClass("fxGeomOrdinal", contains = "fxGeom")
+.fxGeomOrdinal <- setClass("fxGeomOrdinal", contains = "fxGeomDiscrete")
+
+#' @rdname fxGeom-class
+#'
+#' @description
+#'       + fxGeomOrdinalCI (also inherits from fxGeomOrdinal)
+#'
+#' @export
+
+.fxGeomOrdinalCI <- setClass("fxGeomOrdinalCI",
+                             contains = c("fxGeomOrdinal"))
 
 #' @rdname fxGeom-class
 #'
@@ -65,27 +85,7 @@
 
 .fxGeomSpatial <- setClass("fxGeomSpatial", contains = "fxGeom")
 
-.fxGeomCI <- setClass("fxGeomCI", contains = "fxGeom")
 
-#' @rdname fxGeom-class
-#'
-#' @description
-#'     + fxGeomContinuousCI (also inherits from fxGeomContinuous)
-#'
-#' @export
-
-.fxGeomContinuousCI <- setClass("fxGeomContinuousCI",
-                                contains = c("fxGeomContinuous", "fxGeomCI"))
-
-#' @rdname fxGeom-class
-#'
-#' @description
-#'     + fxGeomOrdinalCI (also inherits from fxGeomOrdinal)
-#'
-#' @export
-
-.fxGeomOrdinalCI <- setClass("fxGeomOrdinalCI",
-                             contains = c("fxGeomOrdinal", "fxGeomCI"))
 
 #' @rdname fxGeom-class
 #'

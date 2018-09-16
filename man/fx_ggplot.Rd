@@ -4,17 +4,15 @@
 \alias{fx_ggplot}
 \title{Effex Function: Visualization}
 \usage{
-fx_ggplot(data, mapping, facet_vars = vars(), discard = TRUE, ...)
+fx_ggplot(data, mapping, facet_vars = vars(), ...)
 }
 \arguments{
 \item{data}{A dataframe with \code{\link[=metaframe]{metaframe()}} as an attribute}
 
 \item{mapping}{An aesthetic mapping}
 
-\item{facet_vars}{Possibly variables, given via [\code{\link[ggplot2:vars]{ggplot2::vars()}}], to
+\item{facet_vars}{Possibly variables, given via \code{\link[ggplot2:vars]{ggplot2::vars()}}, to
 facet after}
-
-\item{discard}{Should unnecessary columns in the data frame be removed before}
 
 \item{...}{Parameters to give on to \code{\link[=fx_default]{fx_default()}}}
 }
@@ -22,23 +20,39 @@ facet after}
 This function creates an effectively and explicitly specified visualization
 of several variables in line with the syntax of \link{ggplot2}.
 }
-\details{
-Required columns in the metaframe:
+\section{Required metaframe columns}{
+
 \itemize{
 \item \code{fxGeom_class}: What class does the geometry have?
+\item \code{fxGeom_limits}: The range of the variables
+\item \code{fxGeom_trans}: The scale transformation
+\item \code{fxInfo_name}: The name of the variable
+}
 }
 
-Columns that are used:
+\section{Extension Mechanism}{
+
+
+Extensions may be defined over the following functions:
 \itemize{
-\item \code{fxGeom_nominations}: A list of nominations (see
-\code{\link[=fxi_layer_complete]{fxi_layer_complete()}})
-\item \code{fxGeom_veto}: A function that is given a nomination and returns a logical
-value whether to veto this nomination
-\item \code{fxGeom_vote}: A function that returns the amount of votes for a certain
-nomination
-\item \code{fxGeom_name}
-\item \code{fxGeom_title}: for the axis title
-\item layer parameters: see \code{\link[=fxe_layer_scale]{fxe_layer_scale()}}
-\item parameters for many values: see \code{\link[=fxe_layer_complete_nominate]{fxe_layer_complete_nominate()}}
+\item \code{\link[=fxe_layer_single]{fxe_layer_single()}}: This function adds independent elements whose nature
+only depends on a single aesthetic to the plot. Usually, it is split up into:
+\itemize{
+\item \code{\link[=fxe_layer_scale]{fxe_layer_scale()}}: This function explicitly changes the independent
+scale element.
+\item \code{\link[=fxe_layer_single_other]{fxe_layer_single_other()}}: This function adds any other independent
+plot elements.
 }
+\item the sub-functions of \code{\link[=fxi_layer_complete]{fxi_layer_complete()}}: This function implements a
+voting system to
+determine those plot elements which depend on all aesthetics.
+\item \code{\link[=fxe_labeller]{fxe_labeller()}}: This function returns the \code{\link[ggplot2:labeller]{ggplot2::labeller()}} for a
+possible facetting variable. It is again an independent plot element.
+}
+}
+
+\examples{
+fx_ggplot(mtcars, aes(x = mpg))
+fx_ggplot(diamonds, aes(x = carat, y = price))
+
 }
