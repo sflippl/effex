@@ -16,3 +16,9 @@ fx_default_fxInfo_name(data, mf = metaframe(fx_default(data)))
 \code{name}. Nevertheless, inference simply assigns the name to it and replaces
 underscores with spaces.
 }
+\examples{
+fx_default_fxInfo_name(
+  data.frame(Column1 = 1:10, Column_with_underscore = 1:10)
+)
+
+}

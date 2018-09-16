@@ -70,7 +70,7 @@
 #' @rdname fxGeom-class
 #'
 #' @description
-#'       + fxGeomOrdinalCI (also inherits from fxGeomOrdinal)
+#'       + fxGeomOrdinalCI
 #'
 #' @export
 
@@ -85,17 +85,16 @@
 
 .fxGeomSpatial <- setClass("fxGeomSpatial", contains = "fxGeom")
 
-
-
 #' @rdname fxGeom-class
 #'
 #' @export
 
 fxGeom <- function(geom_class = "") {
-  subcls <- names(getClass("fxGeom")@subclasses) %>%
-    stringr::str_remove(stringr::coll("fxGeom"))
-  if(geom_class %in% subcls)
-    return(do.call(paste0(".", "fxGeom", geom_class), list(geom_class)))
-  else if(geom_class == "") return(.fxGeom(""))
-  else stop(glue::glue("There is no subclass called fxGeom{geom_class}."))
+  do.call(paste0(".", "fxGeom", geom_class), list(geom_class))
+  # subcls <- names(getClass("fxGeom")@subclasses) %>%
+  #   stringr::str_remove(stringr::coll("fxGeom"))
+  # if(geom_class %in% subcls)
+  #   return(do.call(paste0(".", "fxGeom", geom_class), list(geom_class)))
+  # else if(geom_class == "") return(.fxGeom(""))
+  # else stop(glue::glue("There is no subclass called fxGeom{geom_class}."))
 }

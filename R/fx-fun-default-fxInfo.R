@@ -7,9 +7,8 @@
 #' @param data A data frame
 #' @param mf The metaframe. The metaframe of `data` is set as default.
 #'
-#' @inheritParams fx_default_fxGeom_class
 #'
-#' @example
+#' @examples
 #' fx_default_fxInfo_name(
 #'   data.frame(Column1 = 1:10, Column_with_underscore = 1:10)
 #' )
@@ -20,7 +19,7 @@ fx_default_fxInfo_name <- function(data, mf = metaframe(fx_default(data))) {
   mf$name %>% stringr::str_replace_all(stringr::coll("_"), " ")
 }
 
-#' @desribeIn fxe_default infers the column `fxInfo_name` via
+#' @describeIn fxe_default infers the column `fxInfo_name` via
 #' [fx_default_fxInfo_name()]
 #'
 #' @export

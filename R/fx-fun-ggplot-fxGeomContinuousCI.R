@@ -39,7 +39,7 @@ setMethod("fxe_layer_complete_nominate",
                   if(lower_var %in% names(data)) {
                     new_mapping <-
                       fxGeom_assoc_vars[c("upper", "lower")] %>%
-                      magrittr::set_names(c("xmax", "xmin"))
+                      magrittr::set_names(c("ymax", "ymin"))
                     bool_errorbar <- TRUE
                   }
                 }

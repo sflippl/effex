@@ -6,6 +6,7 @@
 \docType{methods}
 \name{fxe_layer_complete_vote}
 \alias{fxe_layer_complete_vote}
+\alias{fxe_layer_complete_vote,ANY,fxGeom,AesName-method}
 \alias{fxe_layer_complete_vote,ANY,fxGeomContinuous,xAesName-method}
 \alias{fxe_layer_complete_vote,ANY,fxGeomContinuous,yAesName-method}
 \alias{fxe_layer_complete_vote,ANY,fxGeomContinuousCI,yAesName-method}
@@ -16,6 +17,9 @@
 \title{Effex Extendibles in \code{fx_ggplot}: Vote for the nominations}
 \usage{
 fxe_layer_complete_vote(nomination, fx_geom, aes_name, data, ...)
+
+\S4method{fxe_layer_complete_vote}{ANY,fxGeom,AesName}(nomination, fx_geom,
+  aes_name, data, ..., fxGeom_vote = NULL)
 
 
   \S4method{fxe_layer_complete_vote}{ANY,fxGeomContinuous,xAesName}(nomination,
@@ -68,6 +72,9 @@ fxe_layer_complete_vote(nomination, fx_geom, aes_name, data, ...)
 
 \item{aes_name}{An S4 class argument which inherits from \linkS4class{AesName}.}
 
+\item{fxGeom_vote}{Either \code{NULL} (the default) or a function which returns
+the votes as a numerical value for a given nomination.}
+
 \item{fxGeom_alpha.threshold}{What is the threshold number of data points to
 let transparency increase? Default is 1000}
 
@@ -88,6 +95,9 @@ This function gathers the votes for the different nomination.
 }
 \section{Methods (by class)}{
 \itemize{
+\item \code{nomination = ANY,fx_geom = fxGeom,aes_name = AesName}: applies supplied functions to determine
+additional votes
+
 \item \code{nomination = ANY,fx_geom = fxGeomContinuous,aes_name = xAesName}: \itemize{
 \item \code{GeomPoint} with the correct transparency (see \code{\link[=get_alpha]{get_alpha()}}): 1
 \itemize{

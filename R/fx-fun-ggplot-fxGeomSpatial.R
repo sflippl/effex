@@ -19,7 +19,7 @@ setMethod(
 #' @param fxGeom_expand see [ggplot2::coord_sf()]
 #' @param fxGeom_crs see [ggplot2::coord_sf()]
 #'
-#' @describeIn fxe_layer_single
+#' @describeIn fxe_layer_single adds [ggplot2::coord_sf]
 
 setMethod(
   "fxe_layer_single",
@@ -38,7 +38,7 @@ setMethod(
 
 #' @export
 #'
-#' @describeIn fxe_layer_complete_nominate
+#' @describeIn fxe_layer_complete_nominate [ggplot2::geom_sf()]
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomSpatial", aes_name = "geomAesName"),

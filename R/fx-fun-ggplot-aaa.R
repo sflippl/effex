@@ -298,12 +298,13 @@ setGeneric("fxe_layer_complete_vote",
            function(nomination, fx_geom, aes_name, data, ...)
              standardGeneric("fxe_layer_complete_vote"))
 
-#' @export
-#'
 #' @param fxGeom_vote Either `NULL` (the default) or a function which returns
 #' the votes as a numerical value for a given nomination.
 #'
-#' @describeIn fxe_layer_complete_vote
+#' @describeIn fxe_layer_complete_vote applies supplied functions to determine
+#' additional votes
+#'
+#' @export
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeom", aes_name = "AesName"),

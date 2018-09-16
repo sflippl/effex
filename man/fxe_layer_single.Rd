@@ -6,6 +6,7 @@
 \alias{fxe_layer_single}
 \alias{fxe_layer_single,fxGeom,AesName-method}
 \alias{fxe_layer_single,fxGeomSpatial,AesName-method}
+\alias{fxe_layer_single,fxGeomSpatial,geomAesName-method}
 \title{Effex Extendibles in \code{fx-ggplot}: geometric information along one dimension}
 \usage{
 fxe_layer_single(fx_geom, aes_name, data, ...)
@@ -14,11 +15,23 @@ fxe_layer_single(fx_geom, aes_name, data, ...)
 
 \S4method{fxe_layer_single}{fxGeomSpatial,AesName}(fx_geom, aes_name, data,
   ...)
+
+\S4method{fxe_layer_single}{fxGeomSpatial,geomAesName}(fx_geom, aes_name,
+  data, fxGeom_xlim = NULL, fxGeom_ylim = NULL, fxGeom_expand = NULL,
+  fxGeom_crs = NULL, ...)
 }
 \arguments{
 \item{fx_geom}{An S4 class argument which inherits from \linkS4class{fxGeom}.}
 
 \item{aes_name}{An S4 class argument which inherits from \linkS4class{AesName}.}
+
+\item{fxGeom_xlim}{see \code{\link[ggplot2:coord_sf]{ggplot2::coord_sf()}}}
+
+\item{fxGeom_ylim}{see \code{\link[ggplot2:coord_sf]{ggplot2::coord_sf()}}}
+
+\item{fxGeom_expand}{see \code{\link[ggplot2:coord_sf]{ggplot2::coord_sf()}}}
+
+\item{fxGeom_crs}{see \code{\link[ggplot2:coord_sf]{ggplot2::coord_sf()}}}
 
 \item{fx_geom}{the \code{\link[=fxGeom]{fxGeom()}} object}
 
@@ -38,5 +51,7 @@ considered a possibility that these values are missing.
 
 \item \code{fx_geom = fxGeomSpatial,aes_name = AesName}: produces an error as the aesthetic must be
 \code{geom}
+
+\item \code{fx_geom = fxGeomSpatial,aes_name = geomAesName}: adds \link[ggplot2:coord_sf]{ggplot2::coord_sf}
 }}
 
