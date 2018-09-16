@@ -13,3 +13,5 @@ devtools::install_github("sflippl/tectr")
 ```
 
 For now, an introduction to `tectr` can be found in my [https://github.com/sflippl/bachelor-thesis/blob/master/\_book/bachelor-thesis.pdf](Bachelor's%20Thesis).
+
+The package [https://github.com/sflippl/vdem.tectr](%60vdem.tectr%60) applies `tectr` to the [v-dem.net](V-Dem%20database).
