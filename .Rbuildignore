@@ -2,5 +2,7 @@
 ^\.Rproj\.user$
 ^data-raw$
 ^orga$
-^R2$
-^tests2$
+^README\.Rmd$
+^README-.*\.png$
+^\.travis\.yml$
+^codecov\.yml$

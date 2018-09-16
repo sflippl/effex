@@ -1,21 +1,23 @@
 Package: tectr
 Type: Package
-Title: Provides an implementation of the architecture framework in R
+Title: User Interface For Complex Datasets
 Version: 0.0.0.999
 Authors@R: c(person("Samuel", "Lippl", 
                    email = "sfc.lippl@gmail.com", 
-                   role = c("cre", "aut")), 
-             person("Fabian", "Obster", 
-                     email = "fabian.obster@gmail.com", 
-                     role = c("aut")))
-Description: Provides an implementation of the architecture framework in R.
+                   role = c("cre", "aut")))
+Description: This package allows you to supplement visualizations, summary 
+    tables and other tools of statistical analysis with a proper variable 
+    description and customized default values.
 License: GPL-2
+URL: https://github.com/sflippl/tectr
+BugReports: https://github.com/sflippl/tectr/issues
 LazyData: true
 Depends: R(>= 3.3.3)
 Suggests: testthat,
     knitr,
     rmarkdown,
-    sf
+    sf,
+    covr
 Imports:
     assertthat,
     dplyr,
@@ -36,7 +38,8 @@ Imports:
     kableExtra,
     scales,
     moments,
-    geoR
+    geoR,
+    methods
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.0
 VignetteBuilder: knitr
