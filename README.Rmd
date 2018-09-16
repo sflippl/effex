@@ -14,6 +14,9 @@ knitr::opts_chunk$set(
 
 # tectr
 
+[![Travis-CI Build Status](https://travis-ci.org/sflippl/tectr.svg?branch=master)](https://travis-ci.org/sflippl/tectr)
+[![Coverage Status](https://img.shields.io/codecov/c/github/sflippl/tectr/master.svg)](https://codecov.io/github/sflippl/tectr?branch=master)
+
 R provides powerful opportunities to outsource everyday thought processes in data analysis. However, adapting these mechanisms for application-specific thought processes is expensive and difficult. Whenever a statistician builds a plot he needs to specify the variable name, scale transformations etc. `tectr` supports automation of these parameters. In particular, it supports automated visualization of complex datasets.
 
 You can install tectr from github with:
