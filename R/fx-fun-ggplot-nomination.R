@@ -25,7 +25,9 @@ nomination <- function(...) {
   add_to_nom(lst[[1]], nomination(!!!lst[-1]))
 }
 
-#' @describeIn nomination dispatched over `nomination_el`
+#' @rdname  nomination
+#'
+#' `add_to_nam` may be dispatched over `nomination_el`.
 #'
 #' @param nomination_el a new nomination element. Has to be a "ggproto" object.
 #' @param nomination a nomination

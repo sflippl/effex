@@ -7,6 +7,14 @@
 fx_default_fxGeom_limits(data, mf = metaframe(fx_default(data)),
   custom_fun = default_identity)
 }
+\arguments{
+\item{data}{A data frame}
+
+\item{mf}{The metaframe. The metaframe of \code{data} is set as default.}
+
+\item{custom_fun}{A function which accepts the determined class and the name
+and returns the corrected class. Default is the identity.}
+}
 \description{
 \code{fxGeom_limits} specifies the limits of the scale of \code{\link[=fx_ggplot]{fx_ggplot()}}.
 }

@@ -57,7 +57,7 @@ fxe_default.fxd_default_fxGeom_class <- function(data, mf, col, ...)
 #'
 #' `fxGeom_limits` specifies the limits of the scale of [fx_ggplot()].
 #'
-#' @inheritParam fx_default_fxGeom_class
+#' @inheritParams fx_default_fxGeom_class
 #'
 #' @section Mechanism:
 #' * Numeric: The range of the data
