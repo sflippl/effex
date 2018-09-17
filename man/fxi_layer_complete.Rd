@@ -20,9 +20,9 @@ which depend on all specified layers.
 This function employs a \emph{voting system} to determine a suitable
 \code{\link[=nomination]{nomination()}} of elements.
 \itemize{
-\item \code{\link[=fxe_layer_nominate]{fxe_layer_nominate()}} gathers nominations
-\item \code{\link[=fxe_layer_veto]{fxe_layer_veto()}} determines the vetos
-\item \code{\link[=fxe_layer_vote]{fxe_layer_vote()}} gathers the votes
+\item \code{\link[=fxe_layer_complete_nominate]{fxe_layer_complete_nominate()}} gathers nominations
+\item \code{\link[=fxe_layer_complete_veto]{fxe_layer_complete_veto()}} determines the vetos
+\item \code{\link[=fxe_layer_complete_vote]{fxe_layer_complete_vote()}} gathers the votes
 }
 
 You can extend all three of these functions by S4 dispatch over the aesthetic

@@ -7,10 +7,12 @@
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomOrdinalCI", aes_name = "yAesName"),
-          function(fx_geom, aes_name, data, ..., name,
-                   fxGeom_nominations = NULL,
+          function(fx_geom, aes_name, data, ...,
                    fxGeom_assoc_vars = NULL, fxGeom_errorbar.threshold = NULL) {
-            nxt <- callNextMethod()
+            nxt <- fxe_layer_complete_nominate(
+              fxGeom("Ordinal"), aes_name, data, ...,
+              fxGeom_assoc_vars = fxGeom_assoc_vars,
+              fxGeom_errorbar.threshold = fxGeom_errorbar.threshold)
             if(is.null(fxGeom_errorbar.threshold))
               fxGeom_errorbar.threshold <- 200
             n_row <- nrow(data)
@@ -21,20 +23,16 @@ setMethod("fxe_layer_complete_nominate",
             # if high and low mappings are well defined, define them and set
             # bool_errorbar to true.
             if(!is.null(upper_quo)) {
-              if(rlang::is_quosure(upper_quo))
-                upper_var <-
+              upper_var <-
                   upper_quo %>%
                   rlang::quo_get_expr() %>%
                   as.character()
-              else upper_var <- upper_quo
               if(upper_var %in% names(data)) {
                 if(!is.null(lower_quo)) {
-                  if(rlang::is_quosure(lower_quo))
-                    lower_var <-
+                  lower_var <-
                       lower_quo %>%
                       rlang::quo_get_expr() %>%
                       as.character()
-                  else lower_var <- lower_quo
                   if(lower_var %in% names(data)) {
                     new_mapping <-
                       fxGeom_assoc_vars[c("upper", "lower")] %>%
@@ -75,11 +73,10 @@ setMethod("fxe_layer_complete_nominate",
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomOrdinalCI", aes_name = "yAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL, fxGeom_votes = NULL,
-                   fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
-                   fxGeom_alpha.min = NULL, fxGeom_hex.threshold = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_vote(
+              nomination, fxGeom("Ordinal"), aes_name, data, ...
+            )
             bool_ribbon <-
               nomination %>%
               nom_layers() %>%
@@ -90,5 +87,7 @@ setMethod("fxe_layer_complete_vote",
               nom_layers() %>%
               purrr::map_lgl( ~ inherits(.$geom, "GeomLinerange")) %>%
               any
-            as.numeric(bool_linerange | bool_ribbon) + nxt
+            if(bool_linerange) return(3 + nxt)
+            if(bool_ribbon) return(2 + nxt)
+            nxt
           })

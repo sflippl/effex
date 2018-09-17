@@ -27,6 +27,20 @@ test_that("votes work", {
                             fxGeom("OrdinalCI"),
                             AesName("y"),
                             data.frame()),
-    1
+    3
+  )
+  expect_equal(
+    fxe_layer_complete_vote(nomination(ggplot2::geom_area()),
+                            fxGeom("OrdinalCI"),
+                            AesName("y"),
+                            data.frame()),
+    2
+  )
+  expect_equal(
+    fxe_layer_complete_vote(nomination(ggplot2::geom_point()),
+                            fxGeom("OrdinalCI"),
+                            AesName("y"),
+                            data.frame()),
+    0
   )
 })

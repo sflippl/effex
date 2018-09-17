@@ -23,47 +23,34 @@ fxe_layer_complete_vote(nomination, fx_geom, aes_name, data, ...)
 
 
   \S4method{fxe_layer_complete_vote}{ANY,fxGeomContinuous,xAesName}(nomination,
-  fx_geom, aes_name, data, ..., fxGeom_vetos = NULL,
-  fxGeom_votes = NULL, fxGeom_alpha.threshold = NULL,
+  fx_geom, aes_name, data, ..., fxGeom_alpha.threshold = NULL,
   fxGeom_alpha.half = NULL, fxGeom_alpha.min = NULL,
   fxGeom_hex.threshold = NULL)
 
 
   \S4method{fxe_layer_complete_vote}{ANY,fxGeomContinuous,yAesName}(nomination,
-  fx_geom, aes_name, data, ..., fxGeom_vetos = NULL,
-  fxGeom_votes = NULL, fxGeom_alpha.threshold = NULL,
+  fx_geom, aes_name, data, ..., fxGeom_alpha.threshold = NULL,
   fxGeom_alpha.half = NULL, fxGeom_alpha.min = NULL,
   fxGeom_hex.threshold = NULL)
 
 
   \S4method{fxe_layer_complete_vote}{ANY,fxGeomContinuousCI,yAesName}(nomination,
-  fx_geom, aes_name, data, ..., fxGeom_vetos = NULL,
-  fxGeom_votes = NULL, fxGeom_alpha.threshold = NULL,
-  fxGeom_alpha.half = NULL, fxGeom_alpha.min = NULL,
-  fxGeom_hex.threshold = NULL)
+  fx_geom, aes_name, data, ...)
 
 
   \S4method{fxe_layer_complete_vote}{ANY,fxGeomDiscrete,xAesName}(nomination,
-  fx_geom, aes_name, data, ..., fxGeom_vetos = NULL,
-  fxGeom_votes = NULL)
+  fx_geom, aes_name, data, ...)
 
 
   \S4method{fxe_layer_complete_vote}{ANY,fxGeomDiscrete,yAesName}(nomination,
-  fx_geom, aes_name, data, ..., fxGeom_vetos = NULL,
-  fxGeom_votes = NULL)
+  fx_geom, aes_name, data, ...)
 
 
   \S4method{fxe_layer_complete_vote}{ANY,fxGeomOrdinalCI,yAesName}(nomination,
-  fx_geom, aes_name, data, ..., fxGeom_vetos = NULL,
-  fxGeom_votes = NULL, fxGeom_alpha.threshold = NULL,
-  fxGeom_alpha.half = NULL, fxGeom_alpha.min = NULL,
-  fxGeom_hex.threshold = NULL)
+  fx_geom, aes_name, data, ...)
 
 \S4method{fxe_layer_complete_vote}{ANY,fxGeomTime,xAesName}(nomination,
-  fx_geom, aes_name, data, ..., fxGeom_vetos = NULL,
-  fxGeom_votes = NULL, fxGeom_alpha.threshold = NULL,
-  fxGeom_alpha.half = NULL, fxGeom_alpha.min = NULL,
-  fxGeom_hex.threshold = NULL)
+  fx_geom, aes_name, data, ...)
 }
 \arguments{
 \item{nomination}{the \code{\link[=nomination]{nomination()}} which is to be considered for a veto}
@@ -117,7 +104,7 @@ additional votes
 }
 
 \item \code{nomination = ANY,fx_geom = fxGeomContinuousCI,aes_name = yAesName}: \itemize{
-\item line plot with shaded confidence intervals: 1
+\item line plot with shaded confidence intervals: 2
 \itemize{
 \item 
 }

@@ -7,8 +7,10 @@
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
-          function(fx_geom, aes_name, data, ..., fxGeom_nominations = NULL) {
-            nxt <- callNextMethod()
+          function(fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_nominate(
+              fxGeom("Discrete"), AesName(""), data, ...
+            )
             list(
               nomination(ggplot2::geom_bar()),
               nomination(ggplot2::geom_bin2d()),
@@ -23,8 +25,10 @@ setMethod("fxe_layer_complete_nominate",
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
-          function(fx_geom, aes_name, data, ..., fxGeom_nominations = NULL) {
-            nxt <- callNextMethod()
+          function(fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_nominate(
+              fxGeom("Discrete"), AesName(""), data, ...
+            )
             list(
               nomination(ggplot2::geom_bin2d())
             ) %>% c(nxt)
@@ -37,9 +41,10 @@ setMethod("fxe_layer_complete_nominate",
 
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_veto(
+              nomination, fxGeom("Discrete"), AesName(""), data, ...
+            )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
                              ~ inherits(.$stat, "StatDensity"))
@@ -57,9 +62,10 @@ setMethod("fxe_layer_complete_veto",
 
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_veto(
+              nomination, fxGeom("Discrete"), AesName(""), data, ...
+            )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
                              ~ (inherits(.$stat, "StatBin") &
@@ -80,9 +86,10 @@ setMethod("fxe_layer_complete_veto",
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL, fxGeom_votes = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_vote(
+              nomination, fxGeom("Discrete"), AesName(""), data, ...
+            )
             dplyr::case_when(
               any(purrr::map_lgl(nom_layers(nomination),
                                  ~ inherits(.$geom, "StatBin2d"))) ~
@@ -103,9 +110,10 @@ setMethod("fxe_layer_complete_vote",
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL, fxGeom_votes = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_vote(
+              nomination, fxGeom("Discrete"), AesName(""), data, ...
+            )
             dplyr::case_when(
               any(purrr::map_lgl(nom_layers(nomination),
                                  ~ inherits(.$geom, "StatBin2d"))) ~

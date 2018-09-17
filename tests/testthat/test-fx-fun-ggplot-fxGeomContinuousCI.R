@@ -27,6 +27,20 @@ test_that("votes work", {
                             fxGeom("ContinuousCI"),
                             AesName("y"),
                             data.frame()),
+    3
+  )
+  expect_equal(
+    fxe_layer_complete_vote(nomination(ggplot2::geom_area()),
+                            fxGeom("ContinuousCI"),
+                            AesName("y"),
+                            data.frame()),
+    2
+  )
+  expect_equal(
+    fxe_layer_complete_vote(nomination(ggplot2::geom_point()),
+                            fxGeom("ContinuousCI"),
+                            AesName("y"),
+                            data.frame()),
     1
   )
 })

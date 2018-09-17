@@ -39,21 +39,20 @@
 #' @export
 
 fx_ggplot <- function(data, mapping, facet_vars = vars(), ...) {
-  data <-
+  dat <-
     data %>%
-    fx_default(columns = fx_ggplot_columns, ...) %>%
-    fx_evaluate()
+    fx_default(columns = fx_ggplot_columns, ...)
   layers <- c(
     # At first, we add the geometric information along one dimension
-    purrr::map(names(mapping), ~ fxi_layer_single(data, mapping, .)) %>%
+    purrr::map(names(mapping), ~ fxi_layer_single(dat, mapping, .)) %>%
       unlist(recursive = FALSE),
     # Then, we add the geometric information that is dependent on all dimensions
-    fxi_layer_complete(data, mapping),
+    fxi_layer_complete(dat, mapping),
     if(length(facet_vars) != 0)
-      facet_wrap(facet_vars, labeller = fxi_labeller(data, facet_vars))
+      facet_wrap(facet_vars, labeller = fxi_labeller(dat, facet_vars))
     else NULL
   )
-  ggplot(data, mapping) + layers
+  ggplot(dat, mapping) + layers
 }
 
 fxi_layer_single <- function(data, mapping, nam) {
@@ -114,9 +113,9 @@ setMethod(
 #' This function employs a *voting system* to determine a suitable
 #' [nomination()] of elements.
 #'
-#' * [fxe_layer_nominate()] gathers nominations
-#' * [fxe_layer_veto()] determines the vetos
-#' * [fxe_layer_vote()] gathers the votes
+#' * [fxe_layer_complete_nominate()] gathers nominations
+#' * [fxe_layer_complete_veto()] determines the vetos
+#' * [fxe_layer_complete_vote()] gathers the votes
 #'
 #' You can extend all three of these functions by S4 dispatch over the aesthetic
 #' and the geometry class.
@@ -151,10 +150,10 @@ fxi_layer_complete_nominate <- function(data, mf) {
     mf_args <- dplyr::select(mf[i, ], -aes) %>% lst_mf_args()
     # Let each aesthetic nominate its potential candidates
     new_nominations <- do.call("fxe_layer_complete_nominate",
-                              rlang::list2(fx_geom = lst_fxGeom[[i]],
-                                           aes_name = lst_aesName[[i]],
-                                           data = data,
-                                           !!!mf_args))
+                               rlang::list2(fx_geom = lst_fxGeom[[i]],
+                                            aes_name = lst_aesName[[i]],
+                                            data = data,
+                                            !!!mf_args))
     purrr::walk(new_nominations, ~ assertthat::assert_that(is_nomination(.)))
     nominations <- c(nominations, new_nominations)
   }

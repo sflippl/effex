@@ -42,8 +42,8 @@ setMethod(
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomSpatial", aes_name = "geomAesName"),
-          function(fx_geom, aes_name, data, ..., fxGeom_nominations = NULL) {
-            nxt <- callNextMethod()
+          function(fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_nominate(fxGeom(""), aes_name, data, ...)
             list(nomination(ggplot2::geom_sf())) %>%
               c(nxt)
           })
@@ -55,9 +55,10 @@ setMethod("fxe_layer_complete_nominate",
 
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomSpatial", aes_name = "geomAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_veto(
+              nomination, fxGeom(""), aes_name, data, ...
+            )
             ret <- !any(
               purrr::map_lgl(
                 nom_layers(nomination),

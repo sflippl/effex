@@ -12,13 +12,15 @@
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomTime", aes_name = "xAesName"),
-          function(fx_geom, aes_name, data, ..., name,
-                   fxGeom_nominations = NULL,
-                   fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
-                   fxGeom_alpha.min = NULL,
+          function(fx_geom, aes_name, data, ...,
                    fxGeom_assoc_vars = NULL,
                    fxGeom_shadow.threshold = NULL, fxGeom_shadow.alpha = NULL) {
-            nxt <- callNextMethod()
+            nxt <- fxe_layer_complete_nominate(
+              fxGeom("Continuous"), AesName(""), data, ...,
+              fxGeom_assoc_vars = fxGeom_assoc_vars,
+              fxGeom_shadow.threshold = fxGeom_shadow.threshold,
+              fxGeom_shadow.alpha = fxGeom_shadow.alpha
+            )
             if(is.null(fxGeom_shadow.threshold)) fxGeom_shadow.threshold <- 10
             if(is.null(fxGeom_shadow.alpha)) fxGeom_shadow.alpha <- 0.05
             # get the number of groups
@@ -75,15 +77,14 @@ setMethod("fxe_layer_complete_nominate",
 #'
 #' @describeIn fxe_layer_complete_vote
 #'     + a line plot: 4
-#'     + a path plot which is not a line plot: 3
+#'     * a path plot which is not a line plot: 3
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomTime", aes_name = "xAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL, fxGeom_votes = NULL,
-                   fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
-                   fxGeom_alpha.min = NULL, fxGeom_hex.threshold = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_vote(
+              nomination, fxGeom("Continuous"), aes_name, data, ...
+            )
             bool_path <-
               nomination %>%
               nom_layers() %>%

@@ -11,11 +11,15 @@
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "xAesName"),
-          function(fx_geom, aes_name, data, ..., name,
-                   fxGeom_nominations = NULL,
+          function(fx_geom, aes_name, data, ...,
                    fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
                    fxGeom_alpha.min = NULL) {
-            nxt <- callNextMethod()
+            nxt <- fxe_layer_complete_nominate(
+              fxGeom("Continuous"), AesName(""), data, ...,
+              fxGeom_alpha.threshold = fxGeom_alpha.threshold,
+              fxGeom_alpha.half = fxGeom_alpha.half,
+              fxGeom_alpha.min = fxGeom_alpha.min
+            )
             n_row <- nrow(data)
             alpha <- get_alpha(fxGeom_alpha.threshold, fxGeom_alpha.half,
                                fxGeom_alpha.min, n_row)
@@ -41,10 +45,15 @@ setMethod("fxe_layer_complete_nominate",
 
 setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "yAesName"),
-          function(fx_geom, aes_name, data, ..., fxGeom_nominations = NULL,
+          function(fx_geom, aes_name, data, ...,
                    fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
                    fxGeom_alpha.min = NULL) {
-            nxt <- callNextMethod()
+            nxt <- fxe_layer_complete_nominate(
+              fxGeom("Continuous"), AesName(""), data, ...,
+              fxGeom_alpha.threshold = fxGeom_alpha.threshold,
+              fxGeom_alpha.half = fxGeom_alpha.half,
+              fxGeom_alpha.min = fxGeom_alpha.min
+            )
             n_row <- nrow(data)
             alpha <- get_alpha(fxGeom_alpha.threshold, fxGeom_alpha.half,
                                fxGeom_alpha.min, n_row)
@@ -67,9 +76,10 @@ setMethod("fxe_layer_complete_nominate",
 
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "xAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_veto(
+              nomination, fxGeom("Continuous"), AesName(""), data, ...
+            )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
                              ~ inherits(.$geom, "GeomBoxplot") |
@@ -86,9 +96,10 @@ setMethod("fxe_layer_complete_veto",
 
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "yAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_veto(
+              nomination, fxGeom("Continuous"), AesName(""), data, ...
+            )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
                              ~ inherits(.$stat, "StatCount") |
@@ -113,10 +124,14 @@ setMethod("fxe_layer_complete_veto",
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "xAesName"),
           function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL, fxGeom_votes = NULL,
                    fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
                    fxGeom_alpha.min = NULL, fxGeom_hex.threshold = NULL) {
-            nxt <- callNextMethod()
+            nxt <- fxe_layer_complete_vote(
+              nomination, fxGeom("Continuous"), AesName(""), data, ...,
+              fxGeom_alpha.threshold = fxGeom_alpha.threshold,
+              fxGeom_alpha.half = fxGeom_alpha.half,
+              fxGeom_alpha.min = fxGeom_alpha.min,
+              fxGeom_hex.threshold = fxGeom_hex.threshold)
             n_row <- nrow(data)
             alpha <- get_alpha(fxGeom_alpha.threshold, fxGeom_alpha.half,
                                fxGeom_alpha.min, n_row)
@@ -127,7 +142,8 @@ setMethod("fxe_layer_complete_vote",
                 purrr::map_lgl(
                   nom_layers(nomination),
                   ~ inherits(.$geom, "GeomPoint") &
-                    identical(.$aes_params$alpha, alpha)
+                    (isTRUE(all.equal(.$aes_params$alpha, alpha)) ||
+                       (is.null(.$aes_params$alpha) & alpha == 1))
                 )
               ) ~ 1,
               any(
@@ -158,10 +174,14 @@ setMethod("fxe_layer_complete_vote",
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "yAesName"),
           function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL, fxGeom_votes = NULL,
                    fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
                    fxGeom_alpha.min = NULL, fxGeom_hex.threshold = NULL) {
-            nxt <- callNextMethod()
+            nxt <- fxe_layer_complete_vote(
+              nomination, fxGeom("Continuous"), AesName(""), data, ...,
+              fxGeom_alpha.threshold = fxGeom_alpha.threshold,
+              fxGeom_alpha.half = fxGeom_alpha.half,
+              fxGeom_alpha.min = fxGeom_alpha.min,
+              fxGeom_hex.threshold = fxGeom_hex.threshold)
             n_row <- nrow(data)
             alpha <- get_alpha(fxGeom_alpha.threshold, fxGeom_alpha.half,
                                fxGeom_alpha.min, n_row)
@@ -172,7 +192,8 @@ setMethod("fxe_layer_complete_vote",
                 purrr::map_lgl(
                   nom_layers(nomination),
                   ~ inherits(.$geom, "GeomPoint") &
-                    identical(.$aes_params$alpha, alpha)
+                    (isTRUE(all.equal(.$aes_params$alpha, alpha)) ||
+                       (is.null(.$aes_params$alpha) & alpha == 1))
                 )
               ) ~ 1,
               any(
@@ -232,9 +253,10 @@ get_alpha <- function(fxGeom_alpha.threshold, fxGeom_alpha.half,
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomContinuous",
                         aes_name = "colourAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL, fxGeom_votes = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_veto(
+              nomination, fxGeom("Continuous"), AesName(""), data, ...
+            )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
                              ~ inherits(.$stat, "StatBin2d") |
@@ -252,9 +274,10 @@ setMethod("fxe_layer_complete_veto",
 setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomContinuous",
                         aes_name = "fillAesName"),
-          function(nomination, fx_geom, aes_name, data, ...,
-                   fxGeom_vetos = NULL, fxGeom_votes = NULL) {
-            nxt <- callNextMethod()
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_veto(
+              nomination, fxGeom("Continuous"), AesName(""), data, ...
+            )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
                              ~ inherits(.$stat, "StatBin2d") |
