@@ -69,3 +69,16 @@ entire data frame. The new method must conform to the \code{\link[=fxd]{fxd()}} 
 mechanism where the task is "default" and the column name is the subclass.
 }
 
+\examples{
+fxe_default(data.frame(),
+            new_metaframe(name = character(0)),
+            col = fxd("default"),
+            mustWork = FALSE)
+\donttest{
+fxe_default(data.frame(),
+            new_metaframe(name = character(0)),
+            col = fxd("default"))
+}
+
+
+}

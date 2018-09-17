@@ -1,10 +1,11 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^data-raw$
 ^orga$
+^data-raw$
 ^README\.Rmd$
 ^README-.*\.png$
 ^\.travis\.yml$
 ^codecov\.yml$
 .Rhistory
 .gitignore
+codecov.yml

@@ -75,7 +75,8 @@ is 10}
 this layer should be vetoed, i. e. removed from the nominations list.
 }
 \description{
-Effex Extendibles in \code{fx_ggplot}: nominate layers
+This function returns element \code{\link[=nomination]{nomination()}}s for a combination of a geometry
+class and an aesthetic.
 }
 \section{Methods (by class)}{
 \itemize{

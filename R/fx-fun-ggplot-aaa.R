@@ -219,7 +219,7 @@ get_inds <- function(x) {
 #'
 #' @inheritParams fxe_layer_single
 #'
-#' This function returns element [nomination()]s for a combination of a geometry
+#' @description This function returns element [nomination()]s for a combination of a geometry
 #' class and an aesthetic.
 #'
 #' @seealso [fxi_layer_complete()]
@@ -263,8 +263,7 @@ setGeneric("fxe_layer_complete_veto",
            function(nomination, fx_geom, aes_name, data, ...)
              standardGeneric("fxe_layer_complete_veto"))
 
-#' @export fxGeom_veto either `NULL` (the default) or a function which returns
-#' whether this element should be vetoed.
+#' @export
 #'
 #' @param fxGeom_veto either `NULL` or a function which vetoes nominations by
 #' returning a boolean for a given nomination.
