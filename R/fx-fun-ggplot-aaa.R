@@ -168,7 +168,7 @@ fxi_layer_complete_vote <- function(nominations, mf, data) {
 
   # Vetoes ----
 
-  lgl_veto <- FALSE
+  lgl_veto <- rep(FALSE, length(nominations))
   for(i in seq_len(nrow(mf))) {
     mf_args <- dplyr::select(mf[i, ], -aes) %>%
       rlang::as_list(.) %>%

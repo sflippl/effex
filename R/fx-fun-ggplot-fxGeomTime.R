@@ -16,7 +16,7 @@ setMethod("fxe_layer_complete_nominate",
                    fxGeom_assoc_vars = NULL,
                    fxGeom_shadow.threshold = NULL, fxGeom_shadow.alpha = NULL) {
             nxt <- fxe_layer_complete_nominate(
-              fxGeom("Continuous"), AesName(""), data, ...,
+              fxGeom("Continuous"), aes_name, data, ...,
               fxGeom_assoc_vars = fxGeom_assoc_vars,
               fxGeom_shadow.threshold = fxGeom_shadow.threshold,
               fxGeom_shadow.alpha = fxGeom_shadow.alpha
@@ -55,7 +55,8 @@ setMethod("fxe_layer_complete_nominate",
                 ),
                 nomination(
                   ggplot2::geom_step(mapping = new_mapping,
-                                     alpha = fxGeom_shadow.alpha),
+                                     alpha = fxGeom_shadow.alpha,
+                                     na.rm = TRUE),
                   ggplot2::geom_smooth()
                 )
               )
@@ -78,6 +79,7 @@ setMethod("fxe_layer_complete_nominate",
 #' @describeIn fxe_layer_complete_vote
 #'     + a line plot: 4
 #'     * a path plot which is not a line plot: 3
+#'     * `geom_smooth()`: 2
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomTime", aes_name = "xAesName"),
@@ -96,5 +98,10 @@ setMethod("fxe_layer_complete_vote",
               nom_layers() %>%
               purrr::map_lgl( ~ inherits(.$geom, "GeomLine")) %>%
               any
-            bool_line * 1 + bool_path * 3 + nxt
+            bool_smooth <-
+              nomination %>%
+              nom_layers() %>%
+              purrr::map_lgl( ~ inherits(.$geom, "GeomSmooth")) %>%
+              any
+            bool_line * 1 + bool_path * 3 + bool_smooth * 2 + nxt
           })

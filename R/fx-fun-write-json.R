@@ -53,7 +53,7 @@ fx_write_json <- function(data, path, ...,
     # The separation is different if the file path is empty so far:
     sep <-
       dplyr::if_else(stringr::str_detect(data_aff[[".file_path"]], "\\/$"),
-                     "", " - ")
+                     "", "-")
     tmp_paths <- paste0(data_aff[[".file_path"]], sep, nam, ".json")
     for(i in seq_len(nrow(data_aff))) {
       do.call("write_json",

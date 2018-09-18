@@ -86,20 +86,20 @@ This function gathers the votes for the different nomination.
 additional votes
 
 \item \code{nomination = ANY,fx_geom = fxGeomContinuous,aes_name = xAesName}: \itemize{
-\item \code{GeomPoint} with the correct transparency (see \code{\link[=get_alpha]{get_alpha()}}): 1
+\item \code{GeomPoint} with the correct transparency (see \code{\link[=get_alpha]{get_alpha()}}): 2
 \itemize{
-\item hexagonal heatmap if the threshold is exceeded: 2 (else: 0)
-\item histogram: 2
-\item \code{StatBin} without \code{GeomBar}: 1
+\item hexagonal heatmap if the threshold is exceeded: 3 (else: 0)
+\item histogram: 3
+\item \code{StatBin} without \code{GeomBar}: 2
 }
 }
 
 \item \code{nomination = ANY,fx_geom = fxGeomContinuous,aes_name = yAesName}: \itemize{
-\item \code{GeomPoint} with the correct transparency (see \code{\link[=get_alpha]{get_alpha()}}): 1
+\item \code{GeomPoint} with the correct transparency (see \code{\link[=get_alpha]{get_alpha()}}): 2
 \itemize{
-\item hexagonal heatmap if the threshold is exceeded: 2 (else: 0)
-\item \code{StatBin}: 1
-\item boxplot: 2
+\item hexagonal heatmap if the threshold is exceeded: 3 (else: 0)
+\item \code{StatBin}: 2
+\item boxplot: 3
 }
 }
 
@@ -133,6 +133,7 @@ additional votes
 \item a line plot: 4
 \itemize{
 \item a path plot which is not a line plot: 3
+\item \code{geom_smooth()}: 2
 }
 }
 }}

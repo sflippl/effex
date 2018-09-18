@@ -9,7 +9,7 @@ setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
           function(fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_nominate(
-              fxGeom("Discrete"), AesName(""), data, ...
+              fxGeom(""), aes_name, data, ...
             )
             list(
               nomination(ggplot2::geom_bar()),
@@ -27,7 +27,7 @@ setMethod("fxe_layer_complete_nominate",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
           function(fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_nominate(
-              fxGeom("Discrete"), AesName(""), data, ...
+              fxGeom(""), aes_name, data, ...
             )
             list(
               nomination(ggplot2::geom_bin2d())
@@ -43,7 +43,7 @@ setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
           function(nomination, fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_veto(
-              nomination, fxGeom("Discrete"), AesName(""), data, ...
+              nomination, fxGeom(""), aes_name, data, ...
             )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
@@ -64,7 +64,7 @@ setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
           function(nomination, fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_veto(
-              nomination, fxGeom("Discrete"), AesName(""), data, ...
+              nomination, fxGeom(""), aes_name, data, ...
             )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
@@ -88,7 +88,7 @@ setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "xAesName"),
           function(nomination, fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_vote(
-              nomination, fxGeom("Discrete"), AesName(""), data, ...
+              nomination, fxGeom(""), aes_name, data, ...
             )
             dplyr::case_when(
               any(purrr::map_lgl(nom_layers(nomination),
@@ -112,7 +112,7 @@ setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomDiscrete", aes_name = "yAesName"),
           function(nomination, fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_vote(
-              nomination, fxGeom("Discrete"), AesName(""), data, ...
+              nomination, fxGeom(""), aes_name, data, ...
             )
             dplyr::case_when(
               any(purrr::map_lgl(nom_layers(nomination),
@@ -120,4 +120,46 @@ setMethod("fxe_layer_complete_vote",
                 1,
               TRUE ~ 0
             ) + nxt
+          })
+
+#' @export
+#'
+#' @describeIn fxe_layer_complete_veto vetoes heatmaps and two-dimensional
+#' density plots
+
+setMethod("fxe_layer_complete_veto",
+          signature = c(fx_geom = "fxGeomDiscrete",
+                        aes_name = "colourAesName"),
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_veto(
+              nomination, fxGeom(""), aes_name, data, ...
+            )
+            ret <- any(
+              purrr::map_lgl(nom_layers(nomination),
+                             ~ inherits(.$stat, "StatBin2d") |
+                               inherits(.$stat, "StatBinhex") |
+                               inherits(.$stat, "StatDensity2d"))
+            )
+            ret | nxt
+          })
+
+#' @export
+#'
+#' @describeIn fxe_layer_complete_veto vetoes heatmaps and two-dimensional
+#' density plots
+
+setMethod("fxe_layer_complete_veto",
+          signature = c(fx_geom = "fxGeomDiscrete",
+                        aes_name = "fillAesName"),
+          function(nomination, fx_geom, aes_name, data, ...) {
+            nxt <- fxe_layer_complete_veto(
+              nomination, fxGeom(""), aes_name, data, ...
+            )
+            ret <- any(
+              purrr::map_lgl(nom_layers(nomination),
+                             ~ inherits(.$stat, "StatBin2d") |
+                               inherits(.$stat, "StatBinhex") |
+                               inherits(.$stat, "StatDensity2d"))
+            )
+            ret | nxt
           })

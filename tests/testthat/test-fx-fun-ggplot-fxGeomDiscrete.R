@@ -33,3 +33,14 @@ test_that("Vetos and votes have the correct classes", {
       ))
   )
 })
+
+test_that("colour and fill veto correctly", {
+  expect_true(fxe_layer_complete_veto(
+    nomination(ggplot2::geom_density2d()),
+    fxGeom("Discrete"), AesName("colour"), data.frame()
+  ))
+  expect_true(fxe_layer_complete_veto(
+    nomination(ggplot2::geom_density2d()),
+    fxGeom("Discrete"), AesName("fill"), data.frame()
+  ))
+})

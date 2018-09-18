@@ -36,7 +36,9 @@ setMethod("fxe_layer_complete_nominate",
                   if(lower_var %in% names(data)) {
                     new_mapping <-
                       fxGeom_assoc_vars[c("upper", "lower")] %>%
-                      magrittr::set_names(c("ymax", "ymin"))
+                      magrittr::set_names(c("ymax", "ymin")) %>%
+                      c(ggplot2::aes(fill = NULL, colour = NULL))
+                    class(new_mapping) <- "uneval"
                     bool_errorbar <- TRUE
                   }
                 }
@@ -45,8 +47,14 @@ setMethod("fxe_layer_complete_nominate",
             if(bool_errorbar) {
               ci_nom <-
                 list(
-                  ggplot2::geom_line(),
-                  ggplot2::geom_ribbon(new_mapping, alpha = 0.1)
+                  nomination(
+                    ggplot2::geom_line(),
+                    ggplot2::geom_ribbon(new_mapping, alpha = 0.1)
+                  ),
+                  nomination(
+                    ggplot2::geom_step(),
+                    ggplot2::geom_ribbon(new_mapping, alpha = 0.1)
+                  )
                 )
             }
             else

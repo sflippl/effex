@@ -15,7 +15,7 @@ setMethod("fxe_layer_complete_nominate",
                    fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
                    fxGeom_alpha.min = NULL) {
             nxt <- fxe_layer_complete_nominate(
-              fxGeom("Continuous"), AesName(""), data, ...,
+              fxGeom(""), aes_name, data, ...,
               fxGeom_alpha.threshold = fxGeom_alpha.threshold,
               fxGeom_alpha.half = fxGeom_alpha.half,
               fxGeom_alpha.min = fxGeom_alpha.min
@@ -49,7 +49,7 @@ setMethod("fxe_layer_complete_nominate",
                    fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
                    fxGeom_alpha.min = NULL) {
             nxt <- fxe_layer_complete_nominate(
-              fxGeom("Continuous"), AesName(""), data, ...,
+              fxGeom(""), aes_name, data, ...,
               fxGeom_alpha.threshold = fxGeom_alpha.threshold,
               fxGeom_alpha.half = fxGeom_alpha.half,
               fxGeom_alpha.min = fxGeom_alpha.min
@@ -78,7 +78,7 @@ setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "xAesName"),
           function(nomination, fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_veto(
-              nomination, fxGeom("Continuous"), AesName(""), data, ...
+              nomination, fxGeom(""), aes_name, data, ...
             )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
@@ -98,7 +98,7 @@ setMethod("fxe_layer_complete_veto",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "yAesName"),
           function(nomination, fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_veto(
-              nomination, fxGeom("Continuous"), AesName(""), data, ...
+              nomination, fxGeom(""), aes_name, data, ...
             )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
@@ -116,10 +116,10 @@ setMethod("fxe_layer_complete_veto",
 #' a hexagonal heatmap?
 #'
 #' @describeIn fxe_layer_complete_vote
-#'     + `GeomPoint` with the correct transparency (see [get_alpha()]): 1
-#'     + hexagonal heatmap if the threshold is exceeded: 2 (else: 0)
-#'     + histogram: 2
-#'     + `StatBin` without `GeomBar`: 1
+#'     + `GeomPoint` with the correct transparency (see [get_alpha()]): 2
+#'     + hexagonal heatmap if the threshold is exceeded: 3 (else: 0)
+#'     + histogram: 3
+#'     + `StatBin` without `GeomBar`: 2
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "xAesName"),
@@ -127,7 +127,7 @@ setMethod("fxe_layer_complete_vote",
                    fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
                    fxGeom_alpha.min = NULL, fxGeom_hex.threshold = NULL) {
             nxt <- fxe_layer_complete_vote(
-              nomination, fxGeom("Continuous"), AesName(""), data, ...,
+              nomination, fxGeom(""), aes_name, data, ...,
               fxGeom_alpha.threshold = fxGeom_alpha.threshold,
               fxGeom_alpha.half = fxGeom_alpha.half,
               fxGeom_alpha.min = fxGeom_alpha.min,
@@ -145,20 +145,20 @@ setMethod("fxe_layer_complete_vote",
                     (isTRUE(all.equal(.$aes_params$alpha, alpha)) ||
                        (is.null(.$aes_params$alpha) & alpha == 1))
                 )
-              ) ~ 1,
+              ) ~ 2,
               any(
                 purrr::map_lgl(
                   nom_layers(nomination), ~ inherits(.$geom, "GeomHex")
                 )
-              ) ~ bool_hex * 2,
+              ) ~ bool_hex * 3,
               any(
                 purrr::map_lgl(
                   nom_layers(nomination), ~ inherits(.$geom, "GeomBar") &
                                    inherits(.$stat, "StatBin")
                 )
-              ) ~ 2,
+              ) ~ 3,
               any(purrr::map_lgl(nom_layers(nomination),
-                                 ~ inherits(.$stat, "StatBin"))) ~ 1,
+                                 ~ inherits(.$stat, "StatBin"))) ~ 2,
               TRUE ~ 0
             ) + nxt
           })
@@ -166,10 +166,10 @@ setMethod("fxe_layer_complete_vote",
 #' @export
 #'
 #' @describeIn fxe_layer_complete_vote
-#'     + `GeomPoint` with the correct transparency (see [get_alpha()]): 1
-#'     + hexagonal heatmap if the threshold is exceeded: 2 (else: 0)
-#'     + `StatBin`: 1
-#'     + boxplot: 2
+#'     + `GeomPoint` with the correct transparency (see [get_alpha()]): 2
+#'     + hexagonal heatmap if the threshold is exceeded: 3 (else: 0)
+#'     + `StatBin`: 2
+#'     + boxplot: 3
 
 setMethod("fxe_layer_complete_vote",
           signature = c(fx_geom = "fxGeomContinuous", aes_name = "yAesName"),
@@ -177,7 +177,7 @@ setMethod("fxe_layer_complete_vote",
                    fxGeom_alpha.threshold = NULL, fxGeom_alpha.half = NULL,
                    fxGeom_alpha.min = NULL, fxGeom_hex.threshold = NULL) {
             nxt <- fxe_layer_complete_vote(
-              nomination, fxGeom("Continuous"), AesName(""), data, ...,
+              nomination, fxGeom(""), aes_name, data, ...,
               fxGeom_alpha.threshold = fxGeom_alpha.threshold,
               fxGeom_alpha.half = fxGeom_alpha.half,
               fxGeom_alpha.min = fxGeom_alpha.min,
@@ -195,22 +195,22 @@ setMethod("fxe_layer_complete_vote",
                     (isTRUE(all.equal(.$aes_params$alpha, alpha)) ||
                        (is.null(.$aes_params$alpha) & alpha == 1))
                 )
-              ) ~ 1,
+              ) ~ 2,
               any(
                 purrr::map_lgl(
                   nom_layers(nomination), ~ inherits(.$geom, "GeomHex")
                 )
-              ) ~ bool_hex * 2,
+              ) ~ bool_hex * 3,
               any(
                 purrr::map_lgl(
                   nom_layers(nomination), ~ inherits(.$stat, "StatBoxplot")
                 )
-              ) ~ 2,
+              ) ~ 3,
               any(
                 purrr::map_lgl(
                   nom_layers(nomination), ~ inherits(.$stat, "StatBin")
                 )
-              ) ~ 1,
+              ) ~ 2,
               TRUE ~ 0
             ) + nxt
           })
@@ -255,7 +255,7 @@ setMethod("fxe_layer_complete_veto",
                         aes_name = "colourAesName"),
           function(nomination, fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_veto(
-              nomination, fxGeom("Continuous"), AesName(""), data, ...
+              nomination, fxGeom(""), aes_name, data, ...
             )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),
@@ -276,7 +276,7 @@ setMethod("fxe_layer_complete_veto",
                         aes_name = "fillAesName"),
           function(nomination, fx_geom, aes_name, data, ...) {
             nxt <- fxe_layer_complete_veto(
-              nomination, fxGeom("Continuous"), AesName(""), data, ...
+              nomination, fxGeom(""), aes_name, data, ...
             )
             ret <- any(
               purrr::map_lgl(nom_layers(nomination),

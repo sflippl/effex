@@ -26,6 +26,6 @@ Default is NULL which indicates that a subclass is unnecessary.}
 \description{
 Effex Dispatch objects are intended for a simplified dispatch with S3
 generics. They have the classes "fxd_<task>\emph{<subclass>" where task is a
-specific task, often fulfilled by the function "fx}<task>" (e. g. \code{\link[=fx_doc]{fx_doc()}})
+specific task, often fulfilled by the function "fx}<task>" (e. g. \code{\link[=fx_info]{fx_info()}})
 and subclass stands for a specific category that is useful within the task.
 }

@@ -2,7 +2,7 @@
 #'
 #' Effex Dispatch objects are intended for a simplified dispatch with S3
 #' generics. They have the classes "fxd_<task>_<subclass>" where task is a
-#' specific task, often fulfilled by the function "fx_<task>" (e. g. [fx_doc()])
+#' specific task, often fulfilled by the function "fx_<task>" (e. g. [fx_info()])
 #' and subclass stands for a specific category that is useful within the task.
 #'
 #' @param task a character without "_" that can specify a class
