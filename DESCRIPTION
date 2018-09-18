@@ -1,6 +1,6 @@
 Package: tectr
 Type: Package
-Title: User Interface fsfor Complex Datasets
+Title: User Interface for Complex Datasets
 Version: 0.0.0.999
 Authors@R: c(person("Samuel", "Lippl", 
                    email = "sfc.lippl@gmail.com", 
