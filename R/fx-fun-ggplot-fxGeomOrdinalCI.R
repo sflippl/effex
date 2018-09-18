@@ -20,6 +20,28 @@ setMethod("fxe_layer_complete_nominate",
             lower_quo <- fxGeom_assoc_vars[["lower"]]
             new_mapping <- ggplot2::aes()
             bool_errorbar <- FALSE
+            grouping_quo <- fxGeom_assoc_vars[["group"]]
+            if(is.null(grouping_quo)) {
+              n_groups <- 1
+              group_mapping <- ggplot2::aes()
+            }
+            else {
+              grouping_var <-
+                grouping_quo %>%
+                rlang::quo_get_expr() %>%
+                as.character()
+              if(grouping_var %in% names(data)) {
+                n_groups <-
+                  data[[grouping_var]] %>%
+                  unique() %>%
+                  length()
+                group_mapping <- fxGeom_assoc_vars["group"]
+              }
+              else {
+                n_groups <- 1
+                group_mapping <- ggplot2::aes()
+              }
+            }
             # if high and low mappings are well defined, define them and set
             # bool_errorbar to true.
             if(!is.null(upper_quo)) {
@@ -37,7 +59,8 @@ setMethod("fxe_layer_complete_nominate",
                     new_mapping <-
                       fxGeom_assoc_vars[c("upper", "lower")] %>%
                       magrittr::set_names(c("ymax", "ymin")) %>%
-                      c(ggplot2::aes(fill = NULL, colour = NULL))
+                      c(ggplot2::aes(fill = NULL, colour = NULL),
+                        group_mapping)
                     class(new_mapping) <- "uneval"
                     bool_errorbar <- TRUE
                   }
@@ -48,11 +71,11 @@ setMethod("fxe_layer_complete_nominate",
               ci_nom <-
                 list(
                   nomination(
-                    ggplot2::geom_line(),
+                    ggplot2::geom_line(group_mapping),
                     ggplot2::geom_ribbon(new_mapping, alpha = 0.1)
                   ),
                   nomination(
-                    ggplot2::geom_step(),
+                    ggplot2::geom_step(group_mapping),
                     ggplot2::geom_ribbon(new_mapping, alpha = 0.1)
                   )
                 )
