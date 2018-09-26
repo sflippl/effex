@@ -24,7 +24,9 @@ devtools::install_github("sflippl/effex")
 ```
 
 For now, an introduction to `effex` can be found in my [Bachelor’s
-Thesis](https://github.com/sflippl/bachelor-thesis/blob/master/_book/bachelor-thesis.pdf).
+Thesis](https://github.com/sflippl/bachelor-thesis/blob/master/_book/bachelor-thesis.pdf)
+(please note that the package has since been renamed and had been called
+`tectr` at that stage).
 
-The package [`vdem.effex`](https://github.com/sflippl/vdem.effex)
-applies `effex` to the [V-Dem database](v-dem.net).
+The package [`fxVdem`](https://github.com/sflippl/fx-vdem) applies
+`effex` to the [V-Dem database](v-dem.net).
