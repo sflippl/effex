@@ -1,19 +1,30 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-tectr
-=====
 
-[![Travis-CI Build Status](https://travis-ci.org/sflippl/tectr.svg?branch=master)](https://travis-ci.org/sflippl/tectr) [![Coverage Status](https://img.shields.io/codecov/c/github/sflippl/tectr/master.svg)](https://codecov.io/github/sflippl/tectr?branch=master)
+# effex
 
-R provides powerful opportunities to outsource everyday thought processes in data analysis. However, adapting these mechanisms for application-specific thought processes is expensive and difficult. Whenever a statistician builds a plot he needs to specify the variable name, scale transformations etc. `tectr` supports automation of these parameters. In particular, it supports automated visualization of complex datasets.
+[![Travis-CI Build
+Status](https://travis-ci.org/sflippl/effex.svg?branch=master)](https://travis-ci.org/sflippl/effex)
+[![Coverage
+Status](https://img.shields.io/codecov/c/github/sflippl/effex/master.svg)](https://codecov.io/github/sflippl/effex?branch=master)
 
-You can install tectr from github with:
+R provides powerful opportunities to outsource everyday thought
+processes in data analysis. However, adapting these mechanisms for
+application-specific thought processes is expensive and difficult.
+Whenever a statistician builds a plot he needs to specify the variable
+name, scale transformations etc. `effex` supports automation of these
+parameters. In particular, it supports automated visualization of
+complex datasets.
+
+You can install effex from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("sflippl/tectr")
+devtools::install_github("sflippl/effex")
 ```
 
-For now, an introduction to `tectr` can be found in my [Bachelor's Thesis](https://github.com/sflippl/bachelor-thesis/blob/master/_book/bachelor-thesis.pdf).
+For now, an introduction to `effex` can be found in my [Bachelor’s
+Thesis](https://github.com/sflippl/bachelor-thesis/blob/master/_book/bachelor-thesis.pdf).
 
-The package [`vdem.tectr`](https://github.com/sflippl/vdem.tectr) applies `tectr` to the [V-Dem database](v-dem.net).
+The package [`vdem.effex`](https://github.com/sflippl/vdem.effex)
+applies `effex` to the [V-Dem database](v-dem.net).
