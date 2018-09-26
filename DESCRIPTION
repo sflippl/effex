@@ -1,4 +1,4 @@
-Package: tectr
+Package: effex
 Type: Package
 Title: User Interface for Complex Datasets
 Version: 0.0.0.999
@@ -9,8 +9,8 @@ Description: This package allows you to supplement visualizations, summary
     tables and other tools of statistical analysis with a proper variable 
     description and customized default values.
 License: GPL-2
-URL: https://github.com/sflippl/tectr
-BugReports: https://github.com/sflippl/tectr/issues
+URL: https://github.com/sflippl/effex
+BugReports: https://github.com/sflippl/effex/issues
 LazyData: true
 Depends: R(>= 3.3.3)
 Suggests: testthat,
